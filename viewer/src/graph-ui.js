@@ -20,7 +20,7 @@ export async function createGraph() {
 
   const tooltip = document.getElementById("tooltip")
 
-  const graph = await fetch('/graph.json')
+  const graph = await fetch(import.meta.env.BASE_URL + 'graph.json')
     .then(r => r.json())
 
   const elements = []
