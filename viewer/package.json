@@ -21,6 +21,7 @@
     "cytoscape-layout-utilities": "^1.1.1",
     "cytoscape-navigator": "^2.0.2",
     "cytoscape-popper": "^4.0.1",
+    "d3-force": "^3.0.0",
     "fuse.js": "^7.4.0",
     "graphology": "^0.26.0",
     "lucide": "^1.17.0",

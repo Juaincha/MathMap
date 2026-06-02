@@ -1,132 +1,411 @@
 {
   "nodes": [
     {
-      "id": "allosaurus",
-      "label": "allosaurus",
-      "type": "dinosaurio",
+      "id": "absolute-value",
+      "label": "absolute-value",
+      "type": "definition",
       "tags": [
-        "dinosaurio"
+        "analysis"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Allosaurus"
+      "wikipedia": "https://en.wikipedia.org/wiki/Absolute_value"
     },
     {
-      "id": "ankylosaurus",
-      "label": "ankylosaurus",
-      "type": "dinosaurio",
+      "id": "archimedean-property",
+      "label": "archimedean-property",
+      "type": "theorem",
       "tags": [
-        "dinosaurio"
+        "analysis"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Ankylosaurus"
+      "wikipedia": "https://en.wikipedia.org/wiki/Archimedean_property"
     },
     {
-      "id": "archaeopteryx",
-      "label": "archaeopteryx",
-      "type": "dinosaurio",
+      "id": "bezout-identity",
+      "label": "bezout-identity",
+      "type": "theorem",
       "tags": [
-        "dinosaurio"
+        "number-theory"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Archaeopteryx"
+      "wikipedia": "https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity"
     },
     {
-      "id": "brachiosaurus",
-      "label": "brachiosaurus",
-      "type": "dinosaurio",
+      "id": "binomial-theorem",
+      "label": "binomial-theorem",
+      "type": "theorem",
       "tags": [
-        "dinosaurio"
+        "combinatorics",
+        "algebra"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Brachiosaurus"
+      "wikipedia": "https://en.wikipedia.org/wiki/Binomial_theorem"
     },
     {
-      "id": "diplodocus",
-      "label": "diplodocus",
-      "type": "dinosaurio",
+      "id": "cauchy-schwarz-inequality",
+      "label": "cauchy-schwarz-inequality",
+      "type": "theorem",
       "tags": [
-        "dinosaurio"
+        "analysis",
+        "linear-algebra"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Diplodocus"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality"
     },
     {
-      "id": "spinosaurus",
-      "label": "spinosaurus",
-      "type": "dinosaurio",
+      "id": "divisibility",
+      "label": "divisibility",
+      "type": "definition",
       "tags": [
-        "dinosaurio"
+        "number-theory"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Spinosaurus"
+      "wikipedia": "https://en.wikipedia.org/wiki/Divisibility"
     },
     {
-      "id": "stegosaurus",
-      "label": "stegosaurus",
-      "type": "dinosaurio",
+      "id": "equivalence-relation",
+      "label": "equivalence-relation",
+      "type": "definition",
       "tags": [
-        "dinosaurio"
+        "set-theory"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Stegosaurus"
+      "wikipedia": "https://en.wikipedia.org/wiki/Equivalence_relation"
     },
     {
-      "id": "triceratops",
-      "label": "triceratops",
-      "type": "dinosaurio",
+      "id": "euclidean-algorithm",
+      "label": "euclidean-algorithm",
+      "type": "theorem",
       "tags": [
-        "dinosaurio"
+        "number-theory",
+        "algorithms"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Triceratops"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_algorithm"
     },
     {
-      "id": "tyrannosaurus_rex",
-      "label": "tyrannosaurus_rex",
-      "type": "dinosaurio",
+      "id": "euclidean-division",
+      "label": "euclidean-division",
+      "type": "theorem",
       "tags": [
-        "dinosaurio"
+        "number-theory"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Tyrannosaurus_rex"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_division"
     },
     {
-      "id": "velociraptor",
-      "label": "velociraptor",
-      "type": "dinosaurio",
+      "id": "euclidean-geometry-axioms",
+      "label": "euclidean-geometry-axioms",
+      "type": "axiom",
       "tags": [
-        "dinosaurio"
+        "geometry"
       ],
-      "wikipedia": "https://es.wikipedia.org/wiki/Velociraptor"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_geometry"
+    },
+    {
+      "id": "function",
+      "label": "function",
+      "type": "definition",
+      "tags": [
+        "set-theory",
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Function_(mathematics)"
+    },
+    {
+      "id": "fundamental-theorem-of-arithmetic",
+      "label": "fundamental-theorem-of-arithmetic",
+      "type": "theorem",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic"
+    },
+    {
+      "id": "greatest-common-divisor",
+      "label": "greatest-common-divisor",
+      "type": "definition",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Greatest_common_divisor"
+    },
+    {
+      "id": "infinitude-of-primes",
+      "label": "infinitude-of-primes",
+      "type": "theorem",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Euclid%27s_theorem"
+    },
+    {
+      "id": "integer-ring-axioms",
+      "label": "integer-ring-axioms",
+      "type": "axiom",
+      "tags": [
+        "algebra",
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Integer"
+    },
+    {
+      "id": "mathematical-induction",
+      "label": "mathematical-induction",
+      "type": "theorem",
+      "tags": [
+        "number-theory",
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Mathematical_induction"
+    },
+    {
+      "id": "peano-axioms",
+      "label": "peano-axioms",
+      "type": "axiom",
+      "tags": [
+        "number-theory",
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Peano_axioms"
+    },
+    {
+      "id": "prime-number",
+      "label": "prime-number",
+      "type": "definition",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Prime_number"
+    },
+    {
+      "id": "pythagorean-theorem",
+      "label": "pythagorean-theorem",
+      "type": "theorem",
+      "tags": [
+        "geometry"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Pythagorean_theorem"
+    },
+    {
+      "id": "rational-field-axioms",
+      "label": "rational-field-axioms",
+      "type": "axiom",
+      "tags": [
+        "algebra",
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Rational_number"
+    },
+    {
+      "id": "real-number-axioms",
+      "label": "real-number-axioms",
+      "type": "axiom",
+      "tags": [
+        "analysis",
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Real_number"
+    },
+    {
+      "id": "strong-induction",
+      "label": "strong-induction",
+      "type": "theorem",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Mathematical_induction#Strong_induction"
+    },
+    {
+      "id": "supremum-and-infimum",
+      "label": "supremum-and-infimum",
+      "type": "definition",
+      "tags": [
+        "analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Infimum_and_supremum"
+    },
+    {
+      "id": "triangle-inequality",
+      "label": "triangle-inequality",
+      "type": "theorem",
+      "tags": [
+        "analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Triangle_inequality"
+    },
+    {
+      "id": "well-ordering-principle",
+      "label": "well-ordering-principle",
+      "type": "theorem",
+      "tags": [
+        "number-theory",
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Well-ordering_principle"
+    },
+    {
+      "id": "zf-set-theory",
+      "label": "zf-set-theory",
+      "type": "axiom",
+      "tags": [
+        "set-theory",
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory"
     }
   ],
   "edges": [
     {
-      "source": "spinosaurus",
-      "target": "allosaurus"
+      "source": "real-number-axioms",
+      "target": "absolute-value"
     },
     {
-      "source": "stegosaurus",
-      "target": "ankylosaurus"
+      "source": "real-number-axioms",
+      "target": "archimedean-property"
     },
     {
-      "source": "allosaurus",
-      "target": "archaeopteryx"
+      "source": "supremum-and-infimum",
+      "target": "archimedean-property"
     },
     {
-      "source": "velociraptor",
-      "target": "brachiosaurus"
+      "source": "euclidean-algorithm",
+      "target": "bezout-identity"
     },
     {
-      "source": "archaeopteryx",
-      "target": "diplodocus"
+      "source": "greatest-common-divisor",
+      "target": "bezout-identity"
     },
     {
-      "source": "ankylosaurus",
-      "target": "spinosaurus"
+      "source": "mathematical-induction",
+      "target": "binomial-theorem"
     },
     {
-      "source": "brachiosaurus",
-      "target": "stegosaurus"
+      "source": "integer-ring-axioms",
+      "target": "binomial-theorem"
     },
     {
-      "source": "tyrannosaurus_rex",
-      "target": "triceratops"
+      "source": "real-number-axioms",
+      "target": "cauchy-schwarz-inequality"
     },
     {
-      "source": "triceratops",
-      "target": "velociraptor"
+      "source": "triangle-inequality",
+      "target": "cauchy-schwarz-inequality"
+    },
+    {
+      "source": "integer-ring-axioms",
+      "target": "divisibility"
+    },
+    {
+      "source": "zf-set-theory",
+      "target": "equivalence-relation"
+    },
+    {
+      "source": "function",
+      "target": "equivalence-relation"
+    },
+    {
+      "source": "greatest-common-divisor",
+      "target": "euclidean-algorithm"
+    },
+    {
+      "source": "euclidean-division",
+      "target": "euclidean-algorithm"
+    },
+    {
+      "source": "peano-axioms",
+      "target": "euclidean-division"
+    },
+    {
+      "source": "well-ordering-principle",
+      "target": "euclidean-division"
+    },
+    {
+      "source": "real-number-axioms",
+      "target": "euclidean-geometry-axioms"
+    },
+    {
+      "source": "zf-set-theory",
+      "target": "function"
+    },
+    {
+      "source": "prime-number",
+      "target": "fundamental-theorem-of-arithmetic"
+    },
+    {
+      "source": "strong-induction",
+      "target": "fundamental-theorem-of-arithmetic"
+    },
+    {
+      "source": "bezout-identity",
+      "target": "fundamental-theorem-of-arithmetic"
+    },
+    {
+      "source": "divisibility",
+      "target": "greatest-common-divisor"
+    },
+    {
+      "source": "euclidean-division",
+      "target": "greatest-common-divisor"
+    },
+    {
+      "source": "prime-number",
+      "target": "infinitude-of-primes"
+    },
+    {
+      "source": "mathematical-induction",
+      "target": "infinitude-of-primes"
+    },
+    {
+      "source": "euclidean-division",
+      "target": "infinitude-of-primes"
+    },
+    {
+      "source": "peano-axioms",
+      "target": "integer-ring-axioms"
+    },
+    {
+      "source": "peano-axioms",
+      "target": "mathematical-induction"
+    },
+    {
+      "source": "zf-set-theory",
+      "target": "peano-axioms"
+    },
+    {
+      "source": "divisibility",
+      "target": "prime-number"
+    },
+    {
+      "source": "euclidean-geometry-axioms",
+      "target": "pythagorean-theorem"
+    },
+    {
+      "source": "real-number-axioms",
+      "target": "pythagorean-theorem"
+    },
+    {
+      "source": "integer-ring-axioms",
+      "target": "rational-field-axioms"
+    },
+    {
+      "source": "rational-field-axioms",
+      "target": "real-number-axioms"
+    },
+    {
+      "source": "mathematical-induction",
+      "target": "strong-induction"
+    },
+    {
+      "source": "peano-axioms",
+      "target": "strong-induction"
+    },
+    {
+      "source": "real-number-axioms",
+      "target": "supremum-and-infimum"
+    },
+    {
+      "source": "absolute-value",
+      "target": "triangle-inequality"
+    },
+    {
+      "source": "peano-axioms",
+      "target": "well-ordering-principle"
+    },
+    {
+      "source": "mathematical-induction",
+      "target": "well-ordering-principle"
     }
   ]
 }
