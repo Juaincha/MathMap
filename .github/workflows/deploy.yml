@@ -33,6 +33,7 @@ jobs:
       - name: Generate graph.json from content/
         run: |
           python scripts/build_graph.py
+          mkdir -p viewer/public
           cp graph.json viewer/public/graph.json
 
       - uses: actions/setup-node@v4
