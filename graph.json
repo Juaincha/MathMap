@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "id": "allosaurus",
+      "label": "allosaurus",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Allosaurus"
+    },
+    {
+      "id": "ankylosaurus",
+      "label": "ankylosaurus",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Ankylosaurus"
+    },
+    {
+      "id": "archaeopteryx",
+      "label": "archaeopteryx",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Archaeopteryx"
+    },
+    {
+      "id": "brachiosaurus",
+      "label": "brachiosaurus",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Brachiosaurus"
+    },
+    {
+      "id": "diplodocus",
+      "label": "diplodocus",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Diplodocus"
+    },
+    {
+      "id": "spinosaurus",
+      "label": "spinosaurus",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Spinosaurus"
+    },
+    {
+      "id": "stegosaurus",
+      "label": "stegosaurus",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Stegosaurus"
+    },
+    {
+      "id": "triceratops",
+      "label": "triceratops",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Triceratops"
+    },
+    {
+      "id": "tyrannosaurus_rex",
+      "label": "tyrannosaurus_rex",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Tyrannosaurus_rex"
+    },
+    {
+      "id": "velociraptor",
+      "label": "velociraptor",
+      "type": "dinosaurio",
+      "tags": [
+        "dinosaurio"
+      ],
+      "wikipedia": "https://es.wikipedia.org/wiki/Velociraptor"
+    }
+  ],
+  "edges": [
+    {
+      "source": "spinosaurus",
+      "target": "allosaurus"
+    },
+    {
+      "source": "stegosaurus",
+      "target": "ankylosaurus"
+    },
+    {
+      "source": "allosaurus",
+      "target": "archaeopteryx"
+    },
+    {
+      "source": "velociraptor",
+      "target": "brachiosaurus"
+    },
+    {
+      "source": "archaeopteryx",
+      "target": "diplodocus"
+    },
+    {
+      "source": "ankylosaurus",
+      "target": "spinosaurus"
+    },
+    {
+      "source": "brachiosaurus",
+      "target": "stegosaurus"
+    },
+    {
+      "source": "tyrannosaurus_rex",
+      "target": "triceratops"
+    },
+    {
+      "source": "triceratops",
+      "target": "velociraptor"
+    }
+  ]
+}
