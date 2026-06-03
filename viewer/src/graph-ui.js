@@ -193,10 +193,6 @@ export async function createGraph() {
         style: { 'background-color': '#ff9500' }
       },
       {
-        selector: '.selected',
-        style: { 'background-color': '#ff3b30' }
-      },
-      {
         selector: '.neighbor',
         style: { opacity: 1 }
       },
@@ -220,7 +216,7 @@ export async function createGraph() {
   // ── Reset button ──────────────────────────────────────────────────────────────
   document.getElementById('resetBtn').onclick = () => {
     cy.fit()
-    cy.elements().removeClass('selected neighbor faded hover')
+    cy.elements().removeClass('hover neighbor faded')
   }
 
   // ── Type filters ──────────────────────────────────────────────────────────────
@@ -277,46 +273,18 @@ export async function createGraph() {
 
   cy.on('mouseout', 'node', () => {
     tooltip.style.display = 'none'
-
-    const selected = cy.$('.selected')
-
-    if (selected.length > 0) {
-      const neighborhood = selected.closedNeighborhood()
-        .union(selected.predecessors())
-        .union(selected.successors())
-
-      cy.batch(() => {
-        cy.elements().removeClass('hover neighbor faded')
-        neighborhood.addClass('neighbor')
-        cy.elements().difference(neighborhood).addClass('faded')
-        selected.addClass('selected')
-      })
-    } else {
-      cy.batch(() => {
-        cy.elements().removeClass('hover neighbor faded')
-      })
-    }
+    cy.batch(() => {
+      cy.elements().removeClass('hover neighbor faded')
+    })
   })
 
-  // ── Click / tap (preserved exactly from original) ─────────────────────────────
+  // ── Click / tap ───────────────────────────────────────────────────────────────
+  // Opens Wikipedia only — no persistent highlight state so returning to the
+  // tab shows the map exactly as it was before clicking.
 
   cy.on('tap', 'node', e => {
-    cy.elements().removeClass('selected neighbor faded')
-
-    const node = e.target
-    node.addClass('selected')
-
-    const neighborhood = node.closedNeighborhood()
-      .union(node.predecessors())
-      .union(node.successors())
-
-    neighborhood.addClass('neighbor')
-    cy.elements().difference(neighborhood).addClass('faded')
-
-    const wiki = node.data('wikipedia')
-    if (wiki) {
-      setTimeout(() => window.open(wiki, '_blank'), 200)
-    }
+    const wiki = e.target.data('wikipedia')
+    if (wiki) window.open(wiki, '_blank')
   })
 
   // ── Drag hooks — GUARDA 2 ─────────────────────────────────────────────────────
