@@ -86,7 +86,7 @@ for md_file in CONTENT_DIR.rglob("*.md"):
         })
 
 # -------------------------
-# TERCERA PASADA: primaryTag e isCentral
+# TERCERA PASADA: primaryTag
 # -------------------------
 
 # Construir mapa de vecinos para cada nodo (aristas en cualquier dirección)
@@ -127,50 +127,52 @@ for node in nodes:
 
     node["primaryTag"] = best_tag
 
-# Calcular isCentral: un solo nodo por tag (el de mayor grado total)
-# Grado total = nº de aristas (en ambas direcciones)
-degree_of = {node["id"]: 0 for node in nodes}
-for edge in edges:
-    src = edge["source"]
-    tgt = edge["target"]
-    if src in degree_of:
-        degree_of[src] += 1
-    if tgt in degree_of:
-        degree_of[tgt] += 1
+# -------------------------
+# CUARTA PASADA: nodos-anillo de tag
+# -------------------------
+# ORDEN CRÍTICO: primaryTag ya está calculado sobre aristas reales.
+# Los anillos y sus aristas se agregan DESPUÉS para no contaminar grados ni primaryTag.
 
-# Agrupar nodos por primaryTag
-tag_groups = {}  # tag → lista de node_ids
+all_tags = sorted({tag for node in nodes for tag in (node.get("tags") or [])})
+
+ring_nodes = []
+for tag in all_tags:
+    ring_nodes.append({
+        "id": f"tag:{tag}",
+        "label": tag,
+        "type": "tag",
+        "tags": [tag],
+        "wikipedia": None,
+        "primaryTag": tag
+    })
+
+tag_edges = []
 for node in nodes:
-    pt = node["primaryTag"]
-    if pt is None:
-        continue
-    tag_groups.setdefault(pt, []).append(node["id"])
+    for tag in (node.get("tags") or []):
+        tag_edges.append({
+            "source": f"tag:{tag}",
+            "target": node["id"],
+            "kind": "tag-link"
+        })
 
-# Para cada grupo, elegir el central
-central_ids = set()
-for tag, member_ids in tag_groups.items():
-    # Ordenar por grado descendente, luego por id lexicográfico ascendente (desempate)
-    best = sorted(member_ids, key=lambda nid: (-degree_of.get(nid, 0), nid))[0]
-    central_ids.add(best)
-
-# Asignar isCentral a cada nodo
-for node in nodes:
-    node["isCentral"] = (node["id"] in central_ids)
+nodes_export = nodes + ring_nodes
+edges_export = edges + tag_edges
 
 # -------------------------
 # EXPORTAR
 # -------------------------
 
 graph = {
-    "nodes": nodes,
-    "edges": edges
+    "nodes": nodes_export,
+    "edges": edges_export
 }
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     json.dump(graph, f, indent=2, ensure_ascii=False)
 
 print()
-print(f"Nodes: {len(nodes)}")
-print(f"Edges: {len(edges)}")
-print(f"Tags with a central node: {len(central_ids)}")
+print(f"Concept nodes:  {len(nodes)}")
+print(f"Ring nodes:     {len(ring_nodes)}")
+print(f"Dep edges:      {len(edges)}")
+print(f"Tag-link edges: {len(tag_edges)}")
 print(f"Saved: {OUTPUT_FILE}")

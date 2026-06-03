@@ -1,6 +1,6 @@
 import Fuse from 'fuse.js'
 
-export function initializeSearch(cy, nodes) {
+export function initializeSearch(cy, nodes, onSelect) {
 
   const searchBox =
     document.getElementById('search')
@@ -8,7 +8,7 @@ export function initializeSearch(cy, nodes) {
   const suggestions =
     document.getElementById('suggestions')
 
-  const fuse = new Fuse(nodes, {
+  const fuse = new Fuse(nodes.filter(n => n.type !== 'tag'), {
 
     keys: ['label'],
 
@@ -41,17 +41,11 @@ export function initializeSearch(cy, nodes) {
         const node =
           cy.getElementById(result.item.id)
 
-        cy.animate({
-
-          center: {
-            eles: node
-          },
-
-          zoom: 2.5
-
-        }, {
-          duration: 600
-        })
+        if (onSelect) {
+          onSelect(node)
+        } else {
+          cy.animate({ center: { eles: node }, zoom: 2.5 }, { duration: 600 })
+        }
 
         suggestions.innerHTML = ''
       }

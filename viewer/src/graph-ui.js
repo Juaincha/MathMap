@@ -23,7 +23,13 @@ import {
   ZOOM_LABEL_NONE,
   ZOOM_LABEL_HUBS_ONLY,
   HUB_DEGREE_PERCENTILE,
-  ZOOM_DEBOUNCE_MS
+  ZOOM_DEBOUNCE_MS,
+  ZOOM_WHEEL_SENSITIVITY,
+  ZOOM_EASE_FACTOR,
+  ZOOM_REST_EPSILON,
+  RING_CIRCLE_R,
+  RING_SPACING_POWER,
+  INITIAL_VIEW_FRACTION
 } from './physics-config.js'
 
 // ── GUARDA 1: layout runs at most once ────────────────────────────────────────
@@ -37,7 +43,7 @@ let layoutDone = false
  * @param {cytoscape.Core} cy
  * @returns {Promise<void>}
  */
-function runLayoutOnce(cy) {
+function runLayoutOnce(cy, extraOpts = {}) {
   if (layoutDone) {
     // GUARDA 1: second call is a silent no-op.
     return Promise.resolve()
@@ -61,7 +67,9 @@ function runLayoutOnce(cy) {
       numIter:         FCOSE_ITERATIONS,
 
       nodeSeparation:  30,
-      packComponents:  true
+      packComponents:  true,
+
+      ...extraOpts
     })
 
     layout.on('layoutstop', () => {
@@ -153,9 +161,11 @@ export async function createGraph() {
     .then(r => r.json())
 
   // ── Degree map for node sizing and hub classification ────────────────────────
+  // Only dependency edges count — tag-link edges are layout scaffolding, not topology.
   const degreeMap = {}
   graph.nodes.forEach(node => { degreeMap[node.id] = 0 })
   graph.edges.forEach(edge => {
+    if (edge.kind === 'tag-link') return
     degreeMap[edge.source] = (degreeMap[edge.source] || 0) + 1
     degreeMap[edge.target] = (degreeMap[edge.target] || 0) + 1
   })
@@ -179,39 +189,61 @@ export async function createGraph() {
     TAG_COLORS[tag] = `hsl(${hue}, 58%, 42%)`
   })
 
-  // ── Cluster pre-positioning ───────────────────────────────────────────────────
-  // Tags listed in priority order — first match across all groups wins.
-  const CLUSTER_GROUPS = [
-    ['foundations', 'logic', 'set-theory', 'order-theory'],
-    ['algebra', 'abstract-algebra', 'linear-algebra'],
-    ['number-theory'],
-    ['analysis', 'calculus', 'real-analysis', 'complex-analysis',
-     'functional-analysis', 'measure-theory', 'differential-equations'],
-    ['geometry', 'differential-geometry', 'topology'],
-    ['combinatorics', 'graph-theory', 'algorithms'],
-    ['probability'],
-  ]
+  // ── Separate ring nodes from regular nodes ────────────────────────────────────
+  const ringNodes    = graph.nodes.filter(n => n.type === 'tag')
+  const regularNodes = graph.nodes.filter(n => n.type !== 'tag')
 
-  const TAG_TO_CI = {}
-  CLUSTER_GROUPS.forEach((tags, ci) => tags.forEach(t => { TAG_TO_CI[t] = ci }))
-
-  const nodeCI = {}
-  graph.nodes.forEach(node => {
-    let ci = 0
-    let found = false
-    ;(node.tags || []).forEach(tag => {
-      const t = TAG_TO_CI[tag]
-      if (t !== undefined && (!found || t < ci)) { ci = t; found = true }
-    })
-    nodeCI[node.id] = ci
+  // ── Cluster sizes (for scatter radius scaling) ────────────────────────────────
+  const clusterSize = {}
+  regularNodes.forEach(n => {
+    const pt = n.primaryTag
+    if (pt) clusterSize[pt] = (clusterSize[pt] || 0) + 1
   })
 
-  // Place cluster centers evenly on a circle, starting at top (−π/2).
-  const CLUSTER_R = 5000
-  const SCATTER_R = 800
-  const clusterCenters = CLUSTER_GROUPS.map((_, i) => {
-    const a = (2 * Math.PI * i) / CLUSTER_GROUPS.length - Math.PI / 2
-    return { x: Math.cos(a) * CLUSTER_R, y: Math.sin(a) * CLUSTER_R }
+  // ── Seed positions ────────────────────────────────────────────────────────────
+  // Step 1: compute proportional reference positions on a circle (used only for
+  // spreading clusters apart during the initial seed — NOT fixed constraints).
+  const ringWeights = ringNodes.map(rn => Math.pow(clusterSize[rn.label] || 1, RING_SPACING_POWER))
+  const totalWeight = ringWeights.reduce((s, w) => s + w, 0)
+
+  const clusterRef = {}   // reference center per ring id, on the proportional circle
+  let cumAngle = -Math.PI / 2
+  ringNodes.forEach((rn, i) => {
+    const arcWidth = (ringWeights[i] / totalWeight) * 2 * Math.PI
+    const midAngle = cumAngle + arcWidth / 2
+    clusterRef[rn.id] = {
+      x: Math.cos(midAngle) * RING_CIRCLE_R,
+      y: Math.sin(midAngle) * RING_CIRCLE_R
+    }
+    cumAngle += arcWidth
+  })
+
+  // Step 2: seed concept nodes around their cluster reference center.
+  const BASE_SCATTER = 220
+  const conceptSeed = {}
+  regularNodes.forEach(node => {
+    const ringId = node.primaryTag ? `tag:${node.primaryTag}` : null
+    const center = ringId && clusterRef[ringId] ? clusterRef[ringId] : { x: 0, y: 0 }
+    const size   = clusterSize[node.primaryTag] || 1
+    const scatter = BASE_SCATTER * Math.sqrt(size)
+    const a = Math.random() * 2 * Math.PI
+    const r = Math.sqrt(Math.random()) * scatter
+    conceptSeed[node.id] = { x: center.x + Math.cos(a) * r, y: center.y + Math.sin(a) * r }
+  })
+
+  // Step 3: place each ring at the centroid of ALL its tagged members' seed positions.
+  // This ensures rings start inside their cloud; fcose tag-link springs keep them there.
+  const ringPositions = {}
+  ringNodes.forEach(rn => {
+    const members = regularNodes.filter(n => (n.tags || []).includes(rn.label))
+    if (members.length > 0) {
+      ringPositions[rn.id] = {
+        x: members.reduce((s, n) => s + conceptSeed[n.id].x, 0) / members.length,
+        y: members.reduce((s, n) => s + conceptSeed[n.id].y, 0) / members.length
+      }
+    } else {
+      ringPositions[rn.id] = clusterRef[rn.id] || { x: 0, y: 0 }
+    }
   })
 
   // ── Build Cytoscape elements ──────────────────────────────────────────────────
@@ -219,22 +251,29 @@ export async function createGraph() {
   graph.nodes.forEach(n => { tagsByNode[n.id] = n.tags || [] })
 
   const elements = []
-  graph.nodes.forEach(node => {
+
+  regularNodes.forEach(node => {
     const firstTag = (node.tags || [])[0]
     const tagColor = firstTag ? TAG_COLORS[firstTag] : '#7f8c8d'
-    const center = clusterCenters[nodeCI[node.id]]
-    const a = Math.random() * 2 * Math.PI
-    const r = Math.sqrt(Math.random()) * SCATTER_R
+    elements.push({ data: { ...node, tagColor }, position: conceptSeed[node.id] })
+  })
+
+  ringNodes.forEach(rn => {
+    const tagColor    = TAG_COLORS[rn.label] || '#7f8c8d'
+    const memberCount = clusterSize[rn.label] || 0
     elements.push({
-      data: { ...node, tagColor },
-      position: { x: center.x + Math.cos(a) * r, y: center.y + Math.sin(a) * r }
+      data: { ...rn, tagColor, memberCount },
+      position: ringPositions[rn.id] || { x: 0, y: 0 }
     })
   })
+
+  // Edges
   graph.edges.forEach(edge => {
     const srcTags = tagsByNode[edge.source] || []
     const tgtTags = new Set(tagsByNode[edge.target] || [])
-    const crossTag = srcTags.length > 0 && tgtTags.size > 0 && !srcTags.some(t => tgtTags.has(t))
-    elements.push({ data: { source: edge.source, target: edge.target, crossTag } })
+    const crossTag = edge.kind !== 'tag-link' &&
+      srcTags.length > 0 && tgtTags.size > 0 && !srcTags.some(t => tgtTags.has(t))
+    elements.push({ data: { source: edge.source, target: edge.target, crossTag, kind: edge.kind || null } })
   })
 
   // ── Create Cytoscape instance ─────────────────────────────────────────────────
@@ -245,7 +284,7 @@ export async function createGraph() {
 
     elements,
 
-    wheelSensitivity: 2,
+    wheelSensitivity: 0.00001,
 
     layout: { name: 'preset' },
 
@@ -298,6 +337,43 @@ export async function createGraph() {
         }
       },
 
+      // ── Ring nodes (tag anchors) ─────────────────────────────────────────────
+      {
+        selector: 'node[type="tag"]',
+        style: {
+          'background-opacity':  0,
+          'border-width':        3,
+          'border-color':        'data(tagColor)',
+          'border-opacity':      0.85,
+          width:  ele => 28 + Math.sqrt(ele.data('memberCount') || 1) * 4,
+          height: ele => 28 + Math.sqrt(ele.data('memberCount') || 1) * 4,
+          'font-size':    11,
+          'font-weight':  'bold',
+          color:          'data(tagColor)',
+          'text-valign':  'center',
+          'text-halign':  'center',
+          'text-opacity': 1,
+          'text-margin-y': 0,
+          'transition-property': 'opacity, border-color',
+          'transition-duration': '150ms'
+        }
+      },
+
+      // ── Tag-link edges ────────────────────────────────────────────────────────
+      {
+        selector: 'edge[kind="tag-link"]',
+        style: {
+          width:                0.8,
+          opacity:              0.12,
+          'line-color':         '#aaa',
+          'target-arrow-shape': 'none',
+          'source-arrow-shape': 'none',
+          'curve-style':        'bezier',
+          'transition-property': 'opacity',
+          'transition-duration': '150ms'
+        }
+      },
+
       // ── Zoom label classes ──────────────────────────────────────────────────
       // Applied dynamically by the zoom handler.
       // .label-all    → all nodes visible (zoom > ZOOM_LABEL_HUBS_ONLY)
@@ -340,13 +416,88 @@ export async function createGraph() {
   })
 
   // ── Run fcose layout ONCE (GUARDA 1) ─────────────────────────────────────────
+  // Rings start at their cluster centroid; tag-link springs keep them there.
+  // No fixedNodeConstraint — rings are free to settle at the natural center.
   await runLayoutOnce(cy)
+
+  // ── Initial camera: fit to innermost INITIAL_VIEW_FRACTION of concept nodes ───
+  // Concept nodes only — ring nodes are layout scaffolding, not the focal content.
+  // Sorts by distance from centroid; fits the densest central cluster so the user
+  // opens the map already "inside" the graph, not zoomed out to the full extent.
+  {
+    const concepts = cy.nodes().filter(n => n.data('type') !== 'tag')
+    const pts = concepts.map(n => n.position())
+    const cx  = pts.reduce((s, p) => s + p.x, 0) / pts.length
+    const cy0 = pts.reduce((s, p) => s + p.y, 0) / pts.length
+
+    const sorted = concepts.toArray().sort((a, b) => {
+      const pa = a.position(), pb = b.position()
+      return Math.hypot(pa.x - cx, pa.y - cy0) - Math.hypot(pb.x - cx, pb.y - cy0)
+    })
+
+    const innerCount = Math.ceil(sorted.length * INITIAL_VIEW_FRACTION)
+    cy.fit(cy.collection(sorted.slice(0, innerCount)), 60)
+  }
+
+  // ── Smooth cursor-anchored zoom ───────────────────────────────────────────────
+  // Intercepts wheel events before Cytoscape (capture phase) and replaces the
+  // discrete native zoom with a lerp-based animation loop.
+  // The rAF loop exits as soon as |zoomTarget − current| < ZOOM_REST_EPSILON,
+  // so no animation runs at rest and the physics simulation is never touched.
+
+  let zoomTarget      = cy.zoom()   // accumulates wheel input in log-scale
+  let zoomAnchor      = null        // { x, y } rendered position of cursor (px)
+  let smoothZoomRafId = null        // null when idle
+
+  function smoothZoomTick() {
+    const current = cy.zoom()
+    const diff    = zoomTarget - current
+
+    if (Math.abs(diff) < ZOOM_REST_EPSILON) {
+      cy.zoom({ level: zoomTarget, renderedPosition: zoomAnchor })
+      smoothZoomRafId = null
+      return
+    }
+
+    cy.zoom({ level: current + diff * ZOOM_EASE_FACTOR, renderedPosition: zoomAnchor })
+    smoothZoomRafId = requestAnimationFrame(smoothZoomTick)
+  }
+
+  function handleWheel(e) {
+    e.preventDefault()
+    e.stopPropagation()
+
+    // Normalise deltaY to pixels regardless of deltaMode
+    let delta = e.deltaY
+    if (e.deltaMode === 1) delta *= 20    // line mode
+    if (e.deltaMode === 2) delta *= 400   // page mode
+
+    // Accumulate target in log-scale (scroll up → zoom in → larger level)
+    const newTarget = zoomTarget * Math.exp(-delta * ZOOM_WHEEL_SENSITIVITY)
+    zoomTarget = Math.max(cy.minZoom(), Math.min(cy.maxZoom(), newTarget))
+
+    // Anchor: cursor position relative to the cy container
+    const rect = document.getElementById('cy').getBoundingClientRect()
+    zoomAnchor = { x: e.clientX - rect.left, y: e.clientY - rect.top }
+
+    // Start loop only if not already running
+    if (smoothZoomRafId === null) {
+      smoothZoomRafId = requestAnimationFrame(smoothZoomTick)
+    }
+  }
+
+  // Capture phase ensures we intercept before Cytoscape's bubble-phase listener.
+  document.getElementById('cy').addEventListener('wheel', handleWheel, {
+    passive: false,
+    capture: true
+  })
 
   // ── Mark hub nodes (computed once; immutable for the session) ─────────────────
   // Hub = top (1 - HUB_DEGREE_PERCENTILE) % by total degree.
   // The class is used by the zoom-label system to show labels at medium zoom.
   cy.batch(() => {
     cy.nodes().forEach(node => {
+      if (node.data('type') === 'tag') return   // ring nodes: never classified as hub
       const deg = degreeMap[node.id()] || 0
       if (deg >= hubDegreeThreshold) node.addClass('hub')
     })
@@ -381,6 +532,11 @@ export async function createGraph() {
 
   // Edge IDs force-shown during hover (bypass viewport culling).
   let hoverForcedEdgeIds = new Set()
+
+  // Nodes/edges temporarily revealed during hover despite being filter-hidden.
+  // Restored to display:none on clearHighlight.
+  let hoverRevealedNodes = cy.collection()
+  let hoverRevealedEdges = cy.collection()
 
   // Whether the viewport culler is currently active (non-hover context).
   let cullingActive = false
@@ -492,7 +648,19 @@ export async function createGraph() {
   applyEdgeCulling()
 
   // ── Wire search ───────────────────────────────────────────────────────────────
-  initializeSearch(cy, graph.nodes)
+  initializeSearch(cy, graph.nodes, node => {
+    // Always tree-both for search: highlight full dependency tree, fit camera to it.
+    pinnedNode = node
+    clearHighlight()
+    applyHighlight(node, 'tree-both')
+
+    const raw      = node.predecessors().union(node.successors())
+    const treeNodes = node.union(raw.not('[type="tag"]').not('[kind="tag-link"]')).nodes()
+    cy.animate(
+      { fit: { eles: treeNodes, padding: 60 } },
+      { duration: 600, complete: () => { zoomTarget = cy.zoom() } }
+    )
+  })
 
   // ── Reset button ──────────────────────────────────────────────────────────────
   document.getElementById('resetBtn').onclick = () => {
@@ -513,9 +681,13 @@ export async function createGraph() {
   const activeTags  = new Set(allTags)
 
   function nodeVisible(node) {
-    if (!activeTypes.has(node.data('type'))) return false
+    const type = node.data('type')
+    if (type === 'tag') {
+      // Ring node visible only if its tag is active
+      return activeTags.has(node.data('label'))
+    }
+    if (!activeTypes.has(type)) return false
     const tags = node.data('tags') || []
-    // Tag-less nodes pass the tag filter; tagged nodes need at least one active tag.
     return tags.length === 0 || tags.some(t => activeTags.has(t))
   }
 
@@ -597,16 +769,31 @@ export async function createGraph() {
   // ── Highlight helpers (shared by hover and pin) ───────────────────────────────
   let pinnedNode = null
 
-  function applyHighlight(node) {
-    const related =
-      hoverMode === 'tree-both'          ? node.predecessors().union(node.successors()) :
-      hoverMode === 'tree-dependents'    ? node.successors()                            :
-      hoverMode === 'tree-dependencies'  ? node.predecessors()                          :
-      hoverMode === 'near-both'          ? node.incomers().union(node.outgoers())       :
-      hoverMode === 'near-dependents'    ? node.outgoers()                              :
-                                           node.incomers()
+  function applyHighlight(node, mode = hoverMode) {
+    let related
+
+    if (node.data('type') === 'tag') {
+      // Ring node: show all tag members regardless of mode
+      const memberEdges = node.connectedEdges('[kind="tag-link"]')
+      const members     = memberEdges.connectedNodes().not('[type="tag"]')
+      related = members.union(memberEdges)
+    } else {
+      // Regular node: use supplied mode, strip ring nodes and tag-link edges
+      const raw =
+        mode === 'tree-both'         ? node.predecessors().union(node.successors()) :
+        mode === 'tree-dependents'   ? node.successors()                            :
+        mode === 'tree-dependencies' ? node.predecessors()                          :
+        mode === 'near-both'         ? node.incomers().union(node.outgoers())       :
+        mode === 'near-dependents'   ? node.outgoers()                              :
+                                       node.incomers()
+      related = raw.not('[type="tag"]').not('[kind="tag-link"]')
+    }
 
     const lit = node.union(related)
+
+    // Temporarily reveal any filter-hidden nodes/edges in the lit set.
+    hoverRevealedNodes = lit.nodes().filter(n => n.style('display') === 'none')
+    hoverRevealedEdges = lit.edges().filter(e => e.style('display') === 'none')
 
     hoverForcedEdgeIds = new Set()
     node.connectedEdges().forEach(edge => {
@@ -621,18 +808,24 @@ export async function createGraph() {
     })
 
     cy.batch(() => {
+      if (hoverRevealedNodes.length > 0) hoverRevealedNodes.style('display', 'element')
+      if (hoverRevealedEdges.length > 0) hoverRevealedEdges.style('display', 'element')
       cy.elements().difference(lit).addClass('faded')
       node.addClass('hover')
       related.nodes().addClass('neighbor')
       related.edges().addClass('neighbor')
-      node.addClass('label-visible')
+      lit.nodes().addClass('label-visible')
     })
   }
 
   function clearHighlight() {
     cy.batch(() => {
       cy.elements().removeClass('hover neighbor faded label-visible')
+      if (hoverRevealedNodes.length > 0) hoverRevealedNodes.style('display', 'none')
+      if (hoverRevealedEdges.length > 0) hoverRevealedEdges.style('display', 'none')
     })
+    hoverRevealedNodes = cy.collection()
+    hoverRevealedEdges = cy.collection()
     hoverForcedEdgeIds = new Set()
     applyEdgeCulling()
   }
@@ -645,8 +838,13 @@ export async function createGraph() {
     applyHighlight(node)
 
     const pos = e.renderedPosition
-    const tags = (node.data('tags') || []).join(', ') || '—'
-    tooltip.innerHTML = `<span class="tt-row"><b>Type:</b> ${node.data('type')}</span><span class="tt-row"><b>Tags:</b> ${tags}</span>`
+    if (node.data('type') === 'tag') {
+      const count = node.data('memberCount') || 0
+      tooltip.innerHTML = `<span class="tt-row"><b>Tag:</b> ${node.data('label')}</span><span class="tt-row"><b>Members:</b> ${count}</span>`
+    } else {
+      const tags = (node.data('tags') || []).join(', ') || '—'
+      tooltip.innerHTML = `<span class="tt-row"><b>Type:</b> ${node.data('type')}</span><span class="tt-row"><b>Tags:</b> ${tags}</span>`
+    }
     tooltip.style.left    = `${pos.x + 15}px`
     tooltip.style.top     = `${pos.y + 15}px`
     tooltip.style.display = 'flex'
@@ -689,7 +887,20 @@ export async function createGraph() {
   // tab shows the map exactly as it was before clicking.
 
   cy.on('tap', 'node', e => {
-    const wiki = e.target.data('wikipedia')
+    const node = e.target
+    if (node.data('type') === 'tag') {
+      // Ring node: toggle pin highlight for this tag cluster
+      if (pinnedNode && pinnedNode.id() === node.id()) {
+        pinnedNode = null
+        clearHighlight()
+      } else {
+        pinnedNode = node
+        clearHighlight()
+        applyHighlight(node)
+      }
+      return
+    }
+    const wiki = node.data('wikipedia')
     if (wiki) window.open(wiki, '_blank')
   })
 
