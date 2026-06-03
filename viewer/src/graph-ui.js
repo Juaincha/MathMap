@@ -94,19 +94,19 @@ export async function createGraph() {
       </div>
       <div id="suggestions"></div>
       <div class="filter-group">
-        <span class="filter-label">Show tree</span>
+        <span class="filter-label">Show near</span>
         <div class="hover-mode-strip">
-          <button class="hover-mode-btn active" data-mode="tree-both">Both</button>
-          <button class="hover-mode-btn" data-mode="tree-dependents">Dependents</button>
-          <button class="hover-mode-btn" data-mode="tree-dependencies">Dependencies</button>
+          <button class="hover-mode-btn active" data-mode="near-both">Both</button>
+          <button class="hover-mode-btn" data-mode="near-dependents">Implies</button>
+          <button class="hover-mode-btn" data-mode="near-dependencies">Depends on</button>
         </div>
       </div>
       <div class="filter-group">
-        <span class="filter-label">Show near</span>
+        <span class="filter-label">Show tree</span>
         <div class="hover-mode-strip">
-          <button class="hover-mode-btn" data-mode="near-both">Both</button>
-          <button class="hover-mode-btn" data-mode="near-dependents">Dependents</button>
-          <button class="hover-mode-btn" data-mode="near-dependencies">Dependencies</button>
+          <button class="hover-mode-btn" data-mode="tree-both">Both</button>
+          <button class="hover-mode-btn" data-mode="tree-dependents">Implies</button>
+          <button class="hover-mode-btn" data-mode="tree-dependencies">Depends on</button>
         </div>
       </div>
       <div class="filter-group">
@@ -332,7 +332,7 @@ export async function createGraph() {
   })
 
   // ── Hover mode selector (6 mutually exclusive options) ───────────────────────
-  let hoverMode = 'tree-both'
+  let hoverMode = 'near-both'
 
   document.getElementById('toolbar').addEventListener('click', e => {
     const btn = e.target.closest('.hover-mode-btn')
