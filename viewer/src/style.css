@@ -89,7 +89,7 @@ body {
   opacity: 1;
 }
 
-#hover-mode-btns {
+.hover-mode-strip {
   display: flex;
 }
 

@@ -94,11 +94,19 @@ export async function createGraph() {
       </div>
       <div id="suggestions"></div>
       <div class="filter-group">
-        <span class="filter-label">Hover shows</span>
-        <div id="hover-mode-btns">
-          <button class="hover-mode-btn active" data-mode="both">Both</button>
-          <button class="hover-mode-btn" data-mode="dependents">Dependents</button>
-          <button class="hover-mode-btn" data-mode="dependencies">Dependencies</button>
+        <span class="filter-label">Show tree</span>
+        <div class="hover-mode-strip">
+          <button class="hover-mode-btn active" data-mode="tree-both">Both</button>
+          <button class="hover-mode-btn" data-mode="tree-dependents">Dependents</button>
+          <button class="hover-mode-btn" data-mode="tree-dependencies">Dependencies</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Show near</span>
+        <div class="hover-mode-strip">
+          <button class="hover-mode-btn" data-mode="near-both">Both</button>
+          <button class="hover-mode-btn" data-mode="near-dependents">Dependents</button>
+          <button class="hover-mode-btn" data-mode="near-dependencies">Dependencies</button>
         </div>
       </div>
       <div class="filter-group">
@@ -290,11 +298,10 @@ export async function createGraph() {
     applyFilters()
   })
 
-  // ── Hover mode selector ───────────────────────────────────────────────────────
-  // 'both' | 'dependents' | 'dependencies'
-  let hoverMode = 'both'
+  // ── Hover mode selector (6 mutually exclusive options) ───────────────────────
+  let hoverMode = 'tree-both'
 
-  document.getElementById('hover-mode-btns').addEventListener('click', e => {
+  document.getElementById('toolbar').addEventListener('click', e => {
     const btn = e.target.closest('.hover-mode-btn')
     if (!btn) return
     document.querySelectorAll('.hover-mode-btn').forEach(b => b.classList.remove('active'))
@@ -307,11 +314,15 @@ export async function createGraph() {
   cy.on('mouseover', 'node', e => {
     const node = e.target
 
-    // predecessors() / successors() return both nodes and edges in the path.
+    // tree-* modes: transitive (predecessors/successors include nodes + edges).
+    // near-* modes: direct 1-hop (incomers/outgoers include nodes + edges).
     const related =
-      hoverMode === 'dependents'   ? node.successors()   :
-      hoverMode === 'dependencies' ? node.predecessors() :
-      node.predecessors().union(node.successors())
+      hoverMode === 'tree-both'          ? node.predecessors().union(node.successors()) :
+      hoverMode === 'tree-dependents'    ? node.successors()                            :
+      hoverMode === 'tree-dependencies'  ? node.predecessors()                          :
+      hoverMode === 'near-both'          ? node.incomers().union(node.outgoers())       :
+      hoverMode === 'near-dependents'    ? node.outgoers()                              :
+                                           node.incomers()
 
     const lit = node.union(related)
 
