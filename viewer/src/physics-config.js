@@ -3,13 +3,13 @@
 // Changing a value here propagates everywhere without touching logic.
 
 // ── fcose layout (runs ONCE on load) ──────────────────────────────────────────
-export const FCOSE_QUALITY          = 'proof'     // 'draft' | 'default' | 'proof'
+export const FCOSE_QUALITY          = 'default'   // 'draft' | 'default' | 'proof'
 export const FCOSE_RANDOMIZE        = false
-export const FCOSE_NODE_REPULSION   = 18000
+export const FCOSE_NODE_REPULSION   = 14000
 export const FCOSE_IDEAL_EDGE_LEN   = 150
 export const FCOSE_EDGE_ELASTICITY  = 0.40
 export const FCOSE_GRAVITY          = 0.08        // central pull; higher → tighter cluster
-export const FCOSE_ITERATIONS       = 5000
+export const FCOSE_ITERATIONS       = 2500
 export const FCOSE_ANIMATE          = false       // we handle positioning, skip anim
 export const FCOSE_FIT              = false       // initial camera handled by INITIAL_VIEW_FRACTION
 export const FCOSE_PADDING          = 80
