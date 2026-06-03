@@ -1,0 +1,25 @@
+---
+id: exact-functor
+
+type: definition
+
+tags:
+  - foundations
+
+wikipedia: https://en.wikipedia.org/wiki/Exact_functor
+
+depends_on:
+  - functor
+  - abelian-category
+  - exact-sequence
+---
+
+# Exact Functor
+
+## Dependencies
+
+[[Functor]]
+
+[[Abelian Category]]
+
+[[Exact Sequence]]
