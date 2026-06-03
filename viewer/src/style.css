@@ -47,11 +47,26 @@ body {
   border: 1px solid #ccc;
 }
 
-#filters {
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filter-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #999;
+}
+
+#filters,
+#tag-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  max-width: 360px;
+  gap: 5px;
+  max-width: 400px;
 }
 
 .filter-btn {

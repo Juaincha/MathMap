@@ -93,12 +93,19 @@ export async function createGraph() {
         <button id="resetBtn">Reset</button>
       </div>
       <div id="suggestions"></div>
-      <div id="filters">
-        ${ALL_TYPES.map(t => `
-          <button class="filter-btn active" data-type="${t}"
-            style="--type-color:${TYPE_COLORS[t]}">
-            ${t}
-          </button>`).join('')}
+      <div class="filter-group">
+        <span class="filter-label">Type</span>
+        <div id="filters">
+          ${ALL_TYPES.map(t => `
+            <button class="filter-btn active" data-type="${t}"
+              style="--type-color:${TYPE_COLORS[t]}">
+              ${t}
+            </button>`).join('')}
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Tag</span>
+        <div id="tag-filters"></div>
       </div>
     </div>
 
@@ -219,19 +226,39 @@ export async function createGraph() {
     cy.elements().removeClass('hover neighbor faded')
   }
 
-  // ── Type filters ──────────────────────────────────────────────────────────────
-  const activeTypes = new Set(ALL_TYPES)
+  // ── Tag colors (HSL evenly spaced) ───────────────────────────────────────────
+  const allTags = [...new Set(graph.nodes.flatMap(n => n.tags || []))].sort()
 
-  function applyTypeFilter() {
+  const TAG_COLORS = {}
+  allTags.forEach((tag, i) => {
+    const hue = Math.round((i / allTags.length) * 360)
+    TAG_COLORS[tag] = `hsl(${hue}, 58%, 42%)`
+  })
+
+  document.getElementById('tag-filters').innerHTML = allTags.map(t => `
+    <button class="filter-btn active" data-tag="${t}"
+      style="--type-color:${TAG_COLORS[t]}">
+      ${t}
+    </button>`).join('')
+
+  // ── Combined filter state ─────────────────────────────────────────────────────
+  const activeTypes = new Set(ALL_TYPES)
+  const activeTags  = new Set(allTags)
+
+  function nodeVisible(node) {
+    if (!activeTypes.has(node.data('type'))) return false
+    const tags = node.data('tags') || []
+    // Tag-less nodes pass the tag filter; tagged nodes need at least one active tag.
+    return tags.length === 0 || tags.some(t => activeTags.has(t))
+  }
+
+  function applyFilters() {
     cy.batch(() => {
       cy.nodes().forEach(node => {
-        const visible = activeTypes.has(node.data('type'))
-        node.style('display', visible ? 'element' : 'none')
+        node.style('display', nodeVisible(node) ? 'element' : 'none')
       })
       cy.edges().forEach(edge => {
-        const visible =
-          activeTypes.has(edge.source().data('type')) &&
-          activeTypes.has(edge.target().data('type'))
+        const visible = nodeVisible(edge.source()) && nodeVisible(edge.target())
         edge.style('display', visible ? 'element' : 'none')
       })
     })
@@ -241,14 +268,18 @@ export async function createGraph() {
     const btn = e.target.closest('.filter-btn')
     if (!btn) return
     const type = btn.dataset.type
-    if (activeTypes.has(type)) {
-      activeTypes.delete(type)
-      btn.classList.remove('active')
-    } else {
-      activeTypes.add(type)
-      btn.classList.add('active')
-    }
-    applyTypeFilter()
+    if (activeTypes.has(type)) { activeTypes.delete(type); btn.classList.remove('active') }
+    else                        { activeTypes.add(type);    btn.classList.add('active')    }
+    applyFilters()
+  })
+
+  document.getElementById('tag-filters').addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn')
+    if (!btn) return
+    const tag = btn.dataset.tag
+    if (activeTags.has(tag)) { activeTags.delete(tag); btn.classList.remove('active') }
+    else                      { activeTags.add(tag);    btn.classList.add('active')    }
+    applyFilters()
   })
 
   // ── Hover interactions (preserved exactly from original) ──────────────────────
