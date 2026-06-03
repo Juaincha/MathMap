@@ -12,9 +12,7 @@
 import {
   forceSimulation,
   forceLink,
-  forceManyBody,
-  forceCollide,
-  forceCenter
+  forceCollide
 } from 'd3-force'
 
 import {
@@ -26,13 +24,9 @@ import {
   LINK_DISTANCE,
   LINK_STRENGTH,
   LINK_ITERATIONS,
-  CHARGE_STRENGTH,
-  CHARGE_THETA,
-  CHARGE_DIST_MAX,
   COLLISION_RADIUS_PAD,
   COLLISION_STRENGTH,
   COLLISION_ITERATIONS,
-  CENTER_STRENGTH,
   VELOCITY_DECAY,
   PHYSICS_STOP_DELAY_MS
 } from './physics-config.js'
@@ -62,6 +56,8 @@ function stopSimulation() {
   dragging    = null
   dragEndTime = null
   for (const id in nodeMap) {
+    nodeMap[id].fx = null  // unfreeze all nodes fixed during drag
+    nodeMap[id].fy = null
     nodeMap[id].vx = 0
     nodeMap[id].vy = 0
   }
@@ -160,11 +156,9 @@ export function initPhysics(cy) {
  * @param {{ x: number, y: number }} position  current Cytoscape position
  */
 export function onDragStart(nodeId, position) {
-  // Reset the drag-end clock — we're dragging again.
   dragEndTime = null
 
-  // Refresh all positions from Cytoscape before we start so d3
-  // starts from the current visual state.
+  // Refresh all positions from Cytoscape.
   if (cyRef) {
     cyRef.nodes().forEach(node => {
       const n = nodeMap[node.id()]
@@ -179,33 +173,40 @@ export function onDragStart(nodeId, position) {
 
   dragging = nodeId
 
-  // Pin the dragged node at its current position (GUARDA 2).
+  // Fix every node that is NOT a direct neighbor of the dragged node.
+  // Only the immediate neighborhood participates in the simulation;
+  // the rest of the graph stays frozen — no global cascade.
+  if (cyRef) {
+    const cyNode = cyRef.getElementById(nodeId)
+    const freeIds = new Set()
+    freeIds.add(nodeId)
+    cyNode.connectedEdges().connectedNodes().forEach(nb => freeIds.add(nb.id()))
+
+    Object.values(nodeMap).forEach(n => {
+      if (!freeIds.has(n.id)) {
+        n.fx = n.x
+        n.fy = n.y
+      }
+    })
+  }
+
+  // Pin the dragged node at cursor (GUARDA 2).
   const dn = nodeMap[nodeId]
   if (dn) {
     dn.fx = position.x
     dn.fy = position.y
   }
 
-  // Tear down any previous simulation before building a new one.
+  // Tear down any previous simulation.
   running = false
-  if (simulation) {
-    simulation.stop()
-    simulation = null
-  }
-  if (rafId !== null) {
-    cancelAnimationFrame(rafId)
-    rafId = null
-  }
+  if (simulation) { simulation.stop(); simulation = null }
+  if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null }
 
   const nodes = Object.values(nodeMap)
-  const links = (initPhysics._links || [])
-    .map(l => ({ source: l.source, target: l.target }))
-
-  // Resolve link sources/targets to node objects (d3 requires object refs).
   const nodeById = {}
   nodes.forEach(n => { nodeById[n.id] = n })
 
-  const resolvedLinks = links
+  const resolvedLinks = (initPhysics._links || [])
     .filter(l => nodeById[l.source] && nodeById[l.target])
     .map(l => ({ source: nodeById[l.source], target: nodeById[l.target] }))
 
@@ -219,27 +220,17 @@ export function onDragStart(nodeId, position) {
       .strength(LINK_STRENGTH)
       .iterations(LINK_ITERATIONS)
     )
-    .force('charge', forceManyBody()
-      .strength(CHARGE_STRENGTH)
-      .theta(CHARGE_THETA)
-      .distanceMax(CHARGE_DIST_MAX)
-    )
     .force('collide', forceCollide()
       .radius(n => (n.r || 7) + COLLISION_RADIUS_PAD)
       .strength(COLLISION_STRENGTH)
       .iterations(COLLISION_ITERATIONS)
     )
-    .force('center', forceCenter(position.x, position.y)
-      .strength(CENTER_STRENGTH)
-    )
-    // Stop the built-in d3 timer — we drive ticks via rAF.
+    // No forceManyBody: charge force is global and causes cascades across all nodes.
+    // No forceCenter: unnecessary pull that keeps energy in the system.
     .stop()
 
-  // Keep alpha from decaying to rest while the user is still dragging.
-  // onDragEnd resets this to 0 so the simulation can cool down after release.
   simulation.alphaTarget(DRAG_ALPHA_TARGET)
 
-  // Kick off our rAF-driven tick loop.
   running = true
   rafId = requestAnimationFrame(tick)
 }
