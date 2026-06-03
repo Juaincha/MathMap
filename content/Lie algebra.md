@@ -1,0 +1,23 @@
+---
+id: lie-algebra
+
+type: structure
+
+tags:
+  - differential-geometry
+
+wikipedia: https://en.wikipedia.org/wiki/Lie_algebra
+
+depends_on:
+  - lie-group
+  - tangent-space
+  - vector-space
+---
+
+# Lie Algebra
+
+## Dependencies
+
+[[Lie Group]]
+[[Tangent Space]]
+[[Vector Space]]
