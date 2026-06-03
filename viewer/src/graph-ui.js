@@ -56,7 +56,7 @@ function runLayoutOnce(cy) {
       gravity:         FCOSE_GRAVITY,
       numIter:         FCOSE_ITERATIONS,
 
-      nodeSeparation:  12,
+      nodeSeparation:  30,
       packComponents:  true
     })
 
@@ -73,11 +73,33 @@ function runLayoutOnce(cy) {
 // ── main export ────────────────────────────────────────────────────────────────
 export async function createGraph() {
 
+  const TYPE_COLORS = {
+    axiom:      '#e74c3c',
+    definition: '#3498db',
+    lemma:      '#f39c12',
+    theorem:    '#27ae60',
+    conjecture: '#8e44ad',
+    corollary:  '#16a085',
+    structure:  '#2980b9',
+    concept:    '#7f8c8d'
+  }
+
+  const ALL_TYPES = Object.keys(TYPE_COLORS)
+
   document.querySelector('#app').innerHTML = `
     <div id="toolbar">
-      <input id="search" placeholder="Search..." autocomplete="off">
+      <div id="top-row">
+        <input id="search" placeholder="Search..." autocomplete="off">
+        <button id="resetBtn">Reset</button>
+      </div>
       <div id="suggestions"></div>
-      <button id="resetBtn">Reset</button>
+      <div id="filters">
+        ${ALL_TYPES.map(t => `
+          <button class="filter-btn active" data-type="${t}"
+            style="--type-color:${TYPE_COLORS[t]}">
+            ${t}
+          </button>`).join('')}
+      </div>
     </div>
 
     <div id="cy"></div>
@@ -200,6 +222,38 @@ export async function createGraph() {
     cy.fit()
     cy.elements().removeClass('selected neighbor faded hover')
   }
+
+  // ── Type filters ──────────────────────────────────────────────────────────────
+  const activeTypes = new Set(ALL_TYPES)
+
+  function applyTypeFilter() {
+    cy.batch(() => {
+      cy.nodes().forEach(node => {
+        const visible = activeTypes.has(node.data('type'))
+        node.style('display', visible ? 'element' : 'none')
+      })
+      cy.edges().forEach(edge => {
+        const visible =
+          activeTypes.has(edge.source().data('type')) &&
+          activeTypes.has(edge.target().data('type'))
+        edge.style('display', visible ? 'element' : 'none')
+      })
+    })
+  }
+
+  document.getElementById('filters').addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn')
+    if (!btn) return
+    const type = btn.dataset.type
+    if (activeTypes.has(type)) {
+      activeTypes.delete(type)
+      btn.classList.remove('active')
+    } else {
+      activeTypes.add(type)
+      btn.classList.add('active')
+    }
+    applyTypeFilter()
+  })
 
   // ── Hover interactions (preserved exactly from original) ──────────────────────
 

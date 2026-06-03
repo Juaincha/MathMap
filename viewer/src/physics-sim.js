@@ -22,6 +22,7 @@ import {
   SIM_ALPHA_DECAY,
   SIM_ALPHA_MIN,
   REST_THRESHOLD,
+  DRAG_ALPHA_TARGET,
   LINK_DISTANCE,
   LINK_STRENGTH,
   LINK_ITERATIONS,
@@ -32,40 +33,38 @@ import {
   COLLISION_STRENGTH,
   COLLISION_ITERATIONS,
   CENTER_STRENGTH,
-  VELOCITY_DECAY
+  VELOCITY_DECAY,
+  PHYSICS_STOP_DELAY_MS
 } from './physics-config.js'
 
 // ── module-level state ─────────────────────────────────────────────────────────
-let simulation   = null  // active d3 simulation (null when idle)
-let nodeMap      = {}    // id → d3 node object { id, x, y, fx, fy, r }
-let dragging     = null  // id of the node currently being dragged (null when idle)
-let rafId        = null  // requestAnimationFrame handle (null when idle)
-let cyRef        = null  // reference to the Cytoscape instance
+let simulation   = null   // active d3 simulation (null when idle)
+let nodeMap      = {}     // id → d3 node object { id, x, y, fx, fy, r }
+let dragging     = null   // id of the node currently being dragged (null when idle)
+let rafId        = null   // requestAnimationFrame handle (null when idle)
+let cyRef        = null   // reference to the Cytoscape instance
+let running      = false  // kill-switch: tick() exits immediately when false
+let dragEndTime  = null   // performance.now() when drag ended; null while dragging
 
 // ── internal helpers ───────────────────────────────────────────────────────────
 
 /**
- * Cancel the rAF loop and mark it cleared.
- * Called on simulation rest and on teardown.
+ * Single authoritative "go idle" path.
+ * Sets running=false so the next tick() call exits without scheduling another frame.
  */
-function cancelRaf() {
+function stopSimulation() {
+  running = false
+  if (simulation) simulation.stop()
   if (rafId !== null) {
     cancelAnimationFrame(rafId)
     rafId = null
   }
-}
-
-/**
- * Stop the simulation, cancel rAF, and clear the dragging pin.
- * This is the single authoritative "go idle" path.
- */
-function stopSimulation() {
-  if (simulation) {
-    simulation.stop()
+  dragging    = null
+  dragEndTime = null
+  for (const id in nodeMap) {
+    nodeMap[id].vx = 0
+    nodeMap[id].vy = 0
   }
-  cancelRaf()
-  dragging = null
-  // CPU idle: no rAF running
 }
 
 /**
@@ -90,28 +89,28 @@ function flushPositionsToCy() {
 }
 
 /**
- * The rAF tick loop: writes positions to Cytoscape while the simulation
- * is still warm, then stops cleanly when it cools down.
+ * The rAF tick loop: advances d3, flushes positions, stops when idle.
+ * `running` is the authoritative kill-switch — setting it false guarantees
+ * this loop exits at the next frame boundary without relying on setTimeout.
  */
 function tick() {
-  if (!simulation) {
-    // CPU idle: no rAF running
+  if (!running || !simulation) {
     rafId = null
     return
   }
 
-  const alpha = simulation.alpha()
-
-  // Flush positions to Cytoscape each frame.
+  simulation.tick()
   flushPositionsToCy()
 
-  if (alpha < REST_THRESHOLD) {
+  const alpha   = simulation.alpha()
+  const elapsed = dragEndTime !== null ? performance.now() - dragEndTime : 0
+  const timeout = dragEndTime !== null && elapsed >= PHYSICS_STOP_DELAY_MS
+
+  if (alpha < REST_THRESHOLD || timeout) {
     stopSimulation()
-    // CPU idle: no rAF running
     return
   }
 
-  // Schedule next frame only if simulation is still warm.
   rafId = requestAnimationFrame(tick)
 }
 
@@ -161,6 +160,9 @@ export function initPhysics(cy) {
  * @param {{ x: number, y: number }} position  current Cytoscape position
  */
 export function onDragStart(nodeId, position) {
+  // Reset the drag-end clock — we're dragging again.
+  dragEndTime = null
+
   // Refresh all positions from Cytoscape before we start so d3
   // starts from the current visual state.
   if (cyRef) {
@@ -185,11 +187,15 @@ export function onDragStart(nodeId, position) {
   }
 
   // Tear down any previous simulation before building a new one.
+  running = false
   if (simulation) {
     simulation.stop()
     simulation = null
   }
-  cancelRaf()
+  if (rafId !== null) {
+    cancelAnimationFrame(rafId)
+    rafId = null
+  }
 
   const nodes = Object.values(nodeMap)
   const links = (initPhysics._links || [])
@@ -204,7 +210,7 @@ export function onDragStart(nodeId, position) {
     .map(l => ({ source: nodeById[l.source], target: nodeById[l.target] }))
 
   simulation = forceSimulation(nodes)
-    .alphaStart(SIM_ALPHA_START)
+    .alpha(SIM_ALPHA_START)
     .alphaDecay(SIM_ALPHA_DECAY)
     .alphaMin(SIM_ALPHA_MIN)
     .velocityDecay(VELOCITY_DECAY)
@@ -229,7 +235,12 @@ export function onDragStart(nodeId, position) {
     // Stop the built-in d3 timer — we drive ticks via rAF.
     .stop()
 
+  // Keep alpha from decaying to rest while the user is still dragging.
+  // onDragEnd resets this to 0 so the simulation can cool down after release.
+  simulation.alphaTarget(DRAG_ALPHA_TARGET)
+
   // Kick off our rAF-driven tick loop.
+  running = true
   rafId = requestAnimationFrame(tick)
 }
 
@@ -266,13 +277,12 @@ export function onDragMove(nodeId, position) {
 export function onDragEnd(nodeId) {
   const n = nodeMap[nodeId]
   if (n) {
-    // Release the pin — d3 will carry momentum from velocity naturally.
     n.fx = null
     n.fy = null
   }
-  dragging = null
-  // The rAF loop continues running until alpha < REST_THRESHOLD,
-  // at which point stopSimulation() is called automatically.
+  dragging    = null
+  dragEndTime = performance.now()  // tick() uses this to enforce PHYSICS_STOP_DELAY_MS
+  if (simulation) simulation.alphaTarget(0)
 }
 
 /**

@@ -1,8 +1,17 @@
 {
   "nodes": [
     {
+      "id": "abelian-group",
+      "label": "Abelian group",
+      "type": "structure",
+      "tags": [
+        "abstract-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Abelian_group"
+    },
+    {
       "id": "absolute-value",
-      "label": "absolute-value",
+      "label": "Absolute value",
       "type": "definition",
       "tags": [
         "analysis"
@@ -11,7 +20,7 @@
     },
     {
       "id": "archimedean-property",
-      "label": "archimedean-property",
+      "label": "Archimedean property",
       "type": "theorem",
       "tags": [
         "analysis"
@@ -19,8 +28,26 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Archimedean_property"
     },
     {
+      "id": "banach-space",
+      "label": "Banach space",
+      "type": "structure",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Banach_space"
+    },
+    {
+      "id": "basis",
+      "label": "Basis",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Basis_(linear_algebra)"
+    },
+    {
       "id": "bezout-identity",
-      "label": "bezout-identity",
+      "label": "Bezout's identity",
       "type": "theorem",
       "tags": [
         "number-theory"
@@ -28,8 +55,17 @@
       "wikipedia": "https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity"
     },
     {
+      "id": "bijection",
+      "label": "Bijection",
+      "type": "definition",
+      "tags": [
+        "set-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection"
+    },
+    {
       "id": "binomial-theorem",
-      "label": "binomial-theorem",
+      "label": "Binomial theorem",
       "type": "theorem",
       "tags": [
         "combinatorics",
@@ -38,8 +74,44 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Binomial_theorem"
     },
     {
+      "id": "bolzano-weierstrass-theorem",
+      "label": "Bolzano-Weierstrass theorem",
+      "type": "theorem",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Bolzano%E2%80%93Weierstrass_theorem"
+    },
+    {
+      "id": "cardinality",
+      "label": "Cardinality",
+      "type": "concept",
+      "tags": [
+        "set-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Cardinality"
+    },
+    {
+      "id": "cartesian-product",
+      "label": "Cartesian product",
+      "type": "definition",
+      "tags": [
+        "set-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Cartesian_product"
+    },
+    {
+      "id": "cauchy-sequence",
+      "label": "Cauchy sequence",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy_sequence"
+    },
+    {
       "id": "cauchy-schwarz-inequality",
-      "label": "cauchy-schwarz-inequality",
+      "label": "Cauchy-Schwarz inequality",
       "type": "theorem",
       "tags": [
         "analysis",
@@ -48,8 +120,179 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality"
     },
     {
+      "id": "chain-rule",
+      "label": "Chain rule",
+      "type": "theorem",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Chain_rule"
+    },
+    {
+      "id": "characteristic-polynomial",
+      "label": "Characteristic polynomial",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_polynomial"
+    },
+    {
+      "id": "chinese-remainder-theorem",
+      "label": "Chinese remainder theorem",
+      "type": "theorem",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Chinese_remainder_theorem"
+    },
+    {
+      "id": "closed-set",
+      "label": "Closed set",
+      "type": "definition",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Closed_set"
+    },
+    {
+      "id": "compact-set",
+      "label": "Compact set",
+      "type": "definition",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Compact_space"
+    },
+    {
+      "id": "complete-metric-space",
+      "label": "Complete metric space",
+      "type": "definition",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Complete_metric_space"
+    },
+    {
+      "id": "congruence",
+      "label": "Congruence",
+      "type": "definition",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Congruence_relation"
+    },
+    {
+      "id": "connected-set",
+      "label": "Connected set",
+      "type": "definition",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Connected_space"
+    },
+    {
+      "id": "continuity",
+      "label": "Continuity",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Continuous_function"
+    },
+    {
+      "id": "continuous-function-topological",
+      "label": "Continuous function topological",
+      "type": "definition",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Continuous_function#Continuous_functions_between_topological_spaces"
+    },
+    {
+      "id": "convergence-of-series",
+      "label": "Convergence of series",
+      "type": "concept",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Convergent_series"
+    },
+    {
+      "id": "convergence",
+      "label": "Convergence",
+      "type": "concept",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Limit_of_a_sequence#Convergence"
+    },
+    {
+      "id": "cyclic-group",
+      "label": "Cyclic group",
+      "type": "structure",
+      "tags": [
+        "abstract-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Cyclic_group"
+    },
+    {
+      "id": "derivative",
+      "label": "Derivative",
+      "type": "definition",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Derivative"
+    },
+    {
+      "id": "determinant",
+      "label": "Determinant",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Determinant"
+    },
+    {
+      "id": "diagonalization",
+      "label": "Diagonalization",
+      "type": "concept",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Diagonalizable_matrix"
+    },
+    {
+      "id": "differentiability",
+      "label": "Differentiability",
+      "type": "concept",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Differentiable_function"
+    },
+    {
+      "id": "dimension-vector-space",
+      "label": "Dimension",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Dimension_(vector_space)"
+    },
+    {
+      "id": "direct-sum",
+      "label": "Direct sum",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Direct_sum_of_modules"
+    },
+    {
       "id": "divisibility",
-      "label": "divisibility",
+      "label": "Divisibility",
       "type": "definition",
       "tags": [
         "number-theory"
@@ -57,8 +300,17 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Divisibility"
     },
     {
+      "id": "eigenvalue-and-eigenvector",
+      "label": "Eigenvalue and eigenvector",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors"
+    },
+    {
       "id": "equivalence-relation",
-      "label": "equivalence-relation",
+      "label": "Equivalence relation",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -67,7 +319,7 @@
     },
     {
       "id": "euclidean-algorithm",
-      "label": "euclidean-algorithm",
+      "label": "Euclidean algorithm",
       "type": "theorem",
       "tags": [
         "number-theory",
@@ -77,7 +329,7 @@
     },
     {
       "id": "euclidean-division",
-      "label": "euclidean-division",
+      "label": "Euclidean division",
       "type": "theorem",
       "tags": [
         "number-theory"
@@ -86,7 +338,7 @@
     },
     {
       "id": "euclidean-geometry-axioms",
-      "label": "euclidean-geometry-axioms",
+      "label": "Euclidean geometry axioms",
       "type": "axiom",
       "tags": [
         "geometry"
@@ -94,8 +346,62 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_geometry"
     },
     {
+      "id": "eulers-theorem",
+      "label": "Euler's theorem",
+      "type": "theorem",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Euler%27s_theorem"
+    },
+    {
+      "id": "eulers-totient-function",
+      "label": "Euler's totient function",
+      "type": "definition",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Euler%27s_totient_function"
+    },
+    {
+      "id": "extreme-value-theorem",
+      "label": "Extreme value theorem",
+      "type": "theorem",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Extreme_value_theorem"
+    },
+    {
+      "id": "fermats-little-theorem",
+      "label": "Fermat's little theorem",
+      "type": "theorem",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Fermat%27s_little_theorem"
+    },
+    {
+      "id": "field",
+      "label": "Field",
+      "type": "structure",
+      "tags": [
+        "abstract-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Field_(mathematics)"
+    },
+    {
+      "id": "first-order-logic",
+      "label": "First-order logic",
+      "type": "concept",
+      "tags": [
+        "logic"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/First-order_logic"
+    },
+    {
       "id": "function",
-      "label": "function",
+      "label": "Function",
       "type": "definition",
       "tags": [
         "set-theory",
@@ -105,7 +411,7 @@
     },
     {
       "id": "fundamental-theorem-of-arithmetic",
-      "label": "fundamental-theorem-of-arithmetic",
+      "label": "Fundamental theorem of arithmetic",
       "type": "theorem",
       "tags": [
         "number-theory"
@@ -113,8 +419,53 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic"
     },
     {
+      "id": "fundamental-theorem-of-calculus",
+      "label": "Fundamental theorem of calculus",
+      "type": "theorem",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus"
+    },
+    {
+      "id": "gaussian-elimination",
+      "label": "Gaussian elimination",
+      "type": "concept",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Gaussian_elimination"
+    },
+    {
+      "id": "geometric-series",
+      "label": "Geometric series",
+      "type": "theorem",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Geometric_series"
+    },
+    {
+      "id": "gradient",
+      "label": "Gradient",
+      "type": "definition",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Gradient"
+    },
+    {
+      "id": "gram-schmidt-process",
+      "label": "Gram-Schmidt process",
+      "type": "concept",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process"
+    },
+    {
       "id": "greatest-common-divisor",
-      "label": "greatest-common-divisor",
+      "label": "Greatest common divisor",
       "type": "definition",
       "tags": [
         "number-theory"
@@ -122,8 +473,44 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Greatest_common_divisor"
     },
     {
+      "id": "group-homomorphism",
+      "label": "Group homomorphism",
+      "type": "definition",
+      "tags": [
+        "abstract-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Group_homomorphism"
+    },
+    {
+      "id": "group",
+      "label": "Group",
+      "type": "structure",
+      "tags": [
+        "abstract-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Group_(mathematics)"
+    },
+    {
+      "id": "hilbert-space",
+      "label": "Hilbert space",
+      "type": "structure",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Hilbert_space"
+    },
+    {
+      "id": "homeomorphism",
+      "label": "Homeomorphism",
+      "type": "definition",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Homeomorphism"
+    },
+    {
       "id": "infinitude-of-primes",
-      "label": "infinitude-of-primes",
+      "label": "Infinitude of primes",
       "type": "theorem",
       "tags": [
         "number-theory"
@@ -131,8 +518,17 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Euclid%27s_theorem"
     },
     {
+      "id": "inner-product-space",
+      "label": "Inner product space",
+      "type": "structure",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Inner_product_space"
+    },
+    {
       "id": "integer-ring-axioms",
-      "label": "integer-ring-axioms",
+      "label": "Integer ring axioms",
       "type": "axiom",
       "tags": [
         "algebra",
@@ -141,8 +537,107 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Integer"
     },
     {
+      "id": "integration-by-parts",
+      "label": "Integration by parts",
+      "type": "theorem",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Integration_by_parts"
+    },
+    {
+      "id": "intermediate-value-theorem",
+      "label": "Intermediate value theorem",
+      "type": "theorem",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Intermediate_value_theorem"
+    },
+    {
+      "id": "invertible-matrix",
+      "label": "Invertible matrix",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Invertible_matrix"
+    },
+    {
+      "id": "kernel-and-image",
+      "label": "Kernel and image",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Kernel_(linear_algebra)"
+    },
+    {
+      "id": "lhopitals-rule",
+      "label": "L'Hopital's rule",
+      "type": "theorem",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule"
+    },
+    {
+      "id": "legendre-symbol",
+      "label": "Legendre symbol",
+      "type": "definition",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Legendre_symbol"
+    },
+    {
+      "id": "limit-of-a-function",
+      "label": "Limit of a function",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Limit_of_a_function"
+    },
+    {
+      "id": "limit-of-a-sequence",
+      "label": "Limit of a sequence",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Limit_of_a_sequence"
+    },
+    {
+      "id": "linear-independence",
+      "label": "Linear independence",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_independence"
+    },
+    {
+      "id": "linear-map",
+      "label": "Linear map",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_map"
+    },
+    {
+      "id": "lipschitz-continuity",
+      "label": "Lipschitz continuity",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Lipschitz_continuity"
+    },
+    {
       "id": "mathematical-induction",
-      "label": "mathematical-induction",
+      "label": "Mathematical induction",
       "type": "theorem",
       "tags": [
         "number-theory",
@@ -151,8 +646,125 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Mathematical_induction"
     },
     {
+      "id": "matrix-multiplication",
+      "label": "Matrix multiplication",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Matrix_multiplication"
+    },
+    {
+      "id": "matrix",
+      "label": "Matrix",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Matrix_(mathematics)"
+    },
+    {
+      "id": "mean-value-theorem",
+      "label": "Mean value theorem",
+      "type": "theorem",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Mean_value_theorem"
+    },
+    {
+      "id": "metric-space",
+      "label": "Metric space",
+      "type": "structure",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Metric_space"
+    },
+    {
+      "id": "modular-arithmetic",
+      "label": "Modular arithmetic",
+      "type": "concept",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Modular_arithmetic"
+    },
+    {
+      "id": "monotone-convergence-theorem",
+      "label": "Monotone convergence theorem",
+      "type": "theorem",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Monotone_convergence_theorem"
+    },
+    {
+      "id": "multivariable-chain-rule",
+      "label": "Multivariable chain rule",
+      "type": "theorem",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Chain_rule#Multivariable_case"
+    },
+    {
+      "id": "normed-vector-space",
+      "label": "Normed vector space",
+      "type": "structure",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Normed_vector_space"
+    },
+    {
+      "id": "open-set",
+      "label": "Open set",
+      "type": "definition",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Open_set"
+    },
+    {
+      "id": "orthogonality",
+      "label": "Orthogonality",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Orthogonality_(mathematics)"
+    },
+    {
+      "id": "orthonormal-basis",
+      "label": "Orthonormal basis",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Orthonormal_basis"
+    },
+    {
+      "id": "partial-derivative",
+      "label": "Partial derivative",
+      "type": "definition",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Partial_derivative"
+    },
+    {
+      "id": "partial-order",
+      "label": "Partial order",
+      "type": "definition",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Partially_ordered_set"
+    },
+    {
       "id": "peano-axioms",
-      "label": "peano-axioms",
+      "label": "Peano axioms",
       "type": "axiom",
       "tags": [
         "number-theory",
@@ -161,8 +773,35 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Peano_axioms"
     },
     {
+      "id": "pointwise-convergence",
+      "label": "Pointwise convergence",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Pointwise_convergence"
+    },
+    {
+      "id": "power-series",
+      "label": "Power series",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Power_series"
+    },
+    {
+      "id": "primality-test",
+      "label": "Primality test",
+      "type": "concept",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Primality_test"
+    },
+    {
       "id": "prime-number",
-      "label": "prime-number",
+      "label": "Prime number",
       "type": "definition",
       "tags": [
         "number-theory"
@@ -170,8 +809,44 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Prime_number"
     },
     {
+      "id": "primitive-root",
+      "label": "Primitive root",
+      "type": "definition",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Primitive_root_modulo_n"
+    },
+    {
+      "id": "product-rule",
+      "label": "Product rule",
+      "type": "theorem",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Product_rule"
+    },
+    {
+      "id": "proof-by-contradiction",
+      "label": "Proof by contradiction",
+      "type": "concept",
+      "tags": [
+        "logic"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Proof_by_contradiction"
+    },
+    {
+      "id": "propositional-logic",
+      "label": "Propositional logic",
+      "type": "concept",
+      "tags": [
+        "logic"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Propositional_calculus"
+    },
+    {
       "id": "pythagorean-theorem",
-      "label": "pythagorean-theorem",
+      "label": "Pythagorean theorem",
       "type": "theorem",
       "tags": [
         "geometry"
@@ -179,8 +854,35 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Pythagorean_theorem"
     },
     {
+      "id": "quadratic-residue",
+      "label": "Quadratic residue",
+      "type": "definition",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Quadratic_residue"
+    },
+    {
+      "id": "quotient-group",
+      "label": "Quotient group",
+      "type": "structure",
+      "tags": [
+        "abstract-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Quotient_group"
+    },
+    {
+      "id": "rank-of-a-matrix",
+      "label": "Rank of a matrix",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Rank_(linear_algebra)"
+    },
+    {
       "id": "rational-field-axioms",
-      "label": "rational-field-axioms",
+      "label": "Rational field axioms",
       "type": "axiom",
       "tags": [
         "algebra",
@@ -190,7 +892,7 @@
     },
     {
       "id": "real-number-axioms",
-      "label": "real-number-axioms",
+      "label": "Real number axioms",
       "type": "axiom",
       "tags": [
         "analysis",
@@ -199,8 +901,98 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Real_number"
     },
     {
+      "id": "relation",
+      "label": "Relation",
+      "type": "definition",
+      "tags": [
+        "set-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Binary_relation"
+    },
+    {
+      "id": "riemann-integral",
+      "label": "Riemann integral",
+      "type": "definition",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Riemann_integral"
+    },
+    {
+      "id": "ring",
+      "label": "Ring",
+      "type": "structure",
+      "tags": [
+        "abstract-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Ring_(mathematics)"
+    },
+    {
+      "id": "rolles-theorem",
+      "label": "Rolle's theorem",
+      "type": "theorem",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Rolle%27s_theorem"
+    },
+    {
+      "id": "row-echelon-form",
+      "label": "Row echelon form",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Row_echelon_form"
+    },
+    {
+      "id": "sequence",
+      "label": "Sequence",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Sequence"
+    },
+    {
+      "id": "series",
+      "label": "Series",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Series_(mathematics)"
+    },
+    {
+      "id": "set-operations",
+      "label": "Set operations",
+      "type": "definition",
+      "tags": [
+        "set-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Set_(mathematics)#Basic_operations"
+    },
+    {
+      "id": "singular-value-decomposition",
+      "label": "Singular value decomposition",
+      "type": "theorem",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Singular_value_decomposition"
+    },
+    {
+      "id": "span",
+      "label": "Span",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_span"
+    },
+    {
       "id": "strong-induction",
-      "label": "strong-induction",
+      "label": "Strong induction",
       "type": "theorem",
       "tags": [
         "number-theory"
@@ -208,8 +1000,26 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Mathematical_induction#Strong_induction"
     },
     {
+      "id": "subgroup",
+      "label": "Subgroup",
+      "type": "definition",
+      "tags": [
+        "abstract-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Subgroup"
+    },
+    {
+      "id": "subspace",
+      "label": "Subspace",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_subspace"
+    },
+    {
       "id": "supremum-and-infimum",
-      "label": "supremum-and-infimum",
+      "label": "Supremum and infimum",
       "type": "definition",
       "tags": [
         "analysis"
@@ -217,8 +1027,71 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Infimum_and_supremum"
     },
     {
+      "id": "system-of-linear-equations",
+      "label": "System of linear equations",
+      "type": "concept",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/System_of_linear_equations"
+    },
+    {
+      "id": "taylor-series",
+      "label": "Taylor series",
+      "type": "definition",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Taylor_series"
+    },
+    {
+      "id": "taylors-theorem",
+      "label": "Taylor's theorem",
+      "type": "theorem",
+      "tags": [
+        "calculus"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Taylor%27s_theorem"
+    },
+    {
+      "id": "topology",
+      "label": "Topology",
+      "type": "structure",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Topological_space"
+    },
+    {
+      "id": "total-order",
+      "label": "Total order",
+      "type": "definition",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Total_order"
+    },
+    {
+      "id": "trace-of-a-matrix",
+      "label": "Trace of a matrix",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Trace_(linear_algebra)"
+    },
+    {
+      "id": "transpose",
+      "label": "Transpose",
+      "type": "definition",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Transpose"
+    },
+    {
       "id": "triangle-inequality",
-      "label": "triangle-inequality",
+      "label": "Triangle inequality",
       "type": "theorem",
       "tags": [
         "analysis"
@@ -226,8 +1099,35 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Triangle_inequality"
     },
     {
+      "id": "uniform-continuity",
+      "label": "Uniform continuity",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Uniform_continuity"
+    },
+    {
+      "id": "uniform-convergence",
+      "label": "Uniform convergence",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Uniform_convergence"
+    },
+    {
+      "id": "vector-space",
+      "label": "Vector space",
+      "type": "structure",
+      "tags": [
+        "linear-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Vector_space"
+    },
+    {
       "id": "well-ordering-principle",
-      "label": "well-ordering-principle",
+      "label": "Well-ordering principle",
       "type": "theorem",
       "tags": [
         "number-theory",
@@ -237,7 +1137,7 @@
     },
     {
       "id": "zf-set-theory",
-      "label": "zf-set-theory",
+      "label": "ZF set theory",
       "type": "axiom",
       "tags": [
         "set-theory",
@@ -247,6 +1147,10 @@
     }
   ],
   "edges": [
+    {
+      "source": "group",
+      "target": "abelian-group"
+    },
     {
       "source": "real-number-axioms",
       "target": "absolute-value"
@@ -260,12 +1164,32 @@
       "target": "archimedean-property"
     },
     {
+      "source": "normed-vector-space",
+      "target": "banach-space"
+    },
+    {
+      "source": "complete-metric-space",
+      "target": "banach-space"
+    },
+    {
+      "source": "linear-independence",
+      "target": "basis"
+    },
+    {
+      "source": "span",
+      "target": "basis"
+    },
+    {
       "source": "euclidean-algorithm",
       "target": "bezout-identity"
     },
     {
       "source": "greatest-common-divisor",
       "target": "bezout-identity"
+    },
+    {
+      "source": "function",
+      "target": "bijection"
     },
     {
       "source": "mathematical-induction",
@@ -276,6 +1200,30 @@
       "target": "binomial-theorem"
     },
     {
+      "source": "convergence",
+      "target": "bolzano-weierstrass-theorem"
+    },
+    {
+      "source": "supremum-and-infimum",
+      "target": "bolzano-weierstrass-theorem"
+    },
+    {
+      "source": "bijection",
+      "target": "cardinality"
+    },
+    {
+      "source": "set-operations",
+      "target": "cartesian-product"
+    },
+    {
+      "source": "sequence",
+      "target": "cauchy-sequence"
+    },
+    {
+      "source": "absolute-value",
+      "target": "cauchy-sequence"
+    },
+    {
       "source": "real-number-axioms",
       "target": "cauchy-schwarz-inequality"
     },
@@ -284,8 +1232,136 @@
       "target": "cauchy-schwarz-inequality"
     },
     {
+      "source": "derivative",
+      "target": "chain-rule"
+    },
+    {
+      "source": "determinant",
+      "target": "characteristic-polynomial"
+    },
+    {
+      "source": "eigenvalue-and-eigenvector",
+      "target": "characteristic-polynomial"
+    },
+    {
+      "source": "congruence",
+      "target": "chinese-remainder-theorem"
+    },
+    {
+      "source": "bezout-identity",
+      "target": "chinese-remainder-theorem"
+    },
+    {
+      "source": "open-set",
+      "target": "closed-set"
+    },
+    {
+      "source": "open-set",
+      "target": "compact-set"
+    },
+    {
+      "source": "topology",
+      "target": "compact-set"
+    },
+    {
+      "source": "metric-space",
+      "target": "complete-metric-space"
+    },
+    {
+      "source": "cauchy-sequence",
+      "target": "complete-metric-space"
+    },
+    {
+      "source": "modular-arithmetic",
+      "target": "congruence"
+    },
+    {
+      "source": "divisibility",
+      "target": "congruence"
+    },
+    {
+      "source": "open-set",
+      "target": "connected-set"
+    },
+    {
+      "source": "topology",
+      "target": "connected-set"
+    },
+    {
+      "source": "limit-of-a-function",
+      "target": "continuity"
+    },
+    {
+      "source": "topology",
+      "target": "continuous-function-topological"
+    },
+    {
+      "source": "open-set",
+      "target": "continuous-function-topological"
+    },
+    {
+      "source": "function",
+      "target": "continuous-function-topological"
+    },
+    {
+      "source": "series",
+      "target": "convergence-of-series"
+    },
+    {
+      "source": "convergence",
+      "target": "convergence-of-series"
+    },
+    {
+      "source": "limit-of-a-sequence",
+      "target": "convergence"
+    },
+    {
+      "source": "subgroup",
+      "target": "cyclic-group"
+    },
+    {
+      "source": "limit-of-a-function",
+      "target": "derivative"
+    },
+    {
+      "source": "continuity",
+      "target": "derivative"
+    },
+    {
+      "source": "matrix-multiplication",
+      "target": "determinant"
+    },
+    {
+      "source": "characteristic-polynomial",
+      "target": "diagonalization"
+    },
+    {
+      "source": "basis",
+      "target": "diagonalization"
+    },
+    {
+      "source": "derivative",
+      "target": "differentiability"
+    },
+    {
+      "source": "basis",
+      "target": "dimension-vector-space"
+    },
+    {
+      "source": "subspace",
+      "target": "direct-sum"
+    },
+    {
       "source": "integer-ring-axioms",
       "target": "divisibility"
+    },
+    {
+      "source": "linear-map",
+      "target": "eigenvalue-and-eigenvector"
+    },
+    {
+      "source": "matrix-multiplication",
+      "target": "eigenvalue-and-eigenvector"
     },
     {
       "source": "zf-set-theory",
@@ -316,6 +1392,50 @@
       "target": "euclidean-geometry-axioms"
     },
     {
+      "source": "eulers-totient-function",
+      "target": "eulers-theorem"
+    },
+    {
+      "source": "fermats-little-theorem",
+      "target": "eulers-theorem"
+    },
+    {
+      "source": "congruence",
+      "target": "eulers-theorem"
+    },
+    {
+      "source": "greatest-common-divisor",
+      "target": "eulers-totient-function"
+    },
+    {
+      "source": "prime-number",
+      "target": "eulers-totient-function"
+    },
+    {
+      "source": "continuity",
+      "target": "extreme-value-theorem"
+    },
+    {
+      "source": "bolzano-weierstrass-theorem",
+      "target": "extreme-value-theorem"
+    },
+    {
+      "source": "congruence",
+      "target": "fermats-little-theorem"
+    },
+    {
+      "source": "prime-number",
+      "target": "fermats-little-theorem"
+    },
+    {
+      "source": "ring",
+      "target": "field"
+    },
+    {
+      "source": "propositional-logic",
+      "target": "first-order-logic"
+    },
+    {
       "source": "zf-set-theory",
       "target": "function"
     },
@@ -332,12 +1452,80 @@
       "target": "fundamental-theorem-of-arithmetic"
     },
     {
+      "source": "riemann-integral",
+      "target": "fundamental-theorem-of-calculus"
+    },
+    {
+      "source": "derivative",
+      "target": "fundamental-theorem-of-calculus"
+    },
+    {
+      "source": "mean-value-theorem",
+      "target": "fundamental-theorem-of-calculus"
+    },
+    {
+      "source": "system-of-linear-equations",
+      "target": "gaussian-elimination"
+    },
+    {
+      "source": "convergence-of-series",
+      "target": "geometric-series"
+    },
+    {
+      "source": "partial-derivative",
+      "target": "gradient"
+    },
+    {
+      "source": "vector-space",
+      "target": "gradient"
+    },
+    {
+      "source": "orthogonality",
+      "target": "gram-schmidt-process"
+    },
+    {
+      "source": "span",
+      "target": "gram-schmidt-process"
+    },
+    {
       "source": "divisibility",
       "target": "greatest-common-divisor"
     },
     {
       "source": "euclidean-division",
       "target": "greatest-common-divisor"
+    },
+    {
+      "source": "group",
+      "target": "group-homomorphism"
+    },
+    {
+      "source": "function",
+      "target": "group-homomorphism"
+    },
+    {
+      "source": "set-operations",
+      "target": "group"
+    },
+    {
+      "source": "function",
+      "target": "group"
+    },
+    {
+      "source": "inner-product-space",
+      "target": "hilbert-space"
+    },
+    {
+      "source": "banach-space",
+      "target": "hilbert-space"
+    },
+    {
+      "source": "continuous-function-topological",
+      "target": "homeomorphism"
+    },
+    {
+      "source": "bijection",
+      "target": "homeomorphism"
     },
     {
       "source": "prime-number",
@@ -352,20 +1540,232 @@
       "target": "infinitude-of-primes"
     },
     {
+      "source": "vector-space",
+      "target": "inner-product-space"
+    },
+    {
+      "source": "cauchy-schwarz-inequality",
+      "target": "inner-product-space"
+    },
+    {
       "source": "peano-axioms",
       "target": "integer-ring-axioms"
+    },
+    {
+      "source": "fundamental-theorem-of-calculus",
+      "target": "integration-by-parts"
+    },
+    {
+      "source": "product-rule",
+      "target": "integration-by-parts"
+    },
+    {
+      "source": "continuity",
+      "target": "intermediate-value-theorem"
+    },
+    {
+      "source": "determinant",
+      "target": "invertible-matrix"
+    },
+    {
+      "source": "matrix-multiplication",
+      "target": "invertible-matrix"
+    },
+    {
+      "source": "linear-map",
+      "target": "kernel-and-image"
+    },
+    {
+      "source": "subspace",
+      "target": "kernel-and-image"
+    },
+    {
+      "source": "mean-value-theorem",
+      "target": "lhopitals-rule"
+    },
+    {
+      "source": "limit-of-a-function",
+      "target": "lhopitals-rule"
+    },
+    {
+      "source": "quadratic-residue",
+      "target": "legendre-symbol"
+    },
+    {
+      "source": "function",
+      "target": "limit-of-a-function"
+    },
+    {
+      "source": "absolute-value",
+      "target": "limit-of-a-function"
+    },
+    {
+      "source": "sequence",
+      "target": "limit-of-a-sequence"
+    },
+    {
+      "source": "absolute-value",
+      "target": "limit-of-a-sequence"
+    },
+    {
+      "source": "vector-space",
+      "target": "linear-independence"
+    },
+    {
+      "source": "vector-space",
+      "target": "linear-map"
+    },
+    {
+      "source": "function",
+      "target": "linear-map"
+    },
+    {
+      "source": "metric-space",
+      "target": "lipschitz-continuity"
+    },
+    {
+      "source": "uniform-continuity",
+      "target": "lipschitz-continuity"
     },
     {
       "source": "peano-axioms",
       "target": "mathematical-induction"
     },
     {
+      "source": "matrix",
+      "target": "matrix-multiplication"
+    },
+    {
+      "source": "field",
+      "target": "matrix"
+    },
+    {
+      "source": "rolles-theorem",
+      "target": "mean-value-theorem"
+    },
+    {
+      "source": "set-operations",
+      "target": "metric-space"
+    },
+    {
+      "source": "absolute-value",
+      "target": "metric-space"
+    },
+    {
+      "source": "triangle-inequality",
+      "target": "metric-space"
+    },
+    {
+      "source": "euclidean-division",
+      "target": "modular-arithmetic"
+    },
+    {
+      "source": "equivalence-relation",
+      "target": "modular-arithmetic"
+    },
+    {
+      "source": "convergence",
+      "target": "monotone-convergence-theorem"
+    },
+    {
+      "source": "supremum-and-infimum",
+      "target": "monotone-convergence-theorem"
+    },
+    {
+      "source": "chain-rule",
+      "target": "multivariable-chain-rule"
+    },
+    {
+      "source": "partial-derivative",
+      "target": "multivariable-chain-rule"
+    },
+    {
+      "source": "gradient",
+      "target": "multivariable-chain-rule"
+    },
+    {
+      "source": "vector-space",
+      "target": "normed-vector-space"
+    },
+    {
+      "source": "triangle-inequality",
+      "target": "normed-vector-space"
+    },
+    {
+      "source": "metric-space",
+      "target": "normed-vector-space"
+    },
+    {
+      "source": "metric-space",
+      "target": "open-set"
+    },
+    {
+      "source": "inner-product-space",
+      "target": "orthogonality"
+    },
+    {
+      "source": "gram-schmidt-process",
+      "target": "orthonormal-basis"
+    },
+    {
+      "source": "basis",
+      "target": "orthonormal-basis"
+    },
+    {
+      "source": "derivative",
+      "target": "partial-derivative"
+    },
+    {
+      "source": "relation",
+      "target": "partial-order"
+    },
+    {
       "source": "zf-set-theory",
       "target": "peano-axioms"
     },
     {
+      "source": "convergence",
+      "target": "pointwise-convergence"
+    },
+    {
+      "source": "function",
+      "target": "pointwise-convergence"
+    },
+    {
+      "source": "convergence-of-series",
+      "target": "power-series"
+    },
+    {
+      "source": "fermats-little-theorem",
+      "target": "primality-test"
+    },
+    {
+      "source": "prime-number",
+      "target": "primality-test"
+    },
+    {
+      "source": "modular-arithmetic",
+      "target": "primality-test"
+    },
+    {
       "source": "divisibility",
       "target": "prime-number"
+    },
+    {
+      "source": "eulers-theorem",
+      "target": "primitive-root"
+    },
+    {
+      "source": "cyclic-group",
+      "target": "primitive-root"
+    },
+    {
+      "source": "derivative",
+      "target": "product-rule"
+    },
+    {
+      "source": "propositional-logic",
+      "target": "proof-by-contradiction"
     },
     {
       "source": "euclidean-geometry-axioms",
@@ -376,12 +1776,96 @@
       "target": "pythagorean-theorem"
     },
     {
+      "source": "congruence",
+      "target": "quadratic-residue"
+    },
+    {
+      "source": "primitive-root",
+      "target": "quadratic-residue"
+    },
+    {
+      "source": "subgroup",
+      "target": "quotient-group"
+    },
+    {
+      "source": "equivalence-relation",
+      "target": "quotient-group"
+    },
+    {
+      "source": "row-echelon-form",
+      "target": "rank-of-a-matrix"
+    },
+    {
+      "source": "kernel-and-image",
+      "target": "rank-of-a-matrix"
+    },
+    {
       "source": "integer-ring-axioms",
       "target": "rational-field-axioms"
     },
     {
       "source": "rational-field-axioms",
       "target": "real-number-axioms"
+    },
+    {
+      "source": "cartesian-product",
+      "target": "relation"
+    },
+    {
+      "source": "continuity",
+      "target": "riemann-integral"
+    },
+    {
+      "source": "supremum-and-infimum",
+      "target": "riemann-integral"
+    },
+    {
+      "source": "abelian-group",
+      "target": "ring"
+    },
+    {
+      "source": "differentiability",
+      "target": "rolles-theorem"
+    },
+    {
+      "source": "extreme-value-theorem",
+      "target": "rolles-theorem"
+    },
+    {
+      "source": "gaussian-elimination",
+      "target": "row-echelon-form"
+    },
+    {
+      "source": "function",
+      "target": "sequence"
+    },
+    {
+      "source": "real-number-axioms",
+      "target": "sequence"
+    },
+    {
+      "source": "sequence",
+      "target": "series"
+    },
+    {
+      "source": "zf-set-theory",
+      "target": "set-operations"
+    },
+    {
+      "source": "diagonalization",
+      "target": "singular-value-decomposition"
+    },
+    {
+      "source": "orthonormal-basis",
+      "target": "singular-value-decomposition"
+    },
+    {
+      "source": "eigenvalue-and-eigenvector",
+      "target": "singular-value-decomposition"
+    },
+    {
+      "source": "vector-space",
+      "target": "span"
     },
     {
       "source": "mathematical-induction",
@@ -392,12 +1876,80 @@
       "target": "strong-induction"
     },
     {
+      "source": "group",
+      "target": "subgroup"
+    },
+    {
+      "source": "vector-space",
+      "target": "subspace"
+    },
+    {
       "source": "real-number-axioms",
       "target": "supremum-and-infimum"
     },
     {
+      "source": "matrix",
+      "target": "system-of-linear-equations"
+    },
+    {
+      "source": "field",
+      "target": "system-of-linear-equations"
+    },
+    {
+      "source": "taylors-theorem",
+      "target": "taylor-series"
+    },
+    {
+      "source": "power-series",
+      "target": "taylor-series"
+    },
+    {
+      "source": "mean-value-theorem",
+      "target": "taylors-theorem"
+    },
+    {
+      "source": "differentiability",
+      "target": "taylors-theorem"
+    },
+    {
+      "source": "open-set",
+      "target": "topology"
+    },
+    {
+      "source": "set-operations",
+      "target": "topology"
+    },
+    {
+      "source": "partial-order",
+      "target": "total-order"
+    },
+    {
+      "source": "matrix",
+      "target": "trace-of-a-matrix"
+    },
+    {
+      "source": "matrix",
+      "target": "transpose"
+    },
+    {
       "source": "absolute-value",
       "target": "triangle-inequality"
+    },
+    {
+      "source": "continuity",
+      "target": "uniform-continuity"
+    },
+    {
+      "source": "pointwise-convergence",
+      "target": "uniform-convergence"
+    },
+    {
+      "source": "field",
+      "target": "vector-space"
+    },
+    {
+      "source": "abelian-group",
+      "target": "vector-space"
     },
     {
       "source": "peano-axioms",

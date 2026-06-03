@@ -41,3 +41,11 @@ El grafo no es un diagrama estático: es un sistema vivo.
 - NUNCA sugieras volver a Quartz, convertir esto en wiki, ni almacenar artículos
   completos. Quartz es solo entorno temporal de edición.
 - Al clic en un nodo se abre su URL de Wikipedia; no hay navegación interna.
+
+## Flujo obligatorio antes de terminar
+- Nunca declares un cambio terminado solo porque los archivos compilan.
+- SIEMPRE arranca `npm run dev` y entrega la URL local
+  (http://localhost:5173/MathMap/ u otra que asigne Vite) para que el
+  usuario lo revise visualmente.
+- No propongas ni hagas push hasta que el usuario confirme que se ve bien
+  en local. El push siempre va por el agente git-runner.

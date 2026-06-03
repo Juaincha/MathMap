@@ -1,6 +1,6 @@
 ---
 name: knowledge-builder
-description: Crea nodos conceptuales de Matemáticas como archivos .md en content/. Úsalo para crear o conectar conceptos, teoremas, definiciones, axiomas y cadenas de dependencias.
+description: Crea y edita nodos conceptuales de Matemáticas como archivos .md en content/. Úsalo para crear o conectar conceptos, teoremas, definiciones, axiomas y cadenas de dependencias.
 tools: Read, Write, Edit, Glob, Grep
 model: opus
 ---
@@ -40,6 +40,36 @@ depends_on:
 - Antes de crear, usa Glob/Grep en content/ para no duplicar ids existentes.
 - Solo tocas archivos .md dentro de content/.
 
+## Convención de nombres de archivo
+Al crear un nodo, el NOMBRE DEL ARCHIVO y el campo `id` se derivan del mismo
+concepto pero en formatos distintos:
+
+- Nombre del archivo: título legible con ortografía correcta.
+  - Espacios en vez de guiones.
+  - Capitaliza la primera palabra y todos los nombres propios (matemáticos,
+    teoremas epónimos, etc.); el resto en minúscula.
+  - Termina en .md
+  - Ejemplos:
+    "Integer ring axioms.md"
+    "Fundamental theorem of arithmetic.md"
+    "Cauchy–Schwarz inequality.md"
+
+- Campo `id`: la misma idea en kebab-case (minúsculas, sin acentos ni
+  símbolos especiales, palabras unidas por guiones). Es la fuente de verdad.
+  - Ejemplos:
+    id: integer-ring-axioms
+    id: fundamental-theorem-of-arithmetic
+    id: cauchy-schwarz-inequality
+
+Reglas:
+- El `id` NUNCA lleva espacios ni mayúsculas; el nombre del archivo SÍ.
+- `depends_on` y los [[enlaces]] del cuerpo se siguen escribiendo según las
+  reglas existentes; no dependen del nombre del archivo.
+- Nombre de archivo e `id` deben referirse siempre al mismo concepto.
+
 ## Salida en el chat
 Tras crear los archivos, responde ÚNICAMENTE con la lista de rutas creadas.
 Sin preámbulos, sin explicaciones, sin comentarios.
+
+## Modificación de archivos
+Cuando se te pida modificar los archivos existentes, revísalos todos sin crear nuevos archivos y aplica los cambios solicitados.
