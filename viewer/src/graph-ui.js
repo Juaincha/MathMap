@@ -94,6 +94,14 @@ export async function createGraph() {
       </div>
       <div id="suggestions"></div>
       <div class="filter-group">
+        <span class="filter-label">Hover shows</span>
+        <div id="hover-mode-btns">
+          <button class="hover-mode-btn active" data-mode="both">Both</button>
+          <button class="hover-mode-btn" data-mode="dependents">Dependents</button>
+          <button class="hover-mode-btn" data-mode="dependencies">Dependencies</button>
+        </div>
+      </div>
+      <div class="filter-group">
         <span class="filter-label">Type</span>
         <div id="filters">
           ${ALL_TYPES.map(t => `
@@ -282,17 +290,36 @@ export async function createGraph() {
     applyFilters()
   })
 
-  // ── Hover interactions (preserved exactly from original) ──────────────────────
+  // ── Hover mode selector ───────────────────────────────────────────────────────
+  // 'both' | 'dependents' | 'dependencies'
+  let hoverMode = 'both'
+
+  document.getElementById('hover-mode-btns').addEventListener('click', e => {
+    const btn = e.target.closest('.hover-mode-btn')
+    if (!btn) return
+    document.querySelectorAll('.hover-mode-btn').forEach(b => b.classList.remove('active'))
+    btn.classList.add('active')
+    hoverMode = btn.dataset.mode
+  })
+
+  // ── Hover interactions ────────────────────────────────────────────────────────
 
   cy.on('mouseover', 'node', e => {
     const node = e.target
-    const lit  = node.closedNeighborhood()
+
+    // predecessors() / successors() return both nodes and edges in the path.
+    const related =
+      hoverMode === 'dependents'   ? node.successors()   :
+      hoverMode === 'dependencies' ? node.predecessors() :
+      node.predecessors().union(node.successors())
+
+    const lit = node.union(related)
 
     cy.batch(() => {
       cy.elements().difference(lit).addClass('faded')
       node.addClass('hover')
-      lit.nodes().not(node).addClass('neighbor')
-      node.connectedEdges().addClass('neighbor')
+      related.nodes().addClass('neighbor')
+      related.edges().addClass('neighbor')
     })
 
     const pos = e.renderedPosition

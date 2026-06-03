@@ -89,6 +89,31 @@ body {
   opacity: 1;
 }
 
+#hover-mode-btns {
+  display: flex;
+}
+
+.hover-mode-btn {
+  padding: 5px 11px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: background 120ms, color 120ms;
+  border-right-width: 0;
+}
+
+.hover-mode-btn:first-child { border-radius: 8px 0 0 8px; }
+.hover-mode-btn:last-child  { border-radius: 0 8px 8px 0; border-right-width: 1px; }
+
+.hover-mode-btn.active {
+  background: #2c3e50;
+  color: white;
+  border-color: #2c3e50;
+}
+
 #suggestions {
 
   width: 260px;
