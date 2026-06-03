@@ -7,7 +7,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Abelian_group"
+      "wikipedia": "https://en.wikipedia.org/wiki/Abelian_group",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "absolute-continuity-of-measures",
@@ -16,7 +18,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Absolute_continuity#Absolute_continuity_of_measures"
+      "wikipedia": "https://en.wikipedia.org/wiki/Absolute_continuity#Absolute_continuity_of_measures",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "absolute-value",
@@ -25,7 +29,9 @@
       "tags": [
         "analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Absolute_value"
+      "wikipedia": "https://en.wikipedia.org/wiki/Absolute_value",
+      "primaryTag": "analysis",
+      "isCentral": false
     },
     {
       "id": "adjacency-matrix",
@@ -34,7 +40,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Adjacency_matrix"
+      "wikipedia": "https://en.wikipedia.org/wiki/Adjacency_matrix",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "algebraic-closure",
@@ -43,7 +51,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Algebraic_closure"
+      "wikipedia": "https://en.wikipedia.org/wiki/Algebraic_closure",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "algebraic-element",
@@ -52,7 +62,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Algebraic_element"
+      "wikipedia": "https://en.wikipedia.org/wiki/Algebraic_element",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "almost-everywhere",
@@ -61,7 +73,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Almost_everywhere"
+      "wikipedia": "https://en.wikipedia.org/wiki/Almost_everywhere",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "analytic-continuation",
@@ -70,7 +84,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Analytic_continuation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Analytic_continuation",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "analytic-function",
@@ -79,7 +95,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Analytic_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Analytic_function",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "archimedean-property",
@@ -88,7 +106,9 @@
       "tags": [
         "analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Archimedean_property"
+      "wikipedia": "https://en.wikipedia.org/wiki/Archimedean_property",
+      "primaryTag": "analysis",
+      "isCentral": false
     },
     {
       "id": "argument-of-complex-number",
@@ -97,7 +117,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Argument_(complex_analysis)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Argument_(complex_analysis)",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "banach-space",
@@ -106,7 +128,9 @@
       "tags": [
         "functional-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Banach_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Banach_space",
+      "primaryTag": "functional-analysis",
+      "isCentral": false
     },
     {
       "id": "basis-for-topology",
@@ -115,7 +139,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Base_(topology)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Base_(topology)",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "basis",
@@ -124,7 +150,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Basis_(linear_algebra)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Basis_(linear_algebra)",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "bayes-theorem",
@@ -133,7 +161,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Bayes%27_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "bell-number",
@@ -142,7 +172,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Bell_number"
+      "wikipedia": "https://en.wikipedia.org/wiki/Bell_number",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "bernoulli-distribution",
@@ -151,7 +183,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Bernoulli_distribution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Bernoulli_distribution",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "bezout-identity",
@@ -160,7 +194,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity"
+      "wikipedia": "https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "bijection",
@@ -169,7 +205,9 @@
       "tags": [
         "set-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection"
+      "wikipedia": "https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection",
+      "primaryTag": "set-theory",
+      "isCentral": false
     },
     {
       "id": "binomial-distribution",
@@ -178,7 +216,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Binomial_distribution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Binomial_distribution",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "binomial-theorem",
@@ -188,7 +228,9 @@
         "combinatorics",
         "algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Binomial_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Binomial_theorem",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "bipartite-graph",
@@ -197,7 +239,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Bipartite_graph"
+      "wikipedia": "https://en.wikipedia.org/wiki/Bipartite_graph",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "bolzano-weierstrass-theorem",
@@ -206,7 +250,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Bolzano%E2%80%93Weierstrass_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Bolzano%E2%80%93Weierstrass_theorem",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "borel-sigma-algebra",
@@ -215,7 +261,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Borel_set"
+      "wikipedia": "https://en.wikipedia.org/wiki/Borel_set",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "cardinality",
@@ -224,7 +272,9 @@
       "tags": [
         "set-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cardinality"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cardinality",
+      "primaryTag": "set-theory",
+      "isCentral": false
     },
     {
       "id": "cartesian-product",
@@ -233,7 +283,9 @@
       "tags": [
         "set-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cartesian_product"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cartesian_product",
+      "primaryTag": "set-theory",
+      "isCentral": false
     },
     {
       "id": "catalan-number",
@@ -242,7 +294,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Catalan_number"
+      "wikipedia": "https://en.wikipedia.org/wiki/Catalan_number",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "cauchy-sequence",
@@ -251,7 +305,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy_sequence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy_sequence",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "cauchys-integral-formula",
@@ -260,7 +316,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%27s_integral_formula"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%27s_integral_formula",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "cauchys-integral-theorem",
@@ -269,7 +327,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%27s_integral_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%27s_integral_theorem",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "cauchy-riemann-equations",
@@ -278,7 +338,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%E2%80%93Riemann_equations"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%E2%80%93Riemann_equations",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "cauchy-schwarz-inequality",
@@ -288,7 +350,9 @@
         "analysis",
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality",
+      "primaryTag": "analysis",
+      "isCentral": false
     },
     {
       "id": "central-limit-theorem",
@@ -297,7 +361,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Central_limit_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Central_limit_theorem",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "chain-rule",
@@ -306,7 +372,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Chain_rule"
+      "wikipedia": "https://en.wikipedia.org/wiki/Chain_rule",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "characteristic-equation-ode",
@@ -315,7 +383,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_equation_(calculus)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_equation_(calculus)",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "characteristic-polynomial",
@@ -324,7 +394,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_polynomial"
+      "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_polynomial",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "chinese-remainder-theorem",
@@ -333,7 +405,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Chinese_remainder_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Chinese_remainder_theorem",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "chromatic-number",
@@ -342,7 +416,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring"
+      "wikipedia": "https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "closed-set",
@@ -351,7 +427,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Closed_set"
+      "wikipedia": "https://en.wikipedia.org/wiki/Closed_set",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "cohomology",
@@ -360,7 +438,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cohomology"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cohomology",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "combination",
@@ -369,7 +449,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Combination"
+      "wikipedia": "https://en.wikipedia.org/wiki/Combination",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "compact-set",
@@ -378,7 +460,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Compact_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Compact_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "compactification",
@@ -387,7 +471,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Compactification_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Compactification_(mathematics)",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "complete-metric-space",
@@ -396,7 +482,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Complete_metric_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Complete_metric_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "complex-conjugate",
@@ -405,7 +493,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Complex_conjugate"
+      "wikipedia": "https://en.wikipedia.org/wiki/Complex_conjugate",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "complex-exponential",
@@ -414,7 +504,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Exponential_function#Complex_plane"
+      "wikipedia": "https://en.wikipedia.org/wiki/Exponential_function#Complex_plane",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "complex-number",
@@ -423,7 +515,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Complex_number"
+      "wikipedia": "https://en.wikipedia.org/wiki/Complex_number",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "complex-plane",
@@ -432,7 +526,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Complex_plane"
+      "wikipedia": "https://en.wikipedia.org/wiki/Complex_plane",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "conditional-probability",
@@ -441,7 +537,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Conditional_probability"
+      "wikipedia": "https://en.wikipedia.org/wiki/Conditional_probability",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "conformal-map",
@@ -450,7 +548,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Conformal_map"
+      "wikipedia": "https://en.wikipedia.org/wiki/Conformal_map",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "congruence",
@@ -459,7 +559,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Congruence_relation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Congruence_relation",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "connected-graph",
@@ -468,7 +570,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Connectivity_(graph_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Connectivity_(graph_theory)",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "connected-set",
@@ -477,7 +581,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Connected_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Connected_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "constant-coefficient-ode",
@@ -486,7 +592,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Linear_differential_equation#Homogeneous_equation_with_constant_coefficients"
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_differential_equation#Homogeneous_equation_with_constant_coefficients",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "continuity",
@@ -495,7 +603,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Continuous_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Continuous_function",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "continuous-function-topological",
@@ -504,7 +614,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Continuous_function#Continuous_functions_between_topological_spaces"
+      "wikipedia": "https://en.wikipedia.org/wiki/Continuous_function#Continuous_functions_between_topological_spaces",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "continuous-random-variable",
@@ -513,7 +625,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Random_variable#Continuous_random_variable"
+      "wikipedia": "https://en.wikipedia.org/wiki/Random_variable#Continuous_random_variable",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "contour-integral",
@@ -522,7 +636,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Contour_integration"
+      "wikipedia": "https://en.wikipedia.org/wiki/Contour_integration",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "convergence-of-series",
@@ -531,7 +647,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Convergent_series"
+      "wikipedia": "https://en.wikipedia.org/wiki/Convergent_series",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "convergence",
@@ -540,7 +658,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Limit_of_a_sequence#Convergence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Limit_of_a_sequence#Convergence",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "convolution-theorem",
@@ -549,7 +669,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Convolution_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Convolution_theorem",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "correlation",
@@ -558,7 +680,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Correlation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Correlation",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "covariance",
@@ -567,7 +691,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Covariance"
+      "wikipedia": "https://en.wikipedia.org/wiki/Covariance",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "covering-space",
@@ -576,7 +702,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Covering_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Covering_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "cumulative-distribution-function",
@@ -585,7 +713,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cumulative_distribution_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cumulative_distribution_function",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "curvature",
@@ -594,7 +724,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Curvature"
+      "wikipedia": "https://en.wikipedia.org/wiki/Curvature",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "cw-complex",
@@ -603,7 +735,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/CW_complex"
+      "wikipedia": "https://en.wikipedia.org/wiki/CW_complex",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "cycle-in-a-graph",
@@ -612,7 +746,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cycle_(graph_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cycle_(graph_theory)",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "cyclic-group",
@@ -621,7 +757,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cyclic_group"
+      "wikipedia": "https://en.wikipedia.org/wiki/Cyclic_group",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "degree-of-a-vertex",
@@ -630,7 +768,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Degree_(graph_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Degree_(graph_theory)",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "degree-of-field-extension",
@@ -639,7 +779,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Degree_of_a_field_extension"
+      "wikipedia": "https://en.wikipedia.org/wiki/Degree_of_a_field_extension",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "derivative",
@@ -648,7 +790,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Derivative"
+      "wikipedia": "https://en.wikipedia.org/wiki/Derivative",
+      "primaryTag": "calculus",
+      "isCentral": true
     },
     {
       "id": "determinant",
@@ -657,7 +801,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Determinant"
+      "wikipedia": "https://en.wikipedia.org/wiki/Determinant",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "diagonalization",
@@ -666,7 +812,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Diagonalizable_matrix"
+      "wikipedia": "https://en.wikipedia.org/wiki/Diagonalizable_matrix",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "differentiability",
@@ -675,7 +823,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Differentiable_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Differentiable_function",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "differential-form",
@@ -684,7 +834,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Differential_form"
+      "wikipedia": "https://en.wikipedia.org/wiki/Differential_form",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "dimension-vector-space",
@@ -693,7 +845,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Dimension_(vector_space)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Dimension_(vector_space)",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "direct-sum",
@@ -702,7 +856,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Direct_sum_of_modules"
+      "wikipedia": "https://en.wikipedia.org/wiki/Direct_sum_of_modules",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "directed-graph",
@@ -711,7 +867,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Directed_graph"
+      "wikipedia": "https://en.wikipedia.org/wiki/Directed_graph",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "discrete-random-variable",
@@ -720,7 +878,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Random_variable#Discrete_random_variable"
+      "wikipedia": "https://en.wikipedia.org/wiki/Random_variable#Discrete_random_variable",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "divisibility",
@@ -729,7 +889,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Divisibility"
+      "wikipedia": "https://en.wikipedia.org/wiki/Divisibility",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "dominated-convergence-theorem",
@@ -738,7 +900,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Dominated_convergence_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Dominated_convergence_theorem",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "edge",
@@ -747,7 +911,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Glossary_of_graph_theory#edge"
+      "wikipedia": "https://en.wikipedia.org/wiki/Glossary_of_graph_theory#edge",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "eigenvalue-and-eigenvector",
@@ -756,7 +922,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors"
+      "wikipedia": "https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "entire-function",
@@ -765,7 +933,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Entire_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Entire_function",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "equilibrium-point",
@@ -774,7 +944,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Equilibrium_point"
+      "wikipedia": "https://en.wikipedia.org/wiki/Equilibrium_point",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "equivalence-relation",
@@ -783,7 +955,9 @@
       "tags": [
         "set-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Equivalence_relation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Equivalence_relation",
+      "primaryTag": "set-theory",
+      "isCentral": false
     },
     {
       "id": "euclidean-algorithm",
@@ -793,7 +967,9 @@
         "number-theory",
         "algorithms"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_algorithm"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_algorithm",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "euclidean-division",
@@ -802,7 +978,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_division"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_division",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "euclidean-geometry-axioms",
@@ -811,7 +989,9 @@
       "tags": [
         "geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_geometry"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euclidean_geometry",
+      "primaryTag": "geometry",
+      "isCentral": true
     },
     {
       "id": "euler-characteristic",
@@ -820,7 +1000,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Euler_characteristic"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euler_characteristic",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "euler-path",
@@ -829,7 +1011,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Eulerian_path"
+      "wikipedia": "https://en.wikipedia.org/wiki/Eulerian_path",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "eulers-formula",
@@ -838,7 +1022,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Euler%27s_formula"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euler%27s_formula",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "eulers-theorem",
@@ -847,7 +1033,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Euler%27s_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euler%27s_theorem",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "eulers-totient-function",
@@ -856,7 +1044,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Euler%27s_totient_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euler%27s_totient_function",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "event",
@@ -865,7 +1055,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Event_(probability_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Event_(probability_theory)",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "exact-sequence",
@@ -874,7 +1066,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Exact_sequence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Exact_sequence",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "expected-value",
@@ -883,7 +1077,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Expected_value"
+      "wikipedia": "https://en.wikipedia.org/wiki/Expected_value",
+      "primaryTag": "probability",
+      "isCentral": true
     },
     {
       "id": "exponential-distribution",
@@ -892,7 +1088,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Exponential_distribution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Exponential_distribution",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "exponential-generating-function",
@@ -901,7 +1099,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Generating_function#Exponential_generating_function_(EGF)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Generating_function#Exponential_generating_function_(EGF)",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "exterior-derivative",
@@ -910,7 +1110,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Exterior_derivative"
+      "wikipedia": "https://en.wikipedia.org/wiki/Exterior_derivative",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "extremal-graph-theory",
@@ -919,7 +1121,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Extremal_graph_theory"
+      "wikipedia": "https://en.wikipedia.org/wiki/Extremal_graph_theory",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "extreme-value-theorem",
@@ -928,7 +1132,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Extreme_value_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Extreme_value_theorem",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "fatous-lemma",
@@ -937,7 +1143,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fatou%27s_lemma"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fatou%27s_lemma",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "fermats-little-theorem",
@@ -946,7 +1154,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fermat%27s_little_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fermat%27s_little_theorem",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "fibonacci-sequence",
@@ -955,7 +1165,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fibonacci_sequence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fibonacci_sequence",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "field-extension",
@@ -964,7 +1176,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Field_extension"
+      "wikipedia": "https://en.wikipedia.org/wiki/Field_extension",
+      "primaryTag": "abstract-algebra",
+      "isCentral": true
     },
     {
       "id": "field",
@@ -973,7 +1187,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Field_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Field_(mathematics)",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "first-order-logic",
@@ -982,7 +1198,9 @@
       "tags": [
         "logic"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/First-order_logic"
+      "wikipedia": "https://en.wikipedia.org/wiki/First-order_logic",
+      "primaryTag": "logic",
+      "isCentral": false
     },
     {
       "id": "fixed-field",
@@ -991,7 +1209,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fixed_field"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fixed_field",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "free-module",
@@ -1000,7 +1220,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Free_module"
+      "wikipedia": "https://en.wikipedia.org/wiki/Free_module",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "fubinis-theorem",
@@ -1009,7 +1231,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fubini%27s_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fubini%27s_theorem",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "function",
@@ -1019,7 +1243,9 @@
         "set-theory",
         "foundations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Function_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Function_(mathematics)",
+      "primaryTag": "set-theory",
+      "isCentral": true
     },
     {
       "id": "fundamental-group",
@@ -1028,7 +1254,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_group"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_group",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "fundamental-theorem-of-arithmetic",
@@ -1037,7 +1265,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "fundamental-theorem-of-calculus",
@@ -1046,7 +1276,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "galois-correspondence",
@@ -1055,7 +1287,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_Galois_theory"
+      "wikipedia": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_Galois_theory",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "galois-group",
@@ -1064,7 +1298,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Galois_group"
+      "wikipedia": "https://en.wikipedia.org/wiki/Galois_group",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "gauss-bonnet-theorem",
@@ -1073,7 +1309,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Gauss%E2%80%93Bonnet_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Gauss%E2%80%93Bonnet_theorem",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "gaussian-elimination",
@@ -1082,7 +1320,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Gaussian_elimination"
+      "wikipedia": "https://en.wikipedia.org/wiki/Gaussian_elimination",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "general-solution",
@@ -1091,7 +1331,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Ordinary_differential_equation#General_solution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Ordinary_differential_equation#General_solution",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "generating-function",
@@ -1100,7 +1342,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Generating_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Generating_function",
+      "primaryTag": "combinatorics",
+      "isCentral": true
     },
     {
       "id": "geodesic",
@@ -1109,7 +1353,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Geodesic"
+      "wikipedia": "https://en.wikipedia.org/wiki/Geodesic",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "geometric-distribution",
@@ -1118,7 +1364,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Geometric_distribution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Geometric_distribution",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "geometric-series",
@@ -1127,7 +1375,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Geometric_series"
+      "wikipedia": "https://en.wikipedia.org/wiki/Geometric_series",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "gradient",
@@ -1136,7 +1386,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Gradient"
+      "wikipedia": "https://en.wikipedia.org/wiki/Gradient",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "gram-schmidt-process",
@@ -1145,7 +1397,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process"
+      "wikipedia": "https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "graph-coloring",
@@ -1154,7 +1408,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Graph_coloring"
+      "wikipedia": "https://en.wikipedia.org/wiki/Graph_coloring",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "graph-isomorphism",
@@ -1163,7 +1419,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Graph_isomorphism"
+      "wikipedia": "https://en.wikipedia.org/wiki/Graph_isomorphism",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "graph",
@@ -1172,7 +1430,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)",
+      "primaryTag": "graph-theory",
+      "isCentral": true
     },
     {
       "id": "greatest-common-divisor",
@@ -1181,7 +1441,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Greatest_common_divisor"
+      "wikipedia": "https://en.wikipedia.org/wiki/Greatest_common_divisor",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "group-homomorphism",
@@ -1190,7 +1452,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Group_homomorphism"
+      "wikipedia": "https://en.wikipedia.org/wiki/Group_homomorphism",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "group",
@@ -1199,7 +1463,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Group_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Group_(mathematics)",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "hahn-decomposition",
@@ -1208,7 +1474,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Hahn_decomposition_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Hahn_decomposition_theorem",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "hamiltonian-path",
@@ -1217,7 +1485,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Hamiltonian_path"
+      "wikipedia": "https://en.wikipedia.org/wiki/Hamiltonian_path",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "hausdorff-space",
@@ -1226,7 +1496,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Hausdorff_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Hausdorff_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "heat-equation",
@@ -1235,7 +1507,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Heat_equation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Heat_equation",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "hilbert-space",
@@ -1244,7 +1518,9 @@
       "tags": [
         "functional-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Hilbert_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Hilbert_space",
+      "primaryTag": "functional-analysis",
+      "isCentral": false
     },
     {
       "id": "holomorphic-function",
@@ -1253,7 +1529,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Holomorphic_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Holomorphic_function",
+      "primaryTag": "complex-analysis",
+      "isCentral": true
     },
     {
       "id": "homeomorphism",
@@ -1262,7 +1540,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Homeomorphism"
+      "wikipedia": "https://en.wikipedia.org/wiki/Homeomorphism",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "homogeneous-ode",
@@ -1271,7 +1551,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Homogeneous_differential_equation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Homogeneous_differential_equation",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "homology-group",
@@ -1280,7 +1562,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Homology_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Homology_(mathematics)",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "homotopy-equivalence",
@@ -1289,7 +1573,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Homotopy#Homotopy_equivalence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Homotopy#Homotopy_equivalence",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "homotopy",
@@ -1298,7 +1584,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Homotopy"
+      "wikipedia": "https://en.wikipedia.org/wiki/Homotopy",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "ideal",
@@ -1307,7 +1595,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Ideal_(ring_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Ideal_(ring_theory)",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "inclusion-exclusion-principle",
@@ -1316,7 +1606,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle"
+      "wikipedia": "https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "independence-of-events",
@@ -1325,7 +1617,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Independence_(probability_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Independence_(probability_theory)",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "infinitude-of-primes",
@@ -1334,7 +1628,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Euclid%27s_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Euclid%27s_theorem",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "initial-value-problem",
@@ -1343,7 +1639,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Initial_value_problem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Initial_value_problem",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "inner-product-space",
@@ -1352,7 +1650,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Inner_product_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Inner_product_space",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "integer-ring-axioms",
@@ -1362,7 +1662,9 @@
         "algebra",
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Integer"
+      "wikipedia": "https://en.wikipedia.org/wiki/Integer",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "integral-domain",
@@ -1371,7 +1673,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Integral_domain"
+      "wikipedia": "https://en.wikipedia.org/wiki/Integral_domain",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "integrating-factor",
@@ -1380,7 +1684,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Integrating_factor"
+      "wikipedia": "https://en.wikipedia.org/wiki/Integrating_factor",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "integration-by-parts",
@@ -1389,7 +1695,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Integration_by_parts"
+      "wikipedia": "https://en.wikipedia.org/wiki/Integration_by_parts",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "intermediate-value-theorem",
@@ -1398,7 +1706,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Intermediate_value_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Intermediate_value_theorem",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "inverse-laplace-transform",
@@ -1407,7 +1717,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Inverse_Laplace_transform"
+      "wikipedia": "https://en.wikipedia.org/wiki/Inverse_Laplace_transform",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "invertible-matrix",
@@ -1416,7 +1728,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Invertible_matrix"
+      "wikipedia": "https://en.wikipedia.org/wiki/Invertible_matrix",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "irreducible-polynomial",
@@ -1425,7 +1739,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Irreducible_polynomial"
+      "wikipedia": "https://en.wikipedia.org/wiki/Irreducible_polynomial",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "joint-distribution",
@@ -1434,7 +1750,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Joint_probability_distribution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Joint_probability_distribution",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "kernel-and-image",
@@ -1443,7 +1761,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Kernel_(linear_algebra)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Kernel_(linear_algebra)",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "lhopitals-rule",
@@ -1452,7 +1772,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule"
+      "wikipedia": "https://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "laplace-equation",
@@ -1461,7 +1783,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Laplace%27s_equation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Laplace%27s_equation",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "laplace-transform",
@@ -1470,7 +1794,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Laplace_transform"
+      "wikipedia": "https://en.wikipedia.org/wiki/Laplace_transform",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "laurent-series",
@@ -1479,7 +1805,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Laurent_series"
+      "wikipedia": "https://en.wikipedia.org/wiki/Laurent_series",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "law-of-large-numbers",
@@ -1488,7 +1816,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Law_of_large_numbers"
+      "wikipedia": "https://en.wikipedia.org/wiki/Law_of_large_numbers",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "lebesgue-integral",
@@ -1497,7 +1827,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Lebesgue_integration"
+      "wikipedia": "https://en.wikipedia.org/wiki/Lebesgue_integration",
+      "primaryTag": "measure-theory",
+      "isCentral": true
     },
     {
       "id": "lebesgue-measure",
@@ -1506,7 +1838,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Lebesgue_measure"
+      "wikipedia": "https://en.wikipedia.org/wiki/Lebesgue_measure",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "legendre-symbol",
@@ -1515,7 +1849,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Legendre_symbol"
+      "wikipedia": "https://en.wikipedia.org/wiki/Legendre_symbol",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "lie-algebra",
@@ -1524,7 +1860,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Lie_algebra"
+      "wikipedia": "https://en.wikipedia.org/wiki/Lie_algebra",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "lie-group",
@@ -1533,7 +1871,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Lie_group"
+      "wikipedia": "https://en.wikipedia.org/wiki/Lie_group",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "limit-of-a-function",
@@ -1542,7 +1882,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Limit_of_a_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Limit_of_a_function",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "limit-of-a-sequence",
@@ -1551,7 +1893,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Limit_of_a_sequence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Limit_of_a_sequence",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "linear-independence",
@@ -1560,7 +1904,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Linear_independence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_independence",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "linear-map",
@@ -1569,7 +1915,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Linear_map"
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_map",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "linear-ode",
@@ -1578,7 +1926,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Linear_differential_equation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_differential_equation",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "liouvilles-theorem-complex",
@@ -1587,7 +1937,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Liouville%27s_theorem_(complex_analysis)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Liouville%27s_theorem_(complex_analysis)",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "lipschitz-continuity",
@@ -1596,7 +1948,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Lipschitz_continuity"
+      "wikipedia": "https://en.wikipedia.org/wiki/Lipschitz_continuity",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "locally-compact-space",
@@ -1605,7 +1959,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Locally_compact_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Locally_compact_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "lovasz-local-lemma",
@@ -1614,7 +1970,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Lov%C3%A1sz_local_lemma"
+      "wikipedia": "https://en.wikipedia.org/wiki/Lov%C3%A1sz_local_lemma",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "lp-space",
@@ -1623,7 +1981,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Lp_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Lp_space",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "marginal-distribution",
@@ -1632,7 +1992,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Marginal_distribution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Marginal_distribution",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "mathematical-induction",
@@ -1642,7 +2004,9 @@
         "number-theory",
         "foundations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Mathematical_induction"
+      "wikipedia": "https://en.wikipedia.org/wiki/Mathematical_induction",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "matrix-multiplication",
@@ -1651,7 +2015,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Matrix_multiplication"
+      "wikipedia": "https://en.wikipedia.org/wiki/Matrix_multiplication",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "matrix",
@@ -1660,7 +2026,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Matrix_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Matrix_(mathematics)",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "mean-value-theorem",
@@ -1669,7 +2037,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Mean_value_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Mean_value_theorem",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "measurable-function",
@@ -1678,7 +2048,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Measurable_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Measurable_function",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "measurable-set",
@@ -1687,7 +2059,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Measurable_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Measurable_space",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "measure-space",
@@ -1696,7 +2070,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Measure_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Measure_(mathematics)",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "meromorphic-function",
@@ -1705,7 +2081,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Meromorphic_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Meromorphic_function",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "metric-space",
@@ -1714,7 +2092,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Metric_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Metric_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "minimum-spanning-tree",
@@ -1723,7 +2103,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Minimum_spanning_tree"
+      "wikipedia": "https://en.wikipedia.org/wiki/Minimum_spanning_tree",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "mobius-transformation",
@@ -1732,7 +2114,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/M%C3%B6bius_transformation"
+      "wikipedia": "https://en.wikipedia.org/wiki/M%C3%B6bius_transformation",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "modular-arithmetic",
@@ -1741,7 +2125,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Modular_arithmetic"
+      "wikipedia": "https://en.wikipedia.org/wiki/Modular_arithmetic",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "module-homomorphism",
@@ -1750,7 +2136,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Module_homomorphism"
+      "wikipedia": "https://en.wikipedia.org/wiki/Module_homomorphism",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "module",
@@ -1759,7 +2147,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Module_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Module_(mathematics)",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "modulus-of-complex-number",
@@ -1768,7 +2158,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Absolute_value#Complex_numbers"
+      "wikipedia": "https://en.wikipedia.org/wiki/Absolute_value#Complex_numbers",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "moment-generating-function",
@@ -1777,7 +2169,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Moment-generating_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Moment-generating_function",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "monotone-convergence-theorem-measure",
@@ -1786,7 +2180,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Monotone_convergence_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Monotone_convergence_theorem",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "monotone-convergence-theorem",
@@ -1795,7 +2191,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Monotone_convergence_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Monotone_convergence_theorem",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "multinomial-coefficient",
@@ -1804,7 +2202,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Multinomial_theorem#Multinomial_coefficients"
+      "wikipedia": "https://en.wikipedia.org/wiki/Multinomial_theorem#Multinomial_coefficients",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "multivariable-chain-rule",
@@ -1813,7 +2213,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Chain_rule#Multivariable_case"
+      "wikipedia": "https://en.wikipedia.org/wiki/Chain_rule#Multivariable_case",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "normal-distribution",
@@ -1822,7 +2224,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Normal_distribution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Normal_distribution",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "normal-space",
@@ -1831,7 +2235,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Normal_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Normal_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "normal-subgroup",
@@ -1840,7 +2246,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Normal_subgroup"
+      "wikipedia": "https://en.wikipedia.org/wiki/Normal_subgroup",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "normed-vector-space",
@@ -1849,7 +2257,9 @@
       "tags": [
         "functional-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Normed_vector_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Normed_vector_space",
+      "primaryTag": "functional-analysis",
+      "isCentral": true
     },
     {
       "id": "null-set",
@@ -1858,7 +2268,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Null_set"
+      "wikipedia": "https://en.wikipedia.org/wiki/Null_set",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "one-point-compactification",
@@ -1867,7 +2279,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Alexandroff_extension"
+      "wikipedia": "https://en.wikipedia.org/wiki/Alexandroff_extension",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "open-set",
@@ -1876,7 +2290,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Open_set"
+      "wikipedia": "https://en.wikipedia.org/wiki/Open_set",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "ordinary-differential-equation",
@@ -1885,7 +2301,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Ordinary_differential_equation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Ordinary_differential_equation",
+      "primaryTag": "differential-equations",
+      "isCentral": true
     },
     {
       "id": "ordinary-generating-function",
@@ -1894,7 +2312,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Generating_function#Ordinary_generating_function_(OGF)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Generating_function#Ordinary_generating_function_(OGF)",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "orthogonality",
@@ -1903,7 +2323,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Orthogonality_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Orthogonality_(mathematics)",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "orthonormal-basis",
@@ -1912,7 +2334,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Orthonormal_basis"
+      "wikipedia": "https://en.wikipedia.org/wiki/Orthonormal_basis",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "paracompact-space",
@@ -1921,7 +2345,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Paracompact_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Paracompact_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "partial-derivative",
@@ -1930,7 +2356,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Partial_derivative"
+      "wikipedia": "https://en.wikipedia.org/wiki/Partial_derivative",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "partial-differential-equation",
@@ -1939,7 +2367,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Partial_differential_equation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Partial_differential_equation",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "partial-order",
@@ -1948,7 +2378,9 @@
       "tags": [
         "order-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Partially_ordered_set"
+      "wikipedia": "https://en.wikipedia.org/wiki/Partially_ordered_set",
+      "primaryTag": "order-theory",
+      "isCentral": true
     },
     {
       "id": "particular-solution",
@@ -1957,7 +2389,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Ordinary_differential_equation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Ordinary_differential_equation",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "partition-of-integer",
@@ -1966,7 +2400,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Partition_(number_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Partition_(number_theory)",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "path-in-a-graph",
@@ -1975,7 +2411,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Path_(graph_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Path_(graph_theory)",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "peano-axioms",
@@ -1985,7 +2423,9 @@
         "number-theory",
         "foundations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Peano_axioms"
+      "wikipedia": "https://en.wikipedia.org/wiki/Peano_axioms",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "permutation",
@@ -1994,7 +2434,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Permutation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Permutation",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "phase-portrait",
@@ -2003,7 +2445,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Phase_portrait"
+      "wikipedia": "https://en.wikipedia.org/wiki/Phase_portrait",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "pigeonhole-principle",
@@ -2012,7 +2456,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Pigeonhole_principle"
+      "wikipedia": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "planar-graph",
@@ -2021,7 +2467,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Planar_graph"
+      "wikipedia": "https://en.wikipedia.org/wiki/Planar_graph",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "pointwise-convergence",
@@ -2030,7 +2478,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Pointwise_convergence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Pointwise_convergence",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "poisson-distribution",
@@ -2039,7 +2489,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Poisson_distribution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Poisson_distribution",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "polar-form-of-complex-number",
@@ -2048,7 +2500,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Complex_number#Polar_form"
+      "wikipedia": "https://en.wikipedia.org/wiki/Complex_number#Polar_form",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "pole-of-a-function",
@@ -2057,7 +2511,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Zeros_and_poles"
+      "wikipedia": "https://en.wikipedia.org/wiki/Zeros_and_poles",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "polynomial-ring",
@@ -2066,7 +2522,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Polynomial_ring"
+      "wikipedia": "https://en.wikipedia.org/wiki/Polynomial_ring",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "power-series",
@@ -2075,7 +2533,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Power_series"
+      "wikipedia": "https://en.wikipedia.org/wiki/Power_series",
+      "primaryTag": "real-analysis",
+      "isCentral": true
     },
     {
       "id": "primality-test",
@@ -2084,7 +2544,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Primality_test"
+      "wikipedia": "https://en.wikipedia.org/wiki/Primality_test",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "prime-number",
@@ -2093,7 +2555,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Prime_number"
+      "wikipedia": "https://en.wikipedia.org/wiki/Prime_number",
+      "primaryTag": "number-theory",
+      "isCentral": true
     },
     {
       "id": "primitive-root",
@@ -2102,7 +2566,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Primitive_root_modulo_n"
+      "wikipedia": "https://en.wikipedia.org/wiki/Primitive_root_modulo_n",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "principal-ideal",
@@ -2111,7 +2577,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Principal_ideal"
+      "wikipedia": "https://en.wikipedia.org/wiki/Principal_ideal",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "probabilistic-method",
@@ -2120,7 +2588,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Probabilistic_method"
+      "wikipedia": "https://en.wikipedia.org/wiki/Probabilistic_method",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "probability-axioms",
@@ -2129,7 +2599,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Probability_axioms"
+      "wikipedia": "https://en.wikipedia.org/wiki/Probability_axioms",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "probability-density-function",
@@ -2138,7 +2610,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Probability_density_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Probability_density_function",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "probability-mass-function",
@@ -2147,7 +2621,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Probability_mass_function"
+      "wikipedia": "https://en.wikipedia.org/wiki/Probability_mass_function",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "product-measure",
@@ -2156,7 +2632,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Product_measure"
+      "wikipedia": "https://en.wikipedia.org/wiki/Product_measure",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "product-rule",
@@ -2165,7 +2643,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Product_rule"
+      "wikipedia": "https://en.wikipedia.org/wiki/Product_rule",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "proof-by-contradiction",
@@ -2174,7 +2654,9 @@
       "tags": [
         "logic"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Proof_by_contradiction"
+      "wikipedia": "https://en.wikipedia.org/wiki/Proof_by_contradiction",
+      "primaryTag": "logic",
+      "isCentral": false
     },
     {
       "id": "propositional-logic",
@@ -2183,7 +2665,9 @@
       "tags": [
         "logic"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Propositional_calculus"
+      "wikipedia": "https://en.wikipedia.org/wiki/Propositional_calculus",
+      "primaryTag": "logic",
+      "isCentral": true
     },
     {
       "id": "pullback",
@@ -2192,7 +2676,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Pullback_(differential_geometry)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Pullback_(differential_geometry)",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "pushforward",
@@ -2201,7 +2687,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Pushforward_(differential)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Pushforward_(differential)",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "pythagorean-theorem",
@@ -2210,7 +2698,9 @@
       "tags": [
         "geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Pythagorean_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Pythagorean_theorem",
+      "primaryTag": "geometry",
+      "isCentral": false
     },
     {
       "id": "quadratic-residue",
@@ -2219,7 +2709,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Quadratic_residue"
+      "wikipedia": "https://en.wikipedia.org/wiki/Quadratic_residue",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "quotient-group",
@@ -2228,7 +2720,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Quotient_group"
+      "wikipedia": "https://en.wikipedia.org/wiki/Quotient_group",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "quotient-ring",
@@ -2237,7 +2731,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Quotient_ring"
+      "wikipedia": "https://en.wikipedia.org/wiki/Quotient_ring",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "radon-nikodym-theorem",
@@ -2246,7 +2742,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "ramsey-number",
@@ -2255,7 +2753,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Ramsey%27s_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Ramsey%27s_theorem",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "ramsey-theory",
@@ -2264,7 +2764,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Ramsey_theory"
+      "wikipedia": "https://en.wikipedia.org/wiki/Ramsey_theory",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "random-variable",
@@ -2273,7 +2775,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Random_variable"
+      "wikipedia": "https://en.wikipedia.org/wiki/Random_variable",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "rank-of-a-matrix",
@@ -2282,7 +2786,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Rank_(linear_algebra)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Rank_(linear_algebra)",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "rational-field-axioms",
@@ -2292,7 +2798,9 @@
         "algebra",
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Rational_number"
+      "wikipedia": "https://en.wikipedia.org/wiki/Rational_number",
+      "primaryTag": "algebra",
+      "isCentral": true
     },
     {
       "id": "real-number-axioms",
@@ -2302,7 +2810,9 @@
         "analysis",
         "foundations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Real_number"
+      "wikipedia": "https://en.wikipedia.org/wiki/Real_number",
+      "primaryTag": "analysis",
+      "isCentral": true
     },
     {
       "id": "recurrence-relation",
@@ -2311,7 +2821,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Recurrence_relation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Recurrence_relation",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "regular-space",
@@ -2320,7 +2832,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Regular_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Regular_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "relation",
@@ -2329,7 +2843,9 @@
       "tags": [
         "set-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Binary_relation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Binary_relation",
+      "primaryTag": "set-theory",
+      "isCentral": false
     },
     {
       "id": "residue-theorem",
@@ -2338,7 +2854,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Residue_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Residue_theorem",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "riemann-integral",
@@ -2347,7 +2865,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Riemann_integral"
+      "wikipedia": "https://en.wikipedia.org/wiki/Riemann_integral",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "riemann-mapping-theorem",
@@ -2356,7 +2876,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Riemann_mapping_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Riemann_mapping_theorem",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "riemannian-metric",
@@ -2365,7 +2887,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Riemannian_manifold"
+      "wikipedia": "https://en.wikipedia.org/wiki/Riemannian_manifold",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "ring-homomorphism",
@@ -2374,7 +2898,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Ring_homomorphism"
+      "wikipedia": "https://en.wikipedia.org/wiki/Ring_homomorphism",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "ring",
@@ -2383,7 +2909,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Ring_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Ring_(mathematics)",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "rolles-theorem",
@@ -2392,7 +2920,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Rolle%27s_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Rolle%27s_theorem",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "row-echelon-form",
@@ -2401,7 +2931,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Row_echelon_form"
+      "wikipedia": "https://en.wikipedia.org/wiki/Row_echelon_form",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "sample-space",
@@ -2410,7 +2942,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Sample_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Sample_space",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "second-order-linear-ode",
@@ -2419,7 +2953,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Linear_differential_equation#Second-order_case"
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_differential_equation#Second-order_case",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "seifert-van-kampen-theorem",
@@ -2428,7 +2964,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Seifert%E2%80%93Van_Kampen_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Seifert%E2%80%93Van_Kampen_theorem",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "separable-ode",
@@ -2437,7 +2975,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Separation_of_variables"
+      "wikipedia": "https://en.wikipedia.org/wiki/Separation_of_variables",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "sequence",
@@ -2446,7 +2986,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Sequence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Sequence",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "series",
@@ -2455,7 +2997,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Series_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Series_(mathematics)",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "set-operations",
@@ -2464,7 +3008,9 @@
       "tags": [
         "set-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Set_(mathematics)#Basic_operations"
+      "wikipedia": "https://en.wikipedia.org/wiki/Set_(mathematics)#Basic_operations",
+      "primaryTag": "set-theory",
+      "isCentral": false
     },
     {
       "id": "sigma-algebra",
@@ -2473,7 +3019,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/%CE%A3-algebra"
+      "wikipedia": "https://en.wikipedia.org/wiki/%CE%A3-algebra",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "signed-measure",
@@ -2482,7 +3030,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Signed_measure"
+      "wikipedia": "https://en.wikipedia.org/wiki/Signed_measure",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "simply-connected-space",
@@ -2491,7 +3041,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Simply_connected_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Simply_connected_space",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "singular-measure",
@@ -2500,7 +3052,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Singular_measure"
+      "wikipedia": "https://en.wikipedia.org/wiki/Singular_measure",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "singular-value-decomposition",
@@ -2509,7 +3063,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Singular_value_decomposition"
+      "wikipedia": "https://en.wikipedia.org/wiki/Singular_value_decomposition",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "singularity",
@@ -2518,7 +3074,9 @@
       "tags": [
         "complex-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Singularity_(mathematics)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Singularity_(mathematics)",
+      "primaryTag": "complex-analysis",
+      "isCentral": false
     },
     {
       "id": "smooth-manifold",
@@ -2527,7 +3085,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Differentiable_manifold"
+      "wikipedia": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+      "primaryTag": "differential-geometry",
+      "isCentral": true
     },
     {
       "id": "solvable-group",
@@ -2536,7 +3096,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Solvable_group"
+      "wikipedia": "https://en.wikipedia.org/wiki/Solvable_group",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "span",
@@ -2545,7 +3107,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Linear_span"
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_span",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "spanning-tree",
@@ -2554,7 +3118,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Spanning_tree"
+      "wikipedia": "https://en.wikipedia.org/wiki/Spanning_tree",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "splitting-field",
@@ -2563,7 +3129,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Splitting_field"
+      "wikipedia": "https://en.wikipedia.org/wiki/Splitting_field",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "stability-of-equilibrium",
@@ -2572,7 +3140,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Stability_theory"
+      "wikipedia": "https://en.wikipedia.org/wiki/Stability_theory",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "standard-deviation",
@@ -2581,7 +3151,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Standard_deviation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Standard_deviation",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "stirling-number",
@@ -2590,7 +3162,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Stirling_number"
+      "wikipedia": "https://en.wikipedia.org/wiki/Stirling_number",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "strong-induction",
@@ -2599,7 +3173,9 @@
       "tags": [
         "number-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Mathematical_induction#Strong_induction"
+      "wikipedia": "https://en.wikipedia.org/wiki/Mathematical_induction#Strong_induction",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "subgroup",
@@ -2608,7 +3184,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Subgroup"
+      "wikipedia": "https://en.wikipedia.org/wiki/Subgroup",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "submodule",
@@ -2617,7 +3195,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Module_(mathematics)#Submodules_and_homomorphisms"
+      "wikipedia": "https://en.wikipedia.org/wiki/Module_(mathematics)#Submodules_and_homomorphisms",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "subspace",
@@ -2626,7 +3206,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Linear_subspace"
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_subspace",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "supremum-and-infimum",
@@ -2635,7 +3217,9 @@
       "tags": [
         "analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Infimum_and_supremum"
+      "wikipedia": "https://en.wikipedia.org/wiki/Infimum_and_supremum",
+      "primaryTag": "analysis",
+      "isCentral": false
     },
     {
       "id": "system-of-linear-equations",
@@ -2644,7 +3228,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/System_of_linear_equations"
+      "wikipedia": "https://en.wikipedia.org/wiki/System_of_linear_equations",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "system-of-odes",
@@ -2653,7 +3239,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/System_of_differential_equations"
+      "wikipedia": "https://en.wikipedia.org/wiki/System_of_differential_equations",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "tangent-bundle",
@@ -2662,7 +3250,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Tangent_bundle"
+      "wikipedia": "https://en.wikipedia.org/wiki/Tangent_bundle",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "tangent-space",
@@ -2671,7 +3261,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Tangent_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Tangent_space",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "taylor-series",
@@ -2680,7 +3272,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Taylor_series"
+      "wikipedia": "https://en.wikipedia.org/wiki/Taylor_series",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "taylors-theorem",
@@ -2689,7 +3283,9 @@
       "tags": [
         "calculus"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Taylor%27s_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Taylor%27s_theorem",
+      "primaryTag": "calculus",
+      "isCentral": false
     },
     {
       "id": "tensor-product",
@@ -2698,7 +3294,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Tensor_product"
+      "wikipedia": "https://en.wikipedia.org/wiki/Tensor_product",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "tietze-extension-theorem",
@@ -2707,7 +3305,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Tietze_extension_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Tietze_extension_theorem",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "topology",
@@ -2716,7 +3316,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Topological_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Topological_space",
+      "primaryTag": "topology",
+      "isCentral": true
     },
     {
       "id": "total-order",
@@ -2725,7 +3327,9 @@
       "tags": [
         "order-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Total_order"
+      "wikipedia": "https://en.wikipedia.org/wiki/Total_order",
+      "primaryTag": "order-theory",
+      "isCentral": false
     },
     {
       "id": "trace-of-a-matrix",
@@ -2734,7 +3338,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Trace_(linear_algebra)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Trace_(linear_algebra)",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "transcendental-element",
@@ -2743,7 +3349,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Transcendental_extension"
+      "wikipedia": "https://en.wikipedia.org/wiki/Transcendental_extension",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "transpose",
@@ -2752,7 +3360,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Transpose"
+      "wikipedia": "https://en.wikipedia.org/wiki/Transpose",
+      "primaryTag": "linear-algebra",
+      "isCentral": false
     },
     {
       "id": "tree",
@@ -2761,7 +3371,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Tree_(graph_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Tree_(graph_theory)",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "triangle-inequality",
@@ -2770,7 +3382,9 @@
       "tags": [
         "analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Triangle_inequality"
+      "wikipedia": "https://en.wikipedia.org/wiki/Triangle_inequality",
+      "primaryTag": "analysis",
+      "isCentral": false
     },
     {
       "id": "turans-theorem",
@@ -2779,7 +3393,9 @@
       "tags": [
         "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem"
+      "wikipedia": "https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem",
+      "primaryTag": "combinatorics",
+      "isCentral": false
     },
     {
       "id": "undetermined-coefficients",
@@ -2788,7 +3404,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Method_of_undetermined_coefficients"
+      "wikipedia": "https://en.wikipedia.org/wiki/Method_of_undetermined_coefficients",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "uniform-continuity",
@@ -2797,7 +3415,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Uniform_continuity"
+      "wikipedia": "https://en.wikipedia.org/wiki/Uniform_continuity",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "uniform-convergence",
@@ -2806,7 +3426,9 @@
       "tags": [
         "real-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Uniform_convergence"
+      "wikipedia": "https://en.wikipedia.org/wiki/Uniform_convergence",
+      "primaryTag": "real-analysis",
+      "isCentral": false
     },
     {
       "id": "uniform-distribution",
@@ -2815,7 +3437,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Continuous_uniform_distribution"
+      "wikipedia": "https://en.wikipedia.org/wiki/Continuous_uniform_distribution",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "unit-in-a-ring",
@@ -2824,7 +3448,9 @@
       "tags": [
         "abstract-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Unit_(ring_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Unit_(ring_theory)",
+      "primaryTag": "abstract-algebra",
+      "isCentral": false
     },
     {
       "id": "urysohns-lemma",
@@ -2833,7 +3459,9 @@
       "tags": [
         "topology"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Urysohn%27s_lemma"
+      "wikipedia": "https://en.wikipedia.org/wiki/Urysohn%27s_lemma",
+      "primaryTag": "topology",
+      "isCentral": false
     },
     {
       "id": "variance",
@@ -2842,7 +3470,9 @@
       "tags": [
         "probability"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Variance"
+      "wikipedia": "https://en.wikipedia.org/wiki/Variance",
+      "primaryTag": "probability",
+      "isCentral": false
     },
     {
       "id": "variation-of-parameters",
@@ -2851,7 +3481,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Variation_of_parameters"
+      "wikipedia": "https://en.wikipedia.org/wiki/Variation_of_parameters",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "vector-field-on-manifold",
@@ -2860,7 +3492,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Vector_field"
+      "wikipedia": "https://en.wikipedia.org/wiki/Vector_field",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "vector-space",
@@ -2869,7 +3503,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Vector_space"
+      "wikipedia": "https://en.wikipedia.org/wiki/Vector_space",
+      "primaryTag": "linear-algebra",
+      "isCentral": true
     },
     {
       "id": "vertex",
@@ -2878,7 +3514,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Vertex_(graph_theory)"
+      "wikipedia": "https://en.wikipedia.org/wiki/Vertex_(graph_theory)",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "vitali-covering-lemma",
@@ -2887,7 +3525,9 @@
       "tags": [
         "measure-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Vitali_covering_lemma"
+      "wikipedia": "https://en.wikipedia.org/wiki/Vitali_covering_lemma",
+      "primaryTag": "measure-theory",
+      "isCentral": false
     },
     {
       "id": "wave-equation",
@@ -2896,7 +3536,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Wave_equation"
+      "wikipedia": "https://en.wikipedia.org/wiki/Wave_equation",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "wedge-product",
@@ -2905,7 +3547,9 @@
       "tags": [
         "differential-geometry"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Exterior_algebra"
+      "wikipedia": "https://en.wikipedia.org/wiki/Exterior_algebra",
+      "primaryTag": "differential-geometry",
+      "isCentral": false
     },
     {
       "id": "weighted-graph",
@@ -2914,7 +3558,9 @@
       "tags": [
         "graph-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Glossary_of_graph_theory#weighted_graph"
+      "wikipedia": "https://en.wikipedia.org/wiki/Glossary_of_graph_theory#weighted_graph",
+      "primaryTag": "graph-theory",
+      "isCentral": false
     },
     {
       "id": "well-ordering-principle",
@@ -2924,7 +3570,9 @@
         "number-theory",
         "order-theory"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Well-ordering_principle"
+      "wikipedia": "https://en.wikipedia.org/wiki/Well-ordering_principle",
+      "primaryTag": "number-theory",
+      "isCentral": false
     },
     {
       "id": "wronskian",
@@ -2933,7 +3581,9 @@
       "tags": [
         "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Wronskian"
+      "wikipedia": "https://en.wikipedia.org/wiki/Wronskian",
+      "primaryTag": "differential-equations",
+      "isCentral": false
     },
     {
       "id": "zf-set-theory",
@@ -2943,7 +3593,9 @@
         "set-theory",
         "foundations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory"
+      "wikipedia": "https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory",
+      "primaryTag": "set-theory",
+      "isCentral": false
     }
   ],
   "edges": [

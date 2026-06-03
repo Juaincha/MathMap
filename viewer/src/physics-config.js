@@ -4,12 +4,12 @@
 
 // ── fcose layout (runs ONCE on load) ──────────────────────────────────────────
 export const FCOSE_QUALITY          = 'proof'     // 'draft' | 'default' | 'proof'
-export const FCOSE_RANDOMIZE        = true        // random seed → mejor separación inicial
-export const FCOSE_NODE_REPULSION   = 18000       // más repulsión → nodos más separados
-export const FCOSE_IDEAL_EDGE_LEN   = 150         // distancia de resorte más larga
+export const FCOSE_RANDOMIZE        = false
+export const FCOSE_NODE_REPULSION   = 18000
+export const FCOSE_IDEAL_EDGE_LEN   = 150
 export const FCOSE_EDGE_ELASTICITY  = 0.40
-export const FCOSE_GRAVITY          = 0.15        // gravedad más suave → más espacio
-export const FCOSE_ITERATIONS       = 5000        // más iteraciones → layout más resuelto
+export const FCOSE_GRAVITY          = 0.15
+export const FCOSE_ITERATIONS       = 5000
 export const FCOSE_ANIMATE          = false       // we handle positioning, skip anim
 export const FCOSE_FIT              = true
 export const FCOSE_PADDING          = 80
@@ -38,3 +38,13 @@ export const VELOCITY_DECAY         = 0.75
 
 // Hard stop: max ms the simulation runs after drag ends
 export const PHYSICS_STOP_DELAY_MS  = 1500
+
+// ── Smart zoom label thresholds ───────────────────────────────────────────────
+// Zoom levels that control label visibility.
+export const ZOOM_LABEL_NONE        = 0.5   // below this: no labels at all
+export const ZOOM_LABEL_HUBS_ONLY   = 1.2   // 0.5–1.2: only hub labels
+                                             // above 1.2: all labels
+// Top N% by degree are considered hubs (shown at medium zoom).
+export const HUB_DEGREE_PERCENTILE  = 0.85  // top 15 % → hubs
+// Debounce delay for the zoom handler (ms).
+export const ZOOM_DEBOUNCE_MS       = 80
