@@ -110,18 +110,30 @@ export async function createGraph() {
         </div>
       </div>
       <div class="filter-group">
-        <span class="filter-label">Type</span>
-        <div id="filters">
-          ${ALL_TYPES.map(t => `
-            <button class="filter-btn active" data-type="${t}"
-              style="--type-color:${TYPE_COLORS[t]}">
-              ${t}
-            </button>`).join('')}
+        <div class="filter-label-row">
+          <span class="filter-label">Type</span>
+          <button class="filter-quick" data-target="type" data-action="all">All</button>
+          <button class="filter-quick" data-target="type" data-action="none">None</button>
+        </div>
+        <div class="filter-scroll">
+          <div id="filters">
+            ${ALL_TYPES.map(t => `
+              <button class="filter-btn active" data-type="${t}"
+                style="--type-color:${TYPE_COLORS[t]}">
+                ${t}
+              </button>`).join('')}
+          </div>
         </div>
       </div>
       <div class="filter-group">
-        <span class="filter-label">Tag</span>
-        <div id="tag-filters"></div>
+        <div class="filter-label-row">
+          <span class="filter-label">Tag</span>
+          <button class="filter-quick" data-target="tag" data-action="all">All</button>
+          <button class="filter-quick" data-target="tag" data-action="none">None</button>
+        </div>
+        <div class="filter-scroll">
+          <div id="tag-filters"></div>
+        </div>
       </div>
     </div>
 
@@ -295,6 +307,27 @@ export async function createGraph() {
     const tag = btn.dataset.tag
     if (activeTags.has(tag)) { activeTags.delete(tag); btn.classList.remove('active') }
     else                      { activeTags.add(tag);    btn.classList.add('active')    }
+    applyFilters()
+  })
+
+  // ── All / None quick selectors ────────────────────────────────────────────────
+  document.getElementById('toolbar').addEventListener('click', e => {
+    const btn = e.target.closest('.filter-quick')
+    if (!btn) return
+    const { target, action } = btn.dataset
+    const selectAll = action === 'all'
+
+    if (target === 'type') {
+      ALL_TYPES.forEach(t => selectAll ? activeTypes.add(t) : activeTypes.delete(t))
+      document.querySelectorAll('#filters .filter-btn').forEach(b => {
+        b.classList.toggle('active', selectAll)
+      })
+    } else {
+      allTags.forEach(t => selectAll ? activeTags.add(t) : activeTags.delete(t))
+      document.querySelectorAll('#tag-filters .filter-btn').forEach(b => {
+        b.classList.toggle('active', selectAll)
+      })
+    }
     applyFilters()
   })
 

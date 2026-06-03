@@ -53,20 +53,53 @@ body {
   gap: 4px;
 }
 
+.filter-label-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .filter-label {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #999;
+  flex: 1;
 }
+
+.filter-quick {
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  color: #666;
+  cursor: pointer;
+  transition: background 120ms;
+}
+
+.filter-quick:hover {
+  background: #eee;
+}
+
+.filter-scroll {
+  max-height: 110px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.filter-scroll::-webkit-scrollbar       { width: 4px; }
+.filter-scroll::-webkit-scrollbar-track { background: transparent; }
+.filter-scroll::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
 
 #filters,
 #tag-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  max-width: 400px;
+  max-width: 360px;
 }
 
 .filter-btn {
