@@ -522,10 +522,8 @@ export async function createGraph() {
   // During hover, hovered node's edges bypass viewport culling.
 
   // Set of edge IDs that pass the filter (maintained by applyFilters).
-  // Pre-populated with ALL edges on init (all filters are active by default).
-  // applyFilters() rebuilds this set whenever the filter state changes.
+  // Starts empty — applyFilters() populates it on first call during init.
   const filterVisibleEdges = new Set()
-  cy.edges().forEach(edge => filterVisibleEdges.add(edge.id()))
 
   // Set of edge IDs hidden by the viewport culler (subset of filterVisibleEdges).
   let culledEdgeIds = new Set()          // currently culled (display:none) by us
@@ -643,9 +641,20 @@ export async function createGraph() {
 
   cy.on('zoom pan', onViewportChange)
 
-  // Apply the initial label + culling state based on the post-layout zoom level.
+  // ── Combined filter state ─────────────────────────────────────────────────────
+  const DEFAULT_TAG = 'number-theory'
+  const activeTypes = new Set(ALL_TYPES)
+  const activeTags  = new Set([DEFAULT_TAG])
+
+  document.getElementById('tag-filters').innerHTML = allTags.map(t => `
+    <button class="filter-btn${t === DEFAULT_TAG ? ' active' : ''}" data-tag="${t}"
+      style="--type-color:${TAG_COLORS[t]}">
+      ${t}
+    </button>`).join('')
+
+  // Apply zoom labels, then filter (which calls applyEdgeCulling internally).
   applyZoomLabels()
-  applyEdgeCulling()
+  applyFilters()
 
   // ── Wire search ───────────────────────────────────────────────────────────────
   initializeSearch(cy, graph.nodes, node => {
@@ -669,16 +678,6 @@ export async function createGraph() {
     clearHighlight()
     cy.fit()
   }
-
-  document.getElementById('tag-filters').innerHTML = allTags.map(t => `
-    <button class="filter-btn active" data-tag="${t}"
-      style="--type-color:${TAG_COLORS[t]}">
-      ${t}
-    </button>`).join('')
-
-  // ── Combined filter state ─────────────────────────────────────────────────────
-  const activeTypes = new Set(ALL_TYPES)
-  const activeTags  = new Set(allTags)
 
   function nodeVisible(node) {
     const type = node.data('type')
@@ -727,8 +726,19 @@ export async function createGraph() {
     const btn = e.target.closest('.filter-btn')
     if (!btn) return
     const tag = btn.dataset.tag
-    if (activeTags.has(tag)) { activeTags.delete(tag); btn.classList.remove('active') }
-    else                      { activeTags.add(tag);    btn.classList.add('active')    }
+
+    if (e.shiftKey) {
+      // Shift+click: toggle this tag without affecting others
+      if (activeTags.has(tag)) { activeTags.delete(tag); btn.classList.remove('active') }
+      else                      { activeTags.add(tag);    btn.classList.add('active')    }
+    } else {
+      // Plain click: exclusive selection — deselect all, select only this one
+      activeTags.clear()
+      activeTags.add(tag)
+      document.querySelectorAll('#tag-filters .filter-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.tag === tag)
+      })
+    }
     applyFilters()
   })
 
