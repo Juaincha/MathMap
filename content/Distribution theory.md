@@ -9,7 +9,7 @@ tags:
 wikipedia: https://en.wikipedia.org/wiki/Distribution_(mathematics)
 
 depends_on:
-  - dual-space
+  - dual-space-linear
   - schwartz-space
 ---
 

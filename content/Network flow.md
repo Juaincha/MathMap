@@ -13,9 +13,9 @@ depends_on:
   - weighted-graph
 ---
 
-# Network Flow
+# Network flow
 
 ## Dependencies
 
-[[Directed Graph]]
-[[Weighted Graph]]
+[[Directed graph]]
+[[Weighted graph]]

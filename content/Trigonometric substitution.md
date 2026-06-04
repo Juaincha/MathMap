@@ -12,8 +12,8 @@ depends_on:
   - substitution-rule
 ---
 
-# Trigonometric Substitution
+# Trigonometric substitution
 
 ## Dependencies
 
-[[Substitution Rule]]
+[[Substitution rule]]

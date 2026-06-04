@@ -12,4 +12,4 @@ wikipedia: https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory
 depends_on: []
 ---
 
-# Zermelo–Fraenkel Set Theory
+# Zermelo–Fraenkel set theory

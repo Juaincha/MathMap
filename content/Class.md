@@ -17,6 +17,6 @@ depends_on:
 
 ## Dependencies
 
-[[ZF Set Theory]]
+[[Zermelo–Fraenkel set theory]]
 
-[[First-Order Logic]]
+[[First-order logic]]

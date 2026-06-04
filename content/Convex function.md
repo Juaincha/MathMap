@@ -13,7 +13,7 @@ depends_on:
   - continuity
 ---
 
-# Convex Function
+# Convex function
 
 ## Dependencies
 

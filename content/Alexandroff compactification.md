@@ -10,12 +10,12 @@ depends_on:
   - hausdorff-space
 ---
 
-# Alexandroff Compactification
+# Alexandroff compactification
 
 ## Dependencies
 
-[[One-Point Compactification]]
+[[One-point compactification]]
 
-[[Locally Compact Space]]
+[[Locally compact space]]
 
-[[Hausdorff Space]]
+[[Hausdorff space]]

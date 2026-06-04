@@ -13,9 +13,9 @@ depends_on:
   - degree-of-a-vertex
 ---
 
-# Euler Path
+# Euler path
 
 ## Dependencies
 
-[[Path in a Graph]]
-[[Degree of a Vertex]]
+[[Path in a graph]]
+[[Degree of a vertex]]

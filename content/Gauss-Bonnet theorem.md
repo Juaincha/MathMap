@@ -14,10 +14,10 @@ depends_on:
   - riemannian-metric
 ---
 
-# Gauss-Bonnet Theorem
+# Gauss-Bonnet theorem
 
 ## Dependencies
 
 [[Curvature]]
-[[Euler Characteristic]]
-[[Riemannian Metric]]
+[[Euler characteristic]]
+[[Riemannian metric]]

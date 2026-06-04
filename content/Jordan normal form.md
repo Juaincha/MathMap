@@ -10,12 +10,12 @@ depends_on:
   - minimal-polynomial-matrix
 ---
 
-# Jordan Normal Form
+# Jordan normal form
 
 ## Dependencies
 
 [[Matrix]]
 
-[[Eigenvalue and Eigenvector]]
+[[Eigenvalue and eigenvector]]
 
-[[Minimal Polynomial of a Matrix]]
+[[Minimal polynomial of a matrix]]

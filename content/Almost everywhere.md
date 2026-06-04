@@ -12,8 +12,8 @@ depends_on:
   - null-set
 ---
 
-# Almost Everywhere
+# Almost everywhere
 
 ## Dependencies
 
-[[Null Set]]
+[[Null set]]

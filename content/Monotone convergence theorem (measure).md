@@ -13,9 +13,9 @@ depends_on:
   - measurable-function
 ---
 
-# Monotone Convergence Theorem (Measure)
+# Monotone convergence theorem (measure)
 
 ## Dependencies
 
-[[Lebesgue Integral]]
-[[Measurable Function]]
+[[Lebesgue integral]]
+[[Measurable function]]

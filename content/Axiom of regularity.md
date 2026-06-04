@@ -12,8 +12,8 @@ depends_on:
   - zf-set-theory
 ---
 
-# Axiom of Regularity
+# Axiom of regularity
 
 ## Dependencies
 
-[[ZF Set Theory]]
+[[Zermelo–Fraenkel set theory]]

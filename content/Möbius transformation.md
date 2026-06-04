@@ -13,9 +13,9 @@ depends_on:
   - conformal-map
 ---
 
-# Möbius Transformation
+# Möbius transformation
 
 ## Dependencies
 
-[[Complex Number]]
-[[Conformal Map]]
+[[Complex number]]
+[[Conformal map]]

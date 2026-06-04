@@ -10,12 +10,12 @@ depends_on:
   - lipschitz-continuity
 ---
 
-# Existence and Uniqueness Theorem for ODEs
+# Existence and uniqueness theorem for ODEs
 
 ## Dependencies
 
-[[Ordinary Differential Equation]]
+[[Ordinary differential equation]]
 
-[[Initial Value Problem]]
+[[Initial value problem]]
 
-[[Lipschitz Continuity]]
+[[Lipschitz continuity]]

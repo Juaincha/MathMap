@@ -13,9 +13,9 @@ depends_on:
   - primitive-root
 ---
 
-# Quadratic Residue
+# Quadratic residue
 
 ## Dependencies
 
 [[Congruence]]
-[[Primitive Root]]
+[[Primitive root]]

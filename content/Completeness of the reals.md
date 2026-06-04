@@ -14,10 +14,10 @@ depends_on:
   - real-number-axioms
 ---
 
-# Completeness of the Reals
+# Completeness of the reals
 
 ## Dependencies
 
-[[Supremum and Infimum]]
+[[Supremum and infimum]]
 [[Cauchy sequence]]
 [[Real number axioms]]

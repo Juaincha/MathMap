@@ -13,9 +13,9 @@ depends_on:
   - prime-number
 ---
 
-# Euler's Totient Function
+# Euler's totient function
 
 ## Dependencies
 
-[[Greatest Common Divisor]]
-[[Prime Number]]
+[[Greatest common divisor]]
+[[Prime number]]

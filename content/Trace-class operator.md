@@ -18,7 +18,7 @@ depends_on:
 
 ## Dependencies
 
-[[Hilbert Space]]
+[[Hilbert space]]
 
 [[Compact operator]]
 

@@ -9,10 +9,10 @@ depends_on:
   - vector-space
 ---
 
-# Symmetric Bilinear Form
+# Symmetric bilinear form
 
 ## Dependencies
 
-[[Bilinear Form]]
+[[Bilinear form]]
 
-[[Vector Space]]
+[[Vector space]]

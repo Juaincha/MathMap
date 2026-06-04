@@ -12,8 +12,8 @@ depends_on:
   - absolute-value
 ---
 
-# Triangle Inequality
+# Triangle inequality
 
 ## Dependencies
 
-[[Absolute Value]]
+[[Absolute value]]

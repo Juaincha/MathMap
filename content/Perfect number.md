@@ -9,10 +9,10 @@ depends_on:
   - prime-factorization
 ---
 
-# Perfect Number
+# Perfect number
 
 ## Dependencies
 
 [[Divisibility]]
 
-[[Prime Factorization]]
+[[Prime factorization]]

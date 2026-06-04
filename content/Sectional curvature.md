@@ -13,9 +13,9 @@ depends_on:
   - tangent-space
 ---
 
-# Sectional Curvature
+# Sectional curvature
 
 ## Dependencies
 
-[[Riemann Curvature Tensor]]
-[[Tangent Space]]
+[[Riemann curvature tensor]]
+[[Tangent space]]

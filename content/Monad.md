@@ -20,6 +20,6 @@ depends_on:
 
 [[Functor]]
 
-[[Natural Transformation]]
+[[Natural transformation]]
 
-[[Adjoint Functor]]
+[[Adjoint functor]]

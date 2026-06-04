@@ -14,12 +14,12 @@ depends_on:
   - schroeder-bernstein-theorem
 ---
 
-# Cardinal Arithmetic
+# Cardinal arithmetic
 
 ## Dependencies
 
 [[Cardinality]]
 
-[[Ordinal Arithmetic]]
+[[Ordinal arithmetic]]
 
-[[Schroeder-Bernstein Theorem]]
+[[Schroeder-Bernstein theorem]]

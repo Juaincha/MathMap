@@ -9,10 +9,10 @@ depends_on:
   - divisibility
 ---
 
-# Composite Number
+# Composite number
 
 ## Dependencies
 
-[[Prime Number]]
+[[Prime number]]
 
 [[Divisibility]]

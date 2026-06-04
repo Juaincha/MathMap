@@ -12,8 +12,8 @@ depends_on:
   - zf-set-theory
 ---
 
-# Axiom of Extensionality
+# Axiom of extensionality
 
 ## Dependencies
 
-[[ZF Set Theory]]
+[[Zermelo–Fraenkel set theory]]

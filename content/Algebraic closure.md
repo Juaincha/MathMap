@@ -14,10 +14,10 @@ depends_on:
   - splitting-field
 ---
 
-# Algebraic Closure
+# Algebraic closure
 
 ## Dependencies
 
-[[Field Extension]]
-[[Algebraic Element]]
-[[Splitting Field]]
+[[Field extension]]
+[[Algebraic element]]
+[[Splitting field]]

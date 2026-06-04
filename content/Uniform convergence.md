@@ -12,8 +12,8 @@ depends_on:
   - pointwise-convergence
 ---
 
-# Uniform Convergence
+# Uniform convergence
 
 ## Dependencies
 
-[[Pointwise Convergence]]
+[[Pointwise convergence]]

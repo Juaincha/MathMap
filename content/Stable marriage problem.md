@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Bipartite Graph]]
+[[Bipartite graph]]
 [[Greedy algorithm]]

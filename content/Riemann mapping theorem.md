@@ -14,10 +14,10 @@ depends_on:
   - simply-connected-space
 ---
 
-# Riemann Mapping Theorem
+# Riemann mapping theorem
 
 ## Dependencies
 
-[[Holomorphic Function]]
-[[Conformal Map]]
-[[Simply Connected Space]]
+[[Holomorphic function]]
+[[Conformal map]]
+[[Simply connected space]]

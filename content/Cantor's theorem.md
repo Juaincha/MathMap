@@ -14,11 +14,11 @@ depends_on:
   - surjection-set
 ---
 
-# Cantor's Theorem
+# Cantor's theorem
 
 ## Dependencies
 
-[[Power Set]]
+[[Power set]]
 
 [[Cardinality]]
 

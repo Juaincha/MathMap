@@ -13,9 +13,9 @@ depends_on:
   - chain-rule
 ---
 
-# Substitution Rule
+# Substitution rule
 
 ## Dependencies
 
 [[Antiderivative]]
-[[Chain Rule]]
+[[Chain rule]]

@@ -20,6 +20,6 @@ depends_on:
 
 [[Field]]
 
-[[Vector Space]]
+[[Vector space]]
 
 [[Ring]]

@@ -13,9 +13,9 @@ depends_on:
   - algebraic-element
 ---
 
-# Transcendental Element
+# Transcendental element
 
 ## Dependencies
 
-[[Field Extension]]
-[[Algebraic Element]]
+[[Field extension]]
+[[Algebraic element]]

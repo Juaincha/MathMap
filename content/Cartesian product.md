@@ -12,8 +12,8 @@ depends_on:
   - set-operations
 ---
 
-# Cartesian Product
+# Cartesian product
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]

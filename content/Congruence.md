@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Modular Arithmetic]]
+[[Modular arithmetic]]
 [[Divisibility]]

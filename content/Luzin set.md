@@ -13,9 +13,9 @@ depends_on:
   - null-set
 ---
 
-# Luzin Set
+# Luzin set
 
 ## Dependencies
 
-[[Baire Category Theorem]]
-[[Null Set]]
+[[Baire category theorem]]
+[[Null set]]

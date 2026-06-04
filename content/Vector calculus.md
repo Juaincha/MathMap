@@ -13,9 +13,9 @@ depends_on:
   - gradient
 ---
 
-# Vector Calculus
+# Vector calculus
 
 ## Dependencies
 
-[[Partial Derivative]]
+[[Partial derivative]]
 [[Gradient]]

@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Minimum Spanning Tree]]
+[[Minimum spanning tree]]
 [[Greedy algorithm]]

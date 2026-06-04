@@ -13,9 +13,9 @@ depends_on:
   - power-series
 ---
 
-# Ordinary Generating Function
+# Ordinary generating function
 
 ## Dependencies
 
-[[Generating Function]]
-[[Power Series]]
+[[Generating function]]
+[[Power series]]

@@ -13,9 +13,9 @@ depends_on:
   - limit-of-a-function
 ---
 
-# L'Hôpital's Rule
+# L'Hôpital's rule
 
 ## Dependencies
 
-[[Mean Value Theorem]]
-[[Limit of a Function]]
+[[Mean value theorem]]
+[[Limit of a function]]

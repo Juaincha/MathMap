@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Inner Product Space]]
+[[Inner product space]]

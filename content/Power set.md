@@ -13,10 +13,10 @@ depends_on:
   - axiom-of-power-set
 ---
 
-# Power Set
+# Power set
 
 ## Dependencies
 
 [[Subset]]
 
-[[Axiom of Power Set]]
+[[Axiom of power set]]

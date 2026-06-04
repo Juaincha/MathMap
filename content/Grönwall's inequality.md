@@ -9,10 +9,10 @@ depends_on:
   - riemann-integral
 ---
 
-# Grönwall's Inequality
+# Grönwall's inequality
 
 ## Dependencies
 
-[[Ordinary Differential Equation]]
+[[Ordinary differential equation]]
 
-[[Riemann Integral]]
+[[Riemann integral]]

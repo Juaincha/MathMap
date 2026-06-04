@@ -13,9 +13,9 @@ depends_on:
   - vector-space
 ---
 
-# Tangent Space
+# Tangent space
 
 ## Dependencies
 
-[[Smooth Manifold]]
-[[Vector Space]]
+[[Smooth manifold]]
+[[Vector space]]

@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[C*-algebra]]
+[[C-star algebra]]
 
-[[Hilbert Space]]
+[[Hilbert space]]
 
 [[Weak topology]]

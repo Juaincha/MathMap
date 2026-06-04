@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[ZF Set Theory]]
+[[Zermelo–Fraenkel set theory]]
 
-[[Partial Order]]
+[[Partial order]]
 
-[[Generic Extension]]
+[[Generic extension]]

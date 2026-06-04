@@ -12,8 +12,8 @@ depends_on:
   - zf-set-theory
 ---
 
-# Axiom of Union
+# Axiom of union
 
 ## Dependencies
 
-[[ZF Set Theory]]
+[[Zermelo–Fraenkel set theory]]

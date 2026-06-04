@@ -14,10 +14,10 @@ depends_on:
   - convergence
 ---
 
-# Law of Large Numbers
+# Law of large numbers
 
 ## Dependencies
 
-[[Expected Value]]
+[[Expected value]]
 [[Variance]]
 [[Convergence]]

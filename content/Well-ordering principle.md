@@ -14,9 +14,9 @@ depends_on:
   - mathematical-induction
 ---
 
-# Well-Ordering Principle
+# Well-ordering principle
 
 ## Dependencies
 
-[[Peano Axioms]]
-[[Mathematical Induction]]
+[[Peano axioms]]
+[[Mathematical induction]]

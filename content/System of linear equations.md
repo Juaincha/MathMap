@@ -13,7 +13,7 @@ depends_on:
   - field
 ---
 
-# System of Linear Equations
+# System of linear equations
 
 ## Dependencies
 

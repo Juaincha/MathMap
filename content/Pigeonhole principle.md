@@ -13,7 +13,7 @@ depends_on:
   - function
 ---
 
-# Pigeonhole Principle
+# Pigeonhole principle
 
 ## Dependencies
 

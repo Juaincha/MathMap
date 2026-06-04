@@ -13,9 +13,9 @@ depends_on:
   - limit-of-a-function
 ---
 
-# Improper Integral
+# Improper integral
 
 ## Dependencies
 
-[[Definite Integral]]
-[[Limit of a Function]]
+[[Definite integral]]
+[[Limit of a function]]

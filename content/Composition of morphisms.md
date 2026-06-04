@@ -12,7 +12,7 @@ depends_on:
   - morphism
 ---
 
-# Composition of Morphisms
+# Composition of morphisms
 
 ## Dependencies
 

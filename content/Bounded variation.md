@@ -12,8 +12,8 @@ depends_on:
   - total-variation-function
 ---
 
-# Bounded Variation
+# Bounded variation
 
 ## Dependencies
 
-[[Total Variation of a Function]]
+[[Total variation of a function]]

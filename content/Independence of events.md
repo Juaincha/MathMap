@@ -12,8 +12,8 @@ depends_on:
   - conditional-probability
 ---
 
-# Independence of Events
+# Independence of events
 
 ## Dependencies
 
-[[Conditional Probability]]
+[[Conditional probability]]

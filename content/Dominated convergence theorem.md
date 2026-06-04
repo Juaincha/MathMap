@@ -14,10 +14,10 @@ depends_on:
   - almost-everywhere
 ---
 
-# Dominated Convergence Theorem
+# Dominated convergence theorem
 
 ## Dependencies
 
-[[Lebesgue Integral]]
-[[Fatou's Lemma]]
-[[Almost Everywhere]]
+[[Lebesgue integral]]
+[[Fatou's lemma]]
+[[Almost everywhere]]

@@ -9,10 +9,10 @@ depends_on:
   - holomorphic-function
 ---
 
-# Elliptic Function
+# Elliptic function
 
 ## Dependencies
 
-[[Meromorphic Function]]
+[[Meromorphic function]]
 
-[[Holomorphic Function]]
+[[Holomorphic function]]

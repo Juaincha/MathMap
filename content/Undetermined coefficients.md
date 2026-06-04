@@ -13,9 +13,9 @@ depends_on:
   - particular-solution
 ---
 
-# Undetermined Coefficients
+# Undetermined coefficients
 
 ## Dependencies
 
-[[Constant Coefficient ODE]]
-[[Particular Solution]]
+[[Constant coefficient ODE]]
+[[Particular solution]]

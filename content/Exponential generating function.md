@@ -13,9 +13,9 @@ depends_on:
   - permutation
 ---
 
-# Exponential Generating Function
+# Exponential generating function
 
 ## Dependencies
 
-[[Generating Function]]
+[[Generating function]]
 [[Permutation]]

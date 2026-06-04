@@ -17,6 +17,6 @@ depends_on:
 
 ## Dependencies
 
-[[Polynomial Ring]]
+[[Polynomial ring]]
 
 [[Ideal]]

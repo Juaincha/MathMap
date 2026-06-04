@@ -14,10 +14,10 @@ depends_on:
   - vector-calculus
 ---
 
-# Divergence Theorem
+# Divergence theorem
 
 ## Dependencies
 
-[[Surface Integral]]
-[[Triple Integral]]
-[[Vector Calculus]]
+[[Surface integral]]
+[[Triple integral]]
+[[Vector calculus]]

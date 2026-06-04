@@ -13,9 +13,9 @@ depends_on:
   - measurable-set
 ---
 
-# Vitali Covering Lemma
+# Vitali covering lemma
 
 ## Dependencies
 
-[[Lebesgue Measure]]
-[[Measurable Set]]
+[[Lebesgue measure]]
+[[Measurable set]]

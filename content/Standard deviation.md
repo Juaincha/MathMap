@@ -12,7 +12,7 @@ depends_on:
   - variance
 ---
 
-# Standard Deviation
+# Standard deviation
 
 ## Dependencies
 

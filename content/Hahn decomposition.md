@@ -13,9 +13,9 @@ depends_on:
   - measurable-set
 ---
 
-# Hahn Decomposition
+# Hahn decomposition
 
 ## Dependencies
 
-[[Signed Measure]]
-[[Measurable Set]]
+[[Signed measure]]
+[[Measurable set]]

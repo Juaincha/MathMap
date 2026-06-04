@@ -13,9 +13,9 @@ depends_on:
   - cauchy-riemann-equations
 ---
 
-# Conformal Map
+# Conformal map
 
 ## Dependencies
 
-[[Holomorphic Function]]
-[[Cauchy-Riemann Equations]]
+[[Holomorphic function]]
+[[Cauchy-Riemann equations]]

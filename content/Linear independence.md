@@ -12,8 +12,8 @@ depends_on:
   - vector-space
 ---
 
-# Linear Independence
+# Linear independence
 
 ## Dependencies
 
-[[Vector Space]]
+[[Vector space]]

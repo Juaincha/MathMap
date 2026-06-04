@@ -9,10 +9,10 @@ depends_on:
   - linear-map
 ---
 
-# Bilinear Form
+# Bilinear form
 
 ## Dependencies
 
-[[Vector Space]]
+[[Vector space]]
 
-[[Linear Map]]
+[[Linear map]]

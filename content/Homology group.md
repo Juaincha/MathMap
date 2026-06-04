@@ -14,10 +14,10 @@ depends_on:
   - exact-sequence
 ---
 
-# Homology Group
+# Homology group
 
 ## Dependencies
 
-[[CW Complex]]
-[[Abelian Group]]
-[[Exact Sequence]]
+[[CW complex]]
+[[Abelian group]]
+[[Exact sequence]]

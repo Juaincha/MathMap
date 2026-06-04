@@ -10,12 +10,12 @@ depends_on:
   - random-walk
 ---
 
-# Brownian Motion
+# Brownian motion
 
 ## Dependencies
 
-[[Stochastic Process]]
+[[Stochastic process]]
 
-[[Normal Distribution]]
+[[Normal distribution]]
 
-[[Random Walk]]
+[[Random walk]]

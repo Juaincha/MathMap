@@ -13,7 +13,7 @@ depends_on:
   - homotopy
 ---
 
-# CW Complex
+# CW complex
 
 ## Dependencies
 

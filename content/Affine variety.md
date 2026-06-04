@@ -18,7 +18,7 @@ depends_on:
 
 ## Dependencies
 
-[[Polynomial Ring]]
+[[Polynomial ring]]
 
 [[Field]]
 

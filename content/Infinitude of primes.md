@@ -14,10 +14,10 @@ depends_on:
   - euclidean-division
 ---
 
-# Infinitude of Primes
+# Infinitude of primes
 
 ## Dependencies
 
-[[Prime Number]]
-[[Mathematical Induction]]
-[[Euclidean Division]]
+[[Prime number]]
+[[Mathematical induction]]
+[[Euclidean division]]

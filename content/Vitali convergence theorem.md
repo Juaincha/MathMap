@@ -14,12 +14,12 @@ depends_on:
   - measure-space
 ---
 
-# Vitali Convergence Theorem
+# Vitali convergence theorem
 
 ## Dependencies
 
-[[Uniform Integrability]]
+[[Uniform integrability]]
 
-[[Lebesgue Integral]]
+[[Lebesgue integral]]
 
-[[Measure Space]]
+[[Measure space]]

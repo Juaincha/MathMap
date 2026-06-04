@@ -14,12 +14,12 @@ depends_on:
   - lebesgue-measure
 ---
 
-# Lusin Theorem
+# Lusin theorem
 
 ## Dependencies
 
-[[Measurable Function]]
+[[Measurable function]]
 
 [[Continuity]]
 
-[[Lebesgue Measure]]
+[[Lebesgue measure]]

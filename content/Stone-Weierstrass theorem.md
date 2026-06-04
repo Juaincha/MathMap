@@ -15,14 +15,14 @@ depends_on:
   - uniform-convergence
 ---
 
-# Stone-Weierstrass Theorem
+# Stone-Weierstrass theorem
 
 ## Dependencies
 
-[[Weierstrass Approximation Theorem]]
+[[Weierstrass approximation theorem]]
 
 [[Continuity]]
 
-[[Compact Set]]
+[[Compact set]]
 
-[[Uniform Convergence]]
+[[Uniform convergence]]

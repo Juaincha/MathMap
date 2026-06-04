@@ -9,10 +9,10 @@ depends_on:
   - rank-of-a-matrix
 ---
 
-# Rank Function of a Matroid
+# Rank function of a matroid
 
 ## Dependencies
 
 [[Matroid]]
 
-[[Rank of a Matrix]]
+[[Rank of a matrix]]

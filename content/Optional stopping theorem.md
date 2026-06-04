@@ -10,12 +10,12 @@ depends_on:
   - expected-value
 ---
 
-# Optional Stopping Theorem
+# Optional stopping theorem
 
 ## Dependencies
 
 [[Martingale]]
 
-[[Stopping Time]]
+[[Stopping time]]
 
-[[Expected Value]]
+[[Expected value]]

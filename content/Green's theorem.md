@@ -14,10 +14,10 @@ depends_on:
   - vector-calculus
 ---
 
-# Green's Theorem
+# Green's theorem
 
 ## Dependencies
 
-[[Line Integral]]
-[[Double Integral]]
-[[Vector Calculus]]
+[[Line integral]]
+[[Double integral]]
+[[Vector calculus]]

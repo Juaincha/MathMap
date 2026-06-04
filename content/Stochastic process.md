@@ -10,12 +10,12 @@ depends_on:
   - sample-space
 ---
 
-# Stochastic Process
+# Stochastic process
 
 ## Dependencies
 
-[[Random Variable]]
+[[Random variable]]
 
-[[Probability Axioms]]
+[[Probability axioms]]
 
-[[Sample Space]]
+[[Sample space]]

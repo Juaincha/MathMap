@@ -14,12 +14,12 @@ depends_on:
   - category
 ---
 
-# Derived Category
+# Derived category
 
 ## Dependencies
 
-[[Abelian Category]]
+[[Abelian category]]
 
-[[Exact Sequence]]
+[[Exact sequence]]
 
 [[Category]]

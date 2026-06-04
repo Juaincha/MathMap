@@ -13,9 +13,9 @@ depends_on:
   - greatest-common-divisor
 ---
 
-# Bézout's Identity
+# Bézout's identity
 
 ## Dependencies
 
-[[Euclidean Algorithm]]
-[[Greatest Common Divisor]]
+[[Euclidean algorithm]]
+[[Greatest common divisor]]

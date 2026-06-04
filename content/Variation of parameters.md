@@ -14,10 +14,10 @@ depends_on:
   - particular-solution
 ---
 
-# Variation of Parameters
+# Variation of parameters
 
 ## Dependencies
 
 [[Linear ODE]]
 [[Wronskian]]
-[[Particular Solution]]
+[[Particular solution]]

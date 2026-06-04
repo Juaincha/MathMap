@@ -13,7 +13,7 @@ depends_on:
   - edge
 ---
 
-# Degree of a Vertex
+# Degree of a vertex
 
 ## Dependencies
 

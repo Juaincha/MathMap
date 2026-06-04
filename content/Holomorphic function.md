@@ -14,10 +14,10 @@ depends_on:
   - limit-of-a-function
 ---
 
-# Holomorphic Function
+# Holomorphic function
 
 ## Dependencies
 
-[[Complex Number]]
+[[Complex number]]
 [[Differentiability]]
-[[Limit of a Function]]
+[[Limit of a function]]

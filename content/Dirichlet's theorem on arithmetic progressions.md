@@ -10,12 +10,12 @@ depends_on:
   - congruence
 ---
 
-# Dirichlet's Theorem on Arithmetic Progressions
+# Dirichlet's theorem on arithmetic progressions
 
 ## Dependencies
 
-[[Prime Number]]
+[[Prime number]]
 
-[[Dirichlet Series]]
+[[Dirichlet series]]
 
 [[Congruence]]

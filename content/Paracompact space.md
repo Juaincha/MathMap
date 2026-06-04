@@ -14,10 +14,10 @@ depends_on:
   - open-set
 ---
 
-# Paracompact Space
+# Paracompact space
 
 ## Dependencies
 
 [[Topology]]
-[[Compact Set]]
-[[Open Set]]
+[[Compact set]]
+[[Open set]]

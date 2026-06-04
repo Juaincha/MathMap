@@ -11,4 +11,4 @@ wikipedia: https://en.wikipedia.org/wiki/Propositional_calculus
 depends_on: []
 ---
 
-# Propositional Logic
+# Propositional logic

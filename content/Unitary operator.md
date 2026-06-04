@@ -20,6 +20,6 @@ depends_on:
 
 [[Adjoint operator]]
 
-[[Hilbert Space]]
+[[Hilbert space]]
 
-[[Inner Product Space]]
+[[Inner product space]]

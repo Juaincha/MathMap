@@ -13,9 +13,9 @@ depends_on:
   - cauchy-schwarz-inequality
 ---
 
-# Inner Product Space
+# Inner product space
 
 ## Dependencies
 
-[[Vector Space]]
-[[Cauchy–Schwarz Inequality]]
+[[Vector space]]
+[[Cauchy–Schwarz inequality]]

@@ -14,7 +14,7 @@ depends_on:
   - vertex
 ---
 
-# Adjacency Matrix
+# Adjacency matrix
 
 ## Dependencies
 

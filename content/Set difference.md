@@ -13,10 +13,10 @@ depends_on:
   - axiom-of-separation
 ---
 
-# Set Difference
+# Set difference
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]
 
-[[Axiom of Separation]]
+[[Axiom of separation]]

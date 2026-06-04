@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Covariance]]
-[[Standard Deviation]]
+[[Standard deviation]]

@@ -12,8 +12,8 @@ depends_on:
   - nowhere-dense-set
 ---
 
-# Meager Set
+# Meager set
 
 ## Dependencies
 
-[[Nowhere Dense Set]]
+[[Nowhere dense set]]

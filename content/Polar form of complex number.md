@@ -13,9 +13,9 @@ depends_on:
   - argument-of-complex-number
 ---
 
-# Polar Form of Complex Number
+# Polar form of complex number
 
 ## Dependencies
 
-[[Modulus of Complex Number]]
-[[Argument of Complex Number]]
+[[Modulus of complex number]]
+[[Argument of complex number]]

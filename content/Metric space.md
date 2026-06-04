@@ -14,10 +14,10 @@ depends_on:
   - triangle-inequality
 ---
 
-# Metric Space
+# Metric space
 
 ## Dependencies
 
-[[Set Operations]]
-[[Absolute Value]]
-[[Triangle Inequality]]
+[[Set operations]]
+[[Absolute value]]
+[[Triangle inequality]]

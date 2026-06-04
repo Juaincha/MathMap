@@ -13,10 +13,10 @@ depends_on:
   - metric-space
 ---
 
-# Lipschitz Function
+# Lipschitz function
 
 ## Dependencies
 
-[[Lipschitz Continuity]]
+[[Lipschitz continuity]]
 
-[[Metric Space]]
+[[Metric space]]

@@ -10,12 +10,12 @@ depends_on:
   - regular-space
 ---
 
-# Metrization Theorem
+# Metrization theorem
 
 ## Dependencies
 
-[[Metric Space]]
+[[Metric space]]
 
-[[Normal Space]]
+[[Normal space]]
 
-[[Regular Space]]
+[[Regular space]]

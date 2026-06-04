@@ -13,9 +13,9 @@ depends_on:
   - riemannian-metric
 ---
 
-# Ricci Scalar
+# Ricci scalar
 
 ## Dependencies
 
-[[Ricci Tensor]]
-[[Riemannian Metric]]
+[[Ricci tensor]]
+[[Riemannian metric]]

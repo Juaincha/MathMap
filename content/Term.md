@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Formal language]]
-[[First-Order Logic]]
+[[First-order logic]]

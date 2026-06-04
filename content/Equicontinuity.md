@@ -19,4 +19,4 @@ depends_on:
 
 [[Continuity]]
 
-[[Uniform Continuity]]
+[[Uniform continuity]]

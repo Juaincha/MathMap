@@ -13,7 +13,7 @@ depends_on:
   - vertex
 ---
 
-# Bipartite Graph
+# Bipartite graph
 
 ## Dependencies
 

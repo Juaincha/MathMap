@@ -13,9 +13,9 @@ depends_on:
   - function
 ---
 
-# Random Variable
+# Random variable
 
 ## Dependencies
 
-[[Probability Axioms]]
+[[Probability axioms]]
 [[Function]]

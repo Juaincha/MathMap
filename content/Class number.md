@@ -10,12 +10,12 @@ depends_on:
   - integral-domain
 ---
 
-# Class Number
+# Class number
 
 ## Dependencies
 
 [[Ideal]]
 
-[[Principal Ideal]]
+[[Principal ideal]]
 
-[[Integral Domain]]
+[[Integral domain]]

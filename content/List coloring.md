@@ -13,9 +13,9 @@ depends_on:
   - chromatic-number
 ---
 
-# List Coloring
+# List coloring
 
 ## Dependencies
 
-[[Graph Coloring]]
-[[Chromatic Number]]
+[[Graph coloring]]
+[[Chromatic number]]

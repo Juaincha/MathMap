@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Partial Derivative]]
-[[Vector Space]]
+[[Partial derivative]]
+[[Vector space]]

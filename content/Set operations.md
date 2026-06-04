@@ -12,8 +12,8 @@ depends_on:
   - zf-set-theory
 ---
 
-# Set Operations
+# Set operations
 
 ## Dependencies
 
-[[Zermelo–Fraenkel Set Theory]]
+[[Zermelo–Fraenkel set theory]]

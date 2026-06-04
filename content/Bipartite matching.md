@@ -13,9 +13,9 @@ depends_on:
   - edge
 ---
 
-# Bipartite Matching
+# Bipartite matching
 
 ## Dependencies
 
-[[Bipartite Graph]]
+[[Bipartite graph]]
 [[Edge]]

@@ -12,8 +12,8 @@ depends_on:
   - sigma-algebra
 ---
 
-# Measurable Set
+# Measurable set
 
 ## Dependencies
 
-[[Sigma-Algebra]]
+[[Sigma-algebra]]

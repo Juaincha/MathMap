@@ -12,7 +12,7 @@ depends_on:
   - function
 ---
 
-# Superadditive Function
+# Superadditive function
 
 ## Dependencies
 

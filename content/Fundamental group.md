@@ -13,7 +13,7 @@ depends_on:
   - group
 ---
 
-# Fundamental Group
+# Fundamental group
 
 ## Dependencies
 

@@ -13,9 +13,9 @@ depends_on:
   - supremum-and-infimum
 ---
 
-# Archimedean Property
+# Archimedean property
 
 ## Dependencies
 
-[[Real Number Axioms]]
-[[Supremum and Infimum]]
+[[Real number axioms]]
+[[Supremum and infimum]]

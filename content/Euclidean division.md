@@ -13,9 +13,9 @@ depends_on:
   - well-ordering-principle
 ---
 
-# Euclidean Division
+# Euclidean division
 
 ## Dependencies
 
-[[Peano Axioms]]
-[[Well-Ordering Principle]]
+[[Peano axioms]]
+[[Well-ordering principle]]

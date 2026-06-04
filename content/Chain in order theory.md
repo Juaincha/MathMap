@@ -19,4 +19,4 @@ depends_on:
 
 [[Partially ordered set]]
 
-[[Total Order]]
+[[Total order]]

@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Limit of a Function]]
+[[Limit of a function]]
 [[Continuity]]

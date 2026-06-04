@@ -13,9 +13,9 @@ depends_on:
   - probability-density-function
 ---
 
-# Uniform Distribution
+# Uniform distribution
 
 ## Dependencies
 
-[[Continuous Random Variable]]
-[[Probability Density Function]]
+[[Continuous random variable]]
+[[Probability density function]]

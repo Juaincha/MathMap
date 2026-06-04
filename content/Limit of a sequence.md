@@ -13,9 +13,9 @@ depends_on:
   - absolute-value
 ---
 
-# Limit of a Sequence
+# Limit of a sequence
 
 ## Dependencies
 
 [[Sequence]]
-[[Absolute Value]]
+[[Absolute value]]

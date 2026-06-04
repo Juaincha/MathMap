@@ -13,9 +13,9 @@ depends_on:
   - degree-of-a-vertex
 ---
 
-# Leaf Vertex
+# Leaf vertex
 
 ## Dependencies
 
 [[Tree]]
-[[Degree of a Vertex]]
+[[Degree of a vertex]]

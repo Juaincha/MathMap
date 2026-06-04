@@ -13,9 +13,9 @@ depends_on:
   - cardinality
 ---
 
-# Bernstein Set
+# Bernstein set
 
 ## Dependencies
 
-[[Non-Measurable Set]]
+[[Non-measurable set]]
 [[Cardinality]]

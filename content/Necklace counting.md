@@ -10,12 +10,12 @@ depends_on:
   - permutation
 ---
 
-# Necklace Counting
+# Necklace counting
 
 ## Dependencies
 
-[[Burnside's Lemma]]
+[[Burnside's lemma]]
 
-[[Cyclic Group]]
+[[Cyclic group]]
 
 [[Permutation]]

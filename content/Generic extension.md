@@ -13,10 +13,10 @@ depends_on:
   - partial-order
 ---
 
-# Generic Extension
+# Generic extension
 
 ## Dependencies
 
-[[Von Neumann Universe]]
+[[Von Neumann universe]]
 
-[[Partial Order]]
+[[Partial order]]

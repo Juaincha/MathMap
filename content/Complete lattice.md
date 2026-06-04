@@ -19,4 +19,4 @@ depends_on:
 
 [[Lattice]]
 
-[[Supremum and Infimum]]
+[[Supremum and infimum]]

@@ -13,9 +13,9 @@ depends_on:
   - riemann-integral
 ---
 
-# Definite Integral
+# Definite integral
 
 ## Dependencies
 
-[[Riemann Sum]]
-[[Riemann Integral]]
+[[Riemann sum]]
+[[Riemann integral]]

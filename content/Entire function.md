@@ -12,8 +12,8 @@ depends_on:
   - holomorphic-function
 ---
 
-# Entire Function
+# Entire function
 
 ## Dependencies
 
-[[Holomorphic Function]]
+[[Holomorphic function]]

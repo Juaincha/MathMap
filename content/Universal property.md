@@ -13,7 +13,7 @@ depends_on:
   - morphism
 ---
 
-# Universal Property
+# Universal property
 
 ## Dependencies
 

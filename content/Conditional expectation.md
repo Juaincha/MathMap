@@ -10,12 +10,12 @@ depends_on:
   - sigma-algebra
 ---
 
-# Conditional Expectation
+# Conditional expectation
 
 ## Dependencies
 
-[[Radon–Nikodym Theorem]]
+[[Radon-Nikodym theorem]]
 
-[[Measurable Function]]
+[[Measurable function]]
 
-[[Sigma-Algebra]]
+[[Sigma-algebra]]

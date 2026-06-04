@@ -13,9 +13,9 @@ depends_on:
   - integral-domain
 ---
 
-# Polynomial Ring
+# Polynomial ring
 
 ## Dependencies
 
 [[Ring]]
-[[Integral Domain]]
+[[Integral domain]]

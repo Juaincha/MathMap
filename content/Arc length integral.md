@@ -13,9 +13,9 @@ depends_on:
   - derivative
 ---
 
-# Arc Length Integral
+# Arc length integral
 
 ## Dependencies
 
-[[Definite Integral]]
+[[Definite integral]]
 [[Derivative]]

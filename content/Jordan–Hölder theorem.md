@@ -10,12 +10,12 @@ depends_on:
   - group
 ---
 
-# Jordan–Hölder Theorem
+# Jordan–Hölder theorem
 
 ## Dependencies
 
-[[Composition Series]]
+[[Composition series]]
 
-[[Simple Group]]
+[[Simple group]]
 
 [[Group]]

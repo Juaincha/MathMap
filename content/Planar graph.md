@@ -13,7 +13,7 @@ depends_on:
   - edge
 ---
 
-# Planar Graph
+# Planar graph
 
 ## Dependencies
 

@@ -13,9 +13,9 @@ depends_on:
   - definite-integral
 ---
 
-# Surface of Revolution
+# Surface of revolution
 
 ## Dependencies
 
-[[Arc Length Integral]]
-[[Definite Integral]]
+[[Arc length integral]]
+[[Definite integral]]

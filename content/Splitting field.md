@@ -13,9 +13,9 @@ depends_on:
   - irreducible-polynomial
 ---
 
-# Splitting Field
+# Splitting field
 
 ## Dependencies
 
-[[Field Extension]]
-[[Irreducible Polynomial]]
+[[Field extension]]
+[[Irreducible polynomial]]

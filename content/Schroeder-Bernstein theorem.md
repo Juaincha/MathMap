@@ -14,7 +14,7 @@ depends_on:
   - cardinality
 ---
 
-# Schroeder-Bernstein Theorem
+# Schroeder-Bernstein theorem
 
 ## Dependencies
 

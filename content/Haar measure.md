@@ -10,12 +10,12 @@ depends_on:
   - group
 ---
 
-# Haar Measure
+# Haar measure
 
 ## Dependencies
 
-[[Borel Measure]]
+[[Borel measure]]
 
-[[Locally Compact Space]]
+[[Locally compact space]]
 
 [[Group]]

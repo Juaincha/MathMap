@@ -9,10 +9,10 @@ depends_on:
   - entire-function
 ---
 
-# Hadamard Factorization Theorem
+# Hadamard factorization theorem
 
 ## Dependencies
 
-[[Weierstrass Factorization Theorem]]
+[[Weierstrass factorization theorem]]
 
-[[Entire Function]]
+[[Entire function]]

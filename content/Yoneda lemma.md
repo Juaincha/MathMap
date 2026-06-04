@@ -13,10 +13,10 @@ depends_on:
   - natural-transformation
 ---
 
-# Yoneda Lemma
+# Yoneda lemma
 
 ## Dependencies
 
 [[Functor]]
 
-[[Natural Transformation]]
+[[Natural transformation]]

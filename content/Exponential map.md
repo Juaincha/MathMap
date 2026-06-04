@@ -13,9 +13,9 @@ depends_on:
   - tangent-space
 ---
 
-# Exponential Map
+# Exponential map
 
 ## Dependencies
 
 [[Geodesic]]
-[[Tangent Space]]
+[[Tangent space]]

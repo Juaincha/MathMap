@@ -13,10 +13,10 @@ depends_on:
   - uniform-convergence
 ---
 
-# Regulated Function
+# Regulated function
 
 ## Dependencies
 
-[[Limit of a Function]]
+[[Limit of a function]]
 
-[[Uniform Convergence]]
+[[Uniform convergence]]

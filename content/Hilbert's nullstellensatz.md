@@ -15,7 +15,7 @@ depends_on:
   - maximal-ideal
 ---
 
-# Hilbert's Nullstellensatz
+# Hilbert's nullstellensatz
 
 ## Dependencies
 
@@ -23,6 +23,6 @@ depends_on:
 
 [[Radical ideal]]
 
-[[Algebraic Closure]]
+[[Algebraic closure]]
 
 [[Maximal ideal]]

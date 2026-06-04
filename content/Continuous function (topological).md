@@ -14,10 +14,10 @@ depends_on:
   - function
 ---
 
-# Continuous Function (Topological)
+# Continuous function (topological)
 
 ## Dependencies
 
 [[Topology]]
-[[Open Set]]
+[[Open set]]
 [[Function]]

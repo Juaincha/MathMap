@@ -12,8 +12,8 @@ depends_on:
   - gaussian-elimination
 ---
 
-# Row Echelon Form
+# Row echelon form
 
 ## Dependencies
 
-[[Gaussian Elimination]]
+[[Gaussian elimination]]

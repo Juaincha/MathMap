@@ -12,8 +12,8 @@ depends_on:
   - zf-set-theory
 ---
 
-# Axiom of Infinity
+# Axiom of infinity
 
 ## Dependencies
 
-[[ZF Set Theory]]
+[[Zermelo–Fraenkel set theory]]

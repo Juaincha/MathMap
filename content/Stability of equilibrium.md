@@ -13,9 +13,9 @@ depends_on:
   - eigenvalue-and-eigenvector
 ---
 
-# Stability of Equilibrium
+# Stability of equilibrium
 
 ## Dependencies
 
-[[Equilibrium Point]]
-[[Eigenvalue and Eigenvector]]
+[[Equilibrium point]]
+[[Eigenvalue and eigenvector]]

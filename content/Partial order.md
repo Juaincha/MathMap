@@ -12,7 +12,7 @@ depends_on:
   - relation
 ---
 
-# Partial Order
+# Partial order
 
 ## Dependencies
 

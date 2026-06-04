@@ -10,12 +10,12 @@ depends_on:
   - linear-map
 ---
 
-# Change of Basis
+# Change of basis
 
 ## Dependencies
 
 [[Basis]]
 
-[[Invertible Matrix]]
+[[Invertible matrix]]
 
-[[Linear Map]]
+[[Linear map]]

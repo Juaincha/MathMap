@@ -14,10 +14,10 @@ depends_on:
   - quotient-group
 ---
 
-# Quotient Ring
+# Quotient ring
 
 ## Dependencies
 
 [[Ring]]
 [[Ideal]]
-[[Quotient Group]]
+[[Quotient group]]

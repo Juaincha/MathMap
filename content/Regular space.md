@@ -14,10 +14,10 @@ depends_on:
   - closed-set
 ---
 
-# Regular Space
+# Regular space
 
 ## Dependencies
 
 [[Topology]]
-[[Hausdorff Space]]
-[[Closed Set]]
+[[Hausdorff space]]
+[[Closed set]]

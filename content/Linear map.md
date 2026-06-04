@@ -13,9 +13,9 @@ depends_on:
   - function
 ---
 
-# Linear Map
+# Linear map
 
 ## Dependencies
 
-[[Vector Space]]
+[[Vector space]]
 [[Function]]

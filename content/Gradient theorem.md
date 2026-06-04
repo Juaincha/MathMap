@@ -14,10 +14,10 @@ depends_on:
   - fundamental-theorem-of-calculus
 ---
 
-# Gradient Theorem
+# Gradient theorem
 
 ## Dependencies
 
-[[Line Integral]]
+[[Line integral]]
 [[Gradient]]
-[[Fundamental Theorem of Calculus]]
+[[Fundamental theorem of calculus]]

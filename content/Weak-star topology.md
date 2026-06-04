@@ -9,7 +9,7 @@ tags:
 wikipedia: https://en.wikipedia.org/wiki/Weak_topology#The_weak-*_topology
 
 depends_on:
-  - dual-space
+  - dual-space-linear
   - weak-topology
 ---
 

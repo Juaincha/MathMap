@@ -14,10 +14,10 @@ depends_on:
   - function
 ---
 
-# Measurable Function
+# Measurable function
 
 ## Dependencies
 
-[[Measurable Set]]
-[[Borel Sigma-Algebra]]
+[[Measurable set]]
+[[Borel sigma-algebra]]
 [[Function]]

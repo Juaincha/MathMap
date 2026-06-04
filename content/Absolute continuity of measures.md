@@ -13,9 +13,9 @@ depends_on:
   - null-set
 ---
 
-# Absolute Continuity of Measures
+# Absolute continuity of measures
 
 ## Dependencies
 
-[[Measure Space]]
-[[Null Set]]
+[[Measure space]]
+[[Null set]]

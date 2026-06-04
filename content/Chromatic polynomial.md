@@ -10,12 +10,12 @@ depends_on:
   - graph
 ---
 
-# Chromatic Polynomial
+# Chromatic polynomial
 
 ## Dependencies
 
-[[Graph Coloring]]
+[[Graph coloring]]
 
-[[Chromatic Number]]
+[[Chromatic number]]
 
 [[Graph]]

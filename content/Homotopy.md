@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Continuous Function (Topological)]]
+[[Continuous function (topological)]]
 [[Topology]]

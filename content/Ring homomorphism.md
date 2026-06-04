@@ -13,9 +13,9 @@ depends_on:
   - group-homomorphism
 ---
 
-# Ring Homomorphism
+# Ring homomorphism
 
 ## Dependencies
 
 [[Ring]]
-[[Group Homomorphism]]
+[[Group homomorphism]]

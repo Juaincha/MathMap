@@ -9,10 +9,10 @@ depends_on:
   - cycle-in-a-graph
 ---
 
-# Cycle Matroid
+# Cycle matroid
 
 ## Dependencies
 
-[[Graphic Matroid]]
+[[Graphic matroid]]
 
-[[Cycle in a Graph]]
+[[Cycle in a graph]]

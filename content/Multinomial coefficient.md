@@ -13,7 +13,7 @@ depends_on:
   - permutation
 ---
 
-# Multinomial Coefficient
+# Multinomial coefficient
 
 ## Dependencies
 

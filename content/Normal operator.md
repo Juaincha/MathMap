@@ -19,4 +19,4 @@ depends_on:
 
 [[Adjoint operator]]
 
-[[Hilbert Space]]
+[[Hilbert space]]

@@ -13,9 +13,9 @@ depends_on:
   - polynomial-ring
 ---
 
-# Partial Fractions Integration
+# Partial fractions integration
 
 ## Dependencies
 
 [[Antiderivative]]
-[[Polynomial Ring]]
+[[Polynomial ring]]

@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Smooth Manifold]]
+[[Smooth manifold]]
 [[Homeomorphism]]

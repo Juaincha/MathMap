@@ -18,6 +18,6 @@ depends_on:
 
 ## Dependencies
 
-[[First-Order Logic]]
+[[First-order logic]]
 [[Model theory]]
 [[Satisfiability]]

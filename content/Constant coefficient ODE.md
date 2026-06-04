@@ -12,8 +12,8 @@ depends_on:
   - second-order-linear-ode
 ---
 
-# Constant Coefficient ODE
+# Constant coefficient ODE
 
 ## Dependencies
 
-[[Second-Order Linear ODE]]
+[[Second-order linear ODE]]

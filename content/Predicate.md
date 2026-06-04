@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Proposition]]
-[[First-Order Logic]]
+[[First-order logic]]

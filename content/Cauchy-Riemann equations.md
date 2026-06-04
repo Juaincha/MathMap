@@ -13,9 +13,9 @@ depends_on:
   - partial-derivative
 ---
 
-# Cauchy-Riemann Equations
+# Cauchy-Riemann equations
 
 ## Dependencies
 
-[[Holomorphic Function]]
-[[Partial Derivative]]
+[[Holomorphic function]]
+[[Partial derivative]]

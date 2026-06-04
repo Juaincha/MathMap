@@ -14,10 +14,10 @@ depends_on:
   - probability-density-function
 ---
 
-# Expected Value
+# Expected value
 
 ## Dependencies
 
-[[Random Variable]]
-[[Probability Mass Function]]
-[[Probability Density Function]]
+[[Random variable]]
+[[Probability mass function]]
+[[Probability density function]]

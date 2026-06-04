@@ -12,8 +12,8 @@ depends_on:
   - quadratic-residue
 ---
 
-# Legendre Symbol
+# Legendre symbol
 
 ## Dependencies
 
-[[Quadratic Residue]]
+[[Quadratic residue]]

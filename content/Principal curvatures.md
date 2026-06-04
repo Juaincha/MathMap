@@ -13,9 +13,9 @@ depends_on:
   - eigenvalue-and-eigenvector
 ---
 
-# Principal Curvatures
+# Principal curvatures
 
 ## Dependencies
 
-[[Second Fundamental Form]]
-[[Eigenvalue and Eigenvector]]
+[[Second fundamental form]]
+[[Eigenvalue and eigenvector]]

@@ -13,9 +13,9 @@ depends_on:
   - arc-length-integral
 ---
 
-# Line Integral
+# Line integral
 
 ## Dependencies
 
-[[Definite Integral]]
-[[Arc Length Integral]]
+[[Definite integral]]
+[[Arc length integral]]

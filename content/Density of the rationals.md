@@ -13,7 +13,7 @@ depends_on:
   - real-number-axioms
 ---
 
-# Density of the Rationals
+# Density of the rationals
 
 ## Dependencies
 

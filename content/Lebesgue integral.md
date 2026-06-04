@@ -14,10 +14,10 @@ depends_on:
   - riemann-integral
 ---
 
-# Lebesgue Integral
+# Lebesgue integral
 
 ## Dependencies
 
-[[Measurable Function]]
-[[Lebesgue Measure]]
-[[Riemann Integral]]
+[[Measurable function]]
+[[Lebesgue measure]]
+[[Riemann integral]]

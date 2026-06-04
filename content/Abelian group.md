@@ -12,7 +12,7 @@ depends_on:
   - group
 ---
 
-# Abelian Group
+# Abelian group
 
 ## Dependencies
 

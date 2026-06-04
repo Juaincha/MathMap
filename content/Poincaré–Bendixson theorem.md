@@ -10,12 +10,12 @@ depends_on:
   - equilibrium-point
 ---
 
-# Poincaré–Bendixson Theorem
+# Poincaré–Bendixson theorem
 
 ## Dependencies
 
-[[Autonomous System]]
+[[Autonomous system]]
 
-[[Phase Portrait]]
+[[Phase portrait]]
 
-[[Equilibrium Point]]
+[[Equilibrium point]]

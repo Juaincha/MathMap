@@ -13,9 +13,9 @@ depends_on:
   - vertex
 ---
 
-# Hamiltonian Path
+# Hamiltonian path
 
 ## Dependencies
 
-[[Path in a Graph]]
+[[Path in a graph]]
 [[Vertex]]

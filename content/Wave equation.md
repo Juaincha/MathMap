@@ -12,8 +12,8 @@ depends_on:
   - partial-differential-equation
 ---
 
-# Wave Equation
+# Wave equation
 
 ## Dependencies
 
-[[Partial Differential Equation]]
+[[Partial differential equation]]

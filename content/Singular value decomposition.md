@@ -14,10 +14,10 @@ depends_on:
   - eigenvalue-and-eigenvector
 ---
 
-# Singular Value Decomposition
+# Singular value decomposition
 
 ## Dependencies
 
 [[Diagonalization]]
-[[Orthonormal Basis]]
-[[Eigenvalue and Eigenvector]]
+[[Orthonormal basis]]
+[[Eigenvalue and eigenvector]]

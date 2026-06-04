@@ -13,9 +13,9 @@ depends_on:
   - holomorphic-function
 ---
 
-# Laurent Series
+# Laurent series
 
 ## Dependencies
 
-[[Power Series]]
-[[Holomorphic Function]]
+[[Power series]]
+[[Holomorphic function]]

@@ -12,8 +12,8 @@ depends_on:
   - metric-space
 ---
 
-# Open Set
+# Open set
 
 ## Dependencies
 
-[[Metric Space]]
+[[Metric space]]

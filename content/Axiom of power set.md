@@ -12,8 +12,8 @@ depends_on:
   - zf-set-theory
 ---
 
-# Axiom of Power Set
+# Axiom of power set
 
 ## Dependencies
 
-[[ZF Set Theory]]
+[[Zermelo–Fraenkel set theory]]

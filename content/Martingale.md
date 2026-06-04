@@ -13,6 +13,6 @@ depends_on:
 
 ## Dependencies
 
-[[Conditional Expectation]]
+[[Conditional expectation]]
 
-[[Stochastic Process]]
+[[Stochastic process]]

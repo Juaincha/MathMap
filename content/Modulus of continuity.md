@@ -13,10 +13,10 @@ depends_on:
   - continuity
 ---
 
-# Modulus of Continuity
+# Modulus of continuity
 
 ## Dependencies
 
-[[Uniform Continuity]]
+[[Uniform continuity]]
 
 [[Continuity]]

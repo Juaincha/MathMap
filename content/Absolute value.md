@@ -12,8 +12,8 @@ depends_on:
   - real-number-axioms
 ---
 
-# Absolute Value
+# Absolute value
 
 ## Dependencies
 
-[[Real Number Axioms]]
+[[Real number axioms]]

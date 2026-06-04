@@ -14,12 +14,12 @@ depends_on:
   - transfinite-induction
 ---
 
-# Beth Numbers
+# Beth numbers
 
 ## Dependencies
 
-[[Cardinal Arithmetic]]
+[[Cardinal arithmetic]]
 
-[[Power Set]]
+[[Power set]]
 
-[[Transfinite Induction]]
+[[Transfinite induction]]

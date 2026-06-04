@@ -13,10 +13,10 @@ depends_on:
   - russell-paradox
 ---
 
-# Proper Class
+# Proper class
 
 ## Dependencies
 
 [[Class]]
 
-[[Russell Paradox]]
+[[Russell paradox]]

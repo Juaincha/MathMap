@@ -13,9 +13,9 @@ depends_on:
   - partial-derivative
 ---
 
-# Double Integral
+# Double integral
 
 ## Dependencies
 
-[[Definite Integral]]
-[[Partial Derivative]]
+[[Definite integral]]
+[[Partial derivative]]

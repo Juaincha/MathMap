@@ -13,9 +13,9 @@ depends_on:
   - connected-set
 ---
 
-# Simply Connected Space
+# Simply connected space
 
 ## Dependencies
 
-[[Fundamental Group]]
-[[Connected Set]]
+[[Fundamental group]]
+[[Connected set]]

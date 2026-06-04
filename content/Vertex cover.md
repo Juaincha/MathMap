@@ -13,7 +13,7 @@ depends_on:
   - edge
 ---
 
-# Vertex Cover
+# Vertex cover
 
 ## Dependencies
 

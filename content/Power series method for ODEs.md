@@ -9,10 +9,10 @@ depends_on:
   - second-order-linear-ode
 ---
 
-# Power Series Method for ODEs
+# Power series method for ODEs
 
 ## Dependencies
 
-[[Power Series]]
+[[Power series]]
 
-[[Second-Order Linear ODE]]
+[[Second-order linear ODE]]

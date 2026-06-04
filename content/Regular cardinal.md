@@ -13,10 +13,10 @@ depends_on:
   - ordinal-arithmetic
 ---
 
-# Regular Cardinal
+# Regular cardinal
 
 ## Dependencies
 
-[[Cardinal Arithmetic]]
+[[Cardinal arithmetic]]
 
-[[Ordinal Arithmetic]]
+[[Ordinal arithmetic]]

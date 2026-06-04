@@ -13,9 +13,9 @@ depends_on:
   - euclidean-division
 ---
 
-# Greatest Common Divisor
+# Greatest common divisor
 
 ## Dependencies
 
 [[Divisibility]]
-[[Euclidean Division]]
+[[Euclidean division]]

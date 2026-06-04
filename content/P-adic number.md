@@ -10,12 +10,12 @@ depends_on:
   - absolute-value
 ---
 
-# p-adic Number
+# P-adic number
 
 ## Dependencies
 
-[[Prime Number]]
+[[Prime number]]
 
-[[Complete Metric Space]]
+[[Complete metric space]]
 
-[[Absolute Value]]
+[[Absolute value]]

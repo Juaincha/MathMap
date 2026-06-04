@@ -13,10 +13,10 @@ depends_on:
   - first-order-logic
 ---
 
-# Russell Paradox
+# Russell paradox
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]
 
-[[First-Order Logic]]
+[[First-order logic]]

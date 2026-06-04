@@ -19,4 +19,4 @@ depends_on:
 
 [[Module]]
 
-[[Exact Sequence]]
+[[Exact sequence]]

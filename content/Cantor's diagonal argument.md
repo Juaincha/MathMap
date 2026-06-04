@@ -13,7 +13,7 @@ depends_on:
   - bijection
 ---
 
-# Cantor's Diagonal Argument
+# Cantor's diagonal argument
 
 ## Dependencies
 

@@ -13,9 +13,9 @@ depends_on:
   - riemann-integral
 ---
 
-# Probability Density Function
+# Probability density function
 
 ## Dependencies
 
-[[Continuous Random Variable]]
-[[Riemann Integral]]
+[[Continuous random variable]]
+[[Riemann integral]]

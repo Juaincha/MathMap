@@ -14,10 +14,10 @@ depends_on:
   - smooth-manifold
 ---
 
-# Riemannian Metric
+# Riemannian metric
 
 ## Dependencies
 
-[[Tangent Space]]
-[[Inner Product Space]]
-[[Smooth Manifold]]
+[[Tangent space]]
+[[Inner product space]]
+[[Smooth manifold]]

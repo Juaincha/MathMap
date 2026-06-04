@@ -13,9 +13,9 @@ depends_on:
   - basis
 ---
 
-# Orthonormal Basis
+# Orthonormal basis
 
 ## Dependencies
 
-[[Gram-Schmidt Process]]
+[[Gram-Schmidt process]]
 [[Basis]]

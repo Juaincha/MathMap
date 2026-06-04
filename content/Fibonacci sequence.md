@@ -13,9 +13,9 @@ depends_on:
   - sequence
 ---
 
-# Fibonacci Sequence
+# Fibonacci sequence
 
 ## Dependencies
 
-[[Recurrence Relation]]
+[[Recurrence relation]]
 [[Sequence]]

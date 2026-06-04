@@ -13,9 +13,9 @@ depends_on:
   - extreme-value-theorem
 ---
 
-# Rolle's Theorem
+# Rolle's theorem
 
 ## Dependencies
 
 [[Differentiability]]
-[[Extreme Value Theorem]]
+[[Extreme value theorem]]

@@ -10,12 +10,12 @@ depends_on:
   - set-operations
 ---
 
-# Filter (Topology)
+# Filter (topology)
 
 ## Dependencies
 
 [[Topology]]
 
-[[Partial Order]]
+[[Partial order]]
 
-[[Set Operations]]
+[[Set operations]]

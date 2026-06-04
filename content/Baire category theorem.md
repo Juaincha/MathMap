@@ -14,12 +14,12 @@ depends_on:
   - nowhere-dense-set
 ---
 
-# Baire Category Theorem
+# Baire category theorem
 
 ## Dependencies
 
-[[Complete Metric Space]]
+[[Complete metric space]]
 
-[[Meager Set]]
+[[Meager set]]
 
-[[Nowhere Dense Set]]
+[[Nowhere dense set]]

@@ -12,8 +12,8 @@ depends_on:
   - partial-order
 ---
 
-# Total Order
+# Total order
 
 ## Dependencies
 
-[[Partial Order]]
+[[Partial order]]

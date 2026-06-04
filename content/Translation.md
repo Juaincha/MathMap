@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Euclidean plane]]
-[[Vector Space]]
+[[Vector space]]

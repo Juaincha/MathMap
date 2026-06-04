@@ -13,9 +13,9 @@ depends_on:
   - complex-plane
 ---
 
-# Argument of Complex Number
+# Argument of complex number
 
 ## Dependencies
 
-[[Complex Number]]
-[[Complex Plane]]
+[[Complex number]]
+[[Complex plane]]

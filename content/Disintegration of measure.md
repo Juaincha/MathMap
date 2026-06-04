@@ -10,12 +10,12 @@ depends_on:
   - product-measure
 ---
 
-# Disintegration of Measure
+# Disintegration of measure
 
 ## Dependencies
 
-[[Conditional Expectation]]
+[[Conditional expectation]]
 
-[[Pushforward Measure]]
+[[Pushforward measure]]
 
-[[Product Measure]]
+[[Product measure]]

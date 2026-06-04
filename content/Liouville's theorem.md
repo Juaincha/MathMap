@@ -13,9 +13,9 @@ depends_on:
   - cauchys-integral-formula
 ---
 
-# Liouville's Theorem
+# Liouville's theorem
 
 ## Dependencies
 
-[[Entire Function]]
-[[Cauchy's Integral Formula]]
+[[Entire function]]
+[[Cauchy's integral formula]]

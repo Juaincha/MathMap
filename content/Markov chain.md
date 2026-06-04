@@ -10,12 +10,12 @@ depends_on:
   - conditional-distribution
 ---
 
-# Markov Chain
+# Markov chain
 
 ## Dependencies
 
-[[Conditional Probability]]
+[[Conditional probability]]
 
-[[Stochastic Process]]
+[[Stochastic process]]
 
-[[Conditional Distribution]]
+[[Conditional distribution]]

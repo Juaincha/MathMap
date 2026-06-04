@@ -13,9 +13,9 @@ depends_on:
   - kernel-and-image
 ---
 
-# Rank of a Matrix
+# Rank of a matrix
 
 ## Dependencies
 
-[[Row Echelon Form]]
-[[Kernel and Image]]
+[[Row echelon form]]
+[[Kernel and image]]

@@ -13,8 +13,8 @@ depends_on:
   - integer-ring-axioms
 ---
 
-# Rational Field Axioms
+# Rational field axioms
 
 ## Dependencies
 
-[[Integer Ring Axioms]]
+[[Integer ring axioms]]

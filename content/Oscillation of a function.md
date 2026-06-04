@@ -13,10 +13,10 @@ depends_on:
   - limit-of-a-function
 ---
 
-# Oscillation of a Function
+# Oscillation of a function
 
 ## Dependencies
 
-[[Supremum and Infimum]]
+[[Supremum and infimum]]
 
-[[Limit of a Function]]
+[[Limit of a function]]

@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[Polynomial Ring]]
+[[Polynomial ring]]
 
-[[Linear Map]]
+[[Linear map]]
 
-[[Characteristic Polynomial]]
+[[Characteristic polynomial]]

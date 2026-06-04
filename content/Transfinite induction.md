@@ -13,10 +13,10 @@ depends_on:
   - ordinal-arithmetic
 ---
 
-# Transfinite Induction
+# Transfinite induction
 
 ## Dependencies
 
-[[Well-Ordering Principle]]
+[[Well-ordering principle]]
 
-[[Ordinal Arithmetic]]
+[[Ordinal arithmetic]]

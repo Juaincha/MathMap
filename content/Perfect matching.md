@@ -13,9 +13,9 @@ depends_on:
   - vertex
 ---
 
-# Perfect Matching
+# Perfect matching
 
 ## Dependencies
 
-[[Bipartite Matching]]
+[[Bipartite matching]]
 [[Vertex]]

@@ -13,10 +13,10 @@ depends_on:
   - absolute-value
 ---
 
-# Epsilon-Delta Definition
+# Epsilon-delta definition
 
 ## Dependencies
 
-[[Limit of a Function]]
+[[Limit of a function]]
 
-[[Absolute Value]]
+[[Absolute value]]

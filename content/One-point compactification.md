@@ -13,9 +13,9 @@ depends_on:
   - locally-compact-space
 ---
 
-# One-Point Compactification
+# One-point compactification
 
 ## Dependencies
 
 [[Compactification]]
-[[Locally Compact Space]]
+[[Locally compact space]]

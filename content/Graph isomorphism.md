@@ -13,7 +13,7 @@ depends_on:
   - bijection
 ---
 
-# Graph Isomorphism
+# Graph isomorphism
 
 ## Dependencies
 

@@ -14,10 +14,10 @@ depends_on:
   - taylor-series
 ---
 
-# Euler's Formula
+# Euler's formula
 
 ## Dependencies
 
-[[Complex Number]]
-[[Power Series]]
-[[Taylor Series]]
+[[Complex number]]
+[[Power series]]
+[[Taylor series]]

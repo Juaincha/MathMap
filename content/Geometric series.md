@@ -12,8 +12,8 @@ depends_on:
   - convergence-of-series
 ---
 
-# Geometric Series
+# Geometric series
 
 ## Dependencies
 
-[[Convergence of Series]]
+[[Convergence of series]]

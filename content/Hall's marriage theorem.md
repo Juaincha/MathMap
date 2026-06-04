@@ -13,9 +13,9 @@ depends_on:
   - bipartite-graph
 ---
 
-# Hall's Marriage Theorem
+# Hall's marriage theorem
 
 ## Dependencies
 
-[[Bipartite Matching]]
-[[Bipartite Graph]]
+[[Bipartite matching]]
+[[Bipartite graph]]

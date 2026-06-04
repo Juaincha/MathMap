@@ -17,6 +17,6 @@ depends_on:
 
 ## Dependencies
 
-[[Well-Ordering Principle]]
+[[Well-ordering principle]]
 
-[[ZF Set Theory]]
+[[Zermelo–Fraenkel set theory]]

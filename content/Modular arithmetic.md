@@ -13,9 +13,9 @@ depends_on:
   - equivalence-relation
 ---
 
-# Modular Arithmetic
+# Modular arithmetic
 
 ## Dependencies
 
-[[Euclidean Division]]
-[[Equivalence Relation]]
+[[Euclidean division]]
+[[Equivalence relation]]

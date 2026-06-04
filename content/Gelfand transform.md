@@ -22,4 +22,4 @@ depends_on:
 
 [[Maximal ideal]]
 
-[[C*-algebra]]
+[[C-star algebra]]

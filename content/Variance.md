@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Expected Value]]
+[[Expected value]]

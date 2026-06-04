@@ -13,9 +13,9 @@ depends_on:
   - gradient
 ---
 
-# Laplacian Operator
+# Laplacian operator
 
 ## Dependencies
 
-[[Partial Derivative]]
+[[Partial derivative]]
 [[Gradient]]

@@ -13,9 +13,9 @@ depends_on:
   - prime-number
 ---
 
-# Partition of Integer
+# Partition of integer
 
 ## Dependencies
 
-[[Generating Function]]
-[[Prime Number]]
+[[Generating function]]
+[[Prime number]]

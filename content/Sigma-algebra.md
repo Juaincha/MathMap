@@ -13,9 +13,9 @@ depends_on:
   - sample-space
 ---
 
-# Sigma-Algebra
+# Sigma-algebra
 
 ## Dependencies
 
-[[Set Operations]]
-[[Sample Space]]
+[[Set operations]]
+[[Sample space]]

@@ -22,4 +22,4 @@ depends_on:
 
 [[Linear extension]]
 
-[[Total Order]]
+[[Total order]]

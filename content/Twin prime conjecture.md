@@ -9,10 +9,10 @@ depends_on:
   - infinitude-of-primes
 ---
 
-# Twin Prime Conjecture
+# Twin prime conjecture
 
 ## Dependencies
 
-[[Prime Number]]
+[[Prime number]]
 
-[[Infinitude of Primes]]
+[[Infinitude of primes]]

@@ -14,10 +14,10 @@ depends_on:
   - direct-sum
 ---
 
-# Tensor Product
+# Tensor product
 
 ## Dependencies
 
 [[Module]]
-[[Vector Space]]
-[[Direct Sum]]
+[[Vector space]]
+[[Direct sum]]

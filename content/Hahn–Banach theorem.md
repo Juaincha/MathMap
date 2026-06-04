@@ -11,15 +11,15 @@ wikipedia: https://en.wikipedia.org/wiki/Hahn%E2%80%93Banach_theorem
 depends_on:
   - normed-vector-space
   - linear-map
-  - dual-space
+  - dual-space-linear
 ---
 
 # Hahn–Banach theorem
 
 ## Dependencies
 
-[[Normed Vector Space]]
+[[Normed vector space]]
 
-[[Linear Map]]
+[[Linear map]]
 
 [[Dual space]]

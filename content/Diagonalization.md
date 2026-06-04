@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Characteristic Polynomial]]
+[[Characteristic polynomial]]
 [[Basis]]

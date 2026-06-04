@@ -23,53 +23,57 @@ depends_on:
   - <id-de-prerrequisito>
 ---
 
-# <Nombre del concepto>
+# <Nombre del concepto en ortografía correcta>
 
 ## Dependencies
 
-[[Nombre del Prerrequisito]]
+[[Nombre del prerrequisito en ortografía correcta]]
+
+## REGLA DE NOMBRE DE ARCHIVO (CRÍTICA — léela antes de cada Write)
+El nombre del archivo es EXACTAMENTE el texto del encabezado `#`, más ".md".
+Sin transformar, verbatim.
+
+- El nombre del archivo NUNCA es `<id>.md`. El `id` es kebab-case y existe SOLO
+  como referencia interna para depends_on; está PROHIBIDO usarlo como nombre
+  de archivo.
+- "Ortografía correcta" = primera palabra en mayúscula + todos los nombres
+  propios (matemáticos, teoremas epónimos) en mayúscula; el resto en minúscula.
+  Espacios, no guiones.
+
+Las cuatro formas del MISMO concepto deben coincidir así:
+  id (kebab):     fundamental-theorem-of-arithmetic
+  encabezado #:   Fundamental theorem of arithmetic
+  nombre archivo: Fundamental theorem of arithmetic.md
+  enlace [[ ]]:   [[Fundamental theorem of arithmetic]]
+
+Otro ejemplo con nombre propio:
+  id:             cauchy-schwarz-inequality
+  encabezado #:   Cauchy–Schwarz inequality
+  nombre archivo: Cauchy–Schwarz inequality.md
+  enlace [[ ]]:   [[Cauchy–Schwarz inequality]]
 
 ## Reglas estrictas
-- NO añadas NADA fuera de esa plantilla: ni descripciones, ni resúmenes del
-  concepto, ni secciones extra, ni comentarios, ni explicaciones matemáticas.
-  El cuerpo es solo el título (#) y la sección ## Dependencies con [[enlaces]].
-- Si un nodo no tiene dependencias, deja `depends_on: []` y omite la sección
-  ## Dependencies.
+- NO añadas NADA fuera de la plantilla: ni descripciones, ni resúmenes, ni
+  secciones extra, ni comentarios, ni explicaciones. El cuerpo es solo el
+  título (#) y la sección ## Dependencies con [[enlaces]].
+- Si un nodo no tiene dependencias, deja `depends_on: []` y omite ## Dependencies.
 - Cada id en depends_on DEBE tener su [[enlace]] correspondiente y viceversa.
+  El [[enlace]] usa el NOMBRE legible del prerrequisito, no su id kebab-case.
 - Identifica prerrequisitos matemáticos reales; nunca relaciones arbitrarias.
 - Antes de crear, usa Glob/Grep en content/ para no duplicar ids existentes.
 - Solo tocas archivos .md dentro de content/.
 
-## Convención de nombres de archivo
-Al crear un nodo, el NOMBRE DEL ARCHIVO y el campo `id` se derivan del mismo
-concepto pero en formatos distintos:
-
-- Nombre del archivo: título legible con ortografía correcta.
-  - Espacios en vez de guiones.
-  - Capitaliza la primera palabra y todos los nombres propios (matemáticos,
-    teoremas epónimos, etc.); el resto en minúscula.
-  - Termina en .md
-  - Ejemplos:
-    "Integer ring axioms.md"
-    "Fundamental theorem of arithmetic.md"
-    "Cauchy–Schwarz inequality.md"
-
-- Campo `id`: la misma idea en kebab-case (minúsculas, sin acentos ni
-  símbolos especiales, palabras unidas por guiones). Es la fuente de verdad.
-  - Ejemplos:
-    id: integer-ring-axioms
-    id: fundamental-theorem-of-arithmetic
-    id: cauchy-schwarz-inequality
-
-Reglas:
-- El `id` NUNCA lleva espacios ni mayúsculas; el nombre del archivo SÍ.
-- `depends_on` y los [[enlaces]] del cuerpo se siguen escribiendo según las
-  reglas existentes; no dependen del nombre del archivo.
-- Nombre de archivo e `id` deben referirse siempre al mismo concepto.
+## Verificación obligatoria antes de terminar
+Para cada archivo que crees o renombres, comprueba que:
+1. El nombre del archivo es idéntico al texto del encabezado `#` + ".md".
+2. El nombre del archivo NO es igual a `<id>.md`.
+Si alguno falla, corrígelo antes de responder.
 
 ## Salida en el chat
 Tras crear los archivos, responde ÚNICAMENTE con la lista de rutas creadas.
 Sin preámbulos, sin explicaciones, sin comentarios.
 
 ## Modificación de archivos
-Cuando se te pida modificar los archivos existentes, revísalos todos sin crear nuevos archivos y aplica los cambios solicitados.
+Cuando se te pida modificar archivos existentes, revísalos todos sin crear
+nuevos, aplica los cambios solicitados, y aplica también la verificación
+obligatoria de nombre de archivo a cada uno.

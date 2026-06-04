@@ -12,7 +12,7 @@ depends_on:
   - function
 ---
 
-# Composition of Functions
+# Composition of functions
 
 ## Dependencies
 

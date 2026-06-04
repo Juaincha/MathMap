@@ -13,9 +13,9 @@ depends_on:
   - complex-number
 ---
 
-# Characteristic Equation
+# Characteristic equation
 
 ## Dependencies
 
-[[Constant Coefficient ODE]]
-[[Complex Number]]
+[[Constant coefficient ODE]]
+[[Complex number]]

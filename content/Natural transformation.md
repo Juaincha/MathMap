@@ -12,7 +12,7 @@ depends_on:
   - functor
 ---
 
-# Natural Transformation
+# Natural transformation
 
 ## Dependencies
 

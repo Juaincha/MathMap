@@ -13,9 +13,9 @@ depends_on:
   - probability-mass-function
 ---
 
-# Bernoulli Distribution
+# Bernoulli distribution
 
 ## Dependencies
 
-[[Discrete Random Variable]]
-[[Probability Mass Function]]
+[[Discrete random variable]]
+[[Probability mass function]]

@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Linear Independence]]
+[[Linear independence]]
 [[Span]]

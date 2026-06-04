@@ -13,9 +13,9 @@ depends_on:
   - absolute-value
 ---
 
-# Absolutely Convergent Series
+# Absolutely convergent series
 
 ## Dependencies
 
-[[Convergence of Series]]
+[[Convergence of series]]
 [[Absolute value]]

@@ -13,7 +13,7 @@ depends_on:
   - edge
 ---
 
-# Graph Minor
+# Graph minor
 
 ## Dependencies
 

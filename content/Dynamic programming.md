@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Recurrence Relation]]
+[[Recurrence relation]]
 [[Memoization]]

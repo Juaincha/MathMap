@@ -10,12 +10,12 @@ depends_on:
   - conditional-expectation-measure
 ---
 
-# Ergodic Theorem
+# Ergodic theorem
 
 ## Dependencies
 
-[[Ergodic Theory]]
+[[Ergodic theory]]
 
-[[Lebesgue Integral]]
+[[Lebesgue integral]]
 
-[[Conditional Expectation]]
+[[Conditional expectation]]

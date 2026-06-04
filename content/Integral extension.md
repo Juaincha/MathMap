@@ -19,4 +19,4 @@ depends_on:
 
 [[Commutative ring]]
 
-[[Polynomial Ring]]
+[[Polynomial ring]]

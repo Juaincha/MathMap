@@ -13,9 +13,9 @@ depends_on:
   - prime-number
 ---
 
-# Irreducible Polynomial
+# Irreducible polynomial
 
 ## Dependencies
 
-[[Polynomial Ring]]
-[[Prime Number]]
+[[Polynomial ring]]
+[[Prime number]]

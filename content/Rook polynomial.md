@@ -10,12 +10,12 @@ depends_on:
   - generating-function
 ---
 
-# Rook Polynomial
+# Rook polynomial
 
 ## Dependencies
 
 [[Permutation]]
 
-[[Inclusion–Exclusion Principle]]
+[[Inclusion-exclusion principle]]
 
-[[Generating Function]]
+[[Generating function]]

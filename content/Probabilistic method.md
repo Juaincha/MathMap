@@ -14,10 +14,10 @@ depends_on:
   - graph
 ---
 
-# Probabilistic Method
+# Probabilistic method
 
 ## Dependencies
 
-[[Probability Axioms]]
-[[Expected Value]]
+[[Probability axioms]]
+[[Expected value]]
 [[Graph]]

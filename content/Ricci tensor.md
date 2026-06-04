@@ -13,9 +13,9 @@ depends_on:
   - trace-of-a-matrix
 ---
 
-# Ricci Tensor
+# Ricci tensor
 
 ## Dependencies
 
-[[Riemann Curvature Tensor]]
-[[Trace of a Matrix]]
+[[Riemann curvature tensor]]
+[[Trace of a matrix]]

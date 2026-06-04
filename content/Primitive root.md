@@ -13,9 +13,9 @@ depends_on:
   - cyclic-group
 ---
 
-# Primitive Root
+# Primitive root
 
 ## Dependencies
 
-[[Euler's Theorem]]
-[[Cyclic Group]]
+[[Euler's theorem]]
+[[Cyclic group]]

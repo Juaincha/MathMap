@@ -13,9 +13,9 @@ depends_on:
   - subspace
 ---
 
-# Kernel and Image
+# Kernel and image
 
 ## Dependencies
 
-[[Linear Map]]
+[[Linear map]]
 [[Subspace]]

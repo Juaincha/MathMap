@@ -13,9 +13,9 @@ depends_on:
   - differentiability
 ---
 
-# Taylor's Theorem
+# Taylor's theorem
 
 ## Dependencies
 
-[[Mean Value Theorem]]
+[[Mean value theorem]]
 [[Differentiability]]

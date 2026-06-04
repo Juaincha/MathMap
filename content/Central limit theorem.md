@@ -14,10 +14,10 @@ depends_on:
   - moment-generating-function
 ---
 
-# Central Limit Theorem
+# Central limit theorem
 
 ## Dependencies
 
-[[Normal Distribution]]
-[[Law of Large Numbers]]
-[[Moment Generating Function]]
+[[Normal distribution]]
+[[Law of large numbers]]
+[[Moment generating function]]

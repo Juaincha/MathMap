@@ -13,9 +13,9 @@ depends_on:
   - topology
 ---
 
-# Compact Set
+# Compact set
 
 ## Dependencies
 
-[[Open Set]]
+[[Open set]]
 [[Topology]]

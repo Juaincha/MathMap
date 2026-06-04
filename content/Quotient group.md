@@ -13,9 +13,9 @@ depends_on:
   - equivalence-relation
 ---
 
-# Quotient Group
+# Quotient group
 
 ## Dependencies
 
 [[Subgroup]]
-[[Equivalence Relation]]
+[[Equivalence relation]]

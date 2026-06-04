@@ -20,6 +20,6 @@ depends_on:
 
 [[Affine variety]]
 
-[[Quotient Ring]]
+[[Quotient ring]]
 
-[[Polynomial Ring]]
+[[Polynomial ring]]

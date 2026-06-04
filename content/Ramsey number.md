@@ -13,9 +13,9 @@ depends_on:
   - graph-coloring
 ---
 
-# Ramsey Number
+# Ramsey number
 
 ## Dependencies
 
-[[Ramsey Theory]]
-[[Graph Coloring]]
+[[Ramsey theory]]
+[[Graph coloring]]

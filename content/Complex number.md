@@ -13,9 +13,9 @@ depends_on:
   - real-number-axioms
 ---
 
-# Complex Number
+# Complex number
 
 ## Dependencies
 
 [[Field]]
-[[Real Number Axioms]]
+[[Real number axioms]]

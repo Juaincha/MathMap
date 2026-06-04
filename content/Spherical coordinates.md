@@ -13,9 +13,9 @@ depends_on:
   - cylindrical-coordinates
 ---
 
-# Spherical Coordinates
+# Spherical coordinates
 
 ## Dependencies
 
-[[Change of Variables Integral]]
-[[Cylindrical Coordinates]]
+[[Change of variables integral]]
+[[Cylindrical coordinates]]

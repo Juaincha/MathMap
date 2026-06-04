@@ -10,7 +10,7 @@ wikipedia: https://en.wikipedia.org/wiki/Weak_topology
 
 depends_on:
   - normed-vector-space
-  - dual-space
+  - dual-space-linear
   - topology
 ---
 
@@ -18,7 +18,7 @@ depends_on:
 
 ## Dependencies
 
-[[Normed Vector Space]]
+[[Normed vector space]]
 
 [[Dual space]]
 

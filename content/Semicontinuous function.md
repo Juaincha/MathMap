@@ -13,10 +13,10 @@ depends_on:
   - lower-semicontinuity
 ---
 
-# Semicontinuous Function
+# Semicontinuous function
 
 ## Dependencies
 
-[[Upper Semicontinuity]]
+[[Upper semicontinuity]]
 
-[[Lower Semicontinuity]]
+[[Lower semicontinuity]]

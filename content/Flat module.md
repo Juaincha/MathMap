@@ -20,6 +20,6 @@ depends_on:
 
 [[Module]]
 
-[[Tensor Product]]
+[[Tensor product]]
 
-[[Exact Sequence]]
+[[Exact sequence]]

@@ -20,6 +20,6 @@ depends_on:
 
 [[Bounded linear operator]]
 
-[[Banach Space]]
+[[Banach space]]
 
-[[Compact Set]]
+[[Compact set]]

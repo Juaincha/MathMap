@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Degree of a Vertex]]
+[[Degree of a vertex]]
 [[Graph]]

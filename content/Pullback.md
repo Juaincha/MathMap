@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Differential Form]]
-[[Smooth Manifold]]
+[[Differential form]]
+[[Smooth manifold]]

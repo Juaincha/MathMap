@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[Hilbert Space]]
+[[Hilbert space]]
 
 [[Bounded linear operator]]
 
-[[Inner Product Space]]
+[[Inner product space]]

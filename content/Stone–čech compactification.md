@@ -10,12 +10,12 @@ depends_on:
   - continuous-function-topological
 ---
 
-# Stone–Čech Compactification
+# Stone–čech compactification
 
 ## Dependencies
 
 [[Compactification]]
 
-[[Normal Space]]
+[[Normal space]]
 
-[[Continuous Function (Topological)]]
+[[Continuous function (topological)]]

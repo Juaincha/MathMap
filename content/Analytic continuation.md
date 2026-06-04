@@ -13,9 +13,9 @@ depends_on:
   - power-series
 ---
 
-# Analytic Continuation
+# Analytic continuation
 
 ## Dependencies
 
-[[Analytic Function]]
-[[Power Series]]
+[[Analytic function]]
+[[Power series]]

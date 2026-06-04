@@ -13,9 +13,9 @@ depends_on:
   - product-rule
 ---
 
-# Integration by Parts
+# Integration by parts
 
 ## Dependencies
 
-[[Fundamental Theorem of Calculus]]
-[[Product Rule]]
+[[Fundamental theorem of calculus]]
+[[Product rule]]

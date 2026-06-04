@@ -10,7 +10,7 @@ depends_on:
   - partial-order
 ---
 
-# Net Convergence
+# Net convergence
 
 ## Dependencies
 
@@ -18,4 +18,4 @@ depends_on:
 
 [[Convergence]]
 
-[[Partial Order]]
+[[Partial order]]

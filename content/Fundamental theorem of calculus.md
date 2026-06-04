@@ -14,10 +14,10 @@ depends_on:
   - mean-value-theorem
 ---
 
-# Fundamental Theorem of Calculus
+# Fundamental theorem of calculus
 
 ## Dependencies
 
-[[Riemann Integral]]
+[[Riemann integral]]
 [[Derivative]]
-[[Mean Value Theorem]]
+[[Mean value theorem]]

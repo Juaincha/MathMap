@@ -13,7 +13,7 @@ depends_on:
   - edge
 ---
 
-# Weighted Graph
+# Weighted graph
 
 ## Dependencies
 

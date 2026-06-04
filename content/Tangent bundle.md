@@ -13,9 +13,9 @@ depends_on:
   - smooth-manifold
 ---
 
-# Tangent Bundle
+# Tangent bundle
 
 ## Dependencies
 
-[[Tangent Space]]
-[[Smooth Manifold]]
+[[Tangent space]]
+[[Smooth manifold]]

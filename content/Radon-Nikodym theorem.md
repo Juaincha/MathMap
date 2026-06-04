@@ -14,10 +14,10 @@ depends_on:
   - signed-measure
 ---
 
-# Radon-Nikodym Theorem
+# Radon-Nikodym theorem
 
 ## Dependencies
 
-[[Absolute Continuity of Measures]]
-[[Lebesgue Integral]]
-[[Signed Measure]]
+[[Absolute continuity of measures]]
+[[Lebesgue integral]]
+[[Signed measure]]

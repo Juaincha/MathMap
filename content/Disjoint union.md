@@ -14,12 +14,12 @@ depends_on:
   - ordered-pair
 ---
 
-# Disjoint Union
+# Disjoint union
 
 ## Dependencies
 
-[[Union Operation]]
+[[Union operation]]
 
-[[Indexed Family]]
+[[Indexed family]]
 
-[[Ordered Pair]]
+[[Ordered pair]]

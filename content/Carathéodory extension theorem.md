@@ -10,12 +10,12 @@ depends_on:
   - sigma-algebra
 ---
 
-# Carathéodory Extension Theorem
+# Carathéodory extension theorem
 
 ## Dependencies
 
-[[Outer Measure]]
+[[Outer measure]]
 
-[[Measure Space]]
+[[Measure space]]
 
-[[Sigma-Algebra]]
+[[Sigma-algebra]]

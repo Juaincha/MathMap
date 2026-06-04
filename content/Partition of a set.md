@@ -13,10 +13,10 @@ depends_on:
   - equivalence-relation
 ---
 
-# Partition of a Set
+# Partition of a set
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]
 
-[[Equivalence Relation]]
+[[Equivalence relation]]

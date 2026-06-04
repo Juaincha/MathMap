@@ -13,9 +13,9 @@ depends_on:
   - complete-metric-space
 ---
 
-# Banach Space
+# Banach space
 
 ## Dependencies
 
-[[Normed Vector Space]]
-[[Complete Metric Space]]
+[[Normed vector space]]
+[[Complete metric space]]

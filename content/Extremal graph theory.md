@@ -14,10 +14,10 @@ depends_on:
   - edge
 ---
 
-# Extremal Graph Theory
+# Extremal graph theory
 
 ## Dependencies
 
-[[Turán's Theorem]]
+[[Turán's theorem]]
 [[Graph]]
 [[Edge]]

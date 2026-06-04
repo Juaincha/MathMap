@@ -13,9 +13,9 @@ depends_on:
   - cumulative-distribution-function
 ---
 
-# Joint Distribution
+# Joint distribution
 
 ## Dependencies
 
-[[Random Variable]]
-[[Cumulative Distribution Function]]
+[[Random variable]]
+[[Cumulative distribution function]]

@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[First-Order Logic]]
+[[First-order logic]]
 [[Predicate]]

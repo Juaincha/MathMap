@@ -13,7 +13,7 @@ depends_on:
   - function
 ---
 
-# Group Homomorphism
+# Group homomorphism
 
 ## Dependencies
 

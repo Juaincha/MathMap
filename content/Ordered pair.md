@@ -13,10 +13,10 @@ depends_on:
   - set-operations
 ---
 
-# Ordered Pair
+# Ordered pair
 
 ## Dependencies
 
-[[Axiom of Pairing]]
+[[Axiom of pairing]]
 
-[[Set Operations]]
+[[Set operations]]

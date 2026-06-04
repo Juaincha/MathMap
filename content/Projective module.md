@@ -20,6 +20,6 @@ depends_on:
 
 [[Module]]
 
-[[Free Module]]
+[[Free module]]
 
-[[Exact Sequence]]
+[[Exact sequence]]

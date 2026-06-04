@@ -10,12 +10,12 @@ depends_on:
   - group-homomorphism
 ---
 
-# Semidirect Product
+# Semidirect product
 
 ## Dependencies
 
 [[Group]]
 
-[[Normal Subgroup]]
+[[Normal subgroup]]
 
-[[Group Homomorphism]]
+[[Group homomorphism]]

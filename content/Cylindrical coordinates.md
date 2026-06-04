@@ -12,8 +12,8 @@ depends_on:
   - change-of-variables-integral
 ---
 
-# Cylindrical Coordinates
+# Cylindrical coordinates
 
 ## Dependencies
 
-[[Change of Variables Integral]]
+[[Change of variables integral]]

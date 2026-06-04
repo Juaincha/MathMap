@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Euclidean Geometry Axioms]]
-[[Vector Space]]
+[[Euclidean geometry axioms]]
+[[Vector space]]

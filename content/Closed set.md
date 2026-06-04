@@ -12,8 +12,8 @@ depends_on:
   - open-set
 ---
 
-# Closed Set
+# Closed set
 
 ## Dependencies
 
-[[Open Set]]
+[[Open set]]

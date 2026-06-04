@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Logical connective]]
-[[Propositional Logic]]
+[[Propositional logic]]

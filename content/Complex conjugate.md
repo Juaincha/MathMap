@@ -12,8 +12,8 @@ depends_on:
   - complex-number
 ---
 
-# Complex Conjugate
+# Complex conjugate
 
 ## Dependencies
 
-[[Complex Number]]
+[[Complex number]]

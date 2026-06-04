@@ -13,9 +13,9 @@ depends_on:
   - linear-map
 ---
 
-# Module Homomorphism
+# Module homomorphism
 
 ## Dependencies
 
 [[Module]]
-[[Linear Map]]
+[[Linear map]]

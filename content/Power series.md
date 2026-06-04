@@ -12,8 +12,8 @@ depends_on:
   - convergence-of-series
 ---
 
-# Power Series
+# Power series
 
 ## Dependencies
 
-[[Convergence of Series]]
+[[Convergence of series]]

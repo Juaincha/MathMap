@@ -14,12 +14,12 @@ depends_on:
   - measure-space
 ---
 
-# Uniform Integrability
+# Uniform integrability
 
 ## Dependencies
 
-[[Lebesgue Integral]]
+[[Lebesgue integral]]
 
-[[Measurable Function]]
+[[Measurable function]]
 
-[[Measure Space]]
+[[Measure space]]

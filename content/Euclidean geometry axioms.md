@@ -12,8 +12,8 @@ depends_on:
   - real-number-axioms
 ---
 
-# Euclidean Geometry Axioms
+# Euclidean geometry axioms
 
 ## Dependencies
 
-[[Real Number Axioms]]
+[[Real number axioms]]

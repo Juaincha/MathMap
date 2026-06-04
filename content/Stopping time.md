@@ -9,10 +9,10 @@ depends_on:
   - stochastic-process
 ---
 
-# Stopping Time
+# Stopping time
 
 ## Dependencies
 
-[[Sigma-Algebra]]
+[[Sigma-algebra]]
 
-[[Stochastic Process]]
+[[Stochastic process]]

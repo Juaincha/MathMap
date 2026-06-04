@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Weighted Graph]]
+[[Weighted graph]]
 [[Greedy algorithm]]

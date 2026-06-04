@@ -13,9 +13,9 @@ depends_on:
   - event
 ---
 
-# Probability Axioms
+# Probability axioms
 
 ## Dependencies
 
-[[Sigma-Algebra]]
+[[Sigma-algebra]]
 [[Event]]

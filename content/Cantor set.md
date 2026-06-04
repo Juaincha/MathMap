@@ -14,12 +14,12 @@ depends_on:
   - null-set
 ---
 
-# Cantor Set
+# Cantor set
 
 ## Dependencies
 
-[[Closed Set]]
+[[Closed set]]
 
-[[Uncountable Set]]
+[[Uncountable set]]
 
-[[Null Set]]
+[[Null set]]

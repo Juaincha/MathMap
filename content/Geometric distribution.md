@@ -13,9 +13,9 @@ depends_on:
   - geometric-series
 ---
 
-# Geometric Distribution
+# Geometric distribution
 
 ## Dependencies
 
-[[Bernoulli Distribution]]
-[[Geometric Series]]
+[[Bernoulli distribution]]
+[[Geometric series]]

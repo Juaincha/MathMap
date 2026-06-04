@@ -12,7 +12,7 @@ depends_on:
   - derivative
 ---
 
-# Product Rule
+# Product rule
 
 ## Dependencies
 

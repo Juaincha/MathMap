@@ -13,9 +13,9 @@ depends_on:
   - pole-of-a-function
 ---
 
-# Meromorphic Function
+# Meromorphic function
 
 ## Dependencies
 
-[[Holomorphic Function]]
-[[Pole of a Function]]
+[[Holomorphic function]]
+[[Pole of a function]]

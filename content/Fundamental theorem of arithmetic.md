@@ -14,10 +14,10 @@ depends_on:
   - bezout-identity
 ---
 
-# Fundamental Theorem of Arithmetic
+# Fundamental theorem of arithmetic
 
 ## Dependencies
 
-[[Prime Number]]
-[[Strong Induction]]
-[[Bézout's Identity]]
+[[Prime number]]
+[[Strong induction]]
+[[Bézout's identity]]

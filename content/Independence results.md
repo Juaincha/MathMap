@@ -14,12 +14,12 @@ depends_on:
   - zf-set-theory
 ---
 
-# Independence Results
+# Independence results
 
 ## Dependencies
 
 [[Forcing]]
 
-[[Continuum Hypothesis]]
+[[Continuum hypothesis]]
 
-[[ZF Set Theory]]
+[[Zermelo–Fraenkel set theory]]

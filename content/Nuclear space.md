@@ -18,7 +18,7 @@ depends_on:
 
 ## Dependencies
 
-[[Normed Vector Space]]
+[[Normed vector space]]
 
 [[Hilbert–Schmidt operator]]
 

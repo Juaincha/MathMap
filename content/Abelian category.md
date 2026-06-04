@@ -15,7 +15,7 @@ depends_on:
   - kernel-and-image
 ---
 
-# Abelian Category
+# Abelian category
 
 ## Dependencies
 
@@ -25,4 +25,4 @@ depends_on:
 
 [[Colimit]]
 
-[[Kernel and Image]]
+[[Kernel and image]]

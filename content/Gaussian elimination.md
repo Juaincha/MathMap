@@ -12,8 +12,8 @@ depends_on:
   - system-of-linear-equations
 ---
 
-# Gaussian Elimination
+# Gaussian elimination
 
 ## Dependencies
 
-[[System of Linear Equations]]
+[[System of linear equations]]

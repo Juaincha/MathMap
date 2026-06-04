@@ -13,9 +13,9 @@ depends_on:
   - peano-axioms
 ---
 
-# Strong Induction
+# Strong induction
 
 ## Dependencies
 
-[[Mathematical Induction]]
-[[Peano Axioms]]
+[[Mathematical induction]]
+[[Peano axioms]]

@@ -13,9 +13,9 @@ depends_on:
   - partial-derivative
 ---
 
-# Laplace Equation
+# Laplace equation
 
 ## Dependencies
 
-[[Partial Differential Equation]]
-[[Partial Derivative]]
+[[Partial differential equation]]
+[[Partial derivative]]

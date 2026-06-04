@@ -14,9 +14,9 @@ depends_on:
   - integer-ring-axioms
 ---
 
-# Binomial Theorem
+# Binomial theorem
 
 ## Dependencies
 
-[[Mathematical Induction]]
-[[Integer Ring Axioms]]
+[[Mathematical induction]]
+[[Integer ring axioms]]

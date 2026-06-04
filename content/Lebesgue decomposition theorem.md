@@ -10,12 +10,12 @@ depends_on:
   - signed-measure
 ---
 
-# Lebesgue Decomposition Theorem
+# Lebesgue decomposition theorem
 
 ## Dependencies
 
-[[Absolute Continuity of Measures]]
+[[Absolute continuity of measures]]
 
-[[Singular Measure]]
+[[Singular measure]]
 
-[[Signed Measure]]
+[[Signed measure]]

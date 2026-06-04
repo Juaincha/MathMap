@@ -13,7 +13,7 @@ depends_on:
   - group
 ---
 
-# Normal Subgroup
+# Normal subgroup
 
 ## Dependencies
 

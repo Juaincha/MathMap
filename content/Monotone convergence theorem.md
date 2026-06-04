@@ -13,9 +13,9 @@ depends_on:
   - supremum-and-infimum
 ---
 
-# Monotone Convergence Theorem
+# Monotone convergence theorem
 
 ## Dependencies
 
 [[Convergence]]
-[[Supremum and Infimum]]
+[[Supremum and infimum]]

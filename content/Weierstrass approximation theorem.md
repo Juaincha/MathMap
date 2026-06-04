@@ -14,12 +14,12 @@ depends_on:
   - compact-set
 ---
 
-# Weierstrass Approximation Theorem
+# Weierstrass approximation theorem
 
 ## Dependencies
 
 [[Continuity]]
 
-[[Uniform Convergence]]
+[[Uniform convergence]]
 
-[[Compact Set]]
+[[Compact set]]

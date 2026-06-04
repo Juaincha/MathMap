@@ -13,9 +13,9 @@ depends_on:
   - real-number-axioms
 ---
 
-# Pythagorean Theorem
+# Pythagorean theorem
 
 ## Dependencies
 
-[[Euclidean Geometry Axioms]]
-[[Real Number Axioms]]
+[[Euclidean geometry axioms]]
+[[Real number axioms]]

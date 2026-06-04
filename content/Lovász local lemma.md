@@ -14,10 +14,10 @@ depends_on:
   - conditional-probability
 ---
 
-# Lovász Local Lemma
+# Lovász local lemma
 
 ## Dependencies
 
-[[Probabilistic Method]]
-[[Independence of Events]]
-[[Conditional Probability]]
+[[Probabilistic method]]
+[[Independence of events]]
+[[Conditional probability]]

@@ -14,10 +14,10 @@ depends_on:
   - edge
 ---
 
-# Turán's Theorem
+# Turán's theorem
 
 ## Dependencies
 
 [[Graph]]
-[[Bipartite Graph]]
+[[Bipartite graph]]
 [[Edge]]

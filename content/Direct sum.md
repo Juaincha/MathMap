@@ -12,7 +12,7 @@ depends_on:
   - subspace
 ---
 
-# Direct Sum
+# Direct sum
 
 ## Dependencies
 

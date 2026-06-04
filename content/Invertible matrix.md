@@ -13,9 +13,9 @@ depends_on:
   - matrix-multiplication
 ---
 
-# Invertible Matrix
+# Invertible matrix
 
 ## Dependencies
 
 [[Determinant]]
-[[Matrix Multiplication]]
+[[Matrix multiplication]]

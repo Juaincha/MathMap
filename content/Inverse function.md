@@ -13,10 +13,10 @@ depends_on:
   - composition-functions-set
 ---
 
-# Inverse Function
+# Inverse function
 
 ## Dependencies
 
 [[Bijection]]
 
-[[Composition of Functions]]
+[[Composition of functions]]

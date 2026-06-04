@@ -10,7 +10,7 @@ depends_on:
   - orthonormal-basis
 ---
 
-# Orthogonal Matrix
+# Orthogonal matrix
 
 ## Dependencies
 
@@ -18,4 +18,4 @@ depends_on:
 
 [[Transpose]]
 
-[[Orthonormal Basis]]
+[[Orthonormal basis]]

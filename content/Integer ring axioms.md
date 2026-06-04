@@ -13,8 +13,8 @@ depends_on:
   - peano-axioms
 ---
 
-# Integer Ring Axioms
+# Integer ring axioms
 
 ## Dependencies
 
-[[Peano Axioms]]
+[[Peano axioms]]

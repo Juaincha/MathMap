@@ -13,10 +13,10 @@ depends_on:
   - total-order
 ---
 
-# Ordinal Arithmetic
+# Ordinal arithmetic
 
 ## Dependencies
 
-[[Well-Ordering Principle]]
+[[Well-ordering principle]]
 
-[[Total Order]]
+[[Total order]]

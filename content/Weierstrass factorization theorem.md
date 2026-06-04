@@ -10,12 +10,12 @@ depends_on:
   - convergence-of-series
 ---
 
-# Weierstrass Factorization Theorem
+# Weierstrass factorization theorem
 
 ## Dependencies
 
-[[Entire Function]]
+[[Entire function]]
 
-[[Holomorphic Function]]
+[[Holomorphic function]]
 
-[[Convergence of Series]]
+[[Convergence of series]]

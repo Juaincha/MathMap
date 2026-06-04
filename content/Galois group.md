@@ -14,10 +14,10 @@ depends_on:
   - group-homomorphism
 ---
 
-# Galois Group
+# Galois group
 
 ## Dependencies
 
-[[Field Extension]]
+[[Field extension]]
 [[Group]]
-[[Group Homomorphism]]
+[[Group homomorphism]]

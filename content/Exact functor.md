@@ -14,12 +14,12 @@ depends_on:
   - exact-sequence
 ---
 
-# Exact Functor
+# Exact functor
 
 ## Dependencies
 
 [[Functor]]
 
-[[Abelian Category]]
+[[Abelian category]]
 
-[[Exact Sequence]]
+[[Exact sequence]]

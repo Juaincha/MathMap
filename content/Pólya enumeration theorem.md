@@ -10,12 +10,12 @@ depends_on:
   - group
 ---
 
-# Pólya Enumeration Theorem
+# Pólya enumeration theorem
 
 ## Dependencies
 
-[[Burnside's Lemma]]
+[[Burnside's lemma]]
 
-[[Generating Function]]
+[[Generating function]]
 
 [[Group]]

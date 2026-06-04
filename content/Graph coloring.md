@@ -14,7 +14,7 @@ depends_on:
   - edge
 ---
 
-# Graph Coloring
+# Graph coloring
 
 ## Dependencies
 

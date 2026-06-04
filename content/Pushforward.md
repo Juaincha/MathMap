@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Tangent Space]]
-[[Smooth Manifold]]
+[[Tangent space]]
+[[Smooth manifold]]

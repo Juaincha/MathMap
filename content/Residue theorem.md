@@ -14,10 +14,10 @@ depends_on:
   - pole-of-a-function
 ---
 
-# Residue Theorem
+# Residue theorem
 
 ## Dependencies
 
-[[Cauchy's Integral Formula]]
-[[Laurent Series]]
-[[Pole of a Function]]
+[[Cauchy's integral formula]]
+[[Laurent series]]
+[[Pole of a function]]

@@ -12,8 +12,8 @@ depends_on:
   - double-integral
 ---
 
-# Triple Integral
+# Triple integral
 
 ## Dependencies
 
-[[Double Integral]]
+[[Double integral]]

@@ -13,9 +13,9 @@ depends_on:
   - polynomial-ring
 ---
 
-# Algebraic Element
+# Algebraic element
 
 ## Dependencies
 
-[[Field Extension]]
-[[Polynomial Ring]]
+[[Field extension]]
+[[Polynomial ring]]

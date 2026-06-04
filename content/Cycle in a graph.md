@@ -12,8 +12,8 @@ depends_on:
   - path-in-a-graph
 ---
 
-# Cycle in a Graph
+# Cycle in a graph
 
 ## Dependencies
 
-[[Path in a Graph]]
+[[Path in a graph]]

@@ -15,4 +15,4 @@ depends_on:
 
 [[Permutation]]
 
-[[Inclusion–Exclusion Principle]]
+[[Inclusion-exclusion principle]]

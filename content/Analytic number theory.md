@@ -10,12 +10,12 @@ depends_on:
   - prime-number-theorem
 ---
 
-# Analytic Number Theory
+# Analytic number theory
 
 ## Dependencies
 
-[[Dirichlet Series]]
+[[Dirichlet series]]
 
-[[Analytic Function]]
+[[Analytic function]]
 
-[[Prime Number Theorem]]
+[[Prime number theorem]]

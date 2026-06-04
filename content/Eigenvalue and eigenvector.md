@@ -13,9 +13,9 @@ depends_on:
   - matrix-multiplication
 ---
 
-# Eigenvalue and Eigenvector
+# Eigenvalue and eigenvector
 
 ## Dependencies
 
-[[Linear Map]]
-[[Matrix Multiplication]]
+[[Linear map]]
+[[Matrix multiplication]]

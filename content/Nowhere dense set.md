@@ -13,10 +13,10 @@ depends_on:
   - topology
 ---
 
-# Nowhere Dense Set
+# Nowhere dense set
 
 ## Dependencies
 
-[[Closed Set]]
+[[Closed set]]
 
 [[Topology]]

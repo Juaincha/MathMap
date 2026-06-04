@@ -15,14 +15,14 @@ depends_on:
   - measure-space
 ---
 
-# Egorov Theorem
+# Egorov theorem
 
 ## Dependencies
 
-[[Measurable Function]]
+[[Measurable function]]
 
-[[Pointwise Convergence]]
+[[Pointwise convergence]]
 
-[[Uniform Convergence]]
+[[Uniform convergence]]
 
-[[Measure Space]]
+[[Measure space]]

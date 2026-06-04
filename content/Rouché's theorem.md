@@ -10,12 +10,12 @@ depends_on:
   - contour-integral
 ---
 
-# Rouché's Theorem
+# Rouché's theorem
 
 ## Dependencies
 
-[[Argument Principle]]
+[[Argument principle]]
 
-[[Holomorphic Function]]
+[[Holomorphic function]]
 
-[[Contour Integral]]
+[[Contour integral]]

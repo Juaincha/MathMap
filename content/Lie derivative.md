@@ -13,9 +13,9 @@ depends_on:
   - lie-bracket
 ---
 
-# Lie Derivative
+# Lie derivative
 
 ## Dependencies
 
-[[Vector Field on Manifold]]
-[[Lie Bracket]]
+[[Vector field on manifold]]
+[[Lie bracket]]

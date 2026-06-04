@@ -13,7 +13,7 @@ depends_on:
   - cardinality
 ---
 
-# Countable Set
+# Countable set
 
 ## Dependencies
 

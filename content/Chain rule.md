@@ -12,7 +12,7 @@ depends_on:
   - derivative
 ---
 
-# Chain Rule
+# Chain rule
 
 ## Dependencies
 

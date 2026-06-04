@@ -12,7 +12,7 @@ depends_on:
   - ring
 ---
 
-# Unit in a Ring
+# Unit in a ring
 
 ## Dependencies
 

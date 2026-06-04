@@ -10,12 +10,12 @@ depends_on:
   - complex-number
 ---
 
-# Dirichlet Series
+# Dirichlet series
 
 ## Dependencies
 
 [[Series]]
 
-[[Convergence of Series]]
+[[Convergence of series]]
 
-[[Complex Number]]
+[[Complex number]]

@@ -14,12 +14,12 @@ depends_on:
   - type-theory
 ---
 
-# Constructive Mathematics
+# Constructive mathematics
 
 ## Dependencies
 
-[[First-Order Logic]]
+[[First-order logic]]
 
-[[Proof by Contradiction]]
+[[Proof by contradiction]]
 
-[[Type Theory]]
+[[Type theory]]

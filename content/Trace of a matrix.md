@@ -12,7 +12,7 @@ depends_on:
   - matrix
 ---
 
-# Trace of a Matrix
+# Trace of a matrix
 
 ## Dependencies
 

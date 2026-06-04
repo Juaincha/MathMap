@@ -9,10 +9,10 @@ depends_on:
   - power-series-method-ode
 ---
 
-# Bessel Equation
+# Bessel equation
 
 ## Dependencies
 
-[[Second-Order Linear ODE]]
+[[Second-order linear ODE]]
 
-[[Power Series Method for ODEs]]
+[[Power series method for ODEs]]

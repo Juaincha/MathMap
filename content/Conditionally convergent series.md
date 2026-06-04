@@ -13,9 +13,9 @@ depends_on:
   - absolutely-convergent-series
 ---
 
-# Conditionally Convergent Series
+# Conditionally convergent series
 
 ## Dependencies
 
-[[Convergence of Series]]
-[[Absolutely Convergent Series]]
+[[Convergence of series]]
+[[Absolutely convergent series]]

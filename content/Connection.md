@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Vector Bundle]]
-[[Tangent Bundle]]
+[[Vector bundle]]
+[[Tangent bundle]]

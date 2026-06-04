@@ -10,12 +10,12 @@ depends_on:
   - random-variable
 ---
 
-# Conditional Distribution
+# Conditional distribution
 
 ## Dependencies
 
-[[Conditional Probability]]
+[[Conditional probability]]
 
-[[Joint Distribution]]
+[[Joint distribution]]
 
-[[Random Variable]]
+[[Random variable]]

@@ -13,9 +13,9 @@ depends_on:
   - open-set
 ---
 
-# Hausdorff Space
+# Hausdorff space
 
 ## Dependencies
 
 [[Topology]]
-[[Open Set]]
+[[Open set]]

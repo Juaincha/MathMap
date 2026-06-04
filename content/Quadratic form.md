@@ -9,10 +9,10 @@ depends_on:
   - symmetric-bilinear-form
 ---
 
-# Quadratic Form
+# Quadratic form
 
 ## Dependencies
 
-[[Bilinear Form]]
+[[Bilinear form]]
 
-[[Symmetric Bilinear Form]]
+[[Symmetric bilinear form]]

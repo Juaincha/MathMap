@@ -13,9 +13,9 @@ depends_on:
   - measurable-set
 ---
 
-# Measure Space
+# Measure space
 
 ## Dependencies
 
-[[Sigma-Algebra]]
-[[Measurable Set]]
+[[Sigma-algebra]]
+[[Measurable set]]

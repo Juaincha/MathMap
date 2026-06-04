@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Riemannian Metric]]
-[[Ordinary Differential Equation]]
+[[Riemannian metric]]
+[[Ordinary differential equation]]

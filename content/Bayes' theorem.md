@@ -12,8 +12,8 @@ depends_on:
   - conditional-probability
 ---
 
-# Bayes' Theorem
+# Bayes' theorem
 
 ## Dependencies
 
-[[Conditional Probability]]
+[[Conditional probability]]

@@ -13,8 +13,8 @@ depends_on:
   - rational-field-axioms
 ---
 
-# Real Number Axioms
+# Real number axioms
 
 ## Dependencies
 
-[[Rational Field Axioms]]
+[[Rational field axioms]]

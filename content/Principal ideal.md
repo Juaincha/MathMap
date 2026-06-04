@@ -12,7 +12,7 @@ depends_on:
   - ideal
 ---
 
-# Principal Ideal
+# Principal ideal
 
 ## Dependencies
 

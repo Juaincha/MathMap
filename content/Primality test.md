@@ -14,10 +14,10 @@ depends_on:
   - modular-arithmetic
 ---
 
-# Primality Test
+# Primality test
 
 ## Dependencies
 
-[[Fermat's Little Theorem]]
-[[Prime Number]]
-[[Modular Arithmetic]]
+[[Fermat's little theorem]]
+[[Prime number]]
+[[Modular arithmetic]]

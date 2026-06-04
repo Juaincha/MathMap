@@ -13,9 +13,9 @@ depends_on:
   - surface-of-revolution
 ---
 
-# Surface Integral
+# Surface integral
 
 ## Dependencies
 
-[[Double Integral]]
-[[Surface of Revolution]]
+[[Double integral]]
+[[Surface of revolution]]

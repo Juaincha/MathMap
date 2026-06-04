@@ -13,9 +13,9 @@ depends_on:
   - sequence
 ---
 
-# Generating Function
+# Generating function
 
 ## Dependencies
 
-[[Power Series]]
+[[Power series]]
 [[Sequence]]

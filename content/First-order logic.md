@@ -12,8 +12,8 @@ depends_on:
   - propositional-logic
 ---
 
-# First-Order Logic
+# First-order logic
 
 ## Dependencies
 
-[[Propositional Logic]]
+[[Propositional logic]]

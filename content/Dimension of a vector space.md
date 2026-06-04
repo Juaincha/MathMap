@@ -12,7 +12,7 @@ depends_on:
   - basis
 ---
 
-# Dimension of a Vector Space
+# Dimension of a vector space
 
 ## Dependencies
 

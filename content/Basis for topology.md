@@ -13,9 +13,9 @@ depends_on:
   - open-set
 ---
 
-# Basis for Topology
+# Basis for topology
 
 ## Dependencies
 
 [[Topology]]
-[[Open Set]]
+[[Open set]]

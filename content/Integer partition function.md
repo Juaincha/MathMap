@@ -9,10 +9,10 @@ depends_on:
   - generating-function
 ---
 
-# Integer Partition Function
+# Integer partition function
 
 ## Dependencies
 
-[[Partition of Integer]]
+[[Partition of integer]]
 
-[[Generating Function]]
+[[Generating function]]

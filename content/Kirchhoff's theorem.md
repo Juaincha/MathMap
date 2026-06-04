@@ -14,10 +14,10 @@ depends_on:
   - determinant
 ---
 
-# Kirchhoff's Theorem
+# Kirchhoff's theorem
 
 ## Dependencies
 
-[[Spanning Tree]]
-[[Adjacency Matrix]]
+[[Spanning tree]]
+[[Adjacency matrix]]
 [[Determinant]]

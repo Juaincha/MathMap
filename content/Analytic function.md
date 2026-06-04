@@ -13,9 +13,9 @@ depends_on:
   - power-series
 ---
 
-# Analytic Function
+# Analytic function
 
 ## Dependencies
 
-[[Holomorphic Function]]
-[[Power Series]]
+[[Holomorphic function]]
+[[Power series]]

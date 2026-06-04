@@ -9,10 +9,10 @@ depends_on:
   - characteristic-equation-ode
 ---
 
-# Cauchy–Euler Equation
+# Cauchy–Euler equation
 
 ## Dependencies
 
-[[Second-Order Linear ODE]]
+[[Second-order linear ODE]]
 
-[[Characteristic Equation (ODE)]]
+[[Characteristic equation]]

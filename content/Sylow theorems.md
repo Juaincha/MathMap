@@ -10,7 +10,7 @@ depends_on:
   - prime-number
 ---
 
-# Sylow Theorems
+# Sylow theorems
 
 ## Dependencies
 
@@ -18,4 +18,4 @@ depends_on:
 
 [[Subgroup]]
 
-[[Prime Number]]
+[[Prime number]]

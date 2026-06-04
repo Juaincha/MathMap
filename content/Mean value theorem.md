@@ -12,8 +12,8 @@ depends_on:
   - rolles-theorem
 ---
 
-# Mean Value Theorem
+# Mean value theorem
 
 ## Dependencies
 
-[[Rolle's Theorem]]
+[[Rolle's theorem]]

@@ -13,9 +13,9 @@ depends_on:
   - group
 ---
 
-# Lie Group
+# Lie group
 
 ## Dependencies
 
-[[Smooth Manifold]]
+[[Smooth manifold]]
 [[Group]]

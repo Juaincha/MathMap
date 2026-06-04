@@ -20,6 +20,6 @@ depends_on:
 
 [[Bounded linear operator]]
 
-[[Banach Space]]
+[[Banach space]]
 
-[[Eigenvalue and Eigenvector]]
+[[Eigenvalue and eigenvector]]

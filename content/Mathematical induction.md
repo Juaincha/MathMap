@@ -13,8 +13,8 @@ depends_on:
   - peano-axioms
 ---
 
-# Mathematical Induction
+# Mathematical induction
 
 ## Dependencies
 
-[[Peano Axioms]]
+[[Peano axioms]]

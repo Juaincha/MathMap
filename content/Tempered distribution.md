@@ -11,7 +11,7 @@ wikipedia: https://en.wikipedia.org/wiki/Distribution_(mathematics)#Tempered_dis
 depends_on:
   - distribution-theory
   - schwartz-space
-  - dual-space
+  - dual-space-linear
 ---
 
 # Tempered distribution

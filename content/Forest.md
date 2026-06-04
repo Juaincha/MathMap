@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Tree]]
-[[Connected Graph]]
+[[Connected graph]]

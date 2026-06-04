@@ -13,9 +13,9 @@ depends_on:
   - absolute-value
 ---
 
-# Limit of a Function
+# Limit of a function
 
 ## Dependencies
 
 [[Function]]
-[[Absolute Value]]
+[[Absolute value]]

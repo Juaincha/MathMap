@@ -13,7 +13,7 @@ depends_on:
   - function
 ---
 
-# Pointwise Convergence
+# Pointwise convergence
 
 ## Dependencies
 

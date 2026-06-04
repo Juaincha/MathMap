@@ -12,8 +12,8 @@ depends_on:
   - measure-space
 ---
 
-# Null Set
+# Null set
 
 ## Dependencies
 
-[[Measure Space]]
+[[Measure space]]

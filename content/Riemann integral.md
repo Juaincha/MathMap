@@ -13,9 +13,9 @@ depends_on:
   - supremum-and-infimum
 ---
 
-# Riemann Integral
+# Riemann integral
 
 ## Dependencies
 
 [[Continuity]]
-[[Supremum and Infimum]]
+[[Supremum and infimum]]

@@ -12,8 +12,8 @@ depends_on:
   - random-variable
 ---
 
-# Discrete Random Variable
+# Discrete random variable
 
 ## Dependencies
 
-[[Random Variable]]
+[[Random variable]]

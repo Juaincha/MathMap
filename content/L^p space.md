@@ -14,10 +14,10 @@ depends_on:
   - banach-space
 ---
 
-# L^p Space
+# L^p space
 
 ## Dependencies
 
-[[Lebesgue Integral]]
-[[Normed Vector Space]]
-[[Banach Space]]
+[[Lebesgue integral]]
+[[Normed vector space]]
+[[Banach space]]

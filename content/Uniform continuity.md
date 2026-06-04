@@ -12,7 +12,7 @@ depends_on:
   - continuity
 ---
 
-# Uniform Continuity
+# Uniform continuity
 
 ## Dependencies
 

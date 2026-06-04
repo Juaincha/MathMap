@@ -10,7 +10,7 @@ depends_on:
   - determinant
 ---
 
-# Permanent of a Matrix
+# Permanent of a matrix
 
 ## Dependencies
 

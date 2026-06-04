@@ -10,7 +10,7 @@ wikipedia: https://en.wikipedia.org/wiki/Riesz_representation_theorem
 
 depends_on:
   - hilbert-space
-  - dual-space
+  - dual-space-linear
   - inner-product-space
 ---
 
@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[Hilbert Space]]
+[[Hilbert space]]
 
 [[Dual space]]
 
-[[Inner Product Space]]
+[[Inner product space]]

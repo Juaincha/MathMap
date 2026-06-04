@@ -9,10 +9,10 @@ depends_on:
   - fundamental-theorem-of-arithmetic
 ---
 
-# Prime Factorization
+# Prime factorization
 
 ## Dependencies
 
-[[Prime Number]]
+[[Prime number]]
 
-[[Fundamental Theorem of Arithmetic]]
+[[Fundamental theorem of arithmetic]]

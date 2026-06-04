@@ -12,14 +12,17 @@ depends_on:
   - holomorphic-function
   - compact-convergence
   - equicontinuity
+  - uniform-convergence
 ---
 
-# Normal Family
+# Normal family
 
 ## Dependencies
 
-[[Holomorphic Function]]
+[[Holomorphic function]]
 
-[[Compact Convergence]]
+[[Compact convergence]]
 
 [[Equicontinuity]]
+
+[[Uniform convergence]]

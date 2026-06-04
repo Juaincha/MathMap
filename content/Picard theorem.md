@@ -10,12 +10,12 @@ depends_on:
   - meromorphic-function
 ---
 
-# Picard Theorem
+# Picard theorem
 
 ## Dependencies
 
-[[Entire Function]]
+[[Entire function]]
 
 [[Singularity]]
 
-[[Meromorphic Function]]
+[[Meromorphic function]]

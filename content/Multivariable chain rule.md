@@ -14,10 +14,10 @@ depends_on:
   - gradient
 ---
 
-# Multivariable Chain Rule
+# Multivariable chain rule
 
 ## Dependencies
 
-[[Chain Rule]]
-[[Partial Derivative]]
+[[Chain rule]]
+[[Partial derivative]]
 [[Gradient]]

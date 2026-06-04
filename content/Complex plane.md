@@ -13,9 +13,9 @@ depends_on:
   - cartesian-product
 ---
 
-# Complex Plane
+# Complex plane
 
 ## Dependencies
 
-[[Complex Number]]
-[[Cartesian Product]]
+[[Complex number]]
+[[Cartesian product]]

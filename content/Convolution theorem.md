@@ -13,9 +13,9 @@ depends_on:
   - riemann-integral
 ---
 
-# Convolution Theorem
+# Convolution theorem
 
 ## Dependencies
 
-[[Laplace Transform]]
-[[Riemann Integral]]
+[[Laplace transform]]
+[[Riemann integral]]

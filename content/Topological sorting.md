@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Directed Graph]]
+[[Directed graph]]
 [[Depth-first search]]

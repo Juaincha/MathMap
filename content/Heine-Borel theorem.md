@@ -14,10 +14,10 @@ depends_on:
   - closed-set
 ---
 
-# Heine-Borel Theorem
+# Heine-Borel theorem
 
 ## Dependencies
 
-[[Open Cover]]
-[[Compact Set]]
-[[Closed Set]]
+[[Open cover]]
+[[Compact set]]
+[[Closed set]]

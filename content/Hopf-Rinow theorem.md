@@ -14,10 +14,10 @@ depends_on:
   - riemannian-metric
 ---
 
-# Hopf-Rinow Theorem
+# Hopf-Rinow theorem
 
 ## Dependencies
 
 [[Geodesic]]
-[[Complete Metric Space]]
-[[Riemannian Metric]]
+[[Complete metric space]]
+[[Riemannian metric]]

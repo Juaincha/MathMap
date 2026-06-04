@@ -13,10 +13,10 @@ depends_on:
   - axiom-of-union
 ---
 
-# Union Operation
+# Union operation
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]
 
-[[Axiom of Union]]
+[[Axiom of union]]

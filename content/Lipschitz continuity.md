@@ -13,9 +13,9 @@ depends_on:
   - uniform-continuity
 ---
 
-# Lipschitz Continuity
+# Lipschitz continuity
 
 ## Dependencies
 
-[[Metric Space]]
-[[Uniform Continuity]]
+[[Metric space]]
+[[Uniform continuity]]

@@ -10,7 +10,7 @@ depends_on:
   - spanning-tree
 ---
 
-# Graphic Matroid
+# Graphic matroid
 
 ## Dependencies
 
@@ -18,4 +18,4 @@ depends_on:
 
 [[Graph]]
 
-[[Spanning Tree]]
+[[Spanning tree]]

@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[Integral Domain]]
+[[Integral domain]]
 
-[[Irreducible Polynomial]]
+[[Irreducible polynomial]]
 
-[[Unit in a Ring]]
+[[Unit in a ring]]

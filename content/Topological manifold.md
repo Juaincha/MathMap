@@ -10,12 +10,12 @@ depends_on:
   - locally-compact-space
 ---
 
-# Topological Manifold
+# Topological manifold
 
 ## Dependencies
 
-[[Hausdorff Space]]
+[[Hausdorff space]]
 
 [[Homeomorphism]]
 
-[[Locally Compact Space]]
+[[Locally compact space]]

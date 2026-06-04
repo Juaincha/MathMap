@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Function]]
-[[Set Operations]]
+[[Set operations]]

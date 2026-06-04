@@ -13,9 +13,9 @@ depends_on:
   - pigeonhole-principle
 ---
 
-# Ramsey Theory
+# Ramsey theory
 
 ## Dependencies
 
-[[Graph Coloring]]
-[[Pigeonhole Principle]]
+[[Graph coloring]]
+[[Pigeonhole principle]]

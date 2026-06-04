@@ -10,12 +10,12 @@ depends_on:
   - quotient-group
 ---
 
-# Simple Group
+# Simple group
 
 ## Dependencies
 
 [[Group]]
 
-[[Normal Subgroup]]
+[[Normal subgroup]]
 
-[[Quotient Group]]
+[[Quotient group]]

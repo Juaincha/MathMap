@@ -9,10 +9,10 @@ depends_on:
   - perfect-number
 ---
 
-# Mersenne Prime
+# Mersenne prime
 
 ## Dependencies
 
-[[Prime Number]]
+[[Prime number]]
 
-[[Perfect Number]]
+[[Perfect number]]

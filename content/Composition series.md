@@ -10,12 +10,12 @@ depends_on:
   - quotient-group
 ---
 
-# Composition Series
+# Composition series
 
 ## Dependencies
 
-[[Normal Subgroup]]
+[[Normal subgroup]]
 
-[[Simple Group]]
+[[Simple group]]
 
-[[Quotient Group]]
+[[Quotient group]]

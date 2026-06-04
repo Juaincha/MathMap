@@ -13,10 +13,10 @@ depends_on:
   - supremum-and-infimum
 ---
 
-# Upper Semicontinuity
+# Upper semicontinuity
 
 ## Dependencies
 
-[[Limit of a Function]]
+[[Limit of a function]]
 
-[[Supremum and Infimum]]
+[[Supremum and infimum]]

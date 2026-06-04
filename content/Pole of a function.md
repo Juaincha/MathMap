@@ -13,9 +13,9 @@ depends_on:
   - laurent-series
 ---
 
-# Pole of a Function
+# Pole of a function
 
 ## Dependencies
 
 [[Singularity]]
-[[Laurent Series]]
+[[Laurent series]]

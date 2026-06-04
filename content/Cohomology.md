@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Homology Group]]
-[[Exact Sequence]]
+[[Homology group]]
+[[Exact sequence]]

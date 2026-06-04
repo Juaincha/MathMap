@@ -13,9 +13,9 @@ depends_on:
   - homogeneous-ode
 ---
 
-# General Solution
+# General solution
 
 ## Dependencies
 
-[[Ordinary Differential Equation]]
+[[Ordinary differential equation]]
 [[Homogeneous ODE]]

@@ -12,7 +12,7 @@ depends_on:
   - tree
 ---
 
-# Rooted Tree
+# Rooted tree
 
 ## Dependencies
 

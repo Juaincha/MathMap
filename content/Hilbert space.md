@@ -13,9 +13,9 @@ depends_on:
   - banach-space
 ---
 
-# Hilbert Space
+# Hilbert space
 
 ## Dependencies
 
-[[Inner Product Space]]
-[[Banach Space]]
+[[Inner product space]]
+[[Banach space]]

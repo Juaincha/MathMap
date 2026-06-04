@@ -13,9 +13,9 @@ depends_on:
   - dimension-vector-space
 ---
 
-# Degree of Field Extension
+# Degree of field extension
 
 ## Dependencies
 
-[[Field Extension]]
-[[Dimension]]
+[[Field extension]]
+[[Dimension of a vector space]]

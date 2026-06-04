@@ -13,9 +13,9 @@ depends_on:
   - open-set
 ---
 
-# Borel Sigma-Algebra
+# Borel sigma-algebra
 
 ## Dependencies
 
-[[Sigma-Algebra]]
-[[Open Set]]
+[[Sigma-algebra]]
+[[Open set]]

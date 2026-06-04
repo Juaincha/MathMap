@@ -13,9 +13,9 @@ depends_on:
   - borel-sigma-algebra
 ---
 
-# Lebesgue Measure
+# Lebesgue measure
 
 ## Dependencies
 
-[[Measure Space]]
-[[Borel Sigma-Algebra]]
+[[Measure space]]
+[[Borel sigma-algebra]]

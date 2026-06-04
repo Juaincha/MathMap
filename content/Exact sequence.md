@@ -13,9 +13,9 @@ depends_on:
   - kernel-and-image
 ---
 
-# Exact Sequence
+# Exact sequence
 
 ## Dependencies
 
-[[Module Homomorphism]]
-[[Kernel and Image]]
+[[Module homomorphism]]
+[[Kernel and image]]

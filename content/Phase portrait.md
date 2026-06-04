@@ -12,7 +12,7 @@ depends_on:
   - system-of-odes
 ---
 
-# Phase Portrait
+# Phase portrait
 
 ## Dependencies
 

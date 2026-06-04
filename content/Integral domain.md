@@ -12,7 +12,7 @@ depends_on:
   - ring
 ---
 
-# Integral Domain
+# Integral domain
 
 ## Dependencies
 

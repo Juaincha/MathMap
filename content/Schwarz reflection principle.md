@@ -9,10 +9,10 @@ depends_on:
   - analytic-continuation
 ---
 
-# Schwarz Reflection Principle
+# Schwarz reflection principle
 
 ## Dependencies
 
-[[Holomorphic Function]]
+[[Holomorphic function]]
 
-[[Analytic Continuation]]
+[[Analytic continuation]]

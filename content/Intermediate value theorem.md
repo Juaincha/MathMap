@@ -12,7 +12,7 @@ depends_on:
   - continuity
 ---
 
-# Intermediate Value Theorem
+# Intermediate value theorem
 
 ## Dependencies
 

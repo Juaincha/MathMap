@@ -13,9 +13,9 @@ depends_on:
   - convergence-of-series
 ---
 
-# Liouville Number
+# Liouville number
 
 ## Dependencies
 
-[[Algebraic Number]]
-[[Convergence of Series]]
+[[Algebraic number]]
+[[Convergence of series]]

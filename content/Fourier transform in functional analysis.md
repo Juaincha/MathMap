@@ -18,7 +18,7 @@ depends_on:
 
 ## Dependencies
 
-[[Lp Space]]
+[[L^p space]]
 
 [[Schwartz space]]
 

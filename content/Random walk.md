@@ -10,12 +10,12 @@ depends_on:
   - discrete-random-variable
 ---
 
-# Random Walk
+# Random walk
 
 ## Dependencies
 
-[[Markov Chain]]
+[[Markov chain]]
 
-[[Stochastic Process]]
+[[Stochastic process]]
 
-[[Discrete Random Variable]]
+[[Discrete random variable]]

@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Ordinary Differential Equation]]
-[[Riemann Integral]]
+[[Ordinary differential equation]]
+[[Riemann integral]]

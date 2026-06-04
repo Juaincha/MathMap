@@ -13,10 +13,10 @@ depends_on:
   - axiom-of-separation
 ---
 
-# Intersection Operation
+# Intersection operation
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]
 
-[[Axiom of Separation]]
+[[Axiom of separation]]

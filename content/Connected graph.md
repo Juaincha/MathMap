@@ -12,8 +12,8 @@ depends_on:
   - path-in-a-graph
 ---
 
-# Connected Graph
+# Connected graph
 
 ## Dependencies
 
-[[Path in a Graph]]
+[[Path in a graph]]

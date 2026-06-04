@@ -13,7 +13,7 @@ depends_on:
   - monotone-map
 ---
 
-# Knaster–Tarski fixed-point theorem
+# Knaster–tarski fixed-point theorem
 
 ## Dependencies
 

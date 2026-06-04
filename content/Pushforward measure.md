@@ -9,10 +9,10 @@ depends_on:
   - measurable-function
 ---
 
-# Pushforward Measure
+# Pushforward measure
 
 ## Dependencies
 
-[[Measure Space]]
+[[Measure space]]
 
-[[Measurable Function]]
+[[Measurable function]]

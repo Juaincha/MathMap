@@ -15,14 +15,14 @@ depends_on:
   - continuity
 ---
 
-# Dini Theorem
+# Dini theorem
 
 ## Dependencies
 
-[[Pointwise Convergence]]
+[[Pointwise convergence]]
 
-[[Uniform Convergence]]
+[[Uniform convergence]]
 
-[[Compact Set]]
+[[Compact set]]
 
 [[Continuity]]

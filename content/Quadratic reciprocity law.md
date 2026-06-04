@@ -10,12 +10,12 @@ depends_on:
   - prime-number
 ---
 
-# Quadratic Reciprocity Law
+# Quadratic reciprocity law
 
 ## Dependencies
 
-[[Legendre Symbol]]
+[[Legendre symbol]]
 
-[[Quadratic Residue]]
+[[Quadratic residue]]
 
-[[Prime Number]]
+[[Prime number]]

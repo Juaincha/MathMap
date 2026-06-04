@@ -19,4 +19,4 @@ depends_on:
 
 [[Morphism]]
 
-[[Composition of Morphisms]]
+[[Composition of morphisms]]

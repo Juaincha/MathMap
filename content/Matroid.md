@@ -13,6 +13,6 @@ depends_on:
 
 ## Dependencies
 
-[[Linear Independence]]
+[[Linear independence]]
 
-[[Set Operations]]
+[[Set operations]]

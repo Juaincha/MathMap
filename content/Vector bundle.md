@@ -13,9 +13,9 @@ depends_on:
   - vector-space
 ---
 
-# Vector Bundle
+# Vector bundle
 
 ## Dependencies
 
-[[Smooth Manifold]]
-[[Vector Space]]
+[[Smooth manifold]]
+[[Vector space]]

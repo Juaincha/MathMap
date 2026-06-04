@@ -13,9 +13,9 @@ depends_on:
   - bolzano-weierstrass-theorem
 ---
 
-# Extreme Value Theorem
+# Extreme value theorem
 
 ## Dependencies
 
 [[Continuity]]
-[[Bolzano-Weierstrass Theorem]]
+[[Bolzano-Weierstrass theorem]]

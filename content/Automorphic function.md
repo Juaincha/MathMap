@@ -10,12 +10,12 @@ depends_on:
   - group
 ---
 
-# Automorphic Function
+# Automorphic function
 
 ## Dependencies
 
-[[Meromorphic Function]]
+[[Meromorphic function]]
 
-[[Möbius Transformation]]
+[[Möbius transformation]]
 
 [[Group]]

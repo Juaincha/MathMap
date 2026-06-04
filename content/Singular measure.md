@@ -13,9 +13,9 @@ depends_on:
   - null-set
 ---
 
-# Singular Measure
+# Singular measure
 
 ## Dependencies
 
-[[Measure Space]]
-[[Null Set]]
+[[Measure space]]
+[[Null set]]

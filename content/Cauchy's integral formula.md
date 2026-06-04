@@ -13,9 +13,9 @@ depends_on:
   - contour-integral
 ---
 
-# Cauchy's Integral Formula
+# Cauchy's integral formula
 
 ## Dependencies
 
-[[Cauchy's Integral Theorem]]
-[[Contour Integral]]
+[[Cauchy's integral theorem]]
+[[Contour integral]]

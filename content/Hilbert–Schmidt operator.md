@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[Hilbert Space]]
+[[Hilbert space]]
 
 [[Compact operator]]
 
-[[Orthonormal Basis]]
+[[Orthonormal basis]]

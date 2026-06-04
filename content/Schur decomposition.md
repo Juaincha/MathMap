@@ -10,12 +10,12 @@ depends_on:
   - orthogonal-matrix
 ---
 
-# Schur Decomposition
+# Schur decomposition
 
 ## Dependencies
 
 [[Matrix]]
 
-[[Eigenvalue and Eigenvector]]
+[[Eigenvalue and eigenvector]]
 
-[[Orthogonal Matrix]]
+[[Orthogonal matrix]]

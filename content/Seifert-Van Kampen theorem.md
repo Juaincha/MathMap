@@ -13,9 +13,9 @@ depends_on:
   - open-set
 ---
 
-# Seifert-van Kampen Theorem
+# Seifert-Van Kampen theorem
 
 ## Dependencies
 
-[[Fundamental Group]]
-[[Open Set]]
+[[Fundamental group]]
+[[Open set]]

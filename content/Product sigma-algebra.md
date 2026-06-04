@@ -9,10 +9,10 @@ depends_on:
   - cartesian-product
 ---
 
-# Product Sigma-Algebra
+# Product sigma-algebra
 
 ## Dependencies
 
-[[Sigma-Algebra]]
+[[Sigma-algebra]]
 
-[[Cartesian Product]]
+[[Cartesian product]]

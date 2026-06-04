@@ -13,9 +13,9 @@ depends_on:
   - eigenvalue-and-eigenvector
 ---
 
-# Characteristic Polynomial
+# Characteristic polynomial
 
 ## Dependencies
 
 [[Determinant]]
-[[Eigenvalue and Eigenvector]]
+[[Eigenvalue and eigenvector]]

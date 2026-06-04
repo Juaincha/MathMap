@@ -14,10 +14,10 @@ depends_on:
   - subgroup
 ---
 
-# Galois Correspondence
+# Galois correspondence
 
 ## Dependencies
 
-[[Galois Group]]
-[[Fixed Field]]
+[[Galois group]]
+[[Fixed field]]
 [[Subgroup]]

@@ -13,9 +13,9 @@ depends_on:
   - tensor-product
 ---
 
-# Wedge Product
+# Wedge product
 
 ## Dependencies
 
-[[Differential Form]]
-[[Tensor Product]]
+[[Differential form]]
+[[Tensor product]]

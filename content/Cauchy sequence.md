@@ -13,9 +13,9 @@ depends_on:
   - absolute-value
 ---
 
-# Cauchy Sequence
+# Cauchy sequence
 
 ## Dependencies
 
 [[Sequence]]
-[[Absolute Value]]
+[[Absolute value]]

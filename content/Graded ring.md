@@ -19,4 +19,4 @@ depends_on:
 
 [[Commutative ring]]
 
-[[Direct Sum]]
+[[Direct sum]]

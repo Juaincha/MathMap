@@ -9,10 +9,10 @@ depends_on:
   - modulus-of-complex-number
 ---
 
-# Schwarz Lemma
+# Schwarz lemma
 
 ## Dependencies
 
-[[Holomorphic Function]]
+[[Holomorphic function]]
 
-[[Modulus of Complex Number]]
+[[Modulus of complex number]]

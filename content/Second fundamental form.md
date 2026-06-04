@@ -13,9 +13,9 @@ depends_on:
   - covariant-derivative
 ---
 
-# Second Fundamental Form
+# Second fundamental form
 
 ## Dependencies
 
 [[Submanifold]]
-[[Covariant Derivative]]
+[[Covariant derivative]]

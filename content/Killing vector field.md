@@ -13,9 +13,9 @@ depends_on:
   - riemannian-metric
 ---
 
-# Killing Vector Field
+# Killing vector field
 
 ## Dependencies
 
-[[Lie Derivative]]
-[[Riemannian Metric]]
+[[Lie derivative]]
+[[Riemannian metric]]

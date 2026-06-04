@@ -19,5 +19,5 @@ depends_on:
 ## Dependencies
 
 [[Determinant]]
-[[Linear Independence]]
+[[Linear independence]]
 [[Derivative]]

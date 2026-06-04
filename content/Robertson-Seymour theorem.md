@@ -14,10 +14,10 @@ depends_on:
   - treewidth
 ---
 
-# Robertson-Seymour Theorem
+# Robertson-Seymour theorem
 
 ## Dependencies
 
-[[Graph Minor]]
+[[Graph minor]]
 [[Partial order]]
 [[Treewidth]]

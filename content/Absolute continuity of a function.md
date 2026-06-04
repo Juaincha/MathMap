@@ -14,12 +14,12 @@ depends_on:
   - lebesgue-integral
 ---
 
-# Absolute Continuity of a Function
+# Absolute continuity of a function
 
 ## Dependencies
 
 [[Continuity]]
 
-[[Bounded Variation]]
+[[Bounded variation]]
 
-[[Lebesgue Integral]]
+[[Lebesgue integral]]

@@ -13,9 +13,9 @@ depends_on:
   - homology-group
 ---
 
-# Euler Characteristic
+# Euler characteristic
 
 ## Dependencies
 
-[[CW Complex]]
-[[Homology Group]]
+[[CW complex]]
+[[Homology group]]

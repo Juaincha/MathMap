@@ -13,10 +13,10 @@ depends_on:
   - set-operations
 ---
 
-# Indexed Family
+# Indexed family
 
 ## Dependencies
 
 [[Function]]
 
-[[Set Operations]]
+[[Set operations]]

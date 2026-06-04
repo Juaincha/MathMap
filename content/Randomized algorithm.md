@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Random Variable]]
-[[Expected Value]]
+[[Random variable]]
+[[Expected value]]

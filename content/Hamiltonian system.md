@@ -10,12 +10,12 @@ depends_on:
   - autonomous-system
 ---
 
-# Hamiltonian System
+# Hamiltonian system
 
 ## Dependencies
 
 [[System of ODEs]]
 
-[[Partial Derivative]]
+[[Partial derivative]]
 
-[[Autonomous System]]
+[[Autonomous system]]

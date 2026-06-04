@@ -14,12 +14,12 @@ depends_on:
   - ordinal-arithmetic
 ---
 
-# Von Neumann Universe
+# Von Neumann universe
 
 ## Dependencies
 
-[[Axiom of Regularity]]
+[[Axiom of regularity]]
 
-[[Transfinite Induction]]
+[[Transfinite induction]]
 
-[[Ordinal Arithmetic]]
+[[Ordinal arithmetic]]

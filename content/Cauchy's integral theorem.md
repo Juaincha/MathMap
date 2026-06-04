@@ -13,9 +13,9 @@ depends_on:
   - holomorphic-function
 ---
 
-# Cauchy's Integral Theorem
+# Cauchy's integral theorem
 
 ## Dependencies
 
-[[Contour Integral]]
-[[Holomorphic Function]]
+[[Contour integral]]
+[[Holomorphic function]]

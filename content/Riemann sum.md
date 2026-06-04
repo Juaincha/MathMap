@@ -12,8 +12,8 @@ depends_on:
   - limit-of-a-function
 ---
 
-# Riemann Sum
+# Riemann sum
 
 ## Dependencies
 
-[[Limit of a Function]]
+[[Limit of a function]]

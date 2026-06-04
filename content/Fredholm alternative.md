@@ -22,4 +22,4 @@ depends_on:
 
 [[Fredholm operator]]
 
-[[Banach Space]]
+[[Banach space]]

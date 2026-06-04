@@ -18,7 +18,7 @@ depends_on:
 
 ## Dependencies
 
-[[Hilbert Space]]
+[[Hilbert space]]
 
 [[Bounded linear operator]]
 

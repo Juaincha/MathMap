@@ -17,6 +17,6 @@ depends_on:
 
 ## Dependencies
 
-[[Partial Order]]
+[[Partial order]]
 
-[[Set Operations]]
+[[Set operations]]

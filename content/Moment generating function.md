@@ -13,9 +13,9 @@ depends_on:
   - power-series
 ---
 
-# Moment Generating Function
+# Moment generating function
 
 ## Dependencies
 
-[[Expected Value]]
-[[Power Series]]
+[[Expected value]]
+[[Power series]]

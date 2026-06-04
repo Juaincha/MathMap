@@ -10,12 +10,12 @@ depends_on:
   - continuous-function-topological
 ---
 
-# Quotient Topology
+# Quotient topology
 
 ## Dependencies
 
 [[Topology]]
 
-[[Equivalence Relation]]
+[[Equivalence relation]]
 
-[[Continuous Function (Topological)]]
+[[Continuous function (topological)]]

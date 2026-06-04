@@ -14,10 +14,10 @@ depends_on:
   - abelian-group
 ---
 
-# Solvable Group
+# Solvable group
 
 ## Dependencies
 
-[[Normal Subgroup]]
-[[Quotient Group]]
-[[Abelian Group]]
+[[Normal subgroup]]
+[[Quotient group]]
+[[Abelian group]]

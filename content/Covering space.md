@@ -13,9 +13,9 @@ depends_on:
   - fundamental-group
 ---
 
-# Covering Space
+# Covering space
 
 ## Dependencies
 
-[[Continuous Function (Topological)]]
-[[Fundamental Group]]
+[[Continuous function (topological)]]
+[[Fundamental group]]

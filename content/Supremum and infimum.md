@@ -12,8 +12,8 @@ depends_on:
   - real-number-axioms
 ---
 
-# Supremum and Infimum
+# Supremum and infimum
 
 ## Dependencies
 
-[[Real Number Axioms]]
+[[Real number axioms]]

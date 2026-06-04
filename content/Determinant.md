@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Matrix Multiplication]]
+[[Matrix multiplication]]

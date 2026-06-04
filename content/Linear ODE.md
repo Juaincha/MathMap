@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Ordinary Differential Equation]]
-[[Linear Map]]
+[[Ordinary differential equation]]
+[[Linear map]]

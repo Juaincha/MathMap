@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Holomorphic Function]]
-[[Limit of a Function]]
+[[Holomorphic function]]
+[[Limit of a function]]

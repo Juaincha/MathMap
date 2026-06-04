@@ -13,8 +13,8 @@ depends_on:
   - zf-set-theory
 ---
 
-# Peano Axioms
+# Peano axioms
 
 ## Dependencies
 
-[[Zermelo–Fraenkel Set Theory]]
+[[Zermelo–Fraenkel set theory]]

@@ -13,9 +13,9 @@ depends_on:
   - power-series
 ---
 
-# Taylor Series
+# Taylor series
 
 ## Dependencies
 
-[[Taylor's Theorem]]
-[[Power Series]]
+[[Taylor's theorem]]
+[[Power series]]

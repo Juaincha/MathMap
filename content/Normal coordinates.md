@@ -13,9 +13,9 @@ depends_on:
   - geodesic
 ---
 
-# Normal Coordinates
+# Normal coordinates
 
 ## Dependencies
 
-[[Exponential Map]]
+[[Exponential map]]
 [[Geodesic]]

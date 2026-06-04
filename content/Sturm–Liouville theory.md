@@ -10,12 +10,12 @@ depends_on:
   - orthogonality
 ---
 
-# Sturm–Liouville Theory
+# Sturm–Liouville theory
 
 ## Dependencies
 
-[[Second-Order Linear ODE]]
+[[Second-order linear ODE]]
 
-[[Eigenvalue and Eigenvector]]
+[[Eigenvalue and eigenvector]]
 
 [[Orthogonality]]

@@ -5,17 +5,17 @@ tags:
   - complex-analysis
 wikipedia: https://en.wikipedia.org/wiki/Montel%27s_theorem
 depends_on:
-  - normal-family-complex
+  - normal-family
   - holomorphic-function
   - uniform-convergence
 ---
 
-# Vitali Theorem (Complex Analysis)
+# Vitali theorem (complex analysis)
 
 ## Dependencies
 
-[[Normal Family]]
+[[Normal family]]
 
-[[Holomorphic Function]]
+[[Holomorphic function]]
 
-[[Uniform Convergence]]
+[[Uniform convergence]]

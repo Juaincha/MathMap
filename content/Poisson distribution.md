@@ -13,9 +13,9 @@ depends_on:
   - probability-mass-function
 ---
 
-# Poisson Distribution
+# Poisson distribution
 
 ## Dependencies
 
-[[Discrete Random Variable]]
-[[Probability Mass Function]]
+[[Discrete random variable]]
+[[Probability mass function]]

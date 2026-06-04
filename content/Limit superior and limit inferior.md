@@ -13,9 +13,9 @@ depends_on:
   - limit-of-a-sequence
 ---
 
-# Limit Superior and Limit Inferior
+# Limit superior and limit inferior
 
 ## Dependencies
 
-[[Supremum and Infimum]]
-[[Limit of a Sequence]]
+[[Supremum and infimum]]
+[[Limit of a sequence]]

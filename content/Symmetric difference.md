@@ -13,10 +13,10 @@ depends_on:
   - set-difference
 ---
 
-# Symmetric Difference
+# Symmetric difference
 
 ## Dependencies
 
-[[Union Operation]]
+[[Union operation]]
 
-[[Set Difference]]
+[[Set difference]]

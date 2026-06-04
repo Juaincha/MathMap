@@ -14,9 +14,9 @@ depends_on:
   - euclidean-division
 ---
 
-# Euclidean Algorithm
+# Euclidean algorithm
 
 ## Dependencies
 
-[[Greatest Common Divisor]]
-[[Euclidean Division]]
+[[Greatest common divisor]]
+[[Euclidean division]]

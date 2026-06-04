@@ -22,4 +22,4 @@ depends_on:
 
 [[Principal ideal domain]]
 
-[[Integral Domain]]
+[[Integral domain]]

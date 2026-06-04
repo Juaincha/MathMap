@@ -13,9 +13,9 @@ depends_on:
   - vector-field-on-manifold
 ---
 
-# Covariant Derivative
+# Covariant derivative
 
 ## Dependencies
 
 [[Connection]]
-[[Vector Field on Manifold]]
+[[Vector field on manifold]]

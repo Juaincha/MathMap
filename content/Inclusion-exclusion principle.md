@@ -13,9 +13,9 @@ depends_on:
   - cardinality
 ---
 
-# Inclusion-Exclusion Principle
+# Inclusion-exclusion principle
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]
 [[Cardinality]]

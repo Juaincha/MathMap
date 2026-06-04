@@ -15,11 +15,11 @@ depends_on:
   - variance
 ---
 
-# Normal Distribution
+# Normal distribution
 
 ## Dependencies
 
-[[Continuous Random Variable]]
-[[Probability Density Function]]
-[[Expected Value]]
+[[Continuous random variable]]
+[[Probability density function]]
+[[Expected value]]
 [[Variance]]

@@ -13,10 +13,10 @@ depends_on:
   - natural-transformation
 ---
 
-# Adjoint Functor
+# Adjoint functor
 
 ## Dependencies
 
 [[Functor]]
 
-[[Natural Transformation]]
+[[Natural transformation]]

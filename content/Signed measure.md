@@ -12,8 +12,8 @@ depends_on:
   - measure-space
 ---
 
-# Signed Measure
+# Signed measure
 
 ## Dependencies
 
-[[Measure Space]]
+[[Measure space]]

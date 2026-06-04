@@ -13,9 +13,9 @@ depends_on:
   - measurable-set
 ---
 
-# Non-Measurable Set
+# Non-measurable set
 
 ## Dependencies
 
-[[Lebesgue Measure]]
-[[Measurable Set]]
+[[Lebesgue measure]]
+[[Measurable set]]

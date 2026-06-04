@@ -12,8 +12,8 @@ depends_on:
   - rooted-tree
 ---
 
-# Binary Tree
+# Binary tree
 
 ## Dependencies
 
-[[Rooted Tree]]
+[[Rooted tree]]

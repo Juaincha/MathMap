@@ -9,10 +9,10 @@ depends_on:
   - permutation
 ---
 
-# Young Tableau
+# Young tableau
 
 ## Dependencies
 
-[[Partition of Integer]]
+[[Partition of integer]]
 
 [[Permutation]]

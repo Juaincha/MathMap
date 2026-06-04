@@ -19,4 +19,4 @@ depends_on:
 
 [[Noetherian ring]]
 
-[[Polynomial Ring]]
+[[Polynomial ring]]

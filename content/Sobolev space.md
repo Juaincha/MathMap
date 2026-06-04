@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[Lp Space]]
+[[L^p space]]
 
 [[Distribution theory]]
 
-[[Banach Space]]
+[[Banach space]]

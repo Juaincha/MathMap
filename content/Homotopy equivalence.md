@@ -13,7 +13,7 @@ depends_on:
   - homeomorphism
 ---
 
-# Homotopy Equivalence
+# Homotopy equivalence
 
 ## Dependencies
 

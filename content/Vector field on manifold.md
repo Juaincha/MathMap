@@ -13,9 +13,9 @@ depends_on:
   - smooth-manifold
 ---
 
-# Vector Field on Manifold
+# Vector field on manifold
 
 ## Dependencies
 
-[[Tangent Bundle]]
-[[Smooth Manifold]]
+[[Tangent bundle]]
+[[Smooth manifold]]

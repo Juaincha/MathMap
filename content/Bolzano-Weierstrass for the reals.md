@@ -13,7 +13,7 @@ depends_on:
   - real-number-axioms
 ---
 
-# Bolzano-Weierstrass for the Reals
+# Bolzano-Weierstrass for the reals
 
 ## Dependencies
 

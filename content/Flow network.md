@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Directed Graph]]
-[[Weighted Graph]]
+[[Directed graph]]
+[[Weighted graph]]

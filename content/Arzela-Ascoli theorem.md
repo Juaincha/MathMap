@@ -14,12 +14,12 @@ depends_on:
   - uniform-convergence
 ---
 
-# Arzela-Ascoli Theorem
+# Arzela-Ascoli theorem
 
 ## Dependencies
 
 [[Equicontinuity]]
 
-[[Compact Set]]
+[[Compact set]]
 
-[[Uniform Convergence]]
+[[Uniform convergence]]

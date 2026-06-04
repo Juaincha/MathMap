@@ -8,8 +8,8 @@ depends_on:
   - measure-space
 ---
 
-# Sigma-Finite Measure
+# Sigma-finite measure
 
 ## Dependencies
 
-[[Measure Space]]
+[[Measure space]]

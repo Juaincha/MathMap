@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Cartesian Product]]
+[[Cartesian product]]

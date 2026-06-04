@@ -13,9 +13,9 @@ depends_on:
   - product-rule
 ---
 
-# Integrating Factor
+# Integrating factor
 
 ## Dependencies
 
 [[Linear ODE]]
-[[Product Rule]]
+[[Product rule]]

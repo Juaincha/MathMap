@@ -13,9 +13,9 @@ depends_on:
   - connected-graph
 ---
 
-# Spanning Tree
+# Spanning tree
 
 ## Dependencies
 
 [[Tree]]
-[[Connected Graph]]
+[[Connected graph]]

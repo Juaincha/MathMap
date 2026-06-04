@@ -14,10 +14,10 @@ depends_on:
   - metric-space
 ---
 
-# Normed Vector Space
+# Normed vector space
 
 ## Dependencies
 
-[[Vector Space]]
-[[Triangle Inequality]]
-[[Metric Space]]
+[[Vector space]]
+[[Triangle inequality]]
+[[Metric space]]

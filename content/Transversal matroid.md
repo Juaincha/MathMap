@@ -9,10 +9,10 @@ depends_on:
   - bipartite-graph
 ---
 
-# Transversal Matroid
+# Transversal matroid
 
 ## Dependencies
 
 [[Matroid]]
 
-[[Bipartite Graph]]
+[[Bipartite graph]]

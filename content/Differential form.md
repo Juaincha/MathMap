@@ -13,9 +13,9 @@ depends_on:
   - smooth-manifold
 ---
 
-# Differential Form
+# Differential form
 
 ## Dependencies
 
-[[Tangent Space]]
-[[Smooth Manifold]]
+[[Tangent space]]
+[[Smooth manifold]]

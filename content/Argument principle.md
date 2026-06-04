@@ -10,12 +10,12 @@ depends_on:
   - residue-theorem
 ---
 
-# Argument Principle
+# Argument principle
 
 ## Dependencies
 
-[[Contour Integral]]
+[[Contour integral]]
 
-[[Meromorphic Function]]
+[[Meromorphic function]]
 
-[[Residue Theorem]]
+[[Residue theorem]]

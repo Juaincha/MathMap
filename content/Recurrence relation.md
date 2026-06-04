@@ -13,9 +13,9 @@ depends_on:
   - mathematical-induction
 ---
 
-# Recurrence Relation
+# Recurrence relation
 
 ## Dependencies
 
 [[Sequence]]
-[[Mathematical Induction]]
+[[Mathematical induction]]

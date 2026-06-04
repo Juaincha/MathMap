@@ -12,7 +12,7 @@ depends_on:
   - subgroup
 ---
 
-# Cyclic Group
+# Cyclic group
 
 ## Dependencies
 

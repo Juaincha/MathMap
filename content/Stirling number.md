@@ -13,7 +13,7 @@ depends_on:
   - permutation
 ---
 
-# Stirling Number
+# Stirling number
 
 ## Dependencies
 

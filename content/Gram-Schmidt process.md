@@ -13,7 +13,7 @@ depends_on:
   - span
 ---
 
-# Gram-Schmidt Process
+# Gram-Schmidt process
 
 ## Dependencies
 

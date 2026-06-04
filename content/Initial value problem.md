@@ -12,8 +12,8 @@ depends_on:
   - ordinary-differential-equation
 ---
 
-# Initial Value Problem
+# Initial value problem
 
 ## Dependencies
 
-[[Ordinary Differential Equation]]
+[[Ordinary differential equation]]

@@ -12,8 +12,8 @@ depends_on:
   - joint-distribution
 ---
 
-# Marginal Distribution
+# Marginal distribution
 
 ## Dependencies
 
-[[Joint Distribution]]
+[[Joint distribution]]

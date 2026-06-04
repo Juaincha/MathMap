@@ -14,12 +14,12 @@ depends_on:
   - absolute-continuity-function
 ---
 
-# Cantor Function
+# Cantor function
 
 ## Dependencies
 
-[[Cantor Set]]
+[[Cantor set]]
 
 [[Continuity]]
 
-[[Absolute Continuity of a Function]]
+[[Absolute continuity of a function]]

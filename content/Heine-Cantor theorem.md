@@ -14,12 +14,12 @@ depends_on:
   - compact-set
 ---
 
-# Heine-Cantor Theorem
+# Heine-Cantor theorem
 
 ## Dependencies
 
 [[Continuity]]
 
-[[Uniform Continuity]]
+[[Uniform continuity]]
 
-[[Compact Set]]
+[[Compact set]]

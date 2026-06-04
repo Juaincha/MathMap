@@ -13,7 +13,7 @@ depends_on:
   - basis
 ---
 
-# Free Module
+# Free module
 
 ## Dependencies
 

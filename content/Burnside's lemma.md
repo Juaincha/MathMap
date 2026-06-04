@@ -10,7 +10,7 @@ depends_on:
   - cardinality
 ---
 
-# Burnside's Lemma
+# Burnside's lemma
 
 ## Dependencies
 

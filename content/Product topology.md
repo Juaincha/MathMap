@@ -10,12 +10,12 @@ depends_on:
   - basis-for-topology
 ---
 
-# Product Topology
+# Product topology
 
 ## Dependencies
 
 [[Topology]]
 
-[[Cartesian Product]]
+[[Cartesian product]]
 
-[[Basis for Topology]]
+[[Basis for topology]]

@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Limit of a Sequence]]
+[[Limit of a sequence]]

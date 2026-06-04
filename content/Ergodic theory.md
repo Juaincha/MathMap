@@ -9,10 +9,10 @@ depends_on:
   - measurable-function
 ---
 
-# Ergodic Theory
+# Ergodic theory
 
 ## Dependencies
 
-[[Measure Space]]
+[[Measure space]]
 
-[[Measurable Function]]
+[[Measurable function]]

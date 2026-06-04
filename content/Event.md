@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Sample Space]]
+[[Sample space]]

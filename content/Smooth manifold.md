@@ -14,7 +14,7 @@ depends_on:
   - differentiability
 ---
 
-# Smooth Manifold
+# Smooth manifold
 
 ## Dependencies
 

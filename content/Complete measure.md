@@ -9,10 +9,10 @@ depends_on:
   - null-set
 ---
 
-# Complete Measure
+# Complete measure
 
 ## Dependencies
 
-[[Measure Space]]
+[[Measure space]]
 
-[[Null Set]]
+[[Null set]]

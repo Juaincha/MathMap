@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Riemannian Metric]]
+[[Riemannian metric]]
 [[Geodesic]]

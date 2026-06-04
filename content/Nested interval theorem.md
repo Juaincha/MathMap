@@ -13,9 +13,9 @@ depends_on:
   - real-number-axioms
 ---
 
-# Nested Interval Theorem
+# Nested interval theorem
 
 ## Dependencies
 
-[[Supremum and Infimum]]
+[[Supremum and infimum]]
 [[Real number axioms]]

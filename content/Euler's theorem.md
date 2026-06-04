@@ -14,10 +14,10 @@ depends_on:
   - congruence
 ---
 
-# Euler's Theorem
+# Euler's theorem
 
 ## Dependencies
 
-[[Euler's Totient Function]]
-[[Fermat's Little Theorem]]
+[[Euler's totient function]]
+[[Fermat's little theorem]]
 [[Congruence]]

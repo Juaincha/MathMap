@@ -10,7 +10,7 @@ depends_on:
   - eigenvalue-and-eigenvector
 ---
 
-# Floquet Theory
+# Floquet theory
 
 ## Dependencies
 
@@ -18,4 +18,4 @@ depends_on:
 
 [[System of ODEs]]
 
-[[Eigenvalue and Eigenvector]]
+[[Eigenvalue and eigenvector]]

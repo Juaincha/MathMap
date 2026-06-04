@@ -13,9 +13,9 @@ depends_on:
   - binomial-theorem
 ---
 
-# Binomial Distribution
+# Binomial distribution
 
 ## Dependencies
 
-[[Bernoulli Distribution]]
-[[Binomial Theorem]]
+[[Bernoulli distribution]]
+[[Binomial theorem]]

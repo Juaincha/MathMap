@@ -14,7 +14,7 @@ depends_on:
   - vertex
 ---
 
-# Path in a Graph
+# Path in a graph
 
 ## Dependencies
 

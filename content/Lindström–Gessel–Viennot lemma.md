@@ -10,12 +10,12 @@ depends_on:
   - permutation
 ---
 
-# Lindström–Gessel–Viennot Lemma
+# Lindström–Gessel–Viennot lemma
 
 ## Dependencies
 
 [[Determinant]]
 
-[[Directed Graph]]
+[[Directed graph]]
 
 [[Permutation]]

@@ -13,7 +13,7 @@ depends_on:
   - function
 ---
 
-# Ordinary Differential Equation
+# Ordinary differential equation
 
 ## Dependencies
 

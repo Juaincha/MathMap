@@ -13,9 +13,9 @@ depends_on:
   - probability-density-function
 ---
 
-# Cumulative Distribution Function
+# Cumulative distribution function
 
 ## Dependencies
 
-[[Random Variable]]
-[[Probability Density Function]]
+[[Random variable]]
+[[Probability density function]]

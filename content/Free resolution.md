@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[Free Module]]
+[[Free module]]
 
-[[Exact Sequence]]
+[[Exact sequence]]
 
-[[Module Homomorphism]]
+[[Module homomorphism]]

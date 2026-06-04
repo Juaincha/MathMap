@@ -21,8 +21,8 @@ depends_on:
 
 [[Self-adjoint operator]]
 
-[[Hilbert Space]]
+[[Hilbert space]]
 
 [[Spectrum of an operator]]
 
-[[Orthonormal Basis]]
+[[Orthonormal basis]]

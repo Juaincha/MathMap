@@ -13,9 +13,9 @@ depends_on:
   - compact-set
 ---
 
-# Locally Compact Space
+# Locally compact space
 
 ## Dependencies
 
 [[Topology]]
-[[Compact Set]]
+[[Compact set]]

@@ -13,10 +13,10 @@ depends_on:
   - subset
 ---
 
-# Complement of a Set
+# Complement of a set
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]
 
 [[Subset]]

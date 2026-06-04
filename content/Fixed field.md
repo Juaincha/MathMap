@@ -13,9 +13,9 @@ depends_on:
   - field-extension
 ---
 
-# Fixed Field
+# Fixed field
 
 ## Dependencies
 
-[[Galois Group]]
-[[Field Extension]]
+[[Galois group]]
+[[Field extension]]

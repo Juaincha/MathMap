@@ -10,12 +10,12 @@ depends_on:
   - polynomial-ring
 ---
 
-# Minimal Polynomial of a Matrix
+# Minimal polynomial of a matrix
 
 ## Dependencies
 
 [[Matrix]]
 
-[[Characteristic Polynomial]]
+[[Characteristic polynomial]]
 
-[[Polynomial Ring]]
+[[Polynomial ring]]

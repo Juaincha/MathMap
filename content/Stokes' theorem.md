@@ -14,10 +14,10 @@ depends_on:
   - greens-theorem
 ---
 
-# Stokes' Theorem
+# Stokes' theorem
 
 ## Dependencies
 
-[[Surface Integral]]
-[[Line Integral]]
-[[Green's Theorem]]
+[[Surface integral]]
+[[Line integral]]
+[[Green's theorem]]

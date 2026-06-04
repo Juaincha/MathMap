@@ -10,12 +10,12 @@ depends_on:
   - infinitude-of-primes
 ---
 
-# Prime Number Theorem
+# Prime number theorem
 
 ## Dependencies
 
-[[Prime Number]]
+[[Prime number]]
 
-[[Dirichlet Series]]
+[[Dirichlet series]]
 
-[[Infinitude of Primes]]
+[[Infinitude of primes]]

@@ -12,8 +12,8 @@ depends_on:
   - propositional-logic
 ---
 
-# Proof by Contradiction
+# Proof by contradiction
 
 ## Dependencies
 
-[[Propositional Logic]]
+[[Propositional logic]]

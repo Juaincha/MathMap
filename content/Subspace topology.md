@@ -9,10 +9,10 @@ depends_on:
   - open-set
 ---
 
-# Subspace Topology
+# Subspace topology
 
 ## Dependencies
 
 [[Topology]]
 
-[[Open Set]]
+[[Open set]]

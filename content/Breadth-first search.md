@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Graph]]
-[[Path in a Graph]]
+[[Path in a graph]]

@@ -20,6 +20,6 @@ depends_on:
 
 [[Matrix]]
 
-[[Characteristic Polynomial]]
+[[Characteristic polynomial]]
 
 [[Determinant]]

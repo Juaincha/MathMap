@@ -13,10 +13,10 @@ depends_on:
   - function
 ---
 
-# Type Theory
+# Type theory
 
 ## Dependencies
 
-[[First-Order Logic]]
+[[First-order logic]]
 
 [[Function]]

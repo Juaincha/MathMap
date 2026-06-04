@@ -13,9 +13,9 @@ depends_on:
   - bezout-identity
 ---
 
-# Chinese Remainder Theorem
+# Chinese remainder theorem
 
 ## Dependencies
 
 [[Congruence]]
-[[Bézout's Identity]]
+[[Bézout's identity]]

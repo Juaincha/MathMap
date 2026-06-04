@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Expected Value]]
-[[Joint Distribution]]
+[[Expected value]]
+[[Joint distribution]]

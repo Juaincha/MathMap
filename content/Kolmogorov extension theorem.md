@@ -10,12 +10,12 @@ depends_on:
   - measure-space
 ---
 
-# Kolmogorov Extension Theorem
+# Kolmogorov extension theorem
 
 ## Dependencies
 
-[[Product Measure]]
+[[Product measure]]
 
-[[Product Sigma-Algebra]]
+[[Product sigma-algebra]]
 
-[[Measure Space]]
+[[Measure space]]

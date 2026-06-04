@@ -9,10 +9,10 @@ depends_on:
   - composite-number
 ---
 
-# Goldbach's Conjecture
+# Goldbach's conjecture
 
 ## Dependencies
 
-[[Prime Number]]
+[[Prime number]]
 
-[[Composite Number]]
+[[Composite number]]

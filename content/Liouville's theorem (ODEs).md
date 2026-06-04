@@ -9,10 +9,10 @@ depends_on:
   - phase-portrait
 ---
 
-# Liouville's Theorem (ODEs)
+# Liouville's theorem (ODEs)
 
 ## Dependencies
 
-[[Hamiltonian System]]
+[[Hamiltonian system]]
 
-[[Phase Portrait]]
+[[Phase portrait]]

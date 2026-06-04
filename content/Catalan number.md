@@ -14,10 +14,10 @@ depends_on:
   - generating-function
 ---
 
-# Catalan Number
+# Catalan number
 
 ## Dependencies
 
 [[Combination]]
-[[Recurrence Relation]]
-[[Generating Function]]
+[[Recurrence relation]]
+[[Generating function]]

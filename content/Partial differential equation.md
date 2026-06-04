@@ -13,9 +13,9 @@ depends_on:
   - ordinary-differential-equation
 ---
 
-# Partial Differential Equation
+# Partial differential equation
 
 ## Dependencies
 
-[[Partial Derivative]]
-[[Ordinary Differential Equation]]
+[[Partial derivative]]
+[[Ordinary differential equation]]

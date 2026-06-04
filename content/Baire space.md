@@ -13,9 +13,9 @@ depends_on:
   - open-set
 ---
 
-# Baire Category Theorem
+# Baire space
 
 ## Dependencies
 
-[[Complete Metric Space]]
-[[Open Set]]
+[[Complete metric space]]
+[[Open set]]

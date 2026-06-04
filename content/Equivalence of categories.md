@@ -14,12 +14,12 @@ depends_on:
   - isomorphism-category
 ---
 
-# Equivalence of Categories
+# Equivalence of categories
 
 ## Dependencies
 
 [[Functor]]
 
-[[Natural Transformation]]
+[[Natural transformation]]
 
 [[Isomorphism]]

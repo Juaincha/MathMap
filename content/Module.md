@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Ring]]
-[[Abelian Group]]
+[[Abelian group]]

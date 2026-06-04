@@ -14,10 +14,10 @@ depends_on:
   - continuous-function-topological
 ---
 
-# Tietze Extension Theorem
+# Tietze extension theorem
 
 ## Dependencies
 
-[[Normal Space]]
-[[Urysohn's Lemma]]
-[[Continuous Function (Topological)]]
+[[Normal space]]
+[[Urysohn's lemma]]
+[[Continuous function (topological)]]

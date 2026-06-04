@@ -10,12 +10,12 @@ depends_on:
   - laurent-series
 ---
 
-# Mittag-Leffler Theorem
+# Mittag-leffler theorem
 
 ## Dependencies
 
-[[Meromorphic Function]]
+[[Meromorphic function]]
 
-[[Pole of a Function]]
+[[Pole of a function]]
 
-[[Laurent Series]]
+[[Laurent series]]

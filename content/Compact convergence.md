@@ -13,10 +13,10 @@ depends_on:
   - compact-set
 ---
 
-# Compact Convergence
+# Compact convergence
 
 ## Dependencies
 
-[[Uniform Convergence]]
+[[Uniform convergence]]
 
-[[Compact Set]]
+[[Compact set]]

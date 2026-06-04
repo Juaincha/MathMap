@@ -14,12 +14,12 @@ depends_on:
   - power-set-axiom
 ---
 
-# Continuum Hypothesis
+# Continuum hypothesis
 
 ## Dependencies
 
-[[Cardinal Arithmetic]]
+[[Cardinal arithmetic]]
 
-[[Uncountable Set]]
+[[Uncountable set]]
 
-[[Power Set]]
+[[Power set]]

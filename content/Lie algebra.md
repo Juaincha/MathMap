@@ -14,10 +14,10 @@ depends_on:
   - vector-space
 ---
 
-# Lie Algebra
+# Lie algebra
 
 ## Dependencies
 
-[[Lie Group]]
-[[Tangent Space]]
-[[Vector Space]]
+[[Lie group]]
+[[Tangent space]]
+[[Vector space]]

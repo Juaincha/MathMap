@@ -13,9 +13,9 @@ depends_on:
   - field
 ---
 
-# Algebraic Number
+# Algebraic number
 
 ## Dependencies
 
-[[Polynomial Ring]]
+[[Polynomial ring]]
 [[Field]]

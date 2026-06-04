@@ -13,9 +13,9 @@ depends_on:
   - jacobian-determinant
 ---
 
-# Change of Variables Integral
+# Change of variables integral
 
 ## Dependencies
 
-[[Double Integral]]
-[[Jacobian Determinant]]
+[[Double integral]]
+[[Jacobian determinant]]

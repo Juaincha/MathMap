@@ -13,7 +13,7 @@ depends_on:
   - edge
 ---
 
-# Directed Graph
+# Directed graph
 
 ## Dependencies
 

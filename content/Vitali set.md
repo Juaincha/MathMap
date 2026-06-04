@@ -13,9 +13,9 @@ depends_on:
   - equivalence-relation
 ---
 
-# Vitali Set
+# Vitali set
 
 ## Dependencies
 
-[[Non-Measurable Set]]
+[[Non-measurable set]]
 [[Equivalence relation]]

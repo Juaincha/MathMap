@@ -17,6 +17,6 @@ depends_on:
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]
 
-[[Axiom of Extensionality]]
+[[Axiom of extensionality]]

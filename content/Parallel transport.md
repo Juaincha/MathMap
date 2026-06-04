@@ -13,9 +13,9 @@ depends_on:
   - covariant-derivative
 ---
 
-# Parallel Transport
+# Parallel transport
 
 ## Dependencies
 
 [[Connection]]
-[[Covariant Derivative]]
+[[Covariant derivative]]

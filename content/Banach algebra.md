@@ -17,6 +17,6 @@ depends_on:
 
 ## Dependencies
 
-[[Banach Space]]
+[[Banach space]]
 
 [[Algebra over a field]]

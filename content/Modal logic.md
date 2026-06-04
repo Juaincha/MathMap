@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Propositional Logic]]
+[[Propositional logic]]
 [[Logical connective]]

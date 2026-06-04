@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Euclidean Geometry Axioms]]
+[[Euclidean geometry axioms]]

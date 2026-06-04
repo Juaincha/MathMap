@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Abelian Group]]
+[[Abelian group]]

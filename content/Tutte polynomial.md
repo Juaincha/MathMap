@@ -10,12 +10,12 @@ depends_on:
   - matroid
 ---
 
-# Tutte Polynomial
+# Tutte polynomial
 
 ## Dependencies
 
 [[Graph]]
 
-[[Chromatic Polynomial]]
+[[Chromatic polynomial]]
 
 [[Matroid]]

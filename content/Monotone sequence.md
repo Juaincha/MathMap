@@ -13,7 +13,7 @@ depends_on:
   - total-order
 ---
 
-# Monotone Sequence
+# Monotone sequence
 
 ## Dependencies
 

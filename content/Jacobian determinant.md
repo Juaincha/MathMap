@@ -13,9 +13,9 @@ depends_on:
   - determinant
 ---
 
-# Jacobian Determinant
+# Jacobian determinant
 
 ## Dependencies
 
-[[Partial Derivative]]
+[[Partial derivative]]
 [[Determinant]]

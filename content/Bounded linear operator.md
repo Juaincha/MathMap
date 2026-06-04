@@ -17,6 +17,6 @@ depends_on:
 
 ## Dependencies
 
-[[Normed Vector Space]]
+[[Normed vector space]]
 
-[[Linear Map]]
+[[Linear map]]

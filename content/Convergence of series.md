@@ -13,7 +13,7 @@ depends_on:
   - convergence
 ---
 
-# Convergence of Series
+# Convergence of series
 
 ## Dependencies
 

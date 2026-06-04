@@ -10,12 +10,12 @@ depends_on:
   - analytic-continuation
 ---
 
-# Riemann Surface
+# Riemann surface
 
 ## Dependencies
 
-[[Holomorphic Function]]
+[[Holomorphic function]]
 
-[[Smooth Manifold]]
+[[Smooth manifold]]
 
-[[Analytic Continuation]]
+[[Analytic continuation]]

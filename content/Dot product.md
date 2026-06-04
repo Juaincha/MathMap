@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Vector Space]]
-[[Inner Product Space]]
+[[Vector space]]
+[[Inner product space]]

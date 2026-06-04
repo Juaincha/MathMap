@@ -10,12 +10,12 @@ depends_on:
   - complex-exponential
 ---
 
-# Characteristic Function (Probability)
+# Characteristic function (probability)
 
 ## Dependencies
 
-[[Random Variable]]
+[[Random variable]]
 
-[[Expected Value]]
+[[Expected value]]
 
-[[Complex Exponential]]
+[[Complex exponential]]

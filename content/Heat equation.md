@@ -12,8 +12,8 @@ depends_on:
   - partial-differential-equation
 ---
 
-# Heat Equation
+# Heat equation
 
 ## Dependencies
 
-[[Partial Differential Equation]]
+[[Partial differential equation]]

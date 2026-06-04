@@ -12,8 +12,8 @@ depends_on:
   - set-operations
 ---
 
-# Sample Space
+# Sample space
 
 ## Dependencies
 
-[[Set Operations]]
+[[Set operations]]

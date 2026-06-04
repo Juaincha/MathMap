@@ -13,10 +13,10 @@ depends_on:
   - cardinality
 ---
 
-# Uncountable Set
+# Uncountable set
 
 ## Dependencies
 
-[[Countable Set]]
+[[Countable set]]
 
 [[Cardinality]]

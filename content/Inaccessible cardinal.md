@@ -13,10 +13,10 @@ depends_on:
   - cardinal-arithmetic
 ---
 
-# Inaccessible Cardinal
+# Inaccessible cardinal
 
 ## Dependencies
 
-[[Regular Cardinal]]
+[[Regular cardinal]]
 
-[[Cardinal Arithmetic]]
+[[Cardinal arithmetic]]

@@ -12,7 +12,7 @@ depends_on:
   - divisibility
 ---
 
-# Prime Number
+# Prime number
 
 ## Dependencies
 

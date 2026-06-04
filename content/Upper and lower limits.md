@@ -13,9 +13,9 @@ depends_on:
   - convergence
 ---
 
-# Upper and Lower Limits
+# Upper and lower limits
 
 ## Dependencies
 
-[[Limit Superior and Limit Inferior]]
+[[Limit superior and limit inferior]]
 [[Convergence]]

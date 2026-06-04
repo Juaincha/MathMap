@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Connected Graph]]
-[[Cycle in a Graph]]
+[[Connected graph]]
+[[Cycle in a graph]]

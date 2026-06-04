@@ -13,9 +13,9 @@ depends_on:
   - vertex-cover
 ---
 
-# Independent Set
+# Independent set
 
 ## Dependencies
 
 [[Vertex]]
-[[Vertex Cover]]
+[[Vertex cover]]

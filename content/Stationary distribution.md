@@ -9,10 +9,10 @@ depends_on:
   - eigenvalue-and-eigenvector
 ---
 
-# Stationary Distribution
+# Stationary distribution
 
 ## Dependencies
 
-[[Markov Chain]]
+[[Markov chain]]
 
-[[Eigenvalue and Eigenvector]]
+[[Eigenvalue and eigenvector]]

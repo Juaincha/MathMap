@@ -9,10 +9,10 @@ depends_on:
   - sigma-algebra
 ---
 
-# Outer Measure
+# Outer measure
 
 ## Dependencies
 
-[[Measurable Set]]
+[[Measurable set]]
 
-[[Sigma-Algebra]]
+[[Sigma-algebra]]

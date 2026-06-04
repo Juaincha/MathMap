@@ -13,9 +13,9 @@ depends_on:
   - monotone-convergence-theorem-measure
 ---
 
-# Fatou's Lemma
+# Fatou's lemma
 
 ## Dependencies
 
-[[Lebesgue Integral]]
-[[Monotone Convergence Theorem (Measure)]]
+[[Lebesgue integral]]
+[[Monotone convergence theorem (measure)]]

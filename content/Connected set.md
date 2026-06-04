@@ -13,9 +13,9 @@ depends_on:
   - topology
 ---
 
-# Connected Set
+# Connected set
 
 ## Dependencies
 
-[[Open Set]]
+[[Open set]]
 [[Topology]]

@@ -12,7 +12,7 @@ depends_on:
   - derivative
 ---
 
-# Partial Derivative
+# Partial derivative
 
 ## Dependencies
 

@@ -13,9 +13,9 @@ depends_on:
   - vector-space
 ---
 
-# Field Extension
+# Field extension
 
 ## Dependencies
 
 [[Field]]
-[[Vector Space]]
+[[Vector space]]

@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Integer Ring Axioms]]
+[[Integer ring axioms]]

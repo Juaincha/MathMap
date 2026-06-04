@@ -13,10 +13,10 @@ depends_on:
   - set-operations
 ---
 
-# Empty Set
+# Empty set
 
 ## Dependencies
 
-[[Axiom of Separation]]
+[[Axiom of separation]]
 
-[[Set Operations]]
+[[Set operations]]

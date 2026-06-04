@@ -13,10 +13,10 @@ depends_on:
   - function
 ---
 
-# Total Variation of a Function
+# Total variation of a function
 
 ## Dependencies
 
-[[Supremum and Infimum]]
+[[Supremum and infimum]]
 
 [[Function]]

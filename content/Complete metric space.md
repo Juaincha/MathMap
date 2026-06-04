@@ -13,9 +13,9 @@ depends_on:
   - cauchy-sequence
 ---
 
-# Complete Metric Space
+# Complete metric space
 
 ## Dependencies
 
-[[Metric Space]]
-[[Cauchy Sequence]]
+[[Metric space]]
+[[Cauchy sequence]]

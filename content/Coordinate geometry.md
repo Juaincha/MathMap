@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Euclidean plane]]
-[[Cartesian Product]]
+[[Cartesian product]]

@@ -10,12 +10,12 @@ depends_on:
   - autonomous-system
 ---
 
-# Lyapunov Function
+# Lyapunov function
 
 ## Dependencies
 
-[[Equilibrium Point]]
+[[Equilibrium point]]
 
-[[Stability of Equilibrium]]
+[[Stability of equilibrium]]
 
-[[Autonomous System]]
+[[Autonomous system]]

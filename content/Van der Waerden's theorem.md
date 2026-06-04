@@ -9,10 +9,10 @@ depends_on:
   - pigeonhole-principle
 ---
 
-# Van der Waerden's Theorem
+# Van der Waerden's theorem
 
 ## Dependencies
 
-[[Ramsey Theory]]
+[[Ramsey theory]]
 
-[[Pigeonhole Principle]]
+[[Pigeonhole principle]]

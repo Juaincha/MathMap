@@ -14,9 +14,9 @@ depends_on:
   - triangle-inequality
 ---
 
-# Cauchy–Schwarz Inequality
+# Cauchy–Schwarz inequality
 
 ## Dependencies
 
-[[Real Number Axioms]]
-[[Triangle Inequality]]
+[[Real number axioms]]
+[[Triangle inequality]]

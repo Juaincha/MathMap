@@ -13,9 +13,9 @@ depends_on:
   - recurrence-relation
 ---
 
-# Bell Number
+# Bell number
 
 ## Dependencies
 
-[[Stirling Number]]
-[[Recurrence Relation]]
+[[Stirling number]]
+[[Recurrence relation]]

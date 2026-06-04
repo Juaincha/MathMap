@@ -12,7 +12,7 @@ depends_on:
   - system-of-odes
 ---
 
-# Equilibrium Point
+# Equilibrium point
 
 ## Dependencies
 

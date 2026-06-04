@@ -18,6 +18,6 @@ depends_on:
 
 ## Dependencies
 
-[[Ordinary Differential Equation]]
+[[Ordinary differential equation]]
 [[Matrix]]
-[[Eigenvalue and Eigenvector]]
+[[Eigenvalue and eigenvector]]

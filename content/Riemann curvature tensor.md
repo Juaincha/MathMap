@@ -13,9 +13,9 @@ depends_on:
   - riemannian-metric
 ---
 
-# Riemann Curvature Tensor
+# Riemann curvature tensor
 
 ## Dependencies
 
-[[Covariant Derivative]]
-[[Riemannian Metric]]
+[[Covariant derivative]]
+[[Riemannian metric]]

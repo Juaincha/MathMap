@@ -19,4 +19,4 @@ depends_on:
 
 [[Functor]]
 
-[[Universal Property]]
+[[Universal property]]

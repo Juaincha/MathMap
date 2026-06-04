@@ -17,5 +17,5 @@ depends_on:
 
 ## Dependencies
 
-[[Open Set]]
-[[Set Operations]]
+[[Open set]]
+[[Set operations]]

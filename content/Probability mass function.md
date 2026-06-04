@@ -12,8 +12,8 @@ depends_on:
   - discrete-random-variable
 ---
 
-# Probability Mass Function
+# Probability mass function
 
 ## Dependencies
 
-[[Discrete Random Variable]]
+[[Discrete random variable]]

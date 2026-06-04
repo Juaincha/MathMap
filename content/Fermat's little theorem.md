@@ -13,9 +13,9 @@ depends_on:
   - prime-number
 ---
 
-# Fermat's Little Theorem
+# Fermat's little theorem
 
 ## Dependencies
 
 [[Congruence]]
-[[Prime Number]]
+[[Prime number]]

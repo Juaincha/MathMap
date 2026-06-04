@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[Banach Space]]
+[[Banach space]]
 
 [[Bounded linear operator]]
 
-[[Open Set]]
+[[Open set]]

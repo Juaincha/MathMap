@@ -16,4 +16,4 @@ depends_on:
 
 ## Dependencies
 
-[[Vector Space]]
+[[Vector space]]

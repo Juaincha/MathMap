@@ -17,6 +17,6 @@ depends_on:
 
 ## Dependencies
 
-[[Integral Domain]]
+[[Integral domain]]
 
-[[Principal Ideal]]
+[[Principal ideal]]

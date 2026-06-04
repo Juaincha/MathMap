@@ -18,8 +18,8 @@ depends_on:
 
 ## Dependencies
 
-[[Well-Ordering Principle]]
+[[Well-ordering principle]]
 
 [[Axiom of choice]]
 
-[[Total Order]]
+[[Total order]]

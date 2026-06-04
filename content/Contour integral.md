@@ -14,10 +14,10 @@ depends_on:
   - complex-plane
 ---
 
-# Contour Integral
+# Contour integral
 
 ## Dependencies
 
-[[Holomorphic Function]]
-[[Riemann Integral]]
-[[Complex Plane]]
+[[Holomorphic function]]
+[[Riemann integral]]
+[[Complex plane]]

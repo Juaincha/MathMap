@@ -13,9 +13,9 @@ depends_on:
   - contour-integral
 ---
 
-# Inverse Laplace Transform
+# Inverse Laplace transform
 
 ## Dependencies
 
-[[Laplace Transform]]
-[[Contour Integral]]
+[[Laplace transform]]
+[[Contour integral]]

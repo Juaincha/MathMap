@@ -10,12 +10,12 @@ depends_on:
   - eigenvalue-and-eigenvector
 ---
 
-# Positive Definite Matrix
+# Positive definite matrix
 
 ## Dependencies
 
 [[Matrix]]
 
-[[Quadratic Form]]
+[[Quadratic form]]
 
-[[Eigenvalue and Eigenvector]]
+[[Eigenvalue and eigenvector]]

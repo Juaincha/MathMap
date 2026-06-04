@@ -13,9 +13,9 @@ depends_on:
   - continuous-function-topological
 ---
 
-# Urysohn's Lemma
+# Urysohn's lemma
 
 ## Dependencies
 
-[[Normal Space]]
-[[Continuous Function (Topological)]]
+[[Normal space]]
+[[Continuous function (topological)]]

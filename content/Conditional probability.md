@@ -13,9 +13,9 @@ depends_on:
   - event
 ---
 
-# Conditional Probability
+# Conditional probability
 
 ## Dependencies
 
-[[Probability Axioms]]
+[[Probability axioms]]
 [[Event]]

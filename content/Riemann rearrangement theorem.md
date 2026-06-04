@@ -13,9 +13,9 @@ depends_on:
   - absolutely-convergent-series
 ---
 
-# Riemann Rearrangement Theorem
+# Riemann rearrangement theorem
 
 ## Dependencies
 
-[[Conditionally Convergent Series]]
-[[Absolutely Convergent Series]]
+[[Conditionally convergent series]]
+[[Absolutely convergent series]]

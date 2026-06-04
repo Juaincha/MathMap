@@ -10,6 +10,7 @@ wikipedia: https://en.wikipedia.org/wiki/Max-flow_min-cut_theorem
 
 depends_on:
   - network-flow-algorithm
+  - network-flow
 ---
 
 # Max-flow min-cut theorem
@@ -17,3 +18,5 @@ depends_on:
 ## Dependencies
 
 [[Flow network]]
+
+[[Network flow]]

@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Permutation]]
-[[Binomial Theorem]]
+[[Binomial theorem]]

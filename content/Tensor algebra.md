@@ -20,6 +20,6 @@ depends_on:
 
 [[Algebra over a field]]
 
-[[Tensor Product]]
+[[Tensor product]]
 
-[[Direct Sum]]
+[[Direct sum]]

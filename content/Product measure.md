@@ -13,9 +13,9 @@ depends_on:
   - cartesian-product
 ---
 
-# Product Measure
+# Product measure
 
 ## Dependencies
 
-[[Measure Space]]
-[[Cartesian Product]]
+[[Measure space]]
+[[Cartesian product]]

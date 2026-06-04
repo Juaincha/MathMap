@@ -13,9 +13,9 @@ depends_on:
   - power-series
 ---
 
-# Complex Exponential
+# Complex exponential
 
 ## Dependencies
 
-[[Euler's Formula]]
-[[Power Series]]
+[[Euler's formula]]
+[[Power series]]

@@ -12,7 +12,7 @@ depends_on:
   - linear-ode
 ---
 
-# Second-Order Linear ODE
+# Second-order linear ODE
 
 ## Dependencies
 

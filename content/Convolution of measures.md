@@ -9,10 +9,10 @@ depends_on:
   - pushforward-measure
 ---
 
-# Convolution of Measures
+# Convolution of measures
 
 ## Dependencies
 
-[[Product Measure]]
+[[Product measure]]
 
-[[Pushforward Measure]]
+[[Pushforward measure]]

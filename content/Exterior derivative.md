@@ -13,9 +13,9 @@ depends_on:
   - wedge-product
 ---
 
-# Exterior Derivative
+# Exterior derivative
 
 ## Dependencies
 
-[[Differential Form]]
-[[Wedge Product]]
+[[Differential form]]
+[[Wedge product]]

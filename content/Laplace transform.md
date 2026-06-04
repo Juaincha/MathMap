@@ -13,9 +13,9 @@ depends_on:
   - ordinary-differential-equation
 ---
 
-# Laplace Transform
+# Laplace transform
 
 ## Dependencies
 
-[[Riemann Integral]]
-[[Ordinary Differential Equation]]
+[[Riemann integral]]
+[[Ordinary differential equation]]

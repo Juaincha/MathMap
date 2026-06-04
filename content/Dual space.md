@@ -8,14 +8,17 @@ depends_on:
   - vector-space
   - linear-map
   - basis
+  - normed-vector-space
 ---
 
-# Dual Space
+# Dual space
 
 ## Dependencies
 
-[[Vector Space]]
+[[Vector space]]
 
-[[Linear Map]]
+[[Linear map]]
 
 [[Basis]]
+
+[[Normed vector space]]

@@ -12,7 +12,7 @@ depends_on:
   - matrix
 ---
 
-# Matrix Multiplication
+# Matrix multiplication
 
 ## Dependencies
 

@@ -12,8 +12,8 @@ depends_on:
   - open-set
 ---
 
-# Open Cover
+# Open cover
 
 ## Dependencies
 
-[[Open Set]]
+[[Open set]]

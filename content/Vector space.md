@@ -13,9 +13,9 @@ depends_on:
   - abelian-group
 ---
 
-# Vector Space
+# Vector space
 
 ## Dependencies
 
 [[Field]]
-[[Abelian Group]]
+[[Abelian group]]

@@ -18,4 +18,4 @@ depends_on:
 ## Dependencies
 
 [[Function]]
-[[Limit of a Function]]
+[[Limit of a function]]

@@ -13,9 +13,9 @@ depends_on:
   - weighted-graph
 ---
 
-# Minimum Spanning Tree
+# Minimum spanning tree
 
 ## Dependencies
 
-[[Spanning Tree]]
-[[Weighted Graph]]
+[[Spanning tree]]
+[[Weighted graph]]

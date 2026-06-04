@@ -10,12 +10,12 @@ depends_on:
   - prime-number-theorem
 ---
 
-# Riemann Hypothesis
+# Riemann hypothesis
 
 ## Dependencies
 
-[[Dirichlet Series]]
+[[Dirichlet series]]
 
-[[Analytic Continuation]]
+[[Analytic continuation]]
 
-[[Prime Number Theorem]]
+[[Prime number theorem]]

@@ -13,9 +13,9 @@ depends_on:
   - lebesgue-integral
 ---
 
-# Fubini's Theorem
+# Fubini's theorem
 
 ## Dependencies
 
-[[Product Measure]]
-[[Lebesgue Integral]]
+[[Product measure]]
+[[Lebesgue integral]]

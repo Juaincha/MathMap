@@ -9,10 +9,10 @@ depends_on:
   - equilibrium-point
 ---
 
-# Autonomous System
+# Autonomous system
 
 ## Dependencies
 
 [[System of ODEs]]
 
-[[Equilibrium Point]]
+[[Equilibrium point]]

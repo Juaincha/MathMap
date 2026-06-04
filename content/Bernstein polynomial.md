@@ -13,10 +13,10 @@ depends_on:
   - weierstrass-approximation-theorem
 ---
 
-# Bernstein Polynomial
+# Bernstein polynomial
 
 ## Dependencies
 
-[[Binomial Theorem]]
+[[Binomial theorem]]
 
-[[Weierstrass Approximation Theorem]]
+[[Weierstrass approximation theorem]]

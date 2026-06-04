@@ -9,10 +9,10 @@ depends_on:
   - measure-space
 ---
 
-# Regular Measure
+# Regular measure
 
 ## Dependencies
 
-[[Borel Measure]]
+[[Borel measure]]
 
-[[Measure Space]]
+[[Measure space]]

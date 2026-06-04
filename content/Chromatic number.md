@@ -12,8 +12,8 @@ depends_on:
   - graph-coloring
 ---
 
-# Chromatic Number
+# Chromatic number
 
 ## Dependencies
 
-[[Graph Coloring]]
+[[Graph coloring]]

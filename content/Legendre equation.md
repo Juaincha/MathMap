@@ -9,10 +9,10 @@ depends_on:
   - power-series-method-ode
 ---
 
-# Legendre Equation
+# Legendre equation
 
 ## Dependencies
 
-[[Second-Order Linear ODE]]
+[[Second-order linear ODE]]
 
-[[Power Series Method for ODEs]]
+[[Power series method for ODEs]]

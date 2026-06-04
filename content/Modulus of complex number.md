@@ -13,9 +13,9 @@ depends_on:
   - absolute-value
 ---
 
-# Modulus of Complex Number
+# Modulus of complex number
 
 ## Dependencies
 
-[[Complex Number]]
-[[Absolute Value]]
+[[Complex number]]
+[[Absolute value]]
