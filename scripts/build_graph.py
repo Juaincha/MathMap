@@ -37,9 +37,20 @@ for md_file in CONTENT_DIR.rglob("*.md"):
 
     known_ids.add(node_id)
 
+    # Extract label from H1 heading in body; fall back to file stem
+    body = parts[2] if len(parts) >= 3 else ""
+    label = None
+    for line in body.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("# "):
+            label = stripped[2:].strip()
+            break
+    if not label:
+        label = md_file.stem
+
     nodes.append({
         "id": node_id,
-        "label": md_file.stem,
+        "label": label,
         "type": frontmatter.get("type"),
         "tags": frontmatter.get("tags", []),
         "wikipedia": frontmatter.get("wikipedia")

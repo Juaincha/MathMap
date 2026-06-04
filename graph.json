@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "a-star-algorithm",
-      "label": "A-star search algorithm",
+      "label": "A* search algorithm",
       "type": "concept",
       "tags": [
         "algorithms"
@@ -863,7 +863,7 @@
     },
     {
       "id": "c-star-algebra",
-      "label": "C-star algebra",
+      "label": "C*-algebra",
       "type": "structure",
       "tags": [
         "functional-analysis"
