@@ -11,6 +11,16 @@
       "primaryTag": "algorithms"
     },
     {
+      "id": "abelian-category",
+      "label": "Abelian category",
+      "type": "structure",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Abelian_category",
+      "primaryTag": "foundations"
+    },
+    {
       "id": "abelian-group",
       "label": "Abelian group",
       "type": "structure",
@@ -21,14 +31,14 @@
       "primaryTag": "abstract-algebra"
     },
     {
-      "id": "abelian-category",
-      "label": "abelian-category",
-      "type": "structure",
+      "id": "absolute-continuity-function",
+      "label": "Absolute continuity of a function",
+      "type": "definition",
       "tags": [
-        "foundations"
+        "analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Abelian_category",
-      "primaryTag": "foundations"
+      "wikipedia": "https://en.wikipedia.org/wiki/Absolute_continuity",
+      "primaryTag": "analysis"
     },
     {
       "id": "absolute-continuity-of-measures",
@@ -48,16 +58,6 @@
         "analysis"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Absolute_value",
-      "primaryTag": "analysis"
-    },
-    {
-      "id": "absolute-continuity-function",
-      "label": "absolute-continuity-function",
-      "type": "definition",
-      "tags": [
-        "analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Absolute_continuity",
       "primaryTag": "analysis"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "id": "adjoint-functor",
-      "label": "adjoint-functor",
+      "label": "Adjoint functor",
       "type": "definition",
       "tags": [
         "foundations"
@@ -92,7 +92,7 @@
     },
     {
       "id": "adjoint-operator",
-      "label": "adjoint-operator",
+      "label": "Adjoint operator",
       "type": "definition",
       "tags": [
         "functional-analysis"
@@ -112,7 +112,7 @@
     },
     {
       "id": "affine-variety",
-      "label": "affine-variety",
+      "label": "Affine variety",
       "type": "concept",
       "tags": [
         "algebra"
@@ -122,7 +122,7 @@
     },
     {
       "id": "alexandroff-compactification",
-      "label": "alexandroff-compactification",
+      "label": "Alexandroff compactification",
       "type": "theorem",
       "tags": [
         "topology"
@@ -132,7 +132,7 @@
     },
     {
       "id": "algebra-over-field",
-      "label": "algebra-over-field",
+      "label": "Algebra over a field",
       "type": "structure",
       "tags": [
         "algebra"
@@ -212,7 +212,7 @@
     },
     {
       "id": "analytic-number-theory",
-      "label": "analytic-number-theory",
+      "label": "Analytic number theory",
       "type": "concept",
       "tags": [
         "number-theory"
@@ -232,7 +232,7 @@
     },
     {
       "id": "antichain",
-      "label": "antichain",
+      "label": "Antichain",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -312,7 +312,7 @@
     },
     {
       "id": "argument-principle",
-      "label": "argument-principle",
+      "label": "Argument principle",
       "type": "theorem",
       "tags": [
         "complex-analysis"
@@ -322,7 +322,7 @@
     },
     {
       "id": "artinian-ring",
-      "label": "artinian-ring",
+      "label": "Artinian ring",
       "type": "structure",
       "tags": [
         "algebra"
@@ -332,7 +332,7 @@
     },
     {
       "id": "arzela-ascoli-theorem",
-      "label": "arzela-ascoli-theorem",
+      "label": "Arzela-Ascoli theorem",
       "type": "theorem",
       "tags": [
         "analysis"
@@ -342,7 +342,7 @@
     },
     {
       "id": "associated-primes",
-      "label": "associated-primes",
+      "label": "Associated primes",
       "type": "definition",
       "tags": [
         "algebra"
@@ -352,7 +352,7 @@
     },
     {
       "id": "atlas-manifold",
-      "label": "Atlas manifold",
+      "label": "Atlas",
       "type": "definition",
       "tags": [
         "differential-geometry"
@@ -362,7 +362,7 @@
     },
     {
       "id": "automorphic-function",
-      "label": "automorphic-function",
+      "label": "Automorphic function",
       "type": "definition",
       "tags": [
         "complex-analysis"
@@ -372,13 +372,103 @@
     },
     {
       "id": "autonomous-system",
-      "label": "autonomous-system",
+      "label": "Autonomous system",
       "type": "definition",
       "tags": [
         "differential-equations"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Autonomous_system_(mathematics)",
       "primaryTag": "differential-equations"
+    },
+    {
+      "id": "axiom-of-choice",
+      "label": "Axiom of choice",
+      "type": "axiom",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_choice",
+      "primaryTag": "order-theory"
+    },
+    {
+      "id": "axiom-of-extensionality",
+      "label": "Axiom of extensionality",
+      "type": "axiom",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_extensionality",
+      "primaryTag": "foundations"
+    },
+    {
+      "id": "axiom-of-infinity",
+      "label": "Axiom of infinity",
+      "type": "axiom",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_infinity",
+      "primaryTag": "foundations"
+    },
+    {
+      "id": "axiom-of-pairing",
+      "label": "Axiom of pairing",
+      "type": "axiom",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_pairing",
+      "primaryTag": "foundations"
+    },
+    {
+      "id": "axiom-of-power-set",
+      "label": "Axiom of power set",
+      "type": "axiom",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_power_set",
+      "primaryTag": "foundations"
+    },
+    {
+      "id": "axiom-of-regularity",
+      "label": "Axiom of regularity",
+      "type": "axiom",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_regularity",
+      "primaryTag": "foundations"
+    },
+    {
+      "id": "axiom-of-replacement",
+      "label": "Axiom of replacement",
+      "type": "axiom",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_schema_of_replacement",
+      "primaryTag": "foundations"
+    },
+    {
+      "id": "axiom-of-separation",
+      "label": "Axiom of separation",
+      "type": "axiom",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_schema_of_specification",
+      "primaryTag": "foundations"
+    },
+    {
+      "id": "axiom-of-union",
+      "label": "Axiom of union",
+      "type": "axiom",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_union",
+      "primaryTag": "foundations"
     },
     {
       "id": "axiom-schema",
@@ -391,96 +481,6 @@
       "primaryTag": "logic"
     },
     {
-      "id": "axiom-of-choice",
-      "label": "axiom-of-choice",
-      "type": "axiom",
-      "tags": [
-        "order-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_choice",
-      "primaryTag": "order-theory"
-    },
-    {
-      "id": "axiom-of-extensionality",
-      "label": "axiom-of-extensionality",
-      "type": "axiom",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_extensionality",
-      "primaryTag": "foundations"
-    },
-    {
-      "id": "axiom-of-infinity",
-      "label": "axiom-of-infinity",
-      "type": "axiom",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_infinity",
-      "primaryTag": "foundations"
-    },
-    {
-      "id": "axiom-of-pairing",
-      "label": "axiom-of-pairing",
-      "type": "axiom",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_pairing",
-      "primaryTag": "foundations"
-    },
-    {
-      "id": "axiom-of-power-set",
-      "label": "axiom-of-power-set",
-      "type": "axiom",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_power_set",
-      "primaryTag": "foundations"
-    },
-    {
-      "id": "axiom-of-regularity",
-      "label": "axiom-of-regularity",
-      "type": "axiom",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_regularity",
-      "primaryTag": "foundations"
-    },
-    {
-      "id": "axiom-of-replacement",
-      "label": "axiom-of-replacement",
-      "type": "axiom",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_schema_of_replacement",
-      "primaryTag": "foundations"
-    },
-    {
-      "id": "axiom-of-separation",
-      "label": "axiom-of-separation",
-      "type": "axiom",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_schema_of_specification",
-      "primaryTag": "foundations"
-    },
-    {
-      "id": "axiom-of-union",
-      "label": "axiom-of-union",
-      "type": "axiom",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Axiom_of_union",
-      "primaryTag": "foundations"
-    },
-    {
       "id": "backtracking",
       "label": "Backtracking",
       "type": "concept",
@@ -491,8 +491,18 @@
       "primaryTag": "algorithms"
     },
     {
+      "id": "baire-category-theorem",
+      "label": "Baire category theorem",
+      "type": "theorem",
+      "tags": [
+        "analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Baire_category_theorem",
+      "primaryTag": "analysis"
+    },
+    {
       "id": "baire-space-real",
-      "label": "Baire space real",
+      "label": "Baire space",
       "type": "theorem",
       "tags": [
         "real-analysis"
@@ -501,14 +511,14 @@
       "primaryTag": "real-analysis"
     },
     {
-      "id": "baire-category-theorem",
-      "label": "baire-category-theorem",
-      "type": "theorem",
+      "id": "banach-algebra",
+      "label": "Banach algebra",
+      "type": "structure",
       "tags": [
-        "analysis"
+        "functional-analysis"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Baire_category_theorem",
-      "primaryTag": "analysis"
+      "wikipedia": "https://en.wikipedia.org/wiki/Banach_algebra",
+      "primaryTag": "functional-analysis"
     },
     {
       "id": "banach-space",
@@ -518,16 +528,6 @@
         "functional-analysis"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Banach_space",
-      "primaryTag": "functional-analysis"
-    },
-    {
-      "id": "banach-algebra",
-      "label": "banach-algebra",
-      "type": "structure",
-      "tags": [
-        "functional-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Banach_algebra",
       "primaryTag": "functional-analysis"
     },
     {
@@ -591,6 +591,16 @@
       "primaryTag": "probability"
     },
     {
+      "id": "bernstein-polynomial",
+      "label": "Bernstein polynomial",
+      "type": "definition",
+      "tags": [
+        "analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Bernstein_polynomial",
+      "primaryTag": "analysis"
+    },
+    {
       "id": "bernstein-set",
       "label": "Bernstein set",
       "type": "concept",
@@ -601,18 +611,8 @@
       "primaryTag": "real-analysis"
     },
     {
-      "id": "bernstein-polynomial",
-      "label": "bernstein-polynomial",
-      "type": "definition",
-      "tags": [
-        "analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Bernstein_polynomial",
-      "primaryTag": "analysis"
-    },
-    {
       "id": "bessel-equation",
-      "label": "bessel-equation",
+      "label": "Bessel equation",
       "type": "definition",
       "tags": [
         "differential-equations"
@@ -622,23 +622,13 @@
     },
     {
       "id": "beth-numbers",
-      "label": "beth-numbers",
+      "label": "Beth numbers",
       "type": "definition",
       "tags": [
         "set-theory"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Beth_number",
       "primaryTag": "set-theory"
-    },
-    {
-      "id": "bezout-identity",
-      "label": "Bezout's identity",
-      "type": "theorem",
-      "tags": [
-        "number-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity",
-      "primaryTag": "number-theory"
     },
     {
       "id": "big-o-notation",
@@ -662,7 +652,7 @@
     },
     {
       "id": "bilinear-form",
-      "label": "bilinear-form",
+      "label": "Bilinear form",
       "type": "definition",
       "tags": [
         "linear-algebra"
@@ -753,7 +743,7 @@
     },
     {
       "id": "bolzano-weierstrass-real",
-      "label": "Bolzano-Weierstrass real",
+      "label": "Bolzano-Weierstrass for the reals",
       "type": "theorem",
       "tags": [
         "real-analysis"
@@ -783,13 +773,23 @@
     },
     {
       "id": "boolean-lattice",
-      "label": "boolean-lattice",
+      "label": "Boolean lattice",
       "type": "structure",
       "tags": [
         "order-theory"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Boolean_algebra_(structure)",
       "primaryTag": "order-theory"
+    },
+    {
+      "id": "borel-measure",
+      "label": "Borel measure",
+      "type": "definition",
+      "tags": [
+        "measure-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Borel_measure",
+      "primaryTag": "measure-theory"
     },
     {
       "id": "borel-sigma-algebra",
@@ -802,18 +802,8 @@
       "primaryTag": "measure-theory"
     },
     {
-      "id": "borel-measure",
-      "label": "borel-measure",
-      "type": "definition",
-      "tags": [
-        "measure-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Borel_measure",
-      "primaryTag": "measure-theory"
-    },
-    {
       "id": "bounded-linear-operator",
-      "label": "bounded-linear-operator",
+      "label": "Bounded linear operator",
       "type": "definition",
       "tags": [
         "functional-analysis"
@@ -823,7 +813,7 @@
     },
     {
       "id": "bounded-variation",
-      "label": "bounded-variation",
+      "label": "Bounded variation",
       "type": "definition",
       "tags": [
         "analysis"
@@ -843,7 +833,7 @@
     },
     {
       "id": "brownian-motion",
-      "label": "brownian-motion",
+      "label": "Brownian motion",
       "type": "definition",
       "tags": [
         "probability"
@@ -853,7 +843,7 @@
     },
     {
       "id": "burnside-lemma",
-      "label": "burnside-lemma",
+      "label": "Burnside's lemma",
       "type": "lemma",
       "tags": [
         "combinatorics"
@@ -862,8 +852,18 @@
       "primaryTag": "combinatorics"
     },
     {
+      "id": "bezout-identity",
+      "label": "Bézout's identity",
+      "type": "theorem",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity",
+      "primaryTag": "number-theory"
+    },
+    {
       "id": "c-star-algebra",
-      "label": "c-star-algebra",
+      "label": "C-star algebra",
       "type": "structure",
       "tags": [
         "functional-analysis"
@@ -872,18 +872,8 @@
       "primaryTag": "functional-analysis"
     },
     {
-      "id": "cantor-diagonalization",
-      "label": "Cantor diagonalization",
-      "type": "theorem",
-      "tags": [
-        "real-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument",
-      "primaryTag": "real-analysis"
-    },
-    {
       "id": "cantor-function",
-      "label": "cantor-function",
+      "label": "Cantor function",
       "type": "definition",
       "tags": [
         "analysis"
@@ -893,7 +883,7 @@
     },
     {
       "id": "cantor-set",
-      "label": "cantor-set",
+      "label": "Cantor set",
       "type": "definition",
       "tags": [
         "analysis"
@@ -902,8 +892,18 @@
       "primaryTag": "analysis"
     },
     {
+      "id": "cantor-diagonalization",
+      "label": "Cantor's diagonal argument",
+      "type": "theorem",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument",
+      "primaryTag": "real-analysis"
+    },
+    {
       "id": "cantors-theorem",
-      "label": "cantors-theorem",
+      "label": "Cantor's theorem",
       "type": "theorem",
       "tags": [
         "set-theory"
@@ -913,7 +913,7 @@
     },
     {
       "id": "caratheodory-extension",
-      "label": "caratheodory-extension",
+      "label": "Carathéodory extension theorem",
       "type": "theorem",
       "tags": [
         "measure-theory"
@@ -923,7 +923,7 @@
     },
     {
       "id": "cardinal-arithmetic",
-      "label": "cardinal-arithmetic",
+      "label": "Cardinal arithmetic",
       "type": "concept",
       "tags": [
         "set-theory"
@@ -933,7 +933,7 @@
     },
     {
       "id": "cardinal-number",
-      "label": "cardinal-number",
+      "label": "Cardinal number",
       "type": "concept",
       "tags": [
         "order-theory"
@@ -973,7 +973,7 @@
     },
     {
       "id": "category",
-      "label": "category",
+      "label": "Category",
       "type": "structure",
       "tags": [
         "foundations"
@@ -1012,16 +1012,6 @@
       "primaryTag": "complex-analysis"
     },
     {
-      "id": "cauchy-euler-equation",
-      "label": "cauchy-euler-equation",
-      "type": "definition",
-      "tags": [
-        "differential-equations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%E2%80%93Euler_equation",
-      "primaryTag": "differential-equations"
-    },
-    {
       "id": "cauchy-riemann-equations",
       "label": "Cauchy-Riemann equations",
       "type": "theorem",
@@ -1032,8 +1022,18 @@
       "primaryTag": "complex-analysis"
     },
     {
+      "id": "cauchy-euler-equation",
+      "label": "Cauchy–Euler equation",
+      "type": "definition",
+      "tags": [
+        "differential-equations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Cauchy%E2%80%93Euler_equation",
+      "primaryTag": "differential-equations"
+    },
+    {
       "id": "cauchy-schwarz-inequality",
-      "label": "Cauchy-Schwarz inequality",
+      "label": "Cauchy–Schwarz inequality",
       "type": "theorem",
       "tags": [
         "analysis",
@@ -1044,7 +1044,7 @@
     },
     {
       "id": "cayley-hamilton-theorem",
-      "label": "cayley-hamilton-theorem",
+      "label": "Cayley–Hamilton theorem",
       "type": "theorem",
       "tags": [
         "algebra"
@@ -1073,6 +1073,16 @@
       "primaryTag": "probability"
     },
     {
+      "id": "chain-order",
+      "label": "Chain in order theory",
+      "type": "definition",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Total_order#Chains",
+      "primaryTag": "order-theory"
+    },
+    {
       "id": "chain-rule",
       "label": "Chain rule",
       "type": "theorem",
@@ -1083,14 +1093,14 @@
       "primaryTag": "calculus"
     },
     {
-      "id": "chain-order",
-      "label": "chain-order",
-      "type": "definition",
+      "id": "change-of-basis",
+      "label": "Change of basis",
+      "type": "concept",
       "tags": [
-        "order-theory"
+        "linear-algebra"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Total_order#Chains",
-      "primaryTag": "order-theory"
+      "wikipedia": "https://en.wikipedia.org/wiki/Change_of_basis",
+      "primaryTag": "linear-algebra"
     },
     {
       "id": "change-of-variables-integral",
@@ -1103,16 +1113,6 @@
       "primaryTag": "calculus"
     },
     {
-      "id": "change-of-basis",
-      "label": "change-of-basis",
-      "type": "concept",
-      "tags": [
-        "linear-algebra"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Change_of_basis",
-      "primaryTag": "linear-algebra"
-    },
-    {
       "id": "characteristic-equation-ode",
       "label": "Characteristic equation",
       "type": "concept",
@@ -1121,6 +1121,26 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_equation_(calculus)",
       "primaryTag": "differential-equations"
+    },
+    {
+      "id": "characteristic-function-probability",
+      "label": "Characteristic function (probability)",
+      "type": "definition",
+      "tags": [
+        "probability"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_function_(probability_theory)",
+      "primaryTag": "probability"
+    },
+    {
+      "id": "characteristic-of-ring",
+      "label": "Characteristic of a ring",
+      "type": "definition",
+      "tags": [
+        "algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_(algebra)",
+      "primaryTag": "algebra"
     },
     {
       "id": "characteristic-polynomial",
@@ -1133,28 +1153,8 @@
       "primaryTag": "linear-algebra"
     },
     {
-      "id": "characteristic-function-probability",
-      "label": "characteristic-function-probability",
-      "type": "definition",
-      "tags": [
-        "probability"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_function_(probability_theory)",
-      "primaryTag": "probability"
-    },
-    {
-      "id": "characteristic-of-ring",
-      "label": "characteristic-of-ring",
-      "type": "definition",
-      "tags": [
-        "algebra"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Characteristic_(algebra)",
-      "primaryTag": "algebra"
-    },
-    {
       "id": "chart-atlas",
-      "label": "Chart atlas",
+      "label": "Chart",
       "type": "definition",
       "tags": [
         "differential-geometry"
@@ -1184,7 +1184,7 @@
     },
     {
       "id": "chromatic-polynomial",
-      "label": "chromatic-polynomial",
+      "label": "Chromatic polynomial",
       "type": "definition",
       "tags": [
         "combinatorics"
@@ -1224,7 +1224,7 @@
     },
     {
       "id": "class-number",
-      "label": "class-number",
+      "label": "Class number",
       "type": "definition",
       "tags": [
         "number-theory"
@@ -1234,13 +1234,23 @@
     },
     {
       "id": "class-set-theory",
-      "label": "class-set-theory",
+      "label": "Class",
       "type": "concept",
       "tags": [
         "foundations"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Class_(set_theory)",
       "primaryTag": "foundations"
+    },
+    {
+      "id": "closed-graph-theorem",
+      "label": "Closed graph theorem",
+      "type": "theorem",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Closed_graph_theorem_(functional_analysis)",
+      "primaryTag": "functional-analysis"
     },
     {
       "id": "closed-set",
@@ -1253,18 +1263,8 @@
       "primaryTag": "topology"
     },
     {
-      "id": "closed-graph-theorem",
-      "label": "closed-graph-theorem",
-      "type": "theorem",
-      "tags": [
-        "functional-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Closed_graph_theorem_(functional_analysis)",
-      "primaryTag": "functional-analysis"
-    },
-    {
       "id": "closure-operator",
-      "label": "closure-operator",
+      "label": "Closure operator",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -1284,7 +1284,7 @@
     },
     {
       "id": "colimit-category",
-      "label": "colimit-category",
+      "label": "Colimit",
       "type": "concept",
       "tags": [
         "foundations"
@@ -1304,13 +1304,33 @@
     },
     {
       "id": "commutative-ring",
-      "label": "commutative-ring",
+      "label": "Commutative ring",
       "type": "structure",
       "tags": [
         "algebra"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Commutative_ring",
       "primaryTag": "algebra"
+    },
+    {
+      "id": "compact-convergence",
+      "label": "Compact convergence",
+      "type": "definition",
+      "tags": [
+        "analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Compact_convergence",
+      "primaryTag": "analysis"
+    },
+    {
+      "id": "compact-operator",
+      "label": "Compact operator",
+      "type": "definition",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Compact_operator",
+      "primaryTag": "functional-analysis"
     },
     {
       "id": "compact-set",
@@ -1321,26 +1341,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Compact_space",
       "primaryTag": "topology"
-    },
-    {
-      "id": "compact-convergence",
-      "label": "compact-convergence",
-      "type": "definition",
-      "tags": [
-        "analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Compact_convergence",
-      "primaryTag": "analysis"
-    },
-    {
-      "id": "compact-operator",
-      "label": "compact-operator",
-      "type": "definition",
-      "tags": [
-        "functional-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Compact_operator",
-      "primaryTag": "functional-analysis"
     },
     {
       "id": "compactification",
@@ -1364,13 +1364,33 @@
     },
     {
       "id": "complement-set",
-      "label": "complement-set",
+      "label": "Complement of a set",
       "type": "definition",
       "tags": [
         "set-theory"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Complement_(set_theory)",
       "primaryTag": "set-theory"
+    },
+    {
+      "id": "complete-lattice",
+      "label": "Complete lattice",
+      "type": "structure",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Complete_lattice",
+      "primaryTag": "order-theory"
+    },
+    {
+      "id": "complete-measure",
+      "label": "Complete measure",
+      "type": "definition",
+      "tags": [
+        "measure-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Complete_measure",
+      "primaryTag": "measure-theory"
     },
     {
       "id": "complete-metric-space",
@@ -1383,28 +1403,8 @@
       "primaryTag": "topology"
     },
     {
-      "id": "complete-lattice",
-      "label": "complete-lattice",
-      "type": "structure",
-      "tags": [
-        "order-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Complete_lattice",
-      "primaryTag": "order-theory"
-    },
-    {
-      "id": "complete-measure",
-      "label": "complete-measure",
-      "type": "definition",
-      "tags": [
-        "measure-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Complete_measure",
-      "primaryTag": "measure-theory"
-    },
-    {
       "id": "completeness-of-reals",
-      "label": "Completeness of reals",
+      "label": "Completeness of the reals",
       "type": "theorem",
       "tags": [
         "real-analysis"
@@ -1414,7 +1414,7 @@
     },
     {
       "id": "completion-ring",
-      "label": "completion-ring",
+      "label": "Completion of a ring",
       "type": "concept",
       "tags": [
         "algebra"
@@ -1464,7 +1464,7 @@
     },
     {
       "id": "composite-number",
-      "label": "composite-number",
+      "label": "Composite number",
       "type": "definition",
       "tags": [
         "number-theory"
@@ -1474,7 +1474,7 @@
     },
     {
       "id": "composition-functions-set",
-      "label": "composition-functions-set",
+      "label": "Composition of functions",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -1484,7 +1484,7 @@
     },
     {
       "id": "composition-morphism",
-      "label": "composition-morphism",
+      "label": "Composition of morphisms",
       "type": "definition",
       "tags": [
         "foundations"
@@ -1494,13 +1494,33 @@
     },
     {
       "id": "composition-series",
-      "label": "composition-series",
+      "label": "Composition series",
       "type": "definition",
       "tags": [
         "abstract-algebra"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Composition_series",
       "primaryTag": "abstract-algebra"
+    },
+    {
+      "id": "conditional-distribution",
+      "label": "Conditional distribution",
+      "type": "definition",
+      "tags": [
+        "probability"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Conditional_probability_distribution",
+      "primaryTag": "probability"
+    },
+    {
+      "id": "conditional-expectation-measure",
+      "label": "Conditional expectation",
+      "type": "definition",
+      "tags": [
+        "measure-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Conditional_expectation",
+      "primaryTag": "measure-theory"
     },
     {
       "id": "conditional-probability",
@@ -1511,26 +1531,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Conditional_probability",
       "primaryTag": "probability"
-    },
-    {
-      "id": "conditional-distribution",
-      "label": "conditional-distribution",
-      "type": "definition",
-      "tags": [
-        "probability"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Conditional_probability_distribution",
-      "primaryTag": "probability"
-    },
-    {
-      "id": "conditional-expectation-measure",
-      "label": "conditional-expectation-measure",
-      "type": "definition",
-      "tags": [
-        "measure-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Conditional_expectation",
-      "primaryTag": "measure-theory"
     },
     {
       "id": "conditionally-convergent-series",
@@ -1604,7 +1604,7 @@
     },
     {
       "id": "connection-manifold",
-      "label": "Connection manifold",
+      "label": "Connection",
       "type": "definition",
       "tags": [
         "differential-geometry"
@@ -1624,7 +1624,7 @@
     },
     {
       "id": "constructive-mathematics",
-      "label": "constructive-mathematics",
+      "label": "Constructive mathematics",
       "type": "concept",
       "tags": [
         "foundations"
@@ -1644,7 +1644,7 @@
     },
     {
       "id": "continuous-function-topological",
-      "label": "Continuous function topological",
+      "label": "Continuous function (topological)",
       "type": "definition",
       "tags": [
         "topology"
@@ -1664,7 +1664,7 @@
     },
     {
       "id": "continuum-hypothesis",
-      "label": "continuum-hypothesis",
+      "label": "Continuum hypothesis",
       "type": "conjecture",
       "tags": [
         "set-theory"
@@ -1714,13 +1714,23 @@
     },
     {
       "id": "convex-function",
-      "label": "convex-function",
+      "label": "Convex function",
       "type": "definition",
       "tags": [
         "analysis"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Convex_function",
       "primaryTag": "analysis"
+    },
+    {
+      "id": "convolution-measure",
+      "label": "Convolution of measures",
+      "type": "definition",
+      "tags": [
+        "measure-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Convolution",
+      "primaryTag": "measure-theory"
     },
     {
       "id": "convolution-theorem",
@@ -1731,16 +1741,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Convolution_theorem",
       "primaryTag": "differential-equations"
-    },
-    {
-      "id": "convolution-measure",
-      "label": "convolution-measure",
-      "type": "definition",
-      "tags": [
-        "measure-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Convolution",
-      "primaryTag": "measure-theory"
     },
     {
       "id": "coordinate-geometry",
@@ -1754,7 +1754,7 @@
     },
     {
       "id": "coordinate-ring",
-      "label": "coordinate-ring",
+      "label": "Coordinate ring",
       "type": "concept",
       "tags": [
         "algebra"
@@ -1774,7 +1774,7 @@
     },
     {
       "id": "countable-set",
-      "label": "countable-set",
+      "label": "Countable set",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -1864,7 +1864,7 @@
     },
     {
       "id": "cycle-matroid",
-      "label": "cycle-matroid",
+      "label": "Cycle matroid",
       "type": "definition",
       "tags": [
         "combinatorics"
@@ -1934,7 +1934,7 @@
     },
     {
       "id": "degeneracy-graph",
-      "label": "Degeneracy graph",
+      "label": "Degeneracy",
       "type": "definition",
       "tags": [
         "graph-theory"
@@ -1964,7 +1964,7 @@
     },
     {
       "id": "density-of-rationals",
-      "label": "Density of rationals",
+      "label": "Density of the rationals",
       "type": "theorem",
       "tags": [
         "real-analysis"
@@ -1984,7 +1984,7 @@
     },
     {
       "id": "derangement",
-      "label": "derangement",
+      "label": "Derangement",
       "type": "definition",
       "tags": [
         "combinatorics"
@@ -2004,7 +2004,7 @@
     },
     {
       "id": "derived-category",
-      "label": "derived-category",
+      "label": "Derived category",
       "type": "structure",
       "tags": [
         "foundations"
@@ -2074,7 +2074,7 @@
     },
     {
       "id": "dilworth-theorem",
-      "label": "dilworth-theorem",
+      "label": "Dilworth's theorem",
       "type": "theorem",
       "tags": [
         "order-theory"
@@ -2084,7 +2084,7 @@
     },
     {
       "id": "dimension-vector-space",
-      "label": "Dimension",
+      "label": "Dimension of a vector space",
       "type": "definition",
       "tags": [
         "linear-algebra"
@@ -2094,7 +2094,7 @@
     },
     {
       "id": "dini-theorem",
-      "label": "dini-theorem",
+      "label": "Dini theorem",
       "type": "theorem",
       "tags": [
         "analysis"
@@ -2124,7 +2124,7 @@
     },
     {
       "id": "directed-set",
-      "label": "directed-set",
+      "label": "Directed set",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -2134,7 +2134,7 @@
     },
     {
       "id": "dirichlet-series",
-      "label": "dirichlet-series",
+      "label": "Dirichlet series",
       "type": "definition",
       "tags": [
         "number-theory"
@@ -2144,7 +2144,7 @@
     },
     {
       "id": "dirichlet-theorem-primes",
-      "label": "dirichlet-theorem-primes",
+      "label": "Dirichlet's theorem on arithmetic progressions",
       "type": "theorem",
       "tags": [
         "number-theory"
@@ -2164,7 +2164,7 @@
     },
     {
       "id": "discrete-valuation-ring",
-      "label": "discrete-valuation-ring",
+      "label": "Discrete valuation ring",
       "type": "structure",
       "tags": [
         "algebra"
@@ -2174,7 +2174,7 @@
     },
     {
       "id": "disintegration-of-measure",
-      "label": "disintegration-of-measure",
+      "label": "Disintegration of measure",
       "type": "theorem",
       "tags": [
         "measure-theory"
@@ -2184,7 +2184,7 @@
     },
     {
       "id": "disjoint-union",
-      "label": "disjoint-union",
+      "label": "Disjoint union",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -2204,7 +2204,7 @@
     },
     {
       "id": "distribution-theory",
-      "label": "distribution-theory",
+      "label": "Distribution theory",
       "type": "concept",
       "tags": [
         "functional-analysis"
@@ -2214,7 +2214,7 @@
     },
     {
       "id": "distributive-lattice",
-      "label": "distributive-lattice",
+      "label": "Distributive lattice",
       "type": "structure",
       "tags": [
         "order-theory"
@@ -2224,7 +2224,7 @@
     },
     {
       "id": "divergence-theorem-calculus",
-      "label": "Divergence theorem calculus",
+      "label": "Divergence theorem",
       "type": "theorem",
       "tags": [
         "calculus"
@@ -2284,23 +2284,13 @@
     },
     {
       "id": "dual-space-linear",
-      "label": "dual-space-linear",
+      "label": "Dual space",
       "type": "definition",
       "tags": [
         "linear-algebra"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Dual_space",
       "primaryTag": "linear-algebra"
-    },
-    {
-      "id": "dual-space",
-      "label": "dual-space",
-      "type": "concept",
-      "tags": [
-        "functional-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Dual_space",
-      "primaryTag": "functional-analysis"
     },
     {
       "id": "dynamic-programming",
@@ -2334,7 +2324,7 @@
     },
     {
       "id": "egorov-theorem",
-      "label": "egorov-theorem",
+      "label": "Egorov theorem",
       "type": "theorem",
       "tags": [
         "analysis"
@@ -2364,7 +2354,7 @@
     },
     {
       "id": "elliptic-function",
-      "label": "elliptic-function",
+      "label": "Elliptic function",
       "type": "definition",
       "tags": [
         "complex-analysis"
@@ -2374,7 +2364,7 @@
     },
     {
       "id": "embedding-manifold",
-      "label": "Embedding manifold",
+      "label": "Embedding",
       "type": "definition",
       "tags": [
         "differential-geometry"
@@ -2384,7 +2374,7 @@
     },
     {
       "id": "empty-set",
-      "label": "empty-set",
+      "label": "Empty set",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -2404,7 +2394,7 @@
     },
     {
       "id": "epsilon-delta-definition",
-      "label": "epsilon-delta-definition",
+      "label": "Epsilon-delta definition",
       "type": "definition",
       "tags": [
         "analysis"
@@ -2414,7 +2404,7 @@
     },
     {
       "id": "equicontinuity",
-      "label": "equicontinuity",
+      "label": "Equicontinuity",
       "type": "definition",
       "tags": [
         "analysis"
@@ -2433,6 +2423,16 @@
       "primaryTag": "differential-equations"
     },
     {
+      "id": "equivalence-of-categories",
+      "label": "Equivalence of categories",
+      "type": "definition",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Equivalence_of_categories",
+      "primaryTag": "foundations"
+    },
+    {
       "id": "equivalence-relation",
       "label": "Equivalence relation",
       "type": "definition",
@@ -2443,18 +2443,8 @@
       "primaryTag": "set-theory"
     },
     {
-      "id": "equivalence-of-categories",
-      "label": "equivalence-of-categories",
-      "type": "definition",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Equivalence_of_categories",
-      "primaryTag": "foundations"
-    },
-    {
       "id": "ergodic-theorem",
-      "label": "ergodic-theorem",
+      "label": "Ergodic theorem",
       "type": "theorem",
       "tags": [
         "measure-theory"
@@ -2464,7 +2454,7 @@
     },
     {
       "id": "ergodic-theory",
-      "label": "ergodic-theory",
+      "label": "Ergodic theory",
       "type": "concept",
       "tags": [
         "measure-theory"
@@ -2574,6 +2564,16 @@
       "primaryTag": "probability"
     },
     {
+      "id": "exact-functor",
+      "label": "Exact functor",
+      "type": "definition",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Exact_functor",
+      "primaryTag": "foundations"
+    },
+    {
       "id": "exact-sequence",
       "label": "Exact sequence",
       "type": "concept",
@@ -2584,18 +2584,8 @@
       "primaryTag": "abstract-algebra"
     },
     {
-      "id": "exact-functor",
-      "label": "exact-functor",
-      "type": "definition",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Exact_functor",
-      "primaryTag": "foundations"
-    },
-    {
       "id": "existence-uniqueness-ode",
-      "label": "existence-uniqueness-ode",
+      "label": "Existence and uniqueness theorem for ODEs",
       "type": "theorem",
       "tags": [
         "differential-equations"
@@ -2645,7 +2635,7 @@
     },
     {
       "id": "exponential-map-manifold",
-      "label": "Exponential map manifold",
+      "label": "Exponential map",
       "type": "definition",
       "tags": [
         "differential-geometry"
@@ -2734,24 +2724,24 @@
       "primaryTag": "abstract-algebra"
     },
     {
-      "id": "filter-order",
-      "label": "filter-order",
-      "type": "definition",
-      "tags": [
-        "order-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Filter_(mathematics)",
-      "primaryTag": "order-theory"
-    },
-    {
       "id": "filter-topology",
-      "label": "filter-topology",
+      "label": "Filter (topology)",
       "type": "definition",
       "tags": [
         "topology"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Filter_(mathematics)",
       "primaryTag": "topology"
+    },
+    {
+      "id": "filter-order",
+      "label": "Filter in order theory",
+      "type": "definition",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Filter_(mathematics)",
+      "primaryTag": "order-theory"
     },
     {
       "id": "first-order-logic",
@@ -2774,18 +2764,8 @@
       "primaryTag": "abstract-algebra"
     },
     {
-      "id": "fixed-point-theorem-order",
-      "label": "fixed-point-theorem-order",
-      "type": "theorem",
-      "tags": [
-        "order-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Knaster%E2%80%93Tarski_theorem",
-      "primaryTag": "order-theory"
-    },
-    {
       "id": "flat-module",
-      "label": "flat-module",
+      "label": "Flat module",
       "type": "definition",
       "tags": [
         "algebra"
@@ -2795,7 +2775,7 @@
     },
     {
       "id": "floquet-theory",
-      "label": "floquet-theory",
+      "label": "Floquet theory",
       "type": "theorem",
       "tags": [
         "differential-equations"
@@ -2825,7 +2805,7 @@
     },
     {
       "id": "forcing-set-theory",
-      "label": "forcing-set-theory",
+      "label": "Forcing",
       "type": "concept",
       "tags": [
         "set-theory"
@@ -2835,7 +2815,7 @@
     },
     {
       "id": "forest-graph",
-      "label": "Forest graph",
+      "label": "Forest",
       "type": "definition",
       "tags": [
         "graph-theory"
@@ -2865,7 +2845,7 @@
     },
     {
       "id": "fourier-transform-functional",
-      "label": "fourier-transform-functional",
+      "label": "Fourier transform in functional analysis",
       "type": "concept",
       "tags": [
         "functional-analysis"
@@ -2875,7 +2855,7 @@
     },
     {
       "id": "fredholm-alternative",
-      "label": "fredholm-alternative",
+      "label": "Fredholm alternative",
       "type": "theorem",
       "tags": [
         "functional-analysis"
@@ -2885,7 +2865,7 @@
     },
     {
       "id": "fredholm-operator",
-      "label": "fredholm-operator",
+      "label": "Fredholm operator",
       "type": "definition",
       "tags": [
         "functional-analysis"
@@ -2905,7 +2885,7 @@
     },
     {
       "id": "free-resolution",
-      "label": "free-resolution",
+      "label": "Free resolution",
       "type": "concept",
       "tags": [
         "algebra"
@@ -2936,7 +2916,7 @@
     },
     {
       "id": "functor",
-      "label": "functor",
+      "label": "Functor",
       "type": "definition",
       "tags": [
         "foundations"
@@ -2975,6 +2955,16 @@
       "primaryTag": "calculus"
     },
     {
+      "id": "galois-connection",
+      "label": "Galois connection",
+      "type": "concept",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Galois_connection",
+      "primaryTag": "order-theory"
+    },
+    {
       "id": "galois-correspondence",
       "label": "Galois correspondence",
       "type": "theorem",
@@ -2993,16 +2983,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Galois_group",
       "primaryTag": "abstract-algebra"
-    },
-    {
-      "id": "galois-connection",
-      "label": "galois-connection",
-      "type": "concept",
-      "tags": [
-        "order-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Galois_connection",
-      "primaryTag": "order-theory"
     },
     {
       "id": "gauss-bonnet-theorem",
@@ -3026,7 +3006,7 @@
     },
     {
       "id": "gelfand-transform",
-      "label": "gelfand-transform",
+      "label": "Gelfand transform",
       "type": "concept",
       "tags": [
         "functional-analysis"
@@ -3056,7 +3036,7 @@
     },
     {
       "id": "generic-extension",
-      "label": "generic-extension",
+      "label": "Generic extension",
       "type": "concept",
       "tags": [
         "set-theory"
@@ -3096,7 +3076,7 @@
     },
     {
       "id": "going-up-theorem",
-      "label": "going-up-theorem",
+      "label": "Going-up theorem",
       "type": "theorem",
       "tags": [
         "algebra"
@@ -3106,7 +3086,7 @@
     },
     {
       "id": "goldbach-conjecture",
-      "label": "goldbach-conjecture",
+      "label": "Goldbach's conjecture",
       "type": "conjecture",
       "tags": [
         "number-theory"
@@ -3116,7 +3096,7 @@
     },
     {
       "id": "graded-ring",
-      "label": "graded-ring",
+      "label": "Graded ring",
       "type": "structure",
       "tags": [
         "algebra"
@@ -3196,7 +3176,7 @@
     },
     {
       "id": "graphic-matroid",
-      "label": "graphic-matroid",
+      "label": "Graphic matroid",
       "type": "definition",
       "tags": [
         "combinatorics"
@@ -3216,7 +3196,7 @@
     },
     {
       "id": "greatest-element",
-      "label": "greatest-element",
+      "label": "Greatest element",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -3236,33 +3216,13 @@
     },
     {
       "id": "greens-theorem",
-      "label": "Greens theorem",
+      "label": "Green's theorem",
       "type": "theorem",
       "tags": [
         "calculus"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Green%27s_theorem",
       "primaryTag": "calculus"
-    },
-    {
-      "id": "grobner-basis",
-      "label": "grobner-basis",
-      "type": "concept",
-      "tags": [
-        "algebra"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Gr%C3%B6bner_basis",
-      "primaryTag": "algebra"
-    },
-    {
-      "id": "gronwall-inequality",
-      "label": "gronwall-inequality",
-      "type": "lemma",
-      "tags": [
-        "differential-equations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Gr%C3%B6nwall%27s_inequality",
-      "primaryTag": "differential-equations"
     },
     {
       "id": "group-homomorphism",
@@ -3283,6 +3243,26 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Group_(mathematics)",
       "primaryTag": "abstract-algebra"
+    },
+    {
+      "id": "grobner-basis",
+      "label": "Gröbner basis",
+      "type": "concept",
+      "tags": [
+        "algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Gr%C3%B6bner_basis",
+      "primaryTag": "algebra"
+    },
+    {
+      "id": "gronwall-inequality",
+      "label": "Grönwall's inequality",
+      "type": "lemma",
+      "tags": [
+        "differential-equations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Gr%C3%B6nwall%27s_inequality",
+      "primaryTag": "differential-equations"
     },
     {
       "id": "completeness-theorem-logic",
@@ -3306,7 +3286,7 @@
     },
     {
       "id": "haar-measure",
-      "label": "haar-measure",
+      "label": "Haar measure",
       "type": "theorem",
       "tags": [
         "measure-theory"
@@ -3316,7 +3296,7 @@
     },
     {
       "id": "hadamard-factorization",
-      "label": "hadamard-factorization",
+      "label": "Hadamard factorization theorem",
       "type": "theorem",
       "tags": [
         "complex-analysis"
@@ -3336,7 +3316,7 @@
     },
     {
       "id": "hahn-banach-theorem",
-      "label": "hahn-banach-theorem",
+      "label": "Hahn–Banach theorem",
       "type": "theorem",
       "tags": [
         "functional-analysis"
@@ -3346,7 +3326,7 @@
     },
     {
       "id": "halls-theorem",
-      "label": "Halls theorem",
+      "label": "Hall's marriage theorem",
       "type": "theorem",
       "tags": [
         "graph-theory"
@@ -3366,7 +3346,7 @@
     },
     {
       "id": "hamiltonian-system",
-      "label": "hamiltonian-system",
+      "label": "Hamiltonian system",
       "type": "definition",
       "tags": [
         "differential-equations"
@@ -3426,7 +3406,7 @@
     },
     {
       "id": "heine-cantor-theorem",
-      "label": "heine-cantor-theorem",
+      "label": "Heine-Cantor theorem",
       "type": "theorem",
       "tags": [
         "analysis"
@@ -3446,7 +3426,7 @@
     },
     {
       "id": "hilbert-basis-theorem",
-      "label": "hilbert-basis-theorem",
+      "label": "Hilbert's basis theorem",
       "type": "theorem",
       "tags": [
         "algebra"
@@ -3456,7 +3436,7 @@
     },
     {
       "id": "hilbert-nullstellensatz",
-      "label": "hilbert-nullstellensatz",
+      "label": "Hilbert's nullstellensatz",
       "type": "theorem",
       "tags": [
         "algebra"
@@ -3466,7 +3446,7 @@
     },
     {
       "id": "hilbert-schmidt-operator",
-      "label": "hilbert-schmidt-operator",
+      "label": "Hilbert–Schmidt operator",
       "type": "definition",
       "tags": [
         "functional-analysis"
@@ -3556,7 +3536,7 @@
     },
     {
       "id": "ideal-order",
-      "label": "ideal-order",
+      "label": "Ideal in order theory",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -3576,7 +3556,7 @@
     },
     {
       "id": "immersion-manifold",
-      "label": "Immersion manifold",
+      "label": "Immersion",
       "type": "definition",
       "tags": [
         "differential-geometry"
@@ -3596,7 +3576,7 @@
     },
     {
       "id": "inaccessible-cardinal",
-      "label": "inaccessible-cardinal",
+      "label": "Inaccessible cardinal",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -3626,7 +3606,7 @@
     },
     {
       "id": "independence-results",
-      "label": "independence-results",
+      "label": "Independence results",
       "type": "concept",
       "tags": [
         "set-theory"
@@ -3636,7 +3616,7 @@
     },
     {
       "id": "independent-set-graph",
-      "label": "Independent set graph",
+      "label": "Independent set",
       "type": "definition",
       "tags": [
         "graph-theory"
@@ -3646,7 +3626,7 @@
     },
     {
       "id": "indexed-family",
-      "label": "indexed-family",
+      "label": "Indexed family",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -3676,7 +3656,7 @@
     },
     {
       "id": "injection-set",
-      "label": "injection-set",
+      "label": "Injection",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -3686,7 +3666,7 @@
     },
     {
       "id": "injective-module",
-      "label": "injective-module",
+      "label": "Injective module",
       "type": "definition",
       "tags": [
         "algebra"
@@ -3725,6 +3705,16 @@
       "primaryTag": "algorithms"
     },
     {
+      "id": "integer-partition-function",
+      "label": "Integer partition function",
+      "type": "definition",
+      "tags": [
+        "combinatorics"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Partition_function_(number_theory)",
+      "primaryTag": "combinatorics"
+    },
+    {
       "id": "integer-ring-axioms",
       "label": "Integer ring axioms",
       "type": "axiom",
@@ -3734,16 +3724,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Integer",
       "primaryTag": "number-theory"
-    },
-    {
-      "id": "integer-partition-function",
-      "label": "integer-partition-function",
-      "type": "definition",
-      "tags": [
-        "combinatorics"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Partition_function_(number_theory)",
-      "primaryTag": "combinatorics"
     },
     {
       "id": "integral-domain",
@@ -3757,7 +3737,7 @@
     },
     {
       "id": "integral-extension",
-      "label": "integral-extension",
+      "label": "Integral extension",
       "type": "concept",
       "tags": [
         "algebra"
@@ -3807,7 +3787,7 @@
     },
     {
       "id": "intersection-operation",
-      "label": "intersection-operation",
+      "label": "Intersection operation",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -3826,6 +3806,16 @@
       "primaryTag": "logic"
     },
     {
+      "id": "inverse-function",
+      "label": "Inverse function",
+      "type": "definition",
+      "tags": [
+        "set-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Inverse_function",
+      "primaryTag": "set-theory"
+    },
+    {
       "id": "inverse-laplace-transform",
       "label": "Inverse Laplace transform",
       "type": "definition",
@@ -3834,16 +3824,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Inverse_Laplace_transform",
       "primaryTag": "differential-equations"
-    },
-    {
-      "id": "inverse-function",
-      "label": "inverse-function",
-      "type": "definition",
-      "tags": [
-        "set-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Inverse_function",
-      "primaryTag": "set-theory"
     },
     {
       "id": "inversive-geometry",
@@ -3877,7 +3857,7 @@
     },
     {
       "id": "isomorphism-category",
-      "label": "isomorphism-category",
+      "label": "Isomorphism",
       "type": "definition",
       "tags": [
         "foundations"
@@ -3897,7 +3877,7 @@
     },
     {
       "id": "join-semilattice",
-      "label": "join-semilattice",
+      "label": "Join-semilattice",
       "type": "structure",
       "tags": [
         "order-theory"
@@ -3916,24 +3896,24 @@
       "primaryTag": "probability"
     },
     {
-      "id": "jordan-holder-theorem",
-      "label": "jordan-holder-theorem",
-      "type": "theorem",
-      "tags": [
-        "abstract-algebra"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Composition_series#Uniqueness:_Jordan%E2%80%93H%C3%B6lder_theorem",
-      "primaryTag": "abstract-algebra"
-    },
-    {
       "id": "jordan-normal-form",
-      "label": "jordan-normal-form",
+      "label": "Jordan normal form",
       "type": "theorem",
       "tags": [
         "linear-algebra"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Jordan_normal_form",
       "primaryTag": "linear-algebra"
+    },
+    {
+      "id": "jordan-holder-theorem",
+      "label": "Jordan–Hölder theorem",
+      "type": "theorem",
+      "tags": [
+        "abstract-algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Composition_series#Uniqueness:_Jordan%E2%80%93H%C3%B6lder_theorem",
+      "primaryTag": "abstract-algebra"
     },
     {
       "id": "kernel-and-image",
@@ -3957,7 +3937,7 @@
     },
     {
       "id": "kirchhoff-matrix-tree",
-      "label": "Kirchhoff matrix tree",
+      "label": "Kirchhoff's theorem",
       "type": "theorem",
       "tags": [
         "graph-theory"
@@ -3966,8 +3946,18 @@
       "primaryTag": "graph-theory"
     },
     {
+      "id": "fixed-point-theorem-order",
+      "label": "Knaster–tarski fixed-point theorem",
+      "type": "theorem",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Knaster%E2%80%93Tarski_theorem",
+      "primaryTag": "order-theory"
+    },
+    {
       "id": "kolmogorov-extension-theorem",
-      "label": "kolmogorov-extension-theorem",
+      "label": "Kolmogorov extension theorem",
       "type": "theorem",
       "tags": [
         "measure-theory"
@@ -3977,7 +3967,7 @@
     },
     {
       "id": "krull-dimension",
-      "label": "krull-dimension",
+      "label": "Krull dimension",
       "type": "concept",
       "tags": [
         "algebra"
@@ -3997,7 +3987,7 @@
     },
     {
       "id": "lhopitals-rule",
-      "label": "L'Hopital's rule",
+      "label": "L'Hôpital's rule",
       "type": "theorem",
       "tags": [
         "calculus"
@@ -4037,7 +4027,7 @@
     },
     {
       "id": "large-cardinal",
-      "label": "large-cardinal",
+      "label": "Large cardinal",
       "type": "concept",
       "tags": [
         "set-theory"
@@ -4047,7 +4037,7 @@
     },
     {
       "id": "lattice",
-      "label": "lattice",
+      "label": "Lattice",
       "type": "structure",
       "tags": [
         "order-theory"
@@ -4087,13 +4077,23 @@
     },
     {
       "id": "least-element",
-      "label": "least-element",
+      "label": "Least element",
       "type": "definition",
       "tags": [
         "order-theory"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Greatest_element_and_least_element",
       "primaryTag": "order-theory"
+    },
+    {
+      "id": "lebesgue-decomposition",
+      "label": "Lebesgue decomposition theorem",
+      "type": "theorem",
+      "tags": [
+        "measure-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Lebesgue%27s_decomposition_theorem",
+      "primaryTag": "measure-theory"
     },
     {
       "id": "lebesgue-integral",
@@ -4116,14 +4116,14 @@
       "primaryTag": "measure-theory"
     },
     {
-      "id": "lebesgue-decomposition",
-      "label": "lebesgue-decomposition",
-      "type": "theorem",
+      "id": "legendre-equation",
+      "label": "Legendre equation",
+      "type": "definition",
       "tags": [
-        "measure-theory"
+        "differential-equations"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Lebesgue%27s_decomposition_theorem",
-      "primaryTag": "measure-theory"
+      "wikipedia": "https://en.wikipedia.org/wiki/Legendre%27s_equation",
+      "primaryTag": "differential-equations"
     },
     {
       "id": "legendre-symbol",
@@ -4134,16 +4134,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Legendre_symbol",
       "primaryTag": "number-theory"
-    },
-    {
-      "id": "legendre-equation",
-      "label": "legendre-equation",
-      "type": "definition",
-      "tags": [
-        "differential-equations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Legendre%27s_equation",
-      "primaryTag": "differential-equations"
     },
     {
       "id": "lie-algebra",
@@ -4186,16 +4176,6 @@
       "primaryTag": "differential-geometry"
     },
     {
-      "id": "lim-sup-lim-inf",
-      "label": "Lim sup lim inf",
-      "type": "definition",
-      "tags": [
-        "real-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Limit_inferior_and_limit_superior",
-      "primaryTag": "real-analysis"
-    },
-    {
       "id": "limit-of-a-function",
       "label": "Limit of a function",
       "type": "definition",
@@ -4216,8 +4196,18 @@
       "primaryTag": "real-analysis"
     },
     {
+      "id": "lim-sup-lim-inf",
+      "label": "Limit superior and limit inferior",
+      "type": "definition",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Limit_inferior_and_limit_superior",
+      "primaryTag": "real-analysis"
+    },
+    {
       "id": "limit-category",
-      "label": "limit-category",
+      "label": "Limit",
       "type": "concept",
       "tags": [
         "foundations"
@@ -4227,7 +4217,7 @@
     },
     {
       "id": "lindstrom-gessel-viennot",
-      "label": "lindstrom-gessel-viennot",
+      "label": "Lindström–Gessel–Viennot lemma",
       "type": "lemma",
       "tags": [
         "combinatorics"
@@ -4254,6 +4244,16 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Line_integral",
       "primaryTag": "calculus"
+    },
+    {
+      "id": "linear-extension",
+      "label": "Linear extension",
+      "type": "theorem",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Linear_extension",
+      "primaryTag": "order-theory"
     },
     {
       "id": "linear-independence",
@@ -4286,16 +4286,6 @@
       "primaryTag": "differential-equations"
     },
     {
-      "id": "linear-extension",
-      "label": "linear-extension",
-      "type": "theorem",
-      "tags": [
-        "order-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Linear_extension",
-      "primaryTag": "order-theory"
-    },
-    {
       "id": "liouville-number",
       "label": "Liouville number",
       "type": "definition",
@@ -4306,6 +4296,16 @@
       "primaryTag": "real-analysis"
     },
     {
+      "id": "liouville-theorem-ode",
+      "label": "Liouville's theorem (ODEs)",
+      "type": "theorem",
+      "tags": [
+        "differential-equations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Liouville%27s_theorem_(Hamiltonian)",
+      "primaryTag": "differential-equations"
+    },
+    {
       "id": "liouvilles-theorem-complex",
       "label": "Liouville's theorem",
       "type": "theorem",
@@ -4314,16 +4314,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Liouville%27s_theorem_(complex_analysis)",
       "primaryTag": "complex-analysis"
-    },
-    {
-      "id": "liouville-theorem-ode",
-      "label": "liouville-theorem-ode",
-      "type": "theorem",
-      "tags": [
-        "differential-equations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Liouville%27s_theorem_(Hamiltonian)",
-      "primaryTag": "differential-equations"
     },
     {
       "id": "lipschitz-continuity",
@@ -4337,7 +4327,7 @@
     },
     {
       "id": "lipschitz-function",
-      "label": "lipschitz-function",
+      "label": "Lipschitz function",
       "type": "definition",
       "tags": [
         "analysis"
@@ -4357,7 +4347,7 @@
     },
     {
       "id": "local-ring",
-      "label": "local-ring",
+      "label": "Local ring",
       "type": "structure",
       "tags": [
         "algebra"
@@ -4367,7 +4357,7 @@
     },
     {
       "id": "localization-ring",
-      "label": "localization-ring",
+      "label": "Localization of a ring",
       "type": "concept",
       "tags": [
         "algebra"
@@ -4417,7 +4407,7 @@
     },
     {
       "id": "lovasz-local-lemma",
-      "label": "Lovasz local lemma",
+      "label": "Lovász local lemma",
       "type": "lemma",
       "tags": [
         "combinatorics"
@@ -4427,7 +4417,7 @@
     },
     {
       "id": "lower-bound",
-      "label": "lower-bound",
+      "label": "Lower bound",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -4437,7 +4427,7 @@
     },
     {
       "id": "lower-semicontinuity",
-      "label": "lower-semicontinuity",
+      "label": "Lower semicontinuity",
       "type": "definition",
       "tags": [
         "analysis"
@@ -4446,18 +4436,8 @@
       "primaryTag": "analysis"
     },
     {
-      "id": "lp-space",
-      "label": "Lp space",
-      "type": "structure",
-      "tags": [
-        "measure-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Lp_space",
-      "primaryTag": "measure-theory"
-    },
-    {
       "id": "lusin-theorem",
-      "label": "lusin-theorem",
+      "label": "Lusin theorem",
       "type": "theorem",
       "tags": [
         "analysis"
@@ -4477,13 +4457,23 @@
     },
     {
       "id": "lyapunov-function",
-      "label": "lyapunov-function",
+      "label": "Lyapunov function",
       "type": "definition",
       "tags": [
         "differential-equations"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Lyapunov_function",
       "primaryTag": "differential-equations"
+    },
+    {
+      "id": "lp-space",
+      "label": "L^p space",
+      "type": "structure",
+      "tags": [
+        "measure-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Lp_space",
+      "primaryTag": "measure-theory"
     },
     {
       "id": "manifold",
@@ -4507,7 +4497,7 @@
     },
     {
       "id": "markov-chain",
-      "label": "markov-chain",
+      "label": "Markov chain",
       "type": "definition",
       "tags": [
         "probability"
@@ -4517,7 +4507,7 @@
     },
     {
       "id": "martingale",
-      "label": "martingale",
+      "label": "Martingale",
       "type": "definition",
       "tags": [
         "measure-theory"
@@ -4568,23 +4558,13 @@
     },
     {
       "id": "matroid",
-      "label": "matroid",
+      "label": "Matroid",
       "type": "structure",
       "tags": [
         "combinatorics"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Matroid",
       "primaryTag": "combinatorics"
-    },
-    {
-      "id": "max-flow-min-cut-theorem",
-      "label": "Max-flow min-cut theorem graph",
-      "type": "theorem",
-      "tags": [
-        "graph-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Max-flow_min-cut_theorem",
-      "primaryTag": "graph-theory"
     },
     {
       "id": "max-flow-min-cut",
@@ -4598,7 +4578,7 @@
     },
     {
       "id": "maximal-element",
-      "label": "maximal-element",
+      "label": "Maximal element",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -4608,7 +4588,7 @@
     },
     {
       "id": "maximal-ideal",
-      "label": "maximal-ideal",
+      "label": "Maximal ideal",
       "type": "definition",
       "tags": [
         "algebra"
@@ -4618,7 +4598,7 @@
     },
     {
       "id": "meager-set",
-      "label": "meager-set",
+      "label": "Meager set",
       "type": "definition",
       "tags": [
         "analysis"
@@ -4668,7 +4648,7 @@
     },
     {
       "id": "meet-semilattice",
-      "label": "meet-semilattice",
+      "label": "Meet-semilattice",
       "type": "structure",
       "tags": [
         "order-theory"
@@ -4708,7 +4688,7 @@
     },
     {
       "id": "mersenne-prime",
-      "label": "mersenne-prime",
+      "label": "Mersenne prime",
       "type": "definition",
       "tags": [
         "number-theory"
@@ -4728,7 +4708,7 @@
     },
     {
       "id": "metrization-theorem",
-      "label": "metrization-theorem",
+      "label": "Metrization theorem",
       "type": "theorem",
       "tags": [
         "topology"
@@ -4748,7 +4728,7 @@
     },
     {
       "id": "minimal-element",
-      "label": "minimal-element",
+      "label": "Minimal element",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -4758,7 +4738,7 @@
     },
     {
       "id": "minimal-polynomial-matrix",
-      "label": "minimal-polynomial-matrix",
+      "label": "Minimal polynomial of a matrix",
       "type": "definition",
       "tags": [
         "linear-algebra"
@@ -4768,7 +4748,7 @@
     },
     {
       "id": "minimal-polynomial",
-      "label": "minimal-polynomial",
+      "label": "Minimal polynomial",
       "type": "definition",
       "tags": [
         "algebra"
@@ -4788,7 +4768,7 @@
     },
     {
       "id": "mirsky-theorem",
-      "label": "mirsky-theorem",
+      "label": "Mirsky's theorem",
       "type": "theorem",
       "tags": [
         "order-theory"
@@ -4798,22 +4778,12 @@
     },
     {
       "id": "mittag-leffler-theorem",
-      "label": "mittag-leffler-theorem",
+      "label": "Mittag-leffler theorem",
       "type": "theorem",
       "tags": [
         "complex-analysis"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Mittag-Leffler%27s_theorem",
-      "primaryTag": "complex-analysis"
-    },
-    {
-      "id": "mobius-transformation",
-      "label": "Mobius transformation",
-      "type": "definition",
-      "tags": [
-        "complex-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/M%C3%B6bius_transformation",
       "primaryTag": "complex-analysis"
     },
     {
@@ -4848,7 +4818,7 @@
     },
     {
       "id": "modular-lattice",
-      "label": "modular-lattice",
+      "label": "Modular lattice",
       "type": "structure",
       "tags": [
         "order-theory"
@@ -4888,7 +4858,7 @@
     },
     {
       "id": "modulus-of-continuity",
-      "label": "modulus-of-continuity",
+      "label": "Modulus of continuity",
       "type": "definition",
       "tags": [
         "analysis"
@@ -4928,7 +4898,7 @@
     },
     {
       "id": "monad-category",
-      "label": "monad-category",
+      "label": "Monad",
       "type": "structure",
       "tags": [
         "foundations"
@@ -4957,6 +4927,16 @@
       "primaryTag": "real-analysis"
     },
     {
+      "id": "monotone-map",
+      "label": "Monotone map",
+      "type": "definition",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Monotonic_function",
+      "primaryTag": "order-theory"
+    },
+    {
       "id": "monotone-sequence",
       "label": "Monotone sequence",
       "type": "definition",
@@ -4967,18 +4947,8 @@
       "primaryTag": "real-analysis"
     },
     {
-      "id": "monotone-map",
-      "label": "monotone-map",
-      "type": "definition",
-      "tags": [
-        "order-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Monotonic_function",
-      "primaryTag": "order-theory"
-    },
-    {
       "id": "morphism",
-      "label": "morphism",
+      "label": "Morphism",
       "type": "definition",
       "tags": [
         "foundations"
@@ -5007,8 +4977,18 @@
       "primaryTag": "calculus"
     },
     {
+      "id": "mobius-transformation",
+      "label": "Möbius transformation",
+      "type": "definition",
+      "tags": [
+        "complex-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/M%C3%B6bius_transformation",
+      "primaryTag": "complex-analysis"
+    },
+    {
       "id": "nakayama-lemma",
-      "label": "nakayama-lemma",
+      "label": "Nakayama's lemma",
       "type": "lemma",
       "tags": [
         "algebra"
@@ -5028,7 +5008,7 @@
     },
     {
       "id": "natural-transformation",
-      "label": "natural-transformation",
+      "label": "Natural transformation",
       "type": "definition",
       "tags": [
         "foundations"
@@ -5038,7 +5018,7 @@
     },
     {
       "id": "necklace-counting",
-      "label": "necklace-counting",
+      "label": "Necklace counting",
       "type": "theorem",
       "tags": [
         "combinatorics"
@@ -5058,7 +5038,7 @@
     },
     {
       "id": "net-convergence",
-      "label": "net-convergence",
+      "label": "Net convergence",
       "type": "definition",
       "tags": [
         "topology"
@@ -5078,7 +5058,7 @@
     },
     {
       "id": "noether-normalization",
-      "label": "noether-normalization",
+      "label": "Noether normalization lemma",
       "type": "theorem",
       "tags": [
         "algebra"
@@ -5088,7 +5068,7 @@
     },
     {
       "id": "noetherian-ring",
-      "label": "noetherian-ring",
+      "label": "Noetherian ring",
       "type": "structure",
       "tags": [
         "algebra"
@@ -5127,6 +5107,26 @@
       "primaryTag": "probability"
     },
     {
+      "id": "normal-family",
+      "label": "Normal family",
+      "type": "definition",
+      "tags": [
+        "analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Normal_family",
+      "primaryTag": "analysis"
+    },
+    {
+      "id": "normal-operator",
+      "label": "Normal operator",
+      "type": "definition",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Normal_operator",
+      "primaryTag": "functional-analysis"
+    },
+    {
       "id": "normal-space",
       "label": "Normal space",
       "type": "definition",
@@ -5147,36 +5147,6 @@
       "primaryTag": "abstract-algebra"
     },
     {
-      "id": "normal-family-complex",
-      "label": "normal-family-complex",
-      "type": "definition",
-      "tags": [
-        "complex-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Normal_family",
-      "primaryTag": "complex-analysis"
-    },
-    {
-      "id": "normal-family",
-      "label": "normal-family",
-      "type": "definition",
-      "tags": [
-        "analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Normal_family",
-      "primaryTag": "analysis"
-    },
-    {
-      "id": "normal-operator",
-      "label": "normal-operator",
-      "type": "definition",
-      "tags": [
-        "functional-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Normal_operator",
-      "primaryTag": "functional-analysis"
-    },
-    {
       "id": "normed-vector-space",
       "label": "Normed vector space",
       "type": "structure",
@@ -5188,7 +5158,7 @@
     },
     {
       "id": "nowhere-dense-set",
-      "label": "nowhere-dense-set",
+      "label": "Nowhere dense set",
       "type": "definition",
       "tags": [
         "analysis"
@@ -5208,7 +5178,7 @@
     },
     {
       "id": "nuclear-space",
-      "label": "nuclear-space",
+      "label": "Nuclear space",
       "type": "structure",
       "tags": [
         "functional-analysis"
@@ -5247,6 +5217,16 @@
       "primaryTag": "real-analysis"
     },
     {
+      "id": "open-mapping-theorem",
+      "label": "Open mapping theorem",
+      "type": "theorem",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Open_mapping_theorem_(functional_analysis)",
+      "primaryTag": "functional-analysis"
+    },
+    {
       "id": "open-set",
       "label": "Open set",
       "type": "definition",
@@ -5257,18 +5237,8 @@
       "primaryTag": "topology"
     },
     {
-      "id": "open-mapping-theorem",
-      "label": "open-mapping-theorem",
-      "type": "theorem",
-      "tags": [
-        "functional-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Open_mapping_theorem_(functional_analysis)",
-      "primaryTag": "functional-analysis"
-    },
-    {
       "id": "optional-stopping-theorem",
-      "label": "optional-stopping-theorem",
+      "label": "Optional stopping theorem",
       "type": "theorem",
       "tags": [
         "probability"
@@ -5278,7 +5248,7 @@
     },
     {
       "id": "order-dimension",
-      "label": "order-dimension",
+      "label": "Order dimension",
       "type": "concept",
       "tags": [
         "order-theory"
@@ -5288,7 +5258,7 @@
     },
     {
       "id": "order-embedding",
-      "label": "order-embedding",
+      "label": "Order embedding",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -5298,7 +5268,7 @@
     },
     {
       "id": "order-isomorphism",
-      "label": "order-isomorphism",
+      "label": "Order isomorphism",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -5308,7 +5278,7 @@
     },
     {
       "id": "ordered-pair",
-      "label": "ordered-pair",
+      "label": "Ordered pair",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -5318,7 +5288,7 @@
     },
     {
       "id": "ordinal-arithmetic",
-      "label": "ordinal-arithmetic",
+      "label": "Ordinal arithmetic",
       "type": "concept",
       "tags": [
         "set-theory"
@@ -5328,7 +5298,7 @@
     },
     {
       "id": "ordinal-number",
-      "label": "ordinal-number",
+      "label": "Ordinal number",
       "type": "concept",
       "tags": [
         "order-theory"
@@ -5358,7 +5328,7 @@
     },
     {
       "id": "orthogonal-matrix",
-      "label": "orthogonal-matrix",
+      "label": "Orthogonal matrix",
       "type": "definition",
       "tags": [
         "linear-algebra"
@@ -5388,7 +5358,7 @@
     },
     {
       "id": "oscillation-function",
-      "label": "oscillation-function",
+      "label": "Oscillation of a function",
       "type": "definition",
       "tags": [
         "analysis"
@@ -5398,7 +5368,7 @@
     },
     {
       "id": "outer-measure",
-      "label": "outer-measure",
+      "label": "Outer measure",
       "type": "definition",
       "tags": [
         "measure-theory"
@@ -5418,7 +5388,7 @@
     },
     {
       "id": "p-adic-number",
-      "label": "p-adic-number",
+      "label": "P-adic number",
       "type": "definition",
       "tags": [
         "number-theory"
@@ -5507,6 +5477,16 @@
       "primaryTag": "order-theory"
     },
     {
+      "id": "poset",
+      "label": "Partially ordered set",
+      "type": "structure",
+      "tags": [
+        "order-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Partially_ordered_set",
+      "primaryTag": "order-theory"
+    },
+    {
       "id": "particular-solution",
       "label": "Particular solution",
       "type": "concept",
@@ -5517,6 +5497,16 @@
       "primaryTag": "differential-equations"
     },
     {
+      "id": "partition-set",
+      "label": "Partition of a set",
+      "type": "definition",
+      "tags": [
+        "set-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Partition_of_a_set",
+      "primaryTag": "set-theory"
+    },
+    {
       "id": "partition-of-integer",
       "label": "Partition of integer",
       "type": "definition",
@@ -5525,16 +5515,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Partition_(number_theory)",
       "primaryTag": "combinatorics"
-    },
-    {
-      "id": "partition-set",
-      "label": "partition-set",
-      "type": "definition",
-      "tags": [
-        "set-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Partition_of_a_set",
-      "primaryTag": "set-theory"
     },
     {
       "id": "path-in-a-graph",
@@ -5569,7 +5549,7 @@
     },
     {
       "id": "perfect-number",
-      "label": "perfect-number",
+      "label": "Perfect number",
       "type": "definition",
       "tags": [
         "number-theory"
@@ -5589,7 +5569,7 @@
     },
     {
       "id": "permanent-matrix",
-      "label": "permanent-matrix",
+      "label": "Permanent of a matrix",
       "type": "definition",
       "tags": [
         "combinatorics"
@@ -5629,7 +5609,7 @@
     },
     {
       "id": "picard-theorem",
-      "label": "picard-theorem",
+      "label": "Picard theorem",
       "type": "theorem",
       "tags": [
         "complex-analysis"
@@ -5659,7 +5639,7 @@
     },
     {
       "id": "poincare-bendixson-theorem",
-      "label": "poincare-bendixson-theorem",
+      "label": "Poincaré–Bendixson theorem",
       "type": "theorem",
       "tags": [
         "differential-equations"
@@ -5708,16 +5688,6 @@
       "primaryTag": "complex-analysis"
     },
     {
-      "id": "polya-enumeration",
-      "label": "polya-enumeration",
-      "type": "theorem",
-      "tags": [
-        "combinatorics"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/P%C3%B3lya_enumeration_theorem",
-      "primaryTag": "combinatorics"
-    },
-    {
       "id": "polygon",
       "label": "Polygon",
       "type": "definition",
@@ -5738,24 +5708,24 @@
       "primaryTag": "abstract-algebra"
     },
     {
-      "id": "poset",
-      "label": "poset",
-      "type": "structure",
-      "tags": [
-        "order-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Partially_ordered_set",
-      "primaryTag": "order-theory"
-    },
-    {
       "id": "positive-definite-matrix",
-      "label": "positive-definite-matrix",
+      "label": "Positive definite matrix",
       "type": "definition",
       "tags": [
         "linear-algebra"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Definite_matrix",
       "primaryTag": "linear-algebra"
+    },
+    {
+      "id": "power-series-method-ode",
+      "label": "Power series method for ODEs",
+      "type": "concept",
+      "tags": [
+        "differential-equations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Power_series_solution_of_differential_equations",
+      "primaryTag": "differential-equations"
     },
     {
       "id": "power-series",
@@ -5768,18 +5738,8 @@
       "primaryTag": "real-analysis"
     },
     {
-      "id": "power-series-method-ode",
-      "label": "power-series-method-ode",
-      "type": "concept",
-      "tags": [
-        "differential-equations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Power_series_solution_of_differential_equations",
-      "primaryTag": "differential-equations"
-    },
-    {
       "id": "power-set-axiom",
-      "label": "power-set-axiom",
+      "label": "Power set",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -5819,7 +5779,7 @@
     },
     {
       "id": "primary-decomposition",
-      "label": "primary-decomposition",
+      "label": "Primary decomposition",
       "type": "theorem",
       "tags": [
         "algebra"
@@ -5828,18 +5788,8 @@
       "primaryTag": "algebra"
     },
     {
-      "id": "prime-number",
-      "label": "Prime number",
-      "type": "definition",
-      "tags": [
-        "number-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Prime_number",
-      "primaryTag": "number-theory"
-    },
-    {
       "id": "prime-factorization",
-      "label": "prime-factorization",
+      "label": "Prime factorization",
       "type": "concept",
       "tags": [
         "number-theory"
@@ -5849,7 +5799,7 @@
     },
     {
       "id": "prime-ideal",
-      "label": "prime-ideal",
+      "label": "Prime ideal",
       "type": "definition",
       "tags": [
         "algebra"
@@ -5859,12 +5809,22 @@
     },
     {
       "id": "prime-number-theorem",
-      "label": "prime-number-theorem",
+      "label": "Prime number theorem",
       "type": "theorem",
       "tags": [
         "number-theory"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Prime_number_theorem",
+      "primaryTag": "number-theory"
+    },
+    {
+      "id": "prime-number",
+      "label": "Prime number",
+      "type": "definition",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Prime_number",
       "primaryTag": "number-theory"
     },
     {
@@ -5888,6 +5848,16 @@
       "primaryTag": "differential-geometry"
     },
     {
+      "id": "principal-ideal-domain",
+      "label": "Principal ideal domain",
+      "type": "structure",
+      "tags": [
+        "algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Principal_ideal_domain",
+      "primaryTag": "algebra"
+    },
+    {
       "id": "principal-ideal",
       "label": "Principal ideal",
       "type": "definition",
@@ -5896,16 +5866,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Principal_ideal",
       "primaryTag": "abstract-algebra"
-    },
-    {
-      "id": "principal-ideal-domain",
-      "label": "principal-ideal-domain",
-      "type": "structure",
-      "tags": [
-        "algebra"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Principal_ideal_domain",
-      "primaryTag": "algebra"
     },
     {
       "id": "probabilistic-method",
@@ -5969,7 +5929,7 @@
     },
     {
       "id": "product-sigma-algebra",
-      "label": "product-sigma-algebra",
+      "label": "Product sigma-algebra",
       "type": "definition",
       "tags": [
         "measure-theory"
@@ -5979,7 +5939,7 @@
     },
     {
       "id": "product-topology",
-      "label": "product-topology",
+      "label": "Product topology",
       "type": "definition",
       "tags": [
         "topology"
@@ -5989,7 +5949,7 @@
     },
     {
       "id": "projection-operator",
-      "label": "projection-operator",
+      "label": "Projection operator",
       "type": "definition",
       "tags": [
         "functional-analysis"
@@ -6009,7 +5969,7 @@
     },
     {
       "id": "projective-module",
-      "label": "projective-module",
+      "label": "Projective module",
       "type": "definition",
       "tags": [
         "algebra"
@@ -6029,7 +5989,7 @@
     },
     {
       "id": "proper-class",
-      "label": "proper-class",
+      "label": "Proper class",
       "type": "concept",
       "tags": [
         "foundations"
@@ -6069,7 +6029,7 @@
     },
     {
       "id": "pushforward-measure",
-      "label": "pushforward-measure",
+      "label": "Pushforward measure",
       "type": "definition",
       "tags": [
         "measure-theory"
@@ -6108,18 +6068,18 @@
       "primaryTag": "geometry"
     },
     {
-      "id": "quadratic-residue",
-      "label": "Quadratic residue",
-      "type": "definition",
+      "id": "polya-enumeration",
+      "label": "Pólya enumeration theorem",
+      "type": "theorem",
       "tags": [
-        "number-theory"
+        "combinatorics"
       ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Quadratic_residue",
-      "primaryTag": "number-theory"
+      "wikipedia": "https://en.wikipedia.org/wiki/P%C3%B3lya_enumeration_theorem",
+      "primaryTag": "combinatorics"
     },
     {
       "id": "quadratic-form",
-      "label": "quadratic-form",
+      "label": "Quadratic form",
       "type": "definition",
       "tags": [
         "linear-algebra"
@@ -6129,12 +6089,22 @@
     },
     {
       "id": "quadratic-reciprocity-law",
-      "label": "quadratic-reciprocity-law",
+      "label": "Quadratic reciprocity law",
       "type": "theorem",
       "tags": [
         "number-theory"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Quadratic_reciprocity",
+      "primaryTag": "number-theory"
+    },
+    {
+      "id": "quadratic-residue",
+      "label": "Quadratic residue",
+      "type": "definition",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Quadratic_residue",
       "primaryTag": "number-theory"
     },
     {
@@ -6169,7 +6139,7 @@
     },
     {
       "id": "quotient-topology",
-      "label": "quotient-topology",
+      "label": "Quotient topology",
       "type": "definition",
       "tags": [
         "topology"
@@ -6179,7 +6149,7 @@
     },
     {
       "id": "radical-ideal",
-      "label": "radical-ideal",
+      "label": "Radical ideal",
       "type": "definition",
       "tags": [
         "algebra"
@@ -6229,7 +6199,7 @@
     },
     {
       "id": "random-walk",
-      "label": "random-walk",
+      "label": "Random walk",
       "type": "definition",
       "tags": [
         "probability"
@@ -6248,6 +6218,16 @@
       "primaryTag": "algorithms"
     },
     {
+      "id": "rank-function-matroid",
+      "label": "Rank function of a matroid",
+      "type": "definition",
+      "tags": [
+        "combinatorics"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Matroid_rank",
+      "primaryTag": "combinatorics"
+    },
+    {
       "id": "rank-of-a-matrix",
       "label": "Rank of a matrix",
       "type": "definition",
@@ -6256,16 +6236,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Rank_(linear_algebra)",
       "primaryTag": "linear-algebra"
-    },
-    {
-      "id": "rank-function-matroid",
-      "label": "rank-function-matroid",
-      "type": "definition",
-      "tags": [
-        "combinatorics"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Matroid_rank",
-      "primaryTag": "combinatorics"
     },
     {
       "id": "rational-field-axioms",
@@ -6288,16 +6258,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Real_number",
       "primaryTag": "analysis"
-    },
-    {
-      "id": "rearrangement-theorem",
-      "label": "Rearrangement theorem",
-      "type": "theorem",
-      "tags": [
-        "real-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Riemann_series_theorem",
-      "primaryTag": "real-analysis"
     },
     {
       "id": "recurrence-relation",
@@ -6331,13 +6291,33 @@
     },
     {
       "id": "reflexive-space",
-      "label": "reflexive-space",
+      "label": "Reflexive space",
       "type": "definition",
       "tags": [
         "functional-analysis"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Reflexive_space",
       "primaryTag": "functional-analysis"
+    },
+    {
+      "id": "regular-cardinal",
+      "label": "Regular cardinal",
+      "type": "definition",
+      "tags": [
+        "set-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Regular_cardinal",
+      "primaryTag": "set-theory"
+    },
+    {
+      "id": "regular-measure",
+      "label": "Regular measure",
+      "type": "definition",
+      "tags": [
+        "measure-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Regular_measure",
+      "primaryTag": "measure-theory"
     },
     {
       "id": "regular-space",
@@ -6350,28 +6330,8 @@
       "primaryTag": "topology"
     },
     {
-      "id": "regular-cardinal",
-      "label": "regular-cardinal",
-      "type": "definition",
-      "tags": [
-        "set-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Regular_cardinal",
-      "primaryTag": "set-theory"
-    },
-    {
-      "id": "regular-measure",
-      "label": "regular-measure",
-      "type": "definition",
-      "tags": [
-        "measure-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Regular_measure",
-      "primaryTag": "measure-theory"
-    },
-    {
       "id": "regulated-function",
-      "label": "regulated-function",
+      "label": "Regulated function",
       "type": "definition",
       "tags": [
         "analysis"
@@ -6401,7 +6361,7 @@
     },
     {
       "id": "resolvent-operator",
-      "label": "resolvent-operator",
+      "label": "Resolvent operator",
       "type": "concept",
       "tags": [
         "functional-analysis"
@@ -6440,6 +6400,16 @@
       "primaryTag": "differential-geometry"
     },
     {
+      "id": "riemann-hypothesis",
+      "label": "Riemann hypothesis",
+      "type": "conjecture",
+      "tags": [
+        "number-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Riemann_hypothesis",
+      "primaryTag": "number-theory"
+    },
+    {
       "id": "riemann-integral",
       "label": "Riemann integral",
       "type": "definition",
@@ -6460,6 +6430,16 @@
       "primaryTag": "complex-analysis"
     },
     {
+      "id": "rearrangement-theorem",
+      "label": "Riemann rearrangement theorem",
+      "type": "theorem",
+      "tags": [
+        "real-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Riemann_series_theorem",
+      "primaryTag": "real-analysis"
+    },
+    {
       "id": "riemann-sum",
       "label": "Riemann sum",
       "type": "definition",
@@ -6470,18 +6450,8 @@
       "primaryTag": "calculus"
     },
     {
-      "id": "riemann-hypothesis",
-      "label": "riemann-hypothesis",
-      "type": "conjecture",
-      "tags": [
-        "number-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Riemann_hypothesis",
-      "primaryTag": "number-theory"
-    },
-    {
       "id": "riemann-surface",
-      "label": "riemann-surface",
+      "label": "Riemann surface",
       "type": "definition",
       "tags": [
         "complex-analysis"
@@ -6501,7 +6471,7 @@
     },
     {
       "id": "riesz-representation-theorem",
-      "label": "riesz-representation-theorem",
+      "label": "Riesz representation theorem",
       "type": "theorem",
       "tags": [
         "functional-analysis"
@@ -6551,7 +6521,7 @@
     },
     {
       "id": "rook-polynomial",
-      "label": "rook-polynomial",
+      "label": "Rook polynomial",
       "type": "definition",
       "tags": [
         "combinatorics"
@@ -6581,7 +6551,7 @@
     },
     {
       "id": "rouches-theorem",
-      "label": "rouches-theorem",
+      "label": "Rouché's theorem",
       "type": "theorem",
       "tags": [
         "complex-analysis"
@@ -6601,7 +6571,7 @@
     },
     {
       "id": "russell-paradox",
-      "label": "russell-paradox",
+      "label": "Russell paradox",
       "type": "theorem",
       "tags": [
         "foundations"
@@ -6631,7 +6601,7 @@
     },
     {
       "id": "schroeder-bernstein-theorem",
-      "label": "schroeder-bernstein-theorem",
+      "label": "Schroeder-Bernstein theorem",
       "type": "theorem",
       "tags": [
         "set-theory"
@@ -6641,7 +6611,7 @@
     },
     {
       "id": "schur-decomposition",
-      "label": "schur-decomposition",
+      "label": "Schur decomposition",
       "type": "theorem",
       "tags": [
         "linear-algebra"
@@ -6651,7 +6621,7 @@
     },
     {
       "id": "schwartz-space",
-      "label": "schwartz-space",
+      "label": "Schwartz space",
       "type": "structure",
       "tags": [
         "functional-analysis"
@@ -6661,7 +6631,7 @@
     },
     {
       "id": "schwarz-lemma",
-      "label": "schwarz-lemma",
+      "label": "Schwarz lemma",
       "type": "lemma",
       "tags": [
         "complex-analysis"
@@ -6671,7 +6641,7 @@
     },
     {
       "id": "schwarz-reflection-principle",
-      "label": "schwarz-reflection-principle",
+      "label": "Schwarz reflection principle",
       "type": "theorem",
       "tags": [
         "complex-analysis"
@@ -6721,7 +6691,7 @@
     },
     {
       "id": "seifert-van-kampen-theorem",
-      "label": "Seifert-van Kampen theorem",
+      "label": "Seifert-Van Kampen theorem",
       "type": "theorem",
       "tags": [
         "topology"
@@ -6731,7 +6701,7 @@
     },
     {
       "id": "self-adjoint-operator",
-      "label": "self-adjoint-operator",
+      "label": "Self-adjoint operator",
       "type": "definition",
       "tags": [
         "functional-analysis"
@@ -6741,7 +6711,7 @@
     },
     {
       "id": "semicontinuous-function",
-      "label": "semicontinuous-function",
+      "label": "Semicontinuous function",
       "type": "definition",
       "tags": [
         "analysis"
@@ -6751,13 +6721,23 @@
     },
     {
       "id": "semidirect-product",
-      "label": "semidirect-product",
+      "label": "Semidirect product",
       "type": "definition",
       "tags": [
         "abstract-algebra"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Semidirect_product",
       "primaryTag": "abstract-algebra"
+    },
+    {
+      "id": "separable-banach-space",
+      "label": "Separable Banach space",
+      "type": "definition",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Separable_space",
+      "primaryTag": "functional-analysis"
     },
     {
       "id": "separable-ode",
@@ -6768,16 +6748,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Separation_of_variables",
       "primaryTag": "differential-equations"
-    },
-    {
-      "id": "separable-banach-space",
-      "label": "separable-banach-space",
-      "type": "definition",
-      "tags": [
-        "functional-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Separable_space",
-      "primaryTag": "functional-analysis"
     },
     {
       "id": "sequence",
@@ -6800,6 +6770,16 @@
       "primaryTag": "real-analysis"
     },
     {
+      "id": "set-difference",
+      "label": "Set difference",
+      "type": "definition",
+      "tags": [
+        "set-theory"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement",
+      "primaryTag": "set-theory"
+    },
+    {
       "id": "set-operations",
       "label": "Set operations",
       "type": "definition",
@@ -6807,16 +6787,6 @@
         "set-theory"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Set_(mathematics)#Basic_operations",
-      "primaryTag": "set-theory"
-    },
-    {
-      "id": "set-difference",
-      "label": "set-difference",
-      "type": "definition",
-      "tags": [
-        "set-theory"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement",
       "primaryTag": "set-theory"
     },
     {
@@ -6831,7 +6801,7 @@
     },
     {
       "id": "sigma-finite-measure",
-      "label": "sigma-finite-measure",
+      "label": "Sigma-finite measure",
       "type": "definition",
       "tags": [
         "measure-theory"
@@ -6861,7 +6831,7 @@
     },
     {
       "id": "simple-group",
-      "label": "simple-group",
+      "label": "Simple group",
       "type": "definition",
       "tags": [
         "abstract-algebra"
@@ -6931,7 +6901,7 @@
     },
     {
       "id": "sobolev-space",
-      "label": "sobolev-space",
+      "label": "Sobolev space",
       "type": "structure",
       "tags": [
         "functional-analysis"
@@ -7001,7 +6971,7 @@
     },
     {
       "id": "spectral-radius",
-      "label": "spectral-radius",
+      "label": "Spectral radius",
       "type": "concept",
       "tags": [
         "functional-analysis"
@@ -7011,7 +6981,7 @@
     },
     {
       "id": "spectral-theorem",
-      "label": "spectral-theorem",
+      "label": "Spectral theorem",
       "type": "theorem",
       "tags": [
         "functional-analysis"
@@ -7021,7 +6991,7 @@
     },
     {
       "id": "spectrum-of-ring",
-      "label": "spectrum-of-ring",
+      "label": "Spectrum of a ring",
       "type": "concept",
       "tags": [
         "algebra"
@@ -7031,7 +7001,7 @@
     },
     {
       "id": "spectrum-operator",
-      "label": "spectrum-operator",
+      "label": "Spectrum of an operator",
       "type": "concept",
       "tags": [
         "functional-analysis"
@@ -7091,7 +7061,7 @@
     },
     {
       "id": "stationary-distribution",
-      "label": "stationary-distribution",
+      "label": "Stationary distribution",
       "type": "definition",
       "tags": [
         "probability"
@@ -7111,7 +7081,7 @@
     },
     {
       "id": "stochastic-process",
-      "label": "stochastic-process",
+      "label": "Stochastic process",
       "type": "definition",
       "tags": [
         "probability"
@@ -7121,7 +7091,7 @@
     },
     {
       "id": "stokes-theorem-calculus",
-      "label": "Stokes theorem calculus",
+      "label": "Stokes' theorem",
       "type": "theorem",
       "tags": [
         "calculus"
@@ -7130,18 +7100,8 @@
       "primaryTag": "calculus"
     },
     {
-      "id": "stone-cech-compactification",
-      "label": "stone-cech-compactification",
-      "type": "theorem",
-      "tags": [
-        "topology"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Stone%E2%80%93%C4%8Cech_compactification",
-      "primaryTag": "topology"
-    },
-    {
       "id": "stone-weierstrass-theorem",
-      "label": "stone-weierstrass-theorem",
+      "label": "Stone-Weierstrass theorem",
       "type": "theorem",
       "tags": [
         "analysis"
@@ -7150,8 +7110,18 @@
       "primaryTag": "analysis"
     },
     {
+      "id": "stone-cech-compactification",
+      "label": "Stone–čech compactification",
+      "type": "theorem",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Stone%E2%80%93%C4%8Cech_compactification",
+      "primaryTag": "topology"
+    },
+    {
       "id": "stopping-time",
-      "label": "stopping-time",
+      "label": "Stopping time",
       "type": "definition",
       "tags": [
         "measure-theory"
@@ -7181,7 +7151,7 @@
     },
     {
       "id": "sturm-liouville-theory",
-      "label": "sturm-liouville-theory",
+      "label": "Sturm–Liouville theory",
       "type": "theorem",
       "tags": [
         "differential-equations"
@@ -7191,7 +7161,7 @@
     },
     {
       "id": "subadditive-function",
-      "label": "subadditive-function",
+      "label": "Subadditive function",
       "type": "definition",
       "tags": [
         "analysis"
@@ -7201,7 +7171,7 @@
     },
     {
       "id": "subcategory",
-      "label": "subcategory",
+      "label": "Subcategory",
       "type": "definition",
       "tags": [
         "foundations"
@@ -7241,7 +7211,7 @@
     },
     {
       "id": "subset",
-      "label": "subset",
+      "label": "Subset",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -7251,7 +7221,7 @@
     },
     {
       "id": "subspace-topology",
-      "label": "subspace-topology",
+      "label": "Subspace topology",
       "type": "definition",
       "tags": [
         "topology"
@@ -7281,7 +7251,7 @@
     },
     {
       "id": "superadditive-function",
-      "label": "superadditive-function",
+      "label": "Superadditive function",
       "type": "definition",
       "tags": [
         "analysis"
@@ -7321,7 +7291,7 @@
     },
     {
       "id": "surjection-set",
-      "label": "surjection-set",
+      "label": "Surjection",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -7331,7 +7301,7 @@
     },
     {
       "id": "sylow-theorems",
-      "label": "sylow-theorems",
+      "label": "Sylow theorems",
       "type": "theorem",
       "tags": [
         "abstract-algebra"
@@ -7341,7 +7311,7 @@
     },
     {
       "id": "symmetric-bilinear-form",
-      "label": "symmetric-bilinear-form",
+      "label": "Symmetric bilinear form",
       "type": "definition",
       "tags": [
         "linear-algebra"
@@ -7351,7 +7321,7 @@
     },
     {
       "id": "symmetric-difference",
-      "label": "symmetric-difference",
+      "label": "Symmetric difference",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -7431,13 +7401,23 @@
     },
     {
       "id": "tempered-distribution",
-      "label": "tempered-distribution",
+      "label": "Tempered distribution",
       "type": "concept",
       "tags": [
         "functional-analysis"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Distribution_(mathematics)#Tempered_distributions_and_Fourier_transform",
       "primaryTag": "functional-analysis"
+    },
+    {
+      "id": "tensor-algebra",
+      "label": "Tensor algebra",
+      "type": "structure",
+      "tags": [
+        "algebra"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Tensor_algebra",
+      "primaryTag": "algebra"
     },
     {
       "id": "tensor-product",
@@ -7448,16 +7428,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Tensor_product",
       "primaryTag": "abstract-algebra"
-    },
-    {
-      "id": "tensor-algebra",
-      "label": "tensor-algebra",
-      "type": "structure",
-      "tags": [
-        "algebra"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Tensor_algebra",
-      "primaryTag": "algebra"
     },
     {
       "id": "term-logic",
@@ -7510,6 +7480,16 @@
       "primaryTag": "algorithms"
     },
     {
+      "id": "topological-manifold",
+      "label": "Topological manifold",
+      "type": "definition",
+      "tags": [
+        "topology"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Topological_manifold",
+      "primaryTag": "topology"
+    },
+    {
       "id": "topological-sort",
       "label": "Topological sorting",
       "type": "concept",
@@ -7518,16 +7498,6 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Topological_sorting",
       "primaryTag": "algorithms"
-    },
-    {
-      "id": "topological-manifold",
-      "label": "topological-manifold",
-      "type": "definition",
-      "tags": [
-        "topology"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Topological_manifold",
-      "primaryTag": "topology"
     },
     {
       "id": "topology",
@@ -7541,7 +7511,7 @@
     },
     {
       "id": "topos",
-      "label": "topos",
+      "label": "Topos",
       "type": "structure",
       "tags": [
         "foundations"
@@ -7561,7 +7531,7 @@
     },
     {
       "id": "total-variation-function",
-      "label": "total-variation-function",
+      "label": "Total variation of a function",
       "type": "definition",
       "tags": [
         "analysis"
@@ -7581,7 +7551,7 @@
     },
     {
       "id": "trace-class-operator",
-      "label": "trace-class-operator",
+      "label": "Trace-class operator",
       "type": "definition",
       "tags": [
         "functional-analysis"
@@ -7601,7 +7571,7 @@
     },
     {
       "id": "transfinite-induction",
-      "label": "transfinite-induction",
+      "label": "Transfinite induction",
       "type": "theorem",
       "tags": [
         "foundations"
@@ -7631,7 +7601,7 @@
     },
     {
       "id": "transversal-matroid",
-      "label": "transversal-matroid",
+      "label": "Transversal matroid",
       "type": "definition",
       "tags": [
         "combinatorics"
@@ -7700,16 +7670,6 @@
       "primaryTag": "calculus"
     },
     {
-      "id": "turans-theorem",
-      "label": "Turan's theorem",
-      "type": "theorem",
-      "tags": [
-        "combinatorics"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem",
-      "primaryTag": "combinatorics"
-    },
-    {
       "id": "turing-machine",
       "label": "Turing machine",
       "type": "definition",
@@ -7720,8 +7680,18 @@
       "primaryTag": "algorithms"
     },
     {
+      "id": "turans-theorem",
+      "label": "Turán's theorem",
+      "type": "theorem",
+      "tags": [
+        "combinatorics"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem",
+      "primaryTag": "combinatorics"
+    },
+    {
       "id": "tutte-polynomial",
-      "label": "tutte-polynomial",
+      "label": "Tutte polynomial",
       "type": "definition",
       "tags": [
         "combinatorics"
@@ -7731,7 +7701,7 @@
     },
     {
       "id": "twin-prime-conjecture",
-      "label": "twin-prime-conjecture",
+      "label": "Twin prime conjecture",
       "type": "conjecture",
       "tags": [
         "number-theory"
@@ -7741,7 +7711,7 @@
     },
     {
       "id": "type-theory",
-      "label": "type-theory",
+      "label": "Type theory",
       "type": "concept",
       "tags": [
         "foundations"
@@ -7751,7 +7721,7 @@
     },
     {
       "id": "uncountable-set",
-      "label": "uncountable-set",
+      "label": "Uncountable set",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -7778,6 +7748,16 @@
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Method_of_undetermined_coefficients",
       "primaryTag": "differential-equations"
+    },
+    {
+      "id": "uniform-boundedness-principle",
+      "label": "Uniform boundedness principle",
+      "type": "theorem",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Uniform_boundedness_principle",
+      "primaryTag": "functional-analysis"
     },
     {
       "id": "uniform-continuity",
@@ -7810,18 +7790,8 @@
       "primaryTag": "probability"
     },
     {
-      "id": "uniform-boundedness-principle",
-      "label": "uniform-boundedness-principle",
-      "type": "theorem",
-      "tags": [
-        "functional-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Uniform_boundedness_principle",
-      "primaryTag": "functional-analysis"
-    },
-    {
       "id": "uniform-integrability",
-      "label": "uniform-integrability",
+      "label": "Uniform integrability",
       "type": "definition",
       "tags": [
         "analysis"
@@ -7831,7 +7801,7 @@
     },
     {
       "id": "union-operation",
-      "label": "union-operation",
+      "label": "Union operation",
       "type": "definition",
       "tags": [
         "set-theory"
@@ -7841,7 +7811,7 @@
     },
     {
       "id": "unique-factorization-domain",
-      "label": "unique-factorization-domain",
+      "label": "Unique factorization domain",
       "type": "structure",
       "tags": [
         "algebra"
@@ -7861,13 +7831,23 @@
     },
     {
       "id": "unitary-operator",
-      "label": "unitary-operator",
+      "label": "Unitary operator",
       "type": "definition",
       "tags": [
         "functional-analysis"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Unitary_operator",
       "primaryTag": "functional-analysis"
+    },
+    {
+      "id": "universal-property",
+      "label": "Universal property",
+      "type": "concept",
+      "tags": [
+        "foundations"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Universal_property",
+      "primaryTag": "foundations"
     },
     {
       "id": "universal-quantifier",
@@ -7880,18 +7860,8 @@
       "primaryTag": "logic"
     },
     {
-      "id": "universal-property",
-      "label": "universal-property",
-      "type": "concept",
-      "tags": [
-        "foundations"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Universal_property",
-      "primaryTag": "foundations"
-    },
-    {
       "id": "upper-lower-limit",
-      "label": "Upper lower limit",
+      "label": "Upper and lower limits",
       "type": "concept",
       "tags": [
         "real-analysis"
@@ -7901,7 +7871,7 @@
     },
     {
       "id": "upper-bound",
-      "label": "upper-bound",
+      "label": "Upper bound",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -7911,7 +7881,7 @@
     },
     {
       "id": "upper-semicontinuity",
-      "label": "upper-semicontinuity",
+      "label": "Upper semicontinuity",
       "type": "definition",
       "tags": [
         "analysis"
@@ -7941,7 +7911,7 @@
     },
     {
       "id": "van-der-waerden-theorem",
-      "label": "van-der-waerden-theorem",
+      "label": "Van der Waerden's theorem",
       "type": "theorem",
       "tags": [
         "combinatorics"
@@ -8030,6 +8000,16 @@
       "primaryTag": "graph-theory"
     },
     {
+      "id": "vitali-convergence-theorem",
+      "label": "Vitali convergence theorem",
+      "type": "theorem",
+      "tags": [
+        "analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Vitali_convergence_theorem",
+      "primaryTag": "analysis"
+    },
+    {
       "id": "vitali-covering-lemma",
       "label": "Vitali covering lemma",
       "type": "lemma",
@@ -8050,18 +8030,8 @@
       "primaryTag": "real-analysis"
     },
     {
-      "id": "vitali-convergence-theorem",
-      "label": "vitali-convergence-theorem",
-      "type": "theorem",
-      "tags": [
-        "analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Vitali_convergence_theorem",
-      "primaryTag": "analysis"
-    },
-    {
       "id": "vitali-theorem-complex",
-      "label": "vitali-theorem-complex",
+      "label": "Vitali theorem (complex analysis)",
       "type": "theorem",
       "tags": [
         "complex-analysis"
@@ -8081,7 +8051,7 @@
     },
     {
       "id": "von-neumann-algebra",
-      "label": "von-neumann-algebra",
+      "label": "Von Neumann algebra",
       "type": "structure",
       "tags": [
         "functional-analysis"
@@ -8091,7 +8061,7 @@
     },
     {
       "id": "von-neumann-universe",
-      "label": "von-neumann-universe",
+      "label": "Von Neumann universe",
       "type": "concept",
       "tags": [
         "foundations"
@@ -8110,23 +8080,23 @@
       "primaryTag": "differential-equations"
     },
     {
-      "id": "weak-star-topology",
-      "label": "weak-star-topology",
-      "type": "concept",
-      "tags": [
-        "functional-analysis"
-      ],
-      "wikipedia": "https://en.wikipedia.org/wiki/Weak_topology#The_weak-*_topology",
-      "primaryTag": "functional-analysis"
-    },
-    {
       "id": "weak-topology",
-      "label": "weak-topology",
+      "label": "Weak topology",
       "type": "concept",
       "tags": [
         "functional-analysis"
       ],
       "wikipedia": "https://en.wikipedia.org/wiki/Weak_topology",
+      "primaryTag": "functional-analysis"
+    },
+    {
+      "id": "weak-star-topology",
+      "label": "Weak-star topology",
+      "type": "concept",
+      "tags": [
+        "functional-analysis"
+      ],
+      "wikipedia": "https://en.wikipedia.org/wiki/Weak_topology#The_weak-*_topology",
       "primaryTag": "functional-analysis"
     },
     {
@@ -8141,7 +8111,7 @@
     },
     {
       "id": "weierstrass-approximation-theorem",
-      "label": "weierstrass-approximation-theorem",
+      "label": "Weierstrass approximation theorem",
       "type": "theorem",
       "tags": [
         "analysis"
@@ -8151,7 +8121,7 @@
     },
     {
       "id": "weierstrass-factorization-theorem",
-      "label": "weierstrass-factorization-theorem",
+      "label": "Weierstrass factorization theorem",
       "type": "theorem",
       "tags": [
         "complex-analysis"
@@ -8181,7 +8151,7 @@
     },
     {
       "id": "well-founded-relation",
-      "label": "well-founded-relation",
+      "label": "Well-founded relation",
       "type": "definition",
       "tags": [
         "order-theory"
@@ -8202,7 +8172,7 @@
     },
     {
       "id": "well-ordering-theorem",
-      "label": "well-ordering-theorem",
+      "label": "Well-ordering theorem",
       "type": "theorem",
       "tags": [
         "order-theory"
@@ -8222,7 +8192,7 @@
     },
     {
       "id": "yoneda-lemma",
-      "label": "yoneda-lemma",
+      "label": "Yoneda lemma",
       "type": "lemma",
       "tags": [
         "foundations"
@@ -8232,7 +8202,7 @@
     },
     {
       "id": "young-tableau",
-      "label": "young-tableau",
+      "label": "Young tableau",
       "type": "definition",
       "tags": [
         "combinatorics"
@@ -8242,7 +8212,7 @@
     },
     {
       "id": "zf-set-theory",
-      "label": "ZF set theory",
+      "label": "Zermelo–Fraenkel set theory",
       "type": "axiom",
       "tags": [
         "set-theory",
@@ -8253,7 +8223,7 @@
     },
     {
       "id": "zorn-lemma",
-      "label": "zorn-lemma",
+      "label": "Zorn's lemma",
       "type": "lemma",
       "tags": [
         "order-theory"
@@ -8488,10 +8458,6 @@
       "target": "a-star-algorithm"
     },
     {
-      "source": "group",
-      "target": "abelian-group"
-    },
-    {
       "source": "category",
       "target": "abelian-category"
     },
@@ -8508,16 +8474,8 @@
       "target": "abelian-category"
     },
     {
-      "source": "measure-space",
-      "target": "absolute-continuity-of-measures"
-    },
-    {
-      "source": "null-set",
-      "target": "absolute-continuity-of-measures"
-    },
-    {
-      "source": "real-number-axioms",
-      "target": "absolute-value"
+      "source": "group",
+      "target": "abelian-group"
     },
     {
       "source": "continuity",
@@ -8530,6 +8488,18 @@
     {
       "source": "lebesgue-integral",
       "target": "absolute-continuity-function"
+    },
+    {
+      "source": "measure-space",
+      "target": "absolute-continuity-of-measures"
+    },
+    {
+      "source": "null-set",
+      "target": "absolute-continuity-of-measures"
+    },
+    {
+      "source": "real-number-axioms",
+      "target": "absolute-value"
     },
     {
       "source": "convergence-of-series",
@@ -8812,14 +8782,6 @@
       "target": "autonomous-system"
     },
     {
-      "source": "formula-logic",
-      "target": "axiom-schema"
-    },
-    {
-      "source": "deductive-system",
-      "target": "axiom-schema"
-    },
-    {
       "source": "zf-set-theory",
       "target": "axiom-of-choice"
     },
@@ -8860,16 +8822,16 @@
       "target": "axiom-of-union"
     },
     {
+      "source": "formula-logic",
+      "target": "axiom-schema"
+    },
+    {
+      "source": "deductive-system",
+      "target": "axiom-schema"
+    },
+    {
       "source": "depth-first-search",
       "target": "backtracking"
-    },
-    {
-      "source": "complete-metric-space",
-      "target": "baire-space-real"
-    },
-    {
-      "source": "open-set",
-      "target": "baire-space-real"
     },
     {
       "source": "complete-metric-space",
@@ -8884,12 +8846,12 @@
       "target": "baire-category-theorem"
     },
     {
-      "source": "normed-vector-space",
-      "target": "banach-space"
+      "source": "complete-metric-space",
+      "target": "baire-space-real"
     },
     {
-      "source": "complete-metric-space",
-      "target": "banach-space"
+      "source": "open-set",
+      "target": "baire-space-real"
     },
     {
       "source": "banach-space",
@@ -8898,6 +8860,14 @@
     {
       "source": "algebra-over-field",
       "target": "banach-algebra"
+    },
+    {
+      "source": "normed-vector-space",
+      "target": "banach-space"
+    },
+    {
+      "source": "complete-metric-space",
+      "target": "banach-space"
     },
     {
       "source": "topology",
@@ -8944,20 +8914,20 @@
       "target": "bernoulli-distribution"
     },
     {
-      "source": "non-measurable-set",
-      "target": "bernstein-set"
-    },
-    {
-      "source": "cardinality",
-      "target": "bernstein-set"
-    },
-    {
       "source": "binomial-theorem",
       "target": "bernstein-polynomial"
     },
     {
       "source": "weierstrass-approximation-theorem",
       "target": "bernstein-polynomial"
+    },
+    {
+      "source": "non-measurable-set",
+      "target": "bernstein-set"
+    },
+    {
+      "source": "cardinality",
+      "target": "bernstein-set"
     },
     {
       "source": "second-order-linear-ode",
@@ -8978,14 +8948,6 @@
     {
       "source": "transfinite-induction",
       "target": "beth-numbers"
-    },
-    {
-      "source": "euclidean-algorithm",
-      "target": "bezout-identity"
-    },
-    {
-      "source": "greatest-common-divisor",
-      "target": "bezout-identity"
     },
     {
       "source": "function",
@@ -9104,20 +9066,20 @@
       "target": "boolean-lattice"
     },
     {
-      "source": "sigma-algebra",
-      "target": "borel-sigma-algebra"
-    },
-    {
-      "source": "open-set",
-      "target": "borel-sigma-algebra"
-    },
-    {
       "source": "borel-sigma-algebra",
       "target": "borel-measure"
     },
     {
       "source": "measure-space",
       "target": "borel-measure"
+    },
+    {
+      "source": "sigma-algebra",
+      "target": "borel-sigma-algebra"
+    },
+    {
+      "source": "open-set",
+      "target": "borel-sigma-algebra"
     },
     {
       "source": "normed-vector-space",
@@ -9164,20 +9126,20 @@
       "target": "burnside-lemma"
     },
     {
+      "source": "euclidean-algorithm",
+      "target": "bezout-identity"
+    },
+    {
+      "source": "greatest-common-divisor",
+      "target": "bezout-identity"
+    },
+    {
       "source": "banach-algebra",
       "target": "c-star-algebra"
     },
     {
       "source": "adjoint-operator",
       "target": "c-star-algebra"
-    },
-    {
-      "source": "cardinality",
-      "target": "cantor-diagonalization"
-    },
-    {
-      "source": "bijection",
-      "target": "cantor-diagonalization"
     },
     {
       "source": "cantor-set",
@@ -9202,6 +9164,14 @@
     {
       "source": "null-set",
       "target": "cantor-set"
+    },
+    {
+      "source": "cardinality",
+      "target": "cantor-diagonalization"
+    },
+    {
+      "source": "bijection",
+      "target": "cantor-diagonalization"
     },
     {
       "source": "power-set-axiom",
@@ -9300,20 +9270,20 @@
       "target": "cauchys-integral-theorem"
     },
     {
-      "source": "second-order-linear-ode",
-      "target": "cauchy-euler-equation"
-    },
-    {
-      "source": "characteristic-equation-ode",
-      "target": "cauchy-euler-equation"
-    },
-    {
       "source": "holomorphic-function",
       "target": "cauchy-riemann-equations"
     },
     {
       "source": "partial-derivative",
       "target": "cauchy-riemann-equations"
+    },
+    {
+      "source": "second-order-linear-ode",
+      "target": "cauchy-euler-equation"
+    },
+    {
+      "source": "characteristic-equation-ode",
+      "target": "cauchy-euler-equation"
     },
     {
       "source": "real-number-axioms",
@@ -9356,10 +9326,6 @@
       "target": "central-limit-theorem"
     },
     {
-      "source": "derivative",
-      "target": "chain-rule"
-    },
-    {
       "source": "poset",
       "target": "chain-order"
     },
@@ -9368,12 +9334,8 @@
       "target": "chain-order"
     },
     {
-      "source": "double-integral",
-      "target": "change-of-variables-integral"
-    },
-    {
-      "source": "jacobian-determinant",
-      "target": "change-of-variables-integral"
+      "source": "derivative",
+      "target": "chain-rule"
     },
     {
       "source": "basis",
@@ -9388,20 +9350,20 @@
       "target": "change-of-basis"
     },
     {
+      "source": "double-integral",
+      "target": "change-of-variables-integral"
+    },
+    {
+      "source": "jacobian-determinant",
+      "target": "change-of-variables-integral"
+    },
+    {
       "source": "constant-coefficient-ode",
       "target": "characteristic-equation-ode"
     },
     {
       "source": "complex-number",
       "target": "characteristic-equation-ode"
-    },
-    {
-      "source": "determinant",
-      "target": "characteristic-polynomial"
-    },
-    {
-      "source": "eigenvalue-and-eigenvector",
-      "target": "characteristic-polynomial"
     },
     {
       "source": "random-variable",
@@ -9418,6 +9380,14 @@
     {
       "source": "ring",
       "target": "characteristic-of-ring"
+    },
+    {
+      "source": "determinant",
+      "target": "characteristic-polynomial"
+    },
+    {
+      "source": "eigenvalue-and-eigenvector",
+      "target": "characteristic-polynomial"
     },
     {
       "source": "manifold",
@@ -9492,10 +9462,6 @@
       "target": "class-set-theory"
     },
     {
-      "source": "open-set",
-      "target": "closed-set"
-    },
-    {
       "source": "banach-space",
       "target": "closed-graph-theorem"
     },
@@ -9506,6 +9472,10 @@
     {
       "source": "open-mapping-theorem",
       "target": "closed-graph-theorem"
+    },
+    {
+      "source": "open-set",
+      "target": "closed-set"
     },
     {
       "source": "poset",
@@ -9548,14 +9518,6 @@
       "target": "commutative-ring"
     },
     {
-      "source": "open-set",
-      "target": "compact-set"
-    },
-    {
-      "source": "topology",
-      "target": "compact-set"
-    },
-    {
       "source": "uniform-convergence",
       "target": "compact-convergence"
     },
@@ -9574,6 +9536,14 @@
     {
       "source": "compact-set",
       "target": "compact-operator"
+    },
+    {
+      "source": "open-set",
+      "target": "compact-set"
+    },
+    {
+      "source": "topology",
+      "target": "compact-set"
     },
     {
       "source": "topology",
@@ -9604,14 +9574,6 @@
       "target": "complement-set"
     },
     {
-      "source": "metric-space",
-      "target": "complete-metric-space"
-    },
-    {
-      "source": "cauchy-sequence",
-      "target": "complete-metric-space"
-    },
-    {
       "source": "lattice",
       "target": "complete-lattice"
     },
@@ -9626,6 +9588,14 @@
     {
       "source": "null-set",
       "target": "complete-measure"
+    },
+    {
+      "source": "metric-space",
+      "target": "complete-metric-space"
+    },
+    {
+      "source": "cauchy-sequence",
+      "target": "complete-metric-space"
     },
     {
       "source": "supremum-and-infimum",
@@ -9704,14 +9674,6 @@
       "target": "composition-series"
     },
     {
-      "source": "probability-axioms",
-      "target": "conditional-probability"
-    },
-    {
-      "source": "event",
-      "target": "conditional-probability"
-    },
-    {
       "source": "conditional-probability",
       "target": "conditional-distribution"
     },
@@ -9734,6 +9696,14 @@
     {
       "source": "sigma-algebra",
       "target": "conditional-expectation-measure"
+    },
+    {
+      "source": "probability-axioms",
+      "target": "conditional-probability"
+    },
+    {
+      "source": "event",
+      "target": "conditional-probability"
     },
     {
       "source": "convergence-of-series",
@@ -9884,20 +9854,20 @@
       "target": "convex-function"
     },
     {
-      "source": "laplace-transform",
-      "target": "convolution-theorem"
-    },
-    {
-      "source": "riemann-integral",
-      "target": "convolution-theorem"
-    },
-    {
       "source": "product-measure",
       "target": "convolution-measure"
     },
     {
       "source": "pushforward-measure",
       "target": "convolution-measure"
+    },
+    {
+      "source": "laplace-transform",
+      "target": "convolution-theorem"
+    },
+    {
+      "source": "riemann-integral",
+      "target": "convolution-theorem"
     },
     {
       "source": "euclidean-plane",
@@ -10276,7 +10246,7 @@
       "target": "distance-formula"
     },
     {
-      "source": "dual-space",
+      "source": "dual-space-linear",
       "target": "distribution-theory"
     },
     {
@@ -10352,16 +10322,8 @@
       "target": "dual-space-linear"
     },
     {
-      "source": "vector-space",
-      "target": "dual-space"
-    },
-    {
-      "source": "linear-map",
-      "target": "dual-space"
-    },
-    {
       "source": "normed-vector-space",
-      "target": "dual-space"
+      "target": "dual-space-linear"
     },
     {
       "source": "recurrence-relation",
@@ -10464,14 +10426,6 @@
       "target": "equilibrium-point"
     },
     {
-      "source": "zf-set-theory",
-      "target": "equivalence-relation"
-    },
-    {
-      "source": "function",
-      "target": "equivalence-relation"
-    },
-    {
       "source": "functor",
       "target": "equivalence-of-categories"
     },
@@ -10482,6 +10436,14 @@
     {
       "source": "isomorphism-category",
       "target": "equivalence-of-categories"
+    },
+    {
+      "source": "zf-set-theory",
+      "target": "equivalence-relation"
+    },
+    {
+      "source": "function",
+      "target": "equivalence-relation"
     },
     {
       "source": "ergodic-theory",
@@ -10580,14 +10542,6 @@
       "target": "event"
     },
     {
-      "source": "module-homomorphism",
-      "target": "exact-sequence"
-    },
-    {
-      "source": "kernel-and-image",
-      "target": "exact-sequence"
-    },
-    {
       "source": "functor",
       "target": "exact-functor"
     },
@@ -10598,6 +10552,14 @@
     {
       "source": "exact-sequence",
       "target": "exact-functor"
+    },
+    {
+      "source": "module-homomorphism",
+      "target": "exact-sequence"
+    },
+    {
+      "source": "kernel-and-image",
+      "target": "exact-sequence"
     },
     {
       "source": "ordinary-differential-equation",
@@ -10720,14 +10682,6 @@
       "target": "field"
     },
     {
-      "source": "poset",
-      "target": "filter-order"
-    },
-    {
-      "source": "directed-set",
-      "target": "filter-order"
-    },
-    {
       "source": "topology",
       "target": "filter-topology"
     },
@@ -10740,6 +10694,14 @@
       "target": "filter-topology"
     },
     {
+      "source": "poset",
+      "target": "filter-order"
+    },
+    {
+      "source": "directed-set",
+      "target": "filter-order"
+    },
+    {
       "source": "propositional-logic",
       "target": "first-order-logic"
     },
@@ -10750,14 +10712,6 @@
     {
       "source": "field-extension",
       "target": "fixed-field"
-    },
-    {
-      "source": "complete-lattice",
-      "target": "fixed-point-theorem-order"
-    },
-    {
-      "source": "monotone-map",
-      "target": "fixed-point-theorem-order"
     },
     {
       "source": "module",
@@ -10936,6 +10890,14 @@
       "target": "fundamental-theorem-of-calculus"
     },
     {
+      "source": "poset",
+      "target": "galois-connection"
+    },
+    {
+      "source": "monotone-map",
+      "target": "galois-connection"
+    },
+    {
       "source": "galois-group",
       "target": "galois-correspondence"
     },
@@ -10958,14 +10920,6 @@
     {
       "source": "group-homomorphism",
       "target": "galois-group"
-    },
-    {
-      "source": "poset",
-      "target": "galois-connection"
-    },
-    {
-      "source": "monotone-map",
-      "target": "galois-connection"
     },
     {
       "source": "curvature",
@@ -11172,22 +11126,6 @@
       "target": "greens-theorem"
     },
     {
-      "source": "polynomial-ring",
-      "target": "grobner-basis"
-    },
-    {
-      "source": "ideal",
-      "target": "grobner-basis"
-    },
-    {
-      "source": "ordinary-differential-equation",
-      "target": "gronwall-inequality"
-    },
-    {
-      "source": "riemann-integral",
-      "target": "gronwall-inequality"
-    },
-    {
       "source": "group",
       "target": "group-homomorphism"
     },
@@ -11202,6 +11140,22 @@
     {
       "source": "function",
       "target": "group"
+    },
+    {
+      "source": "polynomial-ring",
+      "target": "grobner-basis"
+    },
+    {
+      "source": "ideal",
+      "target": "grobner-basis"
+    },
+    {
+      "source": "ordinary-differential-equation",
+      "target": "gronwall-inequality"
+    },
+    {
+      "source": "riemann-integral",
+      "target": "gronwall-inequality"
     },
     {
       "source": "first-order-logic",
@@ -11264,7 +11218,7 @@
       "target": "hahn-banach-theorem"
     },
     {
-      "source": "dual-space",
+      "source": "dual-space-linear",
       "target": "hahn-banach-theorem"
     },
     {
@@ -11592,16 +11546,16 @@
       "target": "insertion-sort"
     },
     {
-      "source": "peano-axioms",
-      "target": "integer-ring-axioms"
-    },
-    {
       "source": "partition-of-integer",
       "target": "integer-partition-function"
     },
     {
       "source": "generating-function",
       "target": "integer-partition-function"
+    },
+    {
+      "source": "peano-axioms",
+      "target": "integer-ring-axioms"
     },
     {
       "source": "ring",
@@ -11660,20 +11614,20 @@
       "target": "intuitionistic-logic"
     },
     {
-      "source": "laplace-transform",
-      "target": "inverse-laplace-transform"
-    },
-    {
-      "source": "contour-integral",
-      "target": "inverse-laplace-transform"
-    },
-    {
       "source": "bijection",
       "target": "inverse-function"
     },
     {
       "source": "composition-functions-set",
       "target": "inverse-function"
+    },
+    {
+      "source": "laplace-transform",
+      "target": "inverse-laplace-transform"
+    },
+    {
+      "source": "contour-integral",
+      "target": "inverse-laplace-transform"
     },
     {
       "source": "circle-geometry",
@@ -11732,18 +11686,6 @@
       "target": "joint-distribution"
     },
     {
-      "source": "composition-series",
-      "target": "jordan-holder-theorem"
-    },
-    {
-      "source": "simple-group",
-      "target": "jordan-holder-theorem"
-    },
-    {
-      "source": "group",
-      "target": "jordan-holder-theorem"
-    },
-    {
       "source": "matrix",
       "target": "jordan-normal-form"
     },
@@ -11754,6 +11696,18 @@
     {
       "source": "minimal-polynomial-matrix",
       "target": "jordan-normal-form"
+    },
+    {
+      "source": "composition-series",
+      "target": "jordan-holder-theorem"
+    },
+    {
+      "source": "simple-group",
+      "target": "jordan-holder-theorem"
+    },
+    {
+      "source": "group",
+      "target": "jordan-holder-theorem"
     },
     {
       "source": "linear-map",
@@ -11782,6 +11736,14 @@
     {
       "source": "determinant",
       "target": "kirchhoff-matrix-tree"
+    },
+    {
+      "source": "complete-lattice",
+      "target": "fixed-point-theorem-order"
+    },
+    {
+      "source": "monotone-map",
+      "target": "fixed-point-theorem-order"
     },
     {
       "source": "product-measure",
@@ -11904,6 +11866,18 @@
       "target": "least-element"
     },
     {
+      "source": "absolute-continuity-of-measures",
+      "target": "lebesgue-decomposition"
+    },
+    {
+      "source": "singular-measure",
+      "target": "lebesgue-decomposition"
+    },
+    {
+      "source": "signed-measure",
+      "target": "lebesgue-decomposition"
+    },
+    {
       "source": "measurable-function",
       "target": "lebesgue-integral"
     },
@@ -11924,28 +11898,16 @@
       "target": "lebesgue-measure"
     },
     {
-      "source": "absolute-continuity-of-measures",
-      "target": "lebesgue-decomposition"
-    },
-    {
-      "source": "singular-measure",
-      "target": "lebesgue-decomposition"
-    },
-    {
-      "source": "signed-measure",
-      "target": "lebesgue-decomposition"
-    },
-    {
-      "source": "quadratic-residue",
-      "target": "legendre-symbol"
-    },
-    {
       "source": "second-order-linear-ode",
       "target": "legendre-equation"
     },
     {
       "source": "power-series-method-ode",
       "target": "legendre-equation"
+    },
+    {
+      "source": "quadratic-residue",
+      "target": "legendre-symbol"
     },
     {
       "source": "lie-group",
@@ -11984,14 +11946,6 @@
       "target": "lie-group"
     },
     {
-      "source": "supremum-and-infimum",
-      "target": "lim-sup-lim-inf"
-    },
-    {
-      "source": "limit-of-a-sequence",
-      "target": "lim-sup-lim-inf"
-    },
-    {
       "source": "function",
       "target": "limit-of-a-function"
     },
@@ -12006,6 +11960,14 @@
     {
       "source": "absolute-value",
       "target": "limit-of-a-sequence"
+    },
+    {
+      "source": "supremum-and-infimum",
+      "target": "lim-sup-lim-inf"
+    },
+    {
+      "source": "limit-of-a-sequence",
+      "target": "lim-sup-lim-inf"
     },
     {
       "source": "functor",
@@ -12044,6 +12006,18 @@
       "target": "line-integral"
     },
     {
+      "source": "poset",
+      "target": "linear-extension"
+    },
+    {
+      "source": "total-order",
+      "target": "linear-extension"
+    },
+    {
+      "source": "order-embedding",
+      "target": "linear-extension"
+    },
+    {
       "source": "vector-space",
       "target": "linear-independence"
     },
@@ -12064,18 +12038,6 @@
       "target": "linear-ode"
     },
     {
-      "source": "poset",
-      "target": "linear-extension"
-    },
-    {
-      "source": "total-order",
-      "target": "linear-extension"
-    },
-    {
-      "source": "order-embedding",
-      "target": "linear-extension"
-    },
-    {
       "source": "algebraic-number",
       "target": "liouville-number"
     },
@@ -12084,20 +12046,20 @@
       "target": "liouville-number"
     },
     {
-      "source": "entire-function",
-      "target": "liouvilles-theorem-complex"
-    },
-    {
-      "source": "cauchys-integral-formula",
-      "target": "liouvilles-theorem-complex"
-    },
-    {
       "source": "hamiltonian-system",
       "target": "liouville-theorem-ode"
     },
     {
       "source": "phase-portrait",
       "target": "liouville-theorem-ode"
+    },
+    {
+      "source": "entire-function",
+      "target": "liouvilles-theorem-complex"
+    },
+    {
+      "source": "cauchys-integral-formula",
+      "target": "liouvilles-theorem-complex"
     },
     {
       "source": "metric-space",
@@ -12192,18 +12154,6 @@
       "target": "lower-semicontinuity"
     },
     {
-      "source": "lebesgue-integral",
-      "target": "lp-space"
-    },
-    {
-      "source": "normed-vector-space",
-      "target": "lp-space"
-    },
-    {
-      "source": "banach-space",
-      "target": "lp-space"
-    },
-    {
       "source": "measurable-function",
       "target": "lusin-theorem"
     },
@@ -12234,6 +12184,18 @@
     {
       "source": "autonomous-system",
       "target": "lyapunov-function"
+    },
+    {
+      "source": "lebesgue-integral",
+      "target": "lp-space"
+    },
+    {
+      "source": "normed-vector-space",
+      "target": "lp-space"
+    },
+    {
+      "source": "banach-space",
+      "target": "lp-space"
     },
     {
       "source": "topology",
@@ -12292,11 +12254,11 @@
       "target": "matroid"
     },
     {
-      "source": "network-flow",
-      "target": "max-flow-min-cut-theorem"
+      "source": "network-flow-algorithm",
+      "target": "max-flow-min-cut"
     },
     {
-      "source": "network-flow-algorithm",
+      "source": "network-flow",
       "target": "max-flow-min-cut"
     },
     {
@@ -12468,14 +12430,6 @@
       "target": "mittag-leffler-theorem"
     },
     {
-      "source": "complex-number",
-      "target": "mobius-transformation"
-    },
-    {
-      "source": "conformal-map",
-      "target": "mobius-transformation"
-    },
-    {
       "source": "propositional-logic",
       "target": "modal-logic"
     },
@@ -12592,20 +12546,20 @@
       "target": "monotone-convergence-theorem"
     },
     {
-      "source": "sequence",
-      "target": "monotone-sequence"
-    },
-    {
-      "source": "total-order",
-      "target": "monotone-sequence"
-    },
-    {
       "source": "poset",
       "target": "monotone-map"
     },
     {
       "source": "function",
       "target": "monotone-map"
+    },
+    {
+      "source": "sequence",
+      "target": "monotone-sequence"
+    },
+    {
+      "source": "total-order",
+      "target": "monotone-sequence"
     },
     {
       "source": "function",
@@ -12630,6 +12584,14 @@
     {
       "source": "gradient",
       "target": "multivariable-chain-rule"
+    },
+    {
+      "source": "complex-number",
+      "target": "mobius-transformation"
+    },
+    {
+      "source": "conformal-map",
+      "target": "mobius-transformation"
     },
     {
       "source": "local-ring",
@@ -12748,6 +12710,30 @@
       "target": "normal-distribution"
     },
     {
+      "source": "holomorphic-function",
+      "target": "normal-family"
+    },
+    {
+      "source": "compact-convergence",
+      "target": "normal-family"
+    },
+    {
+      "source": "equicontinuity",
+      "target": "normal-family"
+    },
+    {
+      "source": "uniform-convergence",
+      "target": "normal-family"
+    },
+    {
+      "source": "adjoint-operator",
+      "target": "normal-operator"
+    },
+    {
+      "source": "hilbert-space",
+      "target": "normal-operator"
+    },
+    {
       "source": "topology",
       "target": "normal-space"
     },
@@ -12766,34 +12752,6 @@
     {
       "source": "group",
       "target": "normal-subgroup"
-    },
-    {
-      "source": "holomorphic-function",
-      "target": "normal-family-complex"
-    },
-    {
-      "source": "uniform-convergence",
-      "target": "normal-family-complex"
-    },
-    {
-      "source": "holomorphic-function",
-      "target": "normal-family"
-    },
-    {
-      "source": "compact-convergence",
-      "target": "normal-family"
-    },
-    {
-      "source": "equicontinuity",
-      "target": "normal-family"
-    },
-    {
-      "source": "adjoint-operator",
-      "target": "normal-operator"
-    },
-    {
-      "source": "hilbert-space",
-      "target": "normal-operator"
     },
     {
       "source": "vector-space",
@@ -12852,10 +12810,6 @@
       "target": "open-cover"
     },
     {
-      "source": "metric-space",
-      "target": "open-set"
-    },
-    {
       "source": "banach-space",
       "target": "open-mapping-theorem"
     },
@@ -12866,6 +12820,10 @@
     {
       "source": "open-set",
       "target": "open-mapping-theorem"
+    },
+    {
+      "source": "metric-space",
+      "target": "open-set"
     },
     {
       "source": "martingale",
@@ -13064,6 +13022,14 @@
       "target": "partial-order"
     },
     {
+      "source": "partial-order",
+      "target": "poset"
+    },
+    {
+      "source": "set-operations",
+      "target": "poset"
+    },
+    {
       "source": "linear-ode",
       "target": "particular-solution"
     },
@@ -13072,20 +13038,20 @@
       "target": "particular-solution"
     },
     {
-      "source": "generating-function",
-      "target": "partition-of-integer"
-    },
-    {
-      "source": "prime-number",
-      "target": "partition-of-integer"
-    },
-    {
       "source": "set-operations",
       "target": "partition-set"
     },
     {
       "source": "equivalence-relation",
       "target": "partition-set"
+    },
+    {
+      "source": "generating-function",
+      "target": "partition-of-integer"
+    },
+    {
+      "source": "prime-number",
+      "target": "partition-of-integer"
     },
     {
       "source": "graph",
@@ -13224,18 +13190,6 @@
       "target": "pole-of-a-function"
     },
     {
-      "source": "burnside-lemma",
-      "target": "polya-enumeration"
-    },
-    {
-      "source": "generating-function",
-      "target": "polya-enumeration"
-    },
-    {
-      "source": "group",
-      "target": "polya-enumeration"
-    },
-    {
       "source": "euclidean-plane",
       "target": "polygon"
     },
@@ -13252,14 +13206,6 @@
       "target": "polynomial-ring"
     },
     {
-      "source": "partial-order",
-      "target": "poset"
-    },
-    {
-      "source": "set-operations",
-      "target": "poset"
-    },
-    {
       "source": "matrix",
       "target": "positive-definite-matrix"
     },
@@ -13272,16 +13218,16 @@
       "target": "positive-definite-matrix"
     },
     {
-      "source": "convergence-of-series",
-      "target": "power-series"
-    },
-    {
       "source": "power-series",
       "target": "power-series-method-ode"
     },
     {
       "source": "second-order-linear-ode",
       "target": "power-series-method-ode"
+    },
+    {
+      "source": "convergence-of-series",
+      "target": "power-series"
     },
     {
       "source": "subset",
@@ -13332,10 +13278,6 @@
       "target": "primary-decomposition"
     },
     {
-      "source": "divisibility",
-      "target": "prime-number"
-    },
-    {
       "source": "prime-number",
       "target": "prime-factorization"
     },
@@ -13364,6 +13306,10 @@
       "target": "prime-number-theorem"
     },
     {
+      "source": "divisibility",
+      "target": "prime-number"
+    },
+    {
       "source": "eulers-theorem",
       "target": "primitive-root"
     },
@@ -13380,16 +13326,16 @@
       "target": "principal-curvatures"
     },
     {
-      "source": "ideal",
-      "target": "principal-ideal"
-    },
-    {
       "source": "integral-domain",
       "target": "principal-ideal-domain"
     },
     {
       "source": "principal-ideal",
       "target": "principal-ideal-domain"
+    },
+    {
+      "source": "ideal",
+      "target": "principal-ideal"
     },
     {
       "source": "probability-axioms",
@@ -13548,12 +13494,16 @@
       "target": "pythagorean-theorem"
     },
     {
-      "source": "congruence",
-      "target": "quadratic-residue"
+      "source": "burnside-lemma",
+      "target": "polya-enumeration"
     },
     {
-      "source": "primitive-root",
-      "target": "quadratic-residue"
+      "source": "generating-function",
+      "target": "polya-enumeration"
+    },
+    {
+      "source": "group",
+      "target": "polya-enumeration"
     },
     {
       "source": "bilinear-form",
@@ -13574,6 +13524,14 @@
     {
       "source": "prime-number",
       "target": "quadratic-reciprocity-law"
+    },
+    {
+      "source": "congruence",
+      "target": "quadratic-residue"
+    },
+    {
+      "source": "primitive-root",
+      "target": "quadratic-residue"
     },
     {
       "source": "divide-and-conquer",
@@ -13680,14 +13638,6 @@
       "target": "randomized-algorithm"
     },
     {
-      "source": "row-echelon-form",
-      "target": "rank-of-a-matrix"
-    },
-    {
-      "source": "kernel-and-image",
-      "target": "rank-of-a-matrix"
-    },
-    {
       "source": "matroid",
       "target": "rank-function-matroid"
     },
@@ -13696,20 +13646,20 @@
       "target": "rank-function-matroid"
     },
     {
+      "source": "row-echelon-form",
+      "target": "rank-of-a-matrix"
+    },
+    {
+      "source": "kernel-and-image",
+      "target": "rank-of-a-matrix"
+    },
+    {
       "source": "integer-ring-axioms",
       "target": "rational-field-axioms"
     },
     {
       "source": "rational-field-axioms",
       "target": "real-number-axioms"
-    },
-    {
-      "source": "conditionally-convergent-series",
-      "target": "rearrangement-theorem"
-    },
-    {
-      "source": "absolutely-convergent-series",
-      "target": "rearrangement-theorem"
     },
     {
       "source": "sequence",
@@ -13736,20 +13686,8 @@
       "target": "reflexive-space"
     },
     {
-      "source": "dual-space",
+      "source": "dual-space-linear",
       "target": "reflexive-space"
-    },
-    {
-      "source": "topology",
-      "target": "regular-space"
-    },
-    {
-      "source": "hausdorff-space",
-      "target": "regular-space"
-    },
-    {
-      "source": "closed-set",
-      "target": "regular-space"
     },
     {
       "source": "cardinal-arithmetic",
@@ -13766,6 +13704,18 @@
     {
       "source": "measure-space",
       "target": "regular-measure"
+    },
+    {
+      "source": "topology",
+      "target": "regular-space"
+    },
+    {
+      "source": "hausdorff-space",
+      "target": "regular-space"
+    },
+    {
+      "source": "closed-set",
+      "target": "regular-space"
     },
     {
       "source": "limit-of-a-function",
@@ -13824,6 +13774,18 @@
       "target": "riemann-curvature-tensor"
     },
     {
+      "source": "dirichlet-series",
+      "target": "riemann-hypothesis"
+    },
+    {
+      "source": "analytic-continuation",
+      "target": "riemann-hypothesis"
+    },
+    {
+      "source": "prime-number-theorem",
+      "target": "riemann-hypothesis"
+    },
+    {
       "source": "continuity",
       "target": "riemann-integral"
     },
@@ -13844,20 +13806,16 @@
       "target": "riemann-mapping-theorem"
     },
     {
+      "source": "conditionally-convergent-series",
+      "target": "rearrangement-theorem"
+    },
+    {
+      "source": "absolutely-convergent-series",
+      "target": "rearrangement-theorem"
+    },
+    {
       "source": "limit-of-a-function",
       "target": "riemann-sum"
-    },
-    {
-      "source": "dirichlet-series",
-      "target": "riemann-hypothesis"
-    },
-    {
-      "source": "analytic-continuation",
-      "target": "riemann-hypothesis"
-    },
-    {
-      "source": "prime-number-theorem",
-      "target": "riemann-hypothesis"
     },
     {
       "source": "holomorphic-function",
@@ -13888,7 +13846,7 @@
       "target": "riesz-representation-theorem"
     },
     {
-      "source": "dual-space",
+      "source": "dual-space-linear",
       "target": "riesz-representation-theorem"
     },
     {
@@ -14100,20 +14058,20 @@
       "target": "semidirect-product"
     },
     {
-      "source": "ordinary-differential-equation",
-      "target": "separable-ode"
-    },
-    {
-      "source": "riemann-integral",
-      "target": "separable-ode"
-    },
-    {
       "source": "banach-space",
       "target": "separable-banach-space"
     },
     {
       "source": "metric-space",
       "target": "separable-banach-space"
+    },
+    {
+      "source": "ordinary-differential-equation",
+      "target": "separable-ode"
+    },
+    {
+      "source": "riemann-integral",
+      "target": "separable-ode"
     },
     {
       "source": "function",
@@ -14128,16 +14086,16 @@
       "target": "series"
     },
     {
-      "source": "zf-set-theory",
-      "target": "set-operations"
-    },
-    {
       "source": "set-operations",
       "target": "set-difference"
     },
     {
       "source": "axiom-of-separation",
       "target": "set-difference"
+    },
+    {
+      "source": "zf-set-theory",
+      "target": "set-operations"
     },
     {
       "source": "set-operations",
@@ -14408,18 +14366,6 @@
       "target": "stokes-theorem-calculus"
     },
     {
-      "source": "compactification",
-      "target": "stone-cech-compactification"
-    },
-    {
-      "source": "normal-space",
-      "target": "stone-cech-compactification"
-    },
-    {
-      "source": "continuous-function-topological",
-      "target": "stone-cech-compactification"
-    },
-    {
       "source": "weierstrass-approximation-theorem",
       "target": "stone-weierstrass-theorem"
     },
@@ -14434,6 +14380,18 @@
     {
       "source": "uniform-convergence",
       "target": "stone-weierstrass-theorem"
+    },
+    {
+      "source": "compactification",
+      "target": "stone-cech-compactification"
+    },
+    {
+      "source": "normal-space",
+      "target": "stone-cech-compactification"
+    },
+    {
+      "source": "continuous-function-topological",
+      "target": "stone-cech-compactification"
     },
     {
       "source": "sigma-algebra",
@@ -14648,20 +14606,8 @@
       "target": "tempered-distribution"
     },
     {
-      "source": "dual-space",
+      "source": "dual-space-linear",
       "target": "tempered-distribution"
-    },
-    {
-      "source": "module",
-      "target": "tensor-product"
-    },
-    {
-      "source": "vector-space",
-      "target": "tensor-product"
-    },
-    {
-      "source": "direct-sum",
-      "target": "tensor-product"
     },
     {
       "source": "algebra-over-field",
@@ -14674,6 +14620,18 @@
     {
       "source": "direct-sum",
       "target": "tensor-algebra"
+    },
+    {
+      "source": "module",
+      "target": "tensor-product"
+    },
+    {
+      "source": "vector-space",
+      "target": "tensor-product"
+    },
+    {
+      "source": "direct-sum",
+      "target": "tensor-product"
     },
     {
       "source": "formal-language",
@@ -14716,14 +14674,6 @@
       "target": "time-complexity"
     },
     {
-      "source": "directed-graph",
-      "target": "topological-sort"
-    },
-    {
-      "source": "depth-first-search",
-      "target": "topological-sort"
-    },
-    {
       "source": "hausdorff-space",
       "target": "topological-manifold"
     },
@@ -14734,6 +14684,14 @@
     {
       "source": "locally-compact-space",
       "target": "topological-manifold"
+    },
+    {
+      "source": "directed-graph",
+      "target": "topological-sort"
+    },
+    {
+      "source": "depth-first-search",
+      "target": "topological-sort"
     },
     {
       "source": "open-set",
@@ -14856,6 +14814,14 @@
       "target": "triple-integral"
     },
     {
+      "source": "function",
+      "target": "turing-machine"
+    },
+    {
+      "source": "set-operations",
+      "target": "turing-machine"
+    },
+    {
       "source": "graph",
       "target": "turans-theorem"
     },
@@ -14866,14 +14832,6 @@
     {
       "source": "edge",
       "target": "turans-theorem"
-    },
-    {
-      "source": "function",
-      "target": "turing-machine"
-    },
-    {
-      "source": "set-operations",
-      "target": "turing-machine"
     },
     {
       "source": "graph",
@@ -14924,6 +14882,14 @@
       "target": "undetermined-coefficients"
     },
     {
+      "source": "banach-space",
+      "target": "uniform-boundedness-principle"
+    },
+    {
+      "source": "bounded-linear-operator",
+      "target": "uniform-boundedness-principle"
+    },
+    {
       "source": "continuity",
       "target": "uniform-continuity"
     },
@@ -14938,14 +14904,6 @@
     {
       "source": "probability-density-function",
       "target": "uniform-distribution"
-    },
-    {
-      "source": "banach-space",
-      "target": "uniform-boundedness-principle"
-    },
-    {
-      "source": "bounded-linear-operator",
-      "target": "uniform-boundedness-principle"
     },
     {
       "source": "lebesgue-integral",
@@ -14996,20 +14954,20 @@
       "target": "unitary-operator"
     },
     {
-      "source": "predicate",
-      "target": "universal-quantifier"
-    },
-    {
-      "source": "first-order-logic",
-      "target": "universal-quantifier"
-    },
-    {
       "source": "category",
       "target": "universal-property"
     },
     {
       "source": "morphism",
       "target": "universal-property"
+    },
+    {
+      "source": "predicate",
+      "target": "universal-quantifier"
+    },
+    {
+      "source": "first-order-logic",
+      "target": "universal-quantifier"
     },
     {
       "source": "lim-sup-lim-inf",
@@ -15116,6 +15074,18 @@
       "target": "vertex"
     },
     {
+      "source": "uniform-integrability",
+      "target": "vitali-convergence-theorem"
+    },
+    {
+      "source": "lebesgue-integral",
+      "target": "vitali-convergence-theorem"
+    },
+    {
+      "source": "measure-space",
+      "target": "vitali-convergence-theorem"
+    },
+    {
       "source": "lebesgue-measure",
       "target": "vitali-covering-lemma"
     },
@@ -15132,19 +15102,7 @@
       "target": "vitali-set"
     },
     {
-      "source": "uniform-integrability",
-      "target": "vitali-convergence-theorem"
-    },
-    {
-      "source": "lebesgue-integral",
-      "target": "vitali-convergence-theorem"
-    },
-    {
-      "source": "measure-space",
-      "target": "vitali-convergence-theorem"
-    },
-    {
-      "source": "normal-family-complex",
+      "source": "normal-family",
       "target": "vitali-theorem-complex"
     },
     {
@@ -15192,24 +15150,24 @@
       "target": "wave-equation"
     },
     {
-      "source": "dual-space",
-      "target": "weak-star-topology"
-    },
-    {
-      "source": "weak-topology",
-      "target": "weak-star-topology"
-    },
-    {
       "source": "normed-vector-space",
       "target": "weak-topology"
     },
     {
-      "source": "dual-space",
+      "source": "dual-space-linear",
       "target": "weak-topology"
     },
     {
       "source": "topology",
       "target": "weak-topology"
+    },
+    {
+      "source": "dual-space-linear",
+      "target": "weak-star-topology"
+    },
+    {
+      "source": "weak-topology",
+      "target": "weak-star-topology"
     },
     {
       "source": "differential-form",
@@ -15337,13 +15295,18 @@
       "kind": "tag-link"
     },
     {
+      "source": "tag:foundations",
+      "target": "abelian-category",
+      "kind": "tag-link"
+    },
+    {
       "source": "tag:abstract-algebra",
       "target": "abelian-group",
       "kind": "tag-link"
     },
     {
-      "source": "tag:foundations",
-      "target": "abelian-category",
+      "source": "tag:analysis",
+      "target": "absolute-continuity-function",
       "kind": "tag-link"
     },
     {
@@ -15354,11 +15317,6 @@
     {
       "source": "tag:analysis",
       "target": "absolute-value",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:analysis",
-      "target": "absolute-continuity-function",
       "kind": "tag-link"
     },
     {
@@ -15522,11 +15480,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:logic",
-      "target": "axiom-schema",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:order-theory",
       "target": "axiom-of-choice",
       "kind": "tag-link"
@@ -15572,13 +15525,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:algorithms",
-      "target": "backtracking",
+      "source": "tag:logic",
+      "target": "axiom-schema",
       "kind": "tag-link"
     },
     {
-      "source": "tag:real-analysis",
-      "target": "baire-space-real",
+      "source": "tag:algorithms",
+      "target": "backtracking",
       "kind": "tag-link"
     },
     {
@@ -15587,13 +15540,18 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:functional-analysis",
-      "target": "banach-space",
+      "source": "tag:real-analysis",
+      "target": "baire-space-real",
       "kind": "tag-link"
     },
     {
       "source": "tag:functional-analysis",
       "target": "banach-algebra",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:functional-analysis",
+      "target": "banach-space",
       "kind": "tag-link"
     },
     {
@@ -15627,13 +15585,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:real-analysis",
-      "target": "bernstein-set",
+      "source": "tag:analysis",
+      "target": "bernstein-polynomial",
       "kind": "tag-link"
     },
     {
-      "source": "tag:analysis",
-      "target": "bernstein-polynomial",
+      "source": "tag:real-analysis",
+      "target": "bernstein-set",
       "kind": "tag-link"
     },
     {
@@ -15644,11 +15602,6 @@
     {
       "source": "tag:set-theory",
       "target": "beth-numbers",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:number-theory",
-      "target": "bezout-identity",
       "kind": "tag-link"
     },
     {
@@ -15733,12 +15686,12 @@
     },
     {
       "source": "tag:measure-theory",
-      "target": "borel-sigma-algebra",
+      "target": "borel-measure",
       "kind": "tag-link"
     },
     {
       "source": "tag:measure-theory",
-      "target": "borel-measure",
+      "target": "borel-sigma-algebra",
       "kind": "tag-link"
     },
     {
@@ -15767,13 +15720,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:functional-analysis",
-      "target": "c-star-algebra",
+      "source": "tag:number-theory",
+      "target": "bezout-identity",
       "kind": "tag-link"
     },
     {
-      "source": "tag:real-analysis",
-      "target": "cantor-diagonalization",
+      "source": "tag:functional-analysis",
+      "target": "c-star-algebra",
       "kind": "tag-link"
     },
     {
@@ -15784,6 +15737,11 @@
     {
       "source": "tag:analysis",
       "target": "cantor-set",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:real-analysis",
+      "target": "cantor-diagonalization",
       "kind": "tag-link"
     },
     {
@@ -15842,13 +15800,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:differential-equations",
-      "target": "cauchy-euler-equation",
+      "source": "tag:complex-analysis",
+      "target": "cauchy-riemann-equations",
       "kind": "tag-link"
     },
     {
-      "source": "tag:complex-analysis",
-      "target": "cauchy-riemann-equations",
+      "source": "tag:differential-equations",
+      "target": "cauchy-euler-equation",
       "kind": "tag-link"
     },
     {
@@ -15877,18 +15835,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:calculus",
-      "target": "chain-rule",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:order-theory",
       "target": "chain-order",
       "kind": "tag-link"
     },
     {
       "source": "tag:calculus",
-      "target": "change-of-variables-integral",
+      "target": "chain-rule",
       "kind": "tag-link"
     },
     {
@@ -15897,13 +15850,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:differential-equations",
-      "target": "characteristic-equation-ode",
+      "source": "tag:calculus",
+      "target": "change-of-variables-integral",
       "kind": "tag-link"
     },
     {
-      "source": "tag:linear-algebra",
-      "target": "characteristic-polynomial",
+      "source": "tag:differential-equations",
+      "target": "characteristic-equation-ode",
       "kind": "tag-link"
     },
     {
@@ -15914,6 +15867,11 @@
     {
       "source": "tag:algebra",
       "target": "characteristic-of-ring",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:linear-algebra",
+      "target": "characteristic-polynomial",
       "kind": "tag-link"
     },
     {
@@ -15962,13 +15920,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:topology",
-      "target": "closed-set",
+      "source": "tag:functional-analysis",
+      "target": "closed-graph-theorem",
       "kind": "tag-link"
     },
     {
-      "source": "tag:functional-analysis",
-      "target": "closed-graph-theorem",
+      "source": "tag:topology",
+      "target": "closed-set",
       "kind": "tag-link"
     },
     {
@@ -15997,11 +15955,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:topology",
-      "target": "compact-set",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:analysis",
       "target": "compact-convergence",
       "kind": "tag-link"
@@ -16009,6 +15962,11 @@
     {
       "source": "tag:functional-analysis",
       "target": "compact-operator",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:topology",
+      "target": "compact-set",
       "kind": "tag-link"
     },
     {
@@ -16027,11 +15985,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:topology",
-      "target": "complete-metric-space",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:order-theory",
       "target": "complete-lattice",
       "kind": "tag-link"
@@ -16039,6 +15992,11 @@
     {
       "source": "tag:measure-theory",
       "target": "complete-measure",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:topology",
+      "target": "complete-metric-space",
       "kind": "tag-link"
     },
     {
@@ -16093,17 +16051,17 @@
     },
     {
       "source": "tag:probability",
-      "target": "conditional-probability",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:probability",
       "target": "conditional-distribution",
       "kind": "tag-link"
     },
     {
       "source": "tag:measure-theory",
       "target": "conditional-expectation-measure",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:probability",
+      "target": "conditional-probability",
       "kind": "tag-link"
     },
     {
@@ -16202,13 +16160,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:differential-equations",
-      "target": "convolution-theorem",
+      "source": "tag:measure-theory",
+      "target": "convolution-measure",
       "kind": "tag-link"
     },
     {
-      "source": "tag:measure-theory",
-      "target": "convolution-measure",
+      "source": "tag:differential-equations",
+      "target": "convolution-theorem",
       "kind": "tag-link"
     },
     {
@@ -16487,11 +16445,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:functional-analysis",
-      "target": "dual-space",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:algorithms",
       "target": "dynamic-programming",
       "kind": "tag-link"
@@ -16557,13 +16510,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:set-theory",
-      "target": "equivalence-relation",
+      "source": "tag:foundations",
+      "target": "equivalence-of-categories",
       "kind": "tag-link"
     },
     {
-      "source": "tag:foundations",
-      "target": "equivalence-of-categories",
+      "source": "tag:set-theory",
+      "target": "equivalence-relation",
       "kind": "tag-link"
     },
     {
@@ -16632,13 +16585,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:abstract-algebra",
-      "target": "exact-sequence",
+      "source": "tag:foundations",
+      "target": "exact-functor",
       "kind": "tag-link"
     },
     {
-      "source": "tag:foundations",
-      "target": "exact-functor",
+      "source": "tag:abstract-algebra",
+      "target": "exact-sequence",
       "kind": "tag-link"
     },
     {
@@ -16712,13 +16665,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:order-theory",
-      "target": "filter-order",
+      "source": "tag:topology",
+      "target": "filter-topology",
       "kind": "tag-link"
     },
     {
-      "source": "tag:topology",
-      "target": "filter-topology",
+      "source": "tag:order-theory",
+      "target": "filter-order",
       "kind": "tag-link"
     },
     {
@@ -16729,11 +16682,6 @@
     {
       "source": "tag:abstract-algebra",
       "target": "fixed-field",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:order-theory",
-      "target": "fixed-point-theorem-order",
       "kind": "tag-link"
     },
     {
@@ -16837,6 +16785,11 @@
       "kind": "tag-link"
     },
     {
+      "source": "tag:order-theory",
+      "target": "galois-connection",
+      "kind": "tag-link"
+    },
+    {
       "source": "tag:abstract-algebra",
       "target": "galois-correspondence",
       "kind": "tag-link"
@@ -16844,11 +16797,6 @@
     {
       "source": "tag:abstract-algebra",
       "target": "galois-group",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:order-theory",
-      "target": "galois-connection",
       "kind": "tag-link"
     },
     {
@@ -16972,16 +16920,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:algebra",
-      "target": "grobner-basis",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:differential-equations",
-      "target": "gronwall-inequality",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:abstract-algebra",
       "target": "group-homomorphism",
       "kind": "tag-link"
@@ -16989,6 +16927,16 @@
     {
       "source": "tag:abstract-algebra",
       "target": "group",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:algebra",
+      "target": "grobner-basis",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:differential-equations",
+      "target": "gronwall-inequality",
       "kind": "tag-link"
     },
     {
@@ -17212,6 +17160,11 @@
       "kind": "tag-link"
     },
     {
+      "source": "tag:combinatorics",
+      "target": "integer-partition-function",
+      "kind": "tag-link"
+    },
+    {
       "source": "tag:algebra",
       "target": "integer-ring-axioms",
       "kind": "tag-link"
@@ -17219,11 +17172,6 @@
     {
       "source": "tag:number-theory",
       "target": "integer-ring-axioms",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:combinatorics",
-      "target": "integer-partition-function",
       "kind": "tag-link"
     },
     {
@@ -17267,13 +17215,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:differential-equations",
-      "target": "inverse-laplace-transform",
+      "source": "tag:set-theory",
+      "target": "inverse-function",
       "kind": "tag-link"
     },
     {
-      "source": "tag:set-theory",
-      "target": "inverse-function",
+      "source": "tag:differential-equations",
+      "target": "inverse-laplace-transform",
       "kind": "tag-link"
     },
     {
@@ -17312,13 +17260,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:abstract-algebra",
-      "target": "jordan-holder-theorem",
+      "source": "tag:linear-algebra",
+      "target": "jordan-normal-form",
       "kind": "tag-link"
     },
     {
-      "source": "tag:linear-algebra",
-      "target": "jordan-normal-form",
+      "source": "tag:abstract-algebra",
+      "target": "jordan-holder-theorem",
       "kind": "tag-link"
     },
     {
@@ -17334,6 +17282,11 @@
     {
       "source": "tag:graph-theory",
       "target": "kirchhoff-matrix-tree",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:order-theory",
+      "target": "fixed-point-theorem-order",
       "kind": "tag-link"
     },
     {
@@ -17403,6 +17356,11 @@
     },
     {
       "source": "tag:measure-theory",
+      "target": "lebesgue-decomposition",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:measure-theory",
       "target": "lebesgue-integral",
       "kind": "tag-link"
     },
@@ -17412,18 +17370,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:measure-theory",
-      "target": "lebesgue-decomposition",
+      "source": "tag:differential-equations",
+      "target": "legendre-equation",
       "kind": "tag-link"
     },
     {
       "source": "tag:number-theory",
       "target": "legendre-symbol",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:differential-equations",
-      "target": "legendre-equation",
       "kind": "tag-link"
     },
     {
@@ -17448,17 +17401,17 @@
     },
     {
       "source": "tag:real-analysis",
-      "target": "lim-sup-lim-inf",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:real-analysis",
       "target": "limit-of-a-function",
       "kind": "tag-link"
     },
     {
       "source": "tag:real-analysis",
       "target": "limit-of-a-sequence",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:real-analysis",
+      "target": "lim-sup-lim-inf",
       "kind": "tag-link"
     },
     {
@@ -17482,6 +17435,11 @@
       "kind": "tag-link"
     },
     {
+      "source": "tag:order-theory",
+      "target": "linear-extension",
+      "kind": "tag-link"
+    },
+    {
       "source": "tag:linear-algebra",
       "target": "linear-independence",
       "kind": "tag-link"
@@ -17497,23 +17455,18 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:order-theory",
-      "target": "linear-extension",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:real-analysis",
       "target": "liouville-number",
       "kind": "tag-link"
     },
     {
-      "source": "tag:complex-analysis",
-      "target": "liouvilles-theorem-complex",
+      "source": "tag:differential-equations",
+      "target": "liouville-theorem-ode",
       "kind": "tag-link"
     },
     {
-      "source": "tag:differential-equations",
-      "target": "liouville-theorem-ode",
+      "source": "tag:complex-analysis",
+      "target": "liouvilles-theorem-complex",
       "kind": "tag-link"
     },
     {
@@ -17577,11 +17530,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:measure-theory",
-      "target": "lp-space",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:analysis",
       "target": "lusin-theorem",
       "kind": "tag-link"
@@ -17594,6 +17542,11 @@
     {
       "source": "tag:differential-equations",
       "target": "lyapunov-function",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:measure-theory",
+      "target": "lp-space",
       "kind": "tag-link"
     },
     {
@@ -17644,11 +17597,6 @@
     {
       "source": "tag:combinatorics",
       "target": "matroid",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:graph-theory",
-      "target": "max-flow-min-cut-theorem",
       "kind": "tag-link"
     },
     {
@@ -17762,11 +17710,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:complex-analysis",
-      "target": "mobius-transformation",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:logic",
       "target": "modal-logic",
       "kind": "tag-link"
@@ -17837,13 +17780,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:real-analysis",
-      "target": "monotone-sequence",
+      "source": "tag:order-theory",
+      "target": "monotone-map",
       "kind": "tag-link"
     },
     {
-      "source": "tag:order-theory",
-      "target": "monotone-map",
+      "source": "tag:real-analysis",
+      "target": "monotone-sequence",
       "kind": "tag-link"
     },
     {
@@ -17859,6 +17802,11 @@
     {
       "source": "tag:calculus",
       "target": "multivariable-chain-rule",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:complex-analysis",
+      "target": "mobius-transformation",
       "kind": "tag-link"
     },
     {
@@ -17922,21 +17870,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:topology",
-      "target": "normal-space",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:abstract-algebra",
-      "target": "normal-subgroup",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:complex-analysis",
-      "target": "normal-family-complex",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:analysis",
       "target": "normal-family",
       "kind": "tag-link"
@@ -17944,6 +17877,16 @@
     {
       "source": "tag:functional-analysis",
       "target": "normal-operator",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:topology",
+      "target": "normal-space",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:abstract-algebra",
+      "target": "normal-subgroup",
       "kind": "tag-link"
     },
     {
@@ -17982,13 +17925,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:topology",
-      "target": "open-set",
+      "source": "tag:functional-analysis",
+      "target": "open-mapping-theorem",
       "kind": "tag-link"
     },
     {
-      "source": "tag:functional-analysis",
-      "target": "open-mapping-theorem",
+      "source": "tag:topology",
+      "target": "open-set",
       "kind": "tag-link"
     },
     {
@@ -18112,18 +18055,23 @@
       "kind": "tag-link"
     },
     {
+      "source": "tag:order-theory",
+      "target": "poset",
+      "kind": "tag-link"
+    },
+    {
       "source": "tag:differential-equations",
       "target": "particular-solution",
       "kind": "tag-link"
     },
     {
-      "source": "tag:combinatorics",
-      "target": "partition-of-integer",
+      "source": "tag:set-theory",
+      "target": "partition-set",
       "kind": "tag-link"
     },
     {
-      "source": "tag:set-theory",
-      "target": "partition-set",
+      "source": "tag:combinatorics",
+      "target": "partition-of-integer",
       "kind": "tag-link"
     },
     {
@@ -18217,11 +18165,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:combinatorics",
-      "target": "polya-enumeration",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:geometry",
       "target": "polygon",
       "kind": "tag-link"
@@ -18232,23 +18175,18 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:order-theory",
-      "target": "poset",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:linear-algebra",
       "target": "positive-definite-matrix",
       "kind": "tag-link"
     },
     {
-      "source": "tag:real-analysis",
-      "target": "power-series",
+      "source": "tag:differential-equations",
+      "target": "power-series-method-ode",
       "kind": "tag-link"
     },
     {
-      "source": "tag:differential-equations",
-      "target": "power-series-method-ode",
+      "source": "tag:real-analysis",
+      "target": "power-series",
       "kind": "tag-link"
     },
     {
@@ -18278,11 +18216,6 @@
     },
     {
       "source": "tag:number-theory",
-      "target": "prime-number",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:number-theory",
       "target": "prime-factorization",
       "kind": "tag-link"
     },
@@ -18298,6 +18231,11 @@
     },
     {
       "source": "tag:number-theory",
+      "target": "prime-number",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:number-theory",
       "target": "primitive-root",
       "kind": "tag-link"
     },
@@ -18307,13 +18245,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:abstract-algebra",
-      "target": "principal-ideal",
+      "source": "tag:algebra",
+      "target": "principal-ideal-domain",
       "kind": "tag-link"
     },
     {
-      "source": "tag:algebra",
-      "target": "principal-ideal-domain",
+      "source": "tag:abstract-algebra",
+      "target": "principal-ideal",
       "kind": "tag-link"
     },
     {
@@ -18417,8 +18355,8 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:number-theory",
-      "target": "quadratic-residue",
+      "source": "tag:combinatorics",
+      "target": "polya-enumeration",
       "kind": "tag-link"
     },
     {
@@ -18429,6 +18367,11 @@
     {
       "source": "tag:number-theory",
       "target": "quadratic-reciprocity-law",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:number-theory",
+      "target": "quadratic-residue",
       "kind": "tag-link"
     },
     {
@@ -18487,13 +18430,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:linear-algebra",
-      "target": "rank-of-a-matrix",
+      "source": "tag:combinatorics",
+      "target": "rank-function-matroid",
       "kind": "tag-link"
     },
     {
-      "source": "tag:combinatorics",
-      "target": "rank-function-matroid",
+      "source": "tag:linear-algebra",
+      "target": "rank-of-a-matrix",
       "kind": "tag-link"
     },
     {
@@ -18517,11 +18460,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:real-analysis",
-      "target": "rearrangement-theorem",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:combinatorics",
       "target": "recurrence-relation",
       "kind": "tag-link"
@@ -18542,11 +18480,6 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:topology",
-      "target": "regular-space",
-      "kind": "tag-link"
-    },
-    {
       "source": "tag:set-theory",
       "target": "regular-cardinal",
       "kind": "tag-link"
@@ -18554,6 +18487,11 @@
     {
       "source": "tag:measure-theory",
       "target": "regular-measure",
+      "kind": "tag-link"
+    },
+    {
+      "source": "tag:topology",
+      "target": "regular-space",
       "kind": "tag-link"
     },
     {
@@ -18592,6 +18530,11 @@
       "kind": "tag-link"
     },
     {
+      "source": "tag:number-theory",
+      "target": "riemann-hypothesis",
+      "kind": "tag-link"
+    },
+    {
       "source": "tag:calculus",
       "target": "riemann-integral",
       "kind": "tag-link"
@@ -18602,13 +18545,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:calculus",
-      "target": "riemann-sum",
+      "source": "tag:real-analysis",
+      "target": "rearrangement-theorem",
       "kind": "tag-link"
     },
     {
-      "source": "tag:number-theory",
-      "target": "riemann-hypothesis",
+      "source": "tag:calculus",
+      "target": "riemann-sum",
       "kind": "tag-link"
     },
     {
@@ -18752,13 +18695,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:differential-equations",
-      "target": "separable-ode",
+      "source": "tag:functional-analysis",
+      "target": "separable-banach-space",
       "kind": "tag-link"
     },
     {
-      "source": "tag:functional-analysis",
-      "target": "separable-banach-space",
+      "source": "tag:differential-equations",
+      "target": "separable-ode",
       "kind": "tag-link"
     },
     {
@@ -18773,12 +18716,12 @@
     },
     {
       "source": "tag:set-theory",
-      "target": "set-operations",
+      "target": "set-difference",
       "kind": "tag-link"
     },
     {
       "source": "tag:set-theory",
-      "target": "set-difference",
+      "target": "set-operations",
       "kind": "tag-link"
     },
     {
@@ -18937,13 +18880,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:topology",
-      "target": "stone-cech-compactification",
+      "source": "tag:analysis",
+      "target": "stone-weierstrass-theorem",
       "kind": "tag-link"
     },
     {
-      "source": "tag:analysis",
-      "target": "stone-weierstrass-theorem",
+      "source": "tag:topology",
+      "target": "stone-cech-compactification",
       "kind": "tag-link"
     },
     {
@@ -19092,13 +19035,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:abstract-algebra",
-      "target": "tensor-product",
+      "source": "tag:algebra",
+      "target": "tensor-algebra",
       "kind": "tag-link"
     },
     {
-      "source": "tag:algebra",
-      "target": "tensor-algebra",
+      "source": "tag:abstract-algebra",
+      "target": "tensor-product",
       "kind": "tag-link"
     },
     {
@@ -19127,13 +19070,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:algorithms",
-      "target": "topological-sort",
+      "source": "tag:topology",
+      "target": "topological-manifold",
       "kind": "tag-link"
     },
     {
-      "source": "tag:topology",
-      "target": "topological-manifold",
+      "source": "tag:algorithms",
+      "target": "topological-sort",
       "kind": "tag-link"
     },
     {
@@ -19222,13 +19165,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:combinatorics",
-      "target": "turans-theorem",
+      "source": "tag:algorithms",
+      "target": "turing-machine",
       "kind": "tag-link"
     },
     {
-      "source": "tag:algorithms",
-      "target": "turing-machine",
+      "source": "tag:combinatorics",
+      "target": "turans-theorem",
       "kind": "tag-link"
     },
     {
@@ -19262,6 +19205,11 @@
       "kind": "tag-link"
     },
     {
+      "source": "tag:functional-analysis",
+      "target": "uniform-boundedness-principle",
+      "kind": "tag-link"
+    },
+    {
       "source": "tag:real-analysis",
       "target": "uniform-continuity",
       "kind": "tag-link"
@@ -19274,11 +19222,6 @@
     {
       "source": "tag:probability",
       "target": "uniform-distribution",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:functional-analysis",
-      "target": "uniform-boundedness-principle",
       "kind": "tag-link"
     },
     {
@@ -19307,13 +19250,13 @@
       "kind": "tag-link"
     },
     {
-      "source": "tag:logic",
-      "target": "universal-quantifier",
+      "source": "tag:foundations",
+      "target": "universal-property",
       "kind": "tag-link"
     },
     {
-      "source": "tag:foundations",
-      "target": "universal-property",
+      "source": "tag:logic",
+      "target": "universal-quantifier",
       "kind": "tag-link"
     },
     {
@@ -19387,6 +19330,11 @@
       "kind": "tag-link"
     },
     {
+      "source": "tag:analysis",
+      "target": "vitali-convergence-theorem",
+      "kind": "tag-link"
+    },
+    {
       "source": "tag:measure-theory",
       "target": "vitali-covering-lemma",
       "kind": "tag-link"
@@ -19394,11 +19342,6 @@
     {
       "source": "tag:real-analysis",
       "target": "vitali-set",
-      "kind": "tag-link"
-    },
-    {
-      "source": "tag:analysis",
-      "target": "vitali-convergence-theorem",
       "kind": "tag-link"
     },
     {
@@ -19428,12 +19371,12 @@
     },
     {
       "source": "tag:functional-analysis",
-      "target": "weak-star-topology",
+      "target": "weak-topology",
       "kind": "tag-link"
     },
     {
       "source": "tag:functional-analysis",
-      "target": "weak-topology",
+      "target": "weak-star-topology",
       "kind": "tag-link"
     },
     {
