@@ -24,11 +24,15 @@ import {
   LINK_DISTANCE,
   LINK_STRENGTH,
   LINK_ITERATIONS,
+  TAG_LINK_SIM_DISTANCE,
+  TAG_LINK_SIM_STRENGTH,
+  RING_GRAVITY_STRENGTH,
   COLLISION_RADIUS_PAD,
   COLLISION_STRENGTH,
   COLLISION_ITERATIONS,
   VELOCITY_DECAY,
-  PHYSICS_STOP_DELAY_MS
+  PHYSICS_STOP_DELAY_MS,
+  RING_DRAG_STRENGTH
 } from './physics-config.js'
 
 // ── module-level state ─────────────────────────────────────────────────────────
@@ -39,6 +43,9 @@ let rafId        = null   // requestAnimationFrame handle (null when idle)
 let cyRef        = null   // reference to the Cytoscape instance
 let running      = false  // kill-switch: tick() exits immediately when false
 let dragEndTime  = null   // performance.now() when drag ended; null while dragging
+
+let ringDragMode  = false  // true while a ring is being dragged in isolated mode
+let ringMemberIds = null   // Set<string> of clusterTag-member ids for the active ring drag
 
 // ── internal helpers ───────────────────────────────────────────────────────────
 
@@ -61,6 +68,8 @@ function stopSimulation() {
     nodeMap[id].vx = 0
     nodeMap[id].vy = 0
   }
+  ringDragMode  = false
+  ringMemberIds = null
 }
 
 /**
@@ -72,14 +81,13 @@ function flushPositionsToCy() {
   if (!cyRef) return
   cyRef.batch(() => {
     for (const id in nodeMap) {
-      // Never overwrite the dragged node — the user's cursor IS the position.
-      if (id === dragging) continue
+      if (id === dragging) continue          // never overwrite cursor node
+      // In ring-drag mode, only update cluster members — all other nodes stay frozen.
+      if (ringDragMode && ringMemberIds && !ringMemberIds.has(id)) continue
       const n = nodeMap[id]
       if (n.x == null || n.y == null) continue
       const cyNode = cyRef.getElementById(id)
-      if (cyNode.length) {
-        cyNode.position({ x: n.x, y: n.y })
-      }
+      if (cyNode.length) cyNode.position({ x: n.x, y: n.y })
     }
   })
 }
@@ -140,8 +148,106 @@ export function initPhysics(cy) {
   // Stored for re-use when the simulation is (re-)created on drag.
   initPhysics._links = cy.edges().map(edge => ({
     source: edge.data('source'),
-    target: edge.data('target')
+    target: edge.data('target'),
+    kind:   edge.data('kind') || null
   }))
+
+  // Build ring-concept pairs for the quadratic gravity force.
+  // For each tag-link edge, identify which end is the ring and which is the concept.
+  initPhysics._ringPairs = cy.edges()
+    .filter(e => e.data('kind') === 'tag-link')
+    .map(e => {
+      const isRingSrc = e.source().data('type') === 'tag'
+      return {
+        ringId:    isRingSrc ? e.source().id() : e.target().id(),
+        conceptId: isRingSrc ? e.target().id() : e.source().id()
+      }
+    })
+}
+
+/**
+ * Called on 'grabon' for a ring (tag) node.
+ * Creates an isolated d3 simulation: ring pinned at cursor,
+ * members attracted to ring, collision between members only.
+ * All other nodes are NOT in the simulation and do not move.
+ *
+ * @param {string}   ringNodeId  — id of the ring node being dragged
+ * @param {{x,y}}    position    — initial cursor position
+ * @param {string[]} memberIds   — ids of nodes whose clusterTag === this ring's label
+ */
+export function onRingDragStart(ringNodeId, position, memberIds) {
+  // Tear down any previous simulation cleanly.
+  running = false
+  if (simulation) { simulation.stop(); simulation = null }
+  if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null }
+
+  dragEndTime   = null
+  ringDragMode  = true
+  ringMemberIds = new Set(memberIds)
+  dragging      = ringNodeId
+
+  // Refresh positions from Cytoscape for ring + members only.
+  if (cyRef) {
+    cyRef.nodes().forEach(node => {
+      const nid = node.id()
+      if (nid !== ringNodeId && !ringMemberIds.has(nid)) return
+      const n = nodeMap[nid]
+      if (!n) return
+      const pos = node.position()
+      n.x = pos.x; n.y = pos.y
+      n.fx = null; n.fy = null
+      n.vx = 0;    n.vy = 0
+    })
+  }
+
+  // Build d3 node list: ring + members only.
+  const simNodes = []
+  const simById  = {}
+
+  // Ring node — pinned at cursor
+  const ringN = nodeMap[ringNodeId]
+  if (ringN) {
+    ringN.fx = position.x
+    ringN.fy = position.y
+    simNodes.push(ringN)
+    simById[ringNodeId] = ringN
+  }
+
+  // Member nodes — free
+  memberIds.forEach(mid => {
+    const n = nodeMap[mid]
+    if (n) { simNodes.push(n); simById[mid] = n }
+  })
+
+  // Custom force: each member attracted toward the ring's current position.
+  function forceRingPull(alpha) {
+    const ring = simById[ringNodeId]
+    if (!ring) return
+    for (const mid of ringMemberIds) {
+      const m = simById[mid]
+      if (!m) continue
+      const dx = ring.x - m.x
+      const dy = ring.y - m.y
+      m.vx += dx * RING_DRAG_STRENGTH * alpha
+      m.vy += dy * RING_DRAG_STRENGTH * alpha
+    }
+  }
+
+  simulation = forceSimulation(simNodes)
+    .alpha(DRAG_ALPHA_TARGET)
+    .alphaTarget(DRAG_ALPHA_TARGET)   // stays warm while dragging
+    .alphaDecay(0)
+    .velocityDecay(VELOCITY_DECAY)
+    .force('ringPull', forceRingPull)
+    .force('collide',  forceCollide()
+      .radius(n => (n.r || 7) + COLLISION_RADIUS_PAD)
+      .strength(COLLISION_STRENGTH)
+      .iterations(COLLISION_ITERATIONS)
+    )
+    .stop()
+
+  running = true
+  rafId   = requestAnimationFrame(tick)
 }
 
 /**
@@ -216,10 +322,28 @@ export function onDragStart(nodeId, position) {
     .alphaMin(SIM_ALPHA_MIN)
     .velocityDecay(VELOCITY_DECAY)
     .force('link', forceLink(resolvedLinks)
-      .distance(LINK_DISTANCE)
-      .strength(LINK_STRENGTH)
+      .distance(l => l.kind === 'tag-link' ? TAG_LINK_SIM_DISTANCE : LINK_DISTANCE)
+      .strength(l => l.kind === 'tag-link' ? TAG_LINK_SIM_STRENGTH  : LINK_STRENGTH)
       .iterations(LINK_ITERATIONS)
     )
+    .force('ringGravity', alpha => {
+      // Quadratic attraction: F ∝ dist² — grows faster than the linear link spring.
+      // At dist = d0 the extra pull is small; at dist >> d0 it dominates,
+      // preventing concept nodes from escaping their ring under distant repulsions.
+      for (const { ringId, conceptId } of (initPhysics._ringPairs || [])) {
+        const ring    = nodeById[ringId]
+        const concept = nodeById[conceptId]
+        if (!ring || !concept) continue
+        if (concept.fx != null && concept.fy != null) continue  // skip pinned nodes
+        const dx   = ring.x - concept.x
+        const dy   = ring.y - concept.y
+        const dist = Math.hypot(dx, dy) || 1
+        // f scales with dist/d0: at d0 → f = k; at 2·d0 → f = 2k (giving F ∝ dist²).
+        const f = RING_GRAVITY_STRENGTH * (dist / TAG_LINK_SIM_DISTANCE) * alpha
+        concept.vx += dx * f
+        concept.vy += dy * f
+      }
+    })
     .force('collide', forceCollide()
       .radius(n => (n.r || 7) + COLLISION_RADIUS_PAD)
       .strength(COLLISION_STRENGTH)

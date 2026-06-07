@@ -4,7 +4,33 @@ import yaml
 import math
 
 CONTENT_DIR = Path("content")
-OUTPUT_FILE = Path("graph.json")
+OUTPUT_FILE = Path("viewer/public/graph.json")
+
+# ── Tag priority (1 = most foundational) ──────────────────────────────────────
+TAG_PRIORITY = {
+    'logic':                  1,
+    'set-theory':             2,
+    'foundations':            3,
+    'order-theory':           4,
+    'abstract-algebra':       5,
+    'algebra':                6,
+    'linear-algebra':         7,
+    'number-theory':          8,
+    'combinatorics':          9,
+    'real-analysis':         10,
+    'calculus':              11,
+    'topology':              12,
+    'geometry':              13,
+    'analysis':              14,
+    'measure-theory':        15,
+    'graph-theory':          16,
+    'complex-analysis':      17,
+    'differential-equations': 18,
+    'differential-geometry': 19,
+    'functional-analysis':   20,
+    'probability':           21,
+    'algorithms':            22,
+}
 
 nodes = []
 edges = []
@@ -97,52 +123,25 @@ for md_file in CONTENT_DIR.rglob("*.md"):
         })
 
 # -------------------------
-# TERCERA PASADA: primaryTag
+# TERCERA PASADA: clusterTag
 # -------------------------
+# clusterTag = the node's own tag with the lowest TAG_PRIORITY value.
+# This replaces the old primaryTag logic (neighbor-count based).
 
-# Construir mapa de vecinos para cada nodo (aristas en cualquier dirección)
-neighbors_of = {node["id"]: set() for node in nodes}
-for edge in edges:
-    src = edge["source"]
-    tgt = edge["target"]
-    if src in neighbors_of:
-        neighbors_of[src].add(tgt)
-    if tgt in neighbors_of:
-        neighbors_of[tgt].add(src)
-
-# Construir mapa de tags de cada nodo
-tags_of = {node["id"]: (node["tags"] or []) for node in nodes}
-
-# Calcular primaryTag para cada nodo
 for node in nodes:
-    node_id = node["id"]
-    own_tags = tags_of.get(node_id, [])
+    own_tags = node.get("tags") or []
 
     if not own_tags:
-        node["primaryTag"] = None
+        node["clusterTag"] = None
         continue
 
-    # Para cada tag propio, contar cuántos vecinos también tienen ese tag
-    best_tag = None
-    best_count = -1
-
-    for tag in own_tags:
-        count = sum(
-            1 for nb_id in neighbors_of.get(node_id, set())
-            if tag in tags_of.get(nb_id, [])
-        )
-        # Mayor conteo gana; empate → primer tag en el array (orden original)
-        if count > best_count:
-            best_count = count
-            best_tag = tag
-
-    node["primaryTag"] = best_tag
+    node["clusterTag"] = min(own_tags, key=lambda t: TAG_PRIORITY.get(t, 999))
 
 # -------------------------
 # CUARTA PASADA: nodos-anillo de tag
 # -------------------------
-# ORDEN CRÍTICO: primaryTag ya está calculado sobre aristas reales.
-# Los anillos y sus aristas se agregan DESPUÉS para no contaminar grados ni primaryTag.
+# ORDEN CRÍTICO: clusterTag ya está calculado sobre aristas reales.
+# Los anillos y sus aristas se agregan DESPUÉS para no contaminar grados ni clusterTag.
 
 all_tags = sorted({tag for node in nodes for tag in (node.get("tags") or [])})
 
@@ -154,7 +153,7 @@ for tag in all_tags:
         "type": "tag",
         "tags": [tag],
         "wikipedia": None,
-        "primaryTag": tag
+        "primaryTag": tag   # kept for ring-node internal compatibility
     })
 
 tag_edges = []
