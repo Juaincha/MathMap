@@ -1,25 +1,17 @@
 // graph-ui.js
-// Builds the Cytoscape instance, runs fcose layout ONCE (GUARDA 1),
+// Builds the Cytoscape instance, runs a d3-force init layout ONCE at startup,
 // wires hover/selection/click interactions, and delegates drag physics
 // to physics-sim.js.
-//
-// NOTE: cytoscape.use(fcose) is called in main.js — NOT here.
 
 import cytoscape from 'cytoscape'
+import { forceSimulation, forceCollide } from 'd3-force'
 import { initializeSearch } from './search.js'
-import { initPhysics, onDragStart, onDragMove, onDragEnd } from './physics-sim.js'
+import { initPhysics, onDragStart, onDragMove, onDragEnd, onRingDragStart } from './physics-sim.js'
 
 import {
-  FCOSE_QUALITY,
-  FCOSE_RANDOMIZE,
-  FCOSE_NODE_REPULSION,
-  FCOSE_IDEAL_EDGE_LEN,
-  FCOSE_EDGE_ELASTICITY,
-  FCOSE_GRAVITY,
-  FCOSE_ITERATIONS,
-  FCOSE_ANIMATE,
-  FCOSE_FIT,
-  FCOSE_PADDING,
+  NODE_SIZE_BASE,
+  NODE_SIZE_PER_DEG,
+  NODE_SIZE_MAX,
   ZOOM_LABEL_NONE,
   ZOOM_LABEL_HUBS_ONLY,
   HUB_DEGREE_PERCENTILE,
@@ -27,58 +19,87 @@ import {
   ZOOM_WHEEL_SENSITIVITY,
   ZOOM_EASE_FACTOR,
   ZOOM_REST_EPSILON,
-  RING_CIRCLE_R,
-  RING_SPACING_POWER,
+  SPIRAL_TURNS,
+  SPIRAL_SPACING,
+  INIT_SCATTER,
+  INIT_RING_STRENGTH,
+  INIT_RING_TARGET_DIST,
+  INIT_COLLISION_PAD,
+  INIT_ALPHA_THRESHOLD,
+  INIT_MAX_TICKS,
   INITIAL_VIEW_FRACTION
 } from './physics-config.js'
 
-// ── GUARDA 1: layout runs at most once ────────────────────────────────────────
-let layoutDone = false
-
 /**
- * Triggers the fcose layout on `cy`.
- * If called a second time the call is a silent no-op (GUARDA 1).
- * After the layout finishes, initialises the d3 physics snapshot.
- *
- * @param {cytoscape.Core} cy
- * @returns {Promise<void>}
+ * Init-only layout: pure ring-attraction + collision.
+ * clusterRingPos: Map<string, {x, y}> — keyed by "tag:<clusterTag>" ring node id.
+ * Returns a Promise that resolves when alpha < INIT_ALPHA_THRESHOLD or ticks exhausted.
  */
-function runLayoutOnce(cy, extraOpts = {}) {
-  if (layoutDone) {
-    // GUARDA 1: second call is a silent no-op.
-    return Promise.resolve()
-  }
-  layoutDone = true
-
+function runInitLayout(cy, clusterRingPos) {
   return new Promise(resolve => {
-    const layout = cy.layout({
-      name: 'fcose',
-
-      quality:         FCOSE_QUALITY,
-      randomize:       FCOSE_RANDOMIZE,
-      animate:         FCOSE_ANIMATE,
-      fit:             FCOSE_FIT,
-      padding:         FCOSE_PADDING,
-
-      nodeRepulsion:   FCOSE_NODE_REPULSION,
-      idealEdgeLength: FCOSE_IDEAL_EDGE_LEN,
-      edgeElasticity:  FCOSE_EDGE_ELASTICITY,
-      gravity:         FCOSE_GRAVITY,
-      numIter:         FCOSE_ITERATIONS,
-
-      nodeSeparation:  30,
-      packComponents:  true,
-
-      ...extraOpts
+    // Build d3 node list from current cy positions
+    const d3Nodes = []
+    cy.nodes().forEach(n => {
+      const pos = n.position()
+      d3Nodes.push({
+        id:         n.id(),
+        x:          pos.x,
+        y:          pos.y,
+        r:          n.width() / 2,
+        clusterTag: n.data('clusterTag'),
+        isRing:     n.data('type') === 'tag',
+        fx:         n.data('type') === 'tag' ? pos.x : null,  // freeze rings
+        fy:         n.data('type') === 'tag' ? pos.y : null,
+      })
     })
 
-    layout.on('layoutstop', () => {
-      // Snapshot all positions into the d3 node map right after layout finishes.
-      initPhysics(cy)
-      resolve()
+    // Custom force: target-distance spring toward clusterTag ring shell.
+    // Nodes farther than INIT_RING_TARGET_DIST are pulled in;
+    // nodes closer are pushed out. Prevents cross-cluster drift.
+    function forceRingAttraction(alpha) {
+      for (const n of d3Nodes) {
+        if (n.isRing) continue
+        if (n.fx != null) continue  // skip pinned
+        const tag = n.clusterTag
+        if (!tag) continue
+        const ringPos = clusterRingPos.get(`tag:${tag}`)
+        if (!ringPos) continue
+        const dx   = ringPos.x - n.x
+        const dy   = ringPos.y - n.y
+        const dist = Math.hypot(dx, dy) || 1
+        const f    = INIT_RING_STRENGTH * (dist - INIT_RING_TARGET_DIST) / dist * alpha
+        n.vx = (n.vx || 0) + dx * f
+        n.vy = (n.vy || 0) + dy * f
+      }
+    }
+
+    const sim = forceSimulation(d3Nodes)
+      .alpha(0.8)
+      .alphaDecay(0.02)
+      .velocityDecay(0.4)
+      .force('ring', forceRingAttraction)
+      .force('collide', forceCollide()
+        .radius(n => (n.r || 7) + INIT_COLLISION_PAD)
+        .strength(1.0)
+        .iterations(3)
+      )
+      .stop()
+
+    let ticks = 0
+    while (sim.alpha() > INIT_ALPHA_THRESHOLD && ticks < INIT_MAX_TICKS) {
+      sim.tick()
+      ticks++
+    }
+
+    // Flush final positions to Cytoscape
+    cy.batch(() => {
+      d3Nodes.forEach(n => {
+        if (n.isRing) return
+        cy.getElementById(n.id).position({ x: n.x, y: n.y })
+      })
     })
 
-    layout.run()
+    resolve()
   })
 }
 
@@ -196,78 +217,95 @@ export async function createGraph() {
   // ── Cluster sizes (for scatter radius scaling) ────────────────────────────────
   const clusterSize = {}
   regularNodes.forEach(n => {
-    const pt = n.primaryTag
-    if (pt) clusterSize[pt] = (clusterSize[pt] || 0) + 1
+    const ct = n.clusterTag
+    if (ct) clusterSize[ct] = (clusterSize[ct] || 0) + 1
+  })
+
+  // Map from ring label → array of member node ids (nodes whose clusterTag === label).
+  const clusterMembers = {}
+  regularNodes.forEach(n => {
+    if (n.clusterTag) {
+      if (!clusterMembers[n.clusterTag]) clusterMembers[n.clusterTag] = []
+      clusterMembers[n.clusterTag].push(n.id)
+    }
   })
 
   // ── Seed positions ────────────────────────────────────────────────────────────
-  // Step 1: compute proportional reference positions on a circle (used only for
-  // spreading clusters apart during the initial seed — NOT fixed constraints).
-  const ringWeights = ringNodes.map(rn => Math.pow(clusterSize[rn.label] || 1, RING_SPACING_POWER))
-  const totalWeight = ringWeights.reduce((s, w) => s + w, 0)
-
-  const clusterRef = {}   // reference center per ring id, on the proportional circle
-  let cumAngle = -Math.PI / 2
-  ringNodes.forEach((rn, i) => {
-    const arcWidth = (ringWeights[i] / totalWeight) * 2 * Math.PI
-    const midAngle = cumAngle + arcWidth / 2
-    clusterRef[rn.id] = {
-      x: Math.cos(midAngle) * RING_CIRCLE_R,
-      y: Math.sin(midAngle) * RING_CIRCLE_R
-    }
-    cumAngle += arcWidth
-  })
+  // Step 1: place ring nodes on an Archimedean spiral — r(θ) = r₀ + b·θ
+  // with uniform Δθ between consecutive rings (equal angular spacing).
+  // Rings sorted by descending member count so larger clusters sit nearer the
+  // centre, where screen density is highest and they can anchor more nodes.
+  const clusterRef = {}
+  const N = ringNodes.length
+  if (N > 0) {
+    const sortedRings = ringNodes.slice().sort(
+      (a, b) => (clusterSize[b.label] || 0) - (clusterSize[a.label] || 0)
+    )
+    // b: radial growth per radian — one full turn (2π rad) increases r by SPIRAL_SPACING.
+    const bSpiral = SPIRAL_SPACING / (2 * Math.PI)
+    // Spread all rings over SPIRAL_TURNS full rotations.
+    const dTheta  = N > 1 ? (SPIRAL_TURNS * 2 * Math.PI) / (N - 1) : 0
+    // First ring starts at r = SPIRAL_SPACING (one turn-distance from origin).
+    sortedRings.forEach((rn, i) => {
+      const theta = -Math.PI / 2 + i * dTheta          // start pointing up
+      const r     = SPIRAL_SPACING + bSpiral * i * dTheta
+      clusterRef[rn.id] = { x: Math.cos(theta) * r, y: Math.sin(theta) * r }
+    })
+  }
 
   // Step 2: seed concept nodes around their cluster reference center.
-  const BASE_SCATTER = 220
+  // scatter = INIT_SCATTER × sqrt(clusterSize) → uniform disk proportional to cluster density.
   const conceptSeed = {}
   regularNodes.forEach(node => {
-    const ringId = node.primaryTag ? `tag:${node.primaryTag}` : null
+    const ringId = node.clusterTag ? `tag:${node.clusterTag}` : null
     const center = ringId && clusterRef[ringId] ? clusterRef[ringId] : { x: 0, y: 0 }
-    const size   = clusterSize[node.primaryTag] || 1
-    const scatter = BASE_SCATTER * Math.sqrt(size)
+    const size   = clusterSize[node.clusterTag] || 1
+    const scatter = INIT_SCATTER * Math.sqrt(size)
     const a = Math.random() * 2 * Math.PI
     const r = Math.sqrt(Math.random()) * scatter
     conceptSeed[node.id] = { x: center.x + Math.cos(a) * r, y: center.y + Math.sin(a) * r }
   })
 
-  // Step 3: place each ring at the centroid of ALL its tagged members' seed positions.
-  // This ensures rings start inside their cloud; fcose tag-link springs keep them there.
+  // Step 3: place each ring at its exact spiral position.
   const ringPositions = {}
   ringNodes.forEach(rn => {
-    const members = regularNodes.filter(n => (n.tags || []).includes(rn.label))
-    if (members.length > 0) {
-      ringPositions[rn.id] = {
-        x: members.reduce((s, n) => s + conceptSeed[n.id].x, 0) / members.length,
-        y: members.reduce((s, n) => s + conceptSeed[n.id].y, 0) / members.length
-      }
-    } else {
-      ringPositions[rn.id] = clusterRef[rn.id] || { x: 0, y: 0 }
-    }
+    ringPositions[rn.id] = clusterRef[rn.id] || { x: 0, y: 0 }
   })
 
   // ── Build Cytoscape elements ──────────────────────────────────────────────────
   const tagsByNode = {}
   graph.nodes.forEach(n => { tagsByNode[n.id] = n.tags || [] })
 
+  // elements array is populated below in the pre-compute + rebuild block.
   const elements = []
 
+  // ── Pre-compute node sizes as static data values (avoids per-redraw JS mapper) ──
+  // Mapper functions (ele => ...) are re-evaluated on every Cytoscape redraw.
+  // Storing size in node data and using 'data(size)' is evaluated once at element
+  // creation and cached by Cytoscape's style system.
   regularNodes.forEach(node => {
-    const firstTag = (node.tags || [])[0]
-    const tagColor = firstTag ? TAG_COLORS[firstTag] : '#7f8c8d'
-    elements.push({ data: { ...node, tagColor }, position: conceptSeed[node.id] })
+    node._size = Math.min(NODE_SIZE_MAX, NODE_SIZE_BASE + (degreeMap[node.id] || 0) * NODE_SIZE_PER_DEG)
+  })
+  // Ring node sizes are computed inline below (need clusterSize lookup).
+
+  // Re-build elements with _size baked into data so stylesheet can reference it.
+  elements.length = 0
+
+  regularNodes.forEach(node => {
+    const tagColor = node.clusterTag ? TAG_COLORS[node.clusterTag] : '#7f8c8d'
+    elements.push({ data: { ...node, tagColor, size: node._size }, position: conceptSeed[node.id] })
   })
 
   ringNodes.forEach(rn => {
     const tagColor    = TAG_COLORS[rn.label] || '#7f8c8d'
     const memberCount = clusterSize[rn.label] || 0
+    const size        = 28 + Math.sqrt(memberCount || 1) * 4
     elements.push({
-      data: { ...rn, tagColor, memberCount },
+      data: { ...rn, tagColor, memberCount, size },
       position: ringPositions[rn.id] || { x: 0, y: 0 }
     })
   })
 
-  // Edges
   graph.edges.forEach(edge => {
     const srcTags = tagsByNode[edge.source] || []
     const tgtTags = new Set(tagsByNode[edge.target] || [])
@@ -277,7 +315,12 @@ export async function createGraph() {
   })
 
   // ── Create Cytoscape instance ─────────────────────────────────────────────────
-  // Initial layout is 'preset' (no-op); fcose runs below via runLayoutOnce().
+  // Initial layout is 'preset' (no-op); d3-force init sim runs below via runInitLayout().
+  //
+  // PERF: pixelRatio forced to 1 — on HiDPI screens the default devicePixelRatio
+  // (2 on Retina, up to 3 on mobile) means the canvas is 4x–9x the pixel count.
+  // Forcing 1 halves render cost on HiDPI with minimal visual loss at graph scale.
+  // Adjust to 'auto' if crisp text on high-DPI is preferred over performance.
   const cy = cytoscape({
 
     container: document.getElementById('cy'),
@@ -285,6 +328,10 @@ export async function createGraph() {
     elements,
 
     wheelSensitivity: 0.00001,
+
+    // PERF: pixelRatio: 1 — avoids 4x canvas on HiDPI (e.g. Retina 2x → 1x).
+    // Tune: set to 'auto' to restore native DPI at the cost of render bandwidth.
+    pixelRatio: 1,
 
     layout: { name: 'preset' },
 
@@ -295,8 +342,10 @@ export async function createGraph() {
         style: {
           label: 'data(label)',
 
-          width:  ele => 14 + (degreeMap[ele.id()] || 0) * 2,
-          height: ele => 14 + (degreeMap[ele.id()] || 0) * 2,
+          // PERF: static data reference instead of JS mapper function.
+          // Mapper functions re-evaluate on every redraw; data() is cached.
+          width:  'data(size)',
+          height: 'data(size)',
 
           'font-size': 10,
           color: '#222',
@@ -304,6 +353,10 @@ export async function createGraph() {
           'text-margin-y': 5,
           // Labels hidden by default — zoom system reveals them selectively.
           'text-opacity': 0,
+
+          // PERF: border-width: 0 on concept nodes eliminates per-node border stroke.
+          // Ring nodes override this below with their own border-width: 3.
+          'border-width': 0,
 
           'background-color': 'data(tagColor)',
 
@@ -316,12 +369,18 @@ export async function createGraph() {
 
       {
         selector: 'edge',
+        // PERF: dep-edges use straight lines — cheaper than bezier (no control-point math).
+        // Arrows are preserved for semantic directionality.
+        // line-opacity replaces opacity to avoid per-element compositing layer.
         style: {
           width: 1.5,
-          opacity: 0.35,
-          'curve-style': 'bezier',
-          'line-color': '#999',
-          'target-arrow-color': '#999',
+          // PERF: line-opacity instead of opacity — avoids full compositing pass per edge.
+          // opacity: 0.35 forces the canvas to allocate a separate compositing layer per edge.
+          // line-opacity applies alpha only to the stroke, which is much cheaper.
+          'line-opacity': 1,
+          'line-color': '#99999959',  // embed alpha in hex color — no compositing overhead
+          'curve-style': 'straight',  // PERF: straight is O(1) vs bezier which needs control points
+          'target-arrow-color': '#99999959',
           'target-arrow-shape': 'triangle',
           'transition-property': 'opacity',
           'transition-duration': '150ms',
@@ -342,11 +401,13 @@ export async function createGraph() {
         selector: 'node[type="tag"]',
         style: {
           'background-opacity':  0,
+          // Ring nodes keep their border — it IS their visual identity.
           'border-width':        3,
           'border-color':        'data(tagColor)',
           'border-opacity':      0.85,
-          width:  ele => 28 + Math.sqrt(ele.data('memberCount') || 1) * 4,
-          height: ele => 28 + Math.sqrt(ele.data('memberCount') || 1) * 4,
+          // PERF: static data reference (pre-computed in _size above).
+          width:  'data(size)',
+          height: 'data(size)',
           'font-size':    11,
           'font-weight':  'bold',
           color:          'data(tagColor)',
@@ -360,15 +421,20 @@ export async function createGraph() {
       },
 
       // ── Tag-link edges ────────────────────────────────────────────────────────
+      // PERF: haystack is the cheapest curve style — no arrow, no control points.
+      // These are decorative clustering edges; visual fidelity matters less.
       {
         selector: 'edge[kind="tag-link"]',
         style: {
           width:                0.8,
-          opacity:              0.12,
-          'line-color':         '#aaa',
+          // PERF: color with embedded alpha (no compositing) instead of opacity.
+          'line-color':         '#aaaaaa26',  // ~15% opacity embedded in color
+          'line-opacity':       1,
           'target-arrow-shape': 'none',
           'source-arrow-shape': 'none',
-          'curve-style':        'bezier',
+          // PERF: haystack — the absolute cheapest curve style in Cytoscape.
+          // No per-edge control points, no per-edge compositing.
+          'curve-style':        'haystack',
           'transition-property': 'opacity',
           'transition-duration': '150ms'
         }
@@ -376,8 +442,8 @@ export async function createGraph() {
 
       // ── Zoom label classes ──────────────────────────────────────────────────
       // Applied dynamically by the zoom handler.
-      // .label-all    → all nodes visible (zoom > ZOOM_LABEL_HUBS_ONLY)
-      // .label-hub    → hub nodes only (ZOOM_LABEL_NONE < zoom ≤ ZOOM_LABEL_HUBS_ONLY)
+      // .label-all    → all nodes visible (zoom > lodLabelHubsOnly)
+      // .label-hub    → hub nodes only (lodLabelNone < zoom ≤ lodLabelHubsOnly)
       // .label-visible → hover / selected (always shown, any zoom)
 
       {
@@ -393,8 +459,25 @@ export async function createGraph() {
         style: { 'text-opacity': 1 }
       },
 
+      // ── LOD dynamic-visibility classes ─────────────────────────────────────
+      // .edges-hidden   → applied to cy.edges() when zoom < lodEdgeThreshold
+      // .labels-hidden  → applied to cy.nodes() when zoom < lodLabelNone
+      // These classes are toggled by recomputeLodAndApply() via the LOD system.
+      // Note: edge culling is handled by the existing applyEdgeCulling() system
+      // (style('display', 'none') / 'element') for fine-grained viewport culling.
+      // The .edges-hidden class provides a coarse bulk-hide when fully zoomed out.
+      {
+        selector: '.edges-hidden',
+        style: { display: 'none' }
+      },
+      {
+        selector: '.labels-hidden',
+        style: { 'text-opacity': 0 }
+      },
+
       // ── Interaction classes ─────────────────────────────────────────────────
-      // Preserved exactly — hover, search.js, and selection depend on these.
+      // PERF: all interaction states defined in stylesheet (not computed in JS).
+      // Cytoscape caches class-based styles; JS-computed styles bypass the cache.
 
       {
         selector: '.hover',
@@ -402,23 +485,46 @@ export async function createGraph() {
       },
       {
         selector: '.neighbor',
+        // PERF: opacity: 1 overrides the dimmed state — no compositing needed.
         style: { opacity: 1 }
       },
       {
+        // PERF: dimmed class replaces per-element opacity writes.
+        // Defined in stylesheet so Cytoscape style engine caches it.
+        // DO NOT use overlay-opacity here — it forces an extra compositing pass.
+        selector: '.dimmed',
+        style: {
+          opacity: 0.08,
+          'transition-property': 'opacity',
+          'transition-duration': '120ms',
+          'transition-timing-function': 'ease'
+        }
+      },
+      {
+        // Legacy alias kept for any code that still references .faded.
         selector: '.faded',
         style: {
           opacity: 0.08,
           'transition-property': 'opacity',
-          'transition-duration': '150ms'
+          'transition-duration': '120ms'
         }
       }
     ]
   })
 
-  // ── Run fcose layout ONCE (GUARDA 1) ─────────────────────────────────────────
-  // Rings start at their cluster centroid; tag-link springs keep them there.
-  // No fixedNodeConstraint — rings are free to settle at the natural center.
-  await runLayoutOnce(cy)
+  // ── Run d3-force init layout ONCE ─────────────────────────────────────────────
+  // Ring nodes are frozen at their Archimedean spiral positions (fx/fy in d3).
+  // Concept nodes are attracted toward their clusterTag ring and repel each other.
+
+  // Build the clusterRingPos map from seeded ring positions
+  const clusterRingPos = new Map()
+  ringNodes.forEach(rn => {
+    clusterRingPos.set(rn.id, ringPositions[rn.id] || { x: 0, y: 0 })
+  })
+
+  // Run init layout (ring-only attraction + collision), then snapshot for drag
+  await runInitLayout(cy, clusterRingPos)
+  initPhysics(cy)
 
   // ── Initial camera: fit to innermost INITIAL_VIEW_FRACTION of concept nodes ───
   // Concept nodes only — ring nodes are layout scaffolding, not the focal content.
@@ -503,13 +609,81 @@ export async function createGraph() {
     })
   })
 
+  // ── Dynamic LOD (Level-of-Detail) thresholds ─────────────────────────────────
+  // Instead of static zoom thresholds for labels and edges, the thresholds are
+  // computed dynamically based on how many concept nodes are currently visible
+  // in the viewport. More nodes visible → higher zoom required before labels/edges
+  // appear, reducing visual noise and improving render performance.
+  //
+  // Density bands → zoom threshold:
+  //   ≤  50 visible nodes  → 0.25
+  //   51–150               → 0.45
+  //  151–400               → 0.65
+  //  > 400                 → 0.90
+
+  // Current dynamic thresholds (start with static fallbacks from physics-config).
+  let lodEdgeThreshold  = ZOOM_LABEL_NONE        // zoom below which edges hide
+  let lodLabelNone      = ZOOM_LABEL_NONE        // zoom below which no labels shown
+  let lodLabelHubsOnly  = ZOOM_LABEL_HUBS_ONLY   // zoom below which only hubs shown
+
+  // Timer ID for the 100 ms debounce on the LOD recalculation (separate from rAF).
+  let lodDebounceTimer = null
+
+  /**
+   * Counts concept nodes (non-tag) whose bounding box centre lies within the
+   * current viewport extent. Uses cy.extent() (one call) + node.position()
+   * (cheap — no layout calculation) for O(n) efficiency.
+   * Returns the count of visible concept nodes.
+   */
+  function countVisibleConceptNodes() {
+    const ext = cy.extent()
+    let count = 0
+    cy.nodes().forEach(n => {
+      if (n.data('type') === 'tag') return      // skip ring nodes
+      if (n.style('display') === 'none') return // skip filter-hidden nodes
+      const p = n.position()
+      if (p.x >= ext.x1 && p.x <= ext.x2 && p.y >= ext.y1 && p.y <= ext.y2) {
+        count++
+      }
+    })
+    return count
+  }
+
+  /**
+   * Recomputes LOD thresholds based on the current viewport density and applies
+   * zoom-label + edge-culling immediately.
+   * Called via a 100 ms debounce from onViewportChange so it does not run on
+   * every animation frame — only after the viewport settles briefly.
+   */
+  function recomputeLodAndApply() {
+    const visible = countVisibleConceptNodes()
+
+    let threshold
+    if (visible <= 50)       threshold = 0.25
+    else if (visible <= 150) threshold = 0.45
+    else if (visible <= 400) threshold = 0.65
+    else                     threshold = 0.90
+
+    lodEdgeThreshold = threshold
+    lodLabelNone     = threshold
+    // Hub-only tier: between the base threshold and 1.5× it (keeps relative spacing).
+    lodLabelHubsOnly = threshold * 2.4
+
+    // Force re-evaluation by resetting the tier cache (thresholds changed).
+    lastZoomTier = null
+
+    applyZoomLabels()
+    applyEdgeCulling()
+  }
+
   // ── Smart zoom label system ───────────────────────────────────────────────────
   // Labels are hidden by default (text-opacity: 0 in base style).
   // Three zoom tiers control which nodes show their label:
-  //   < ZOOM_LABEL_NONE      → no labels
-  //   ZOOM_LABEL_NONE–ZOOM_LABEL_HUBS_ONLY → hub nodes only (.label-hub)
-  //   > ZOOM_LABEL_HUBS_ONLY → all nodes (.label-all)
+  //   < lodLabelNone      → no labels
+  //   lodLabelNone–lodLabelHubsOnly → hub nodes only (.label-hub)
+  //   > lodLabelHubsOnly  → all nodes (.label-all)
   // Hover always adds .label-visible to the hovered node regardless of zoom tier.
+  // Thresholds are dynamic — recomputed via recomputeLodAndApply() on viewport change.
 
   let zoomRafId = null
   let lastZoomTier = null   // 'none' | 'hubs' | 'all'
@@ -550,14 +724,15 @@ export async function createGraph() {
 
   /**
    * Updates edge display based on viewport culling rules:
-   * - zoom < ZOOM_LABEL_NONE → hide ALL edges (no arrows at cluster zoom)
-   * - otherwise → hide edges where BOTH endpoints are outside the viewport
+   * - zoom < lodEdgeThreshold → hide ALL edges (no arrows at cluster zoom)
+   * - otherwise → hide edges where either endpoint is outside the viewport
    * Filter-hidden edges (not in filterVisibleEdges) are never touched here.
    * Edges in hoverForcedEdgeIds bypass culling and are always shown.
+   * lodEdgeThreshold is set dynamically by recomputeLodAndApply().
    */
   function applyEdgeCulling() {
     const zoom = cy.zoom()
-    const hideAll = zoom < ZOOM_LABEL_NONE
+    const hideAll = zoom < lodEdgeThreshold
 
     const ext = hideAll ? null : cy.extent()
     const newCulled = new Set()
@@ -606,9 +781,9 @@ export async function createGraph() {
   function applyZoomLabels() {
     const zoom = cy.zoom()
     const tier =
-      zoom < ZOOM_LABEL_NONE       ? 'none' :
-      zoom < ZOOM_LABEL_HUBS_ONLY  ? 'hubs' :
-                                     'all'
+      zoom < lodLabelNone      ? 'none' :
+      zoom < lodLabelHubsOnly  ? 'hubs' :
+                                 'all'
 
     if (tier === lastZoomTier) return   // no change — skip batch
     lastZoomTier = tier
@@ -630,30 +805,46 @@ export async function createGraph() {
 
   // Combined handler: labels + edge culling together in one rAF gate.
   // Registered on both 'zoom' and 'pan' so culling tracks pan movement too.
+  //
+  // Two-tier debouncing:
+  //   1. rAF gate (immediate, per-frame): applies current thresholds for smooth
+  //      visual feedback on every rendered frame while zooming/panning.
+  //   2. 100 ms setTimeout (lodDebounceTimer): triggers the more expensive
+  //      visible-node count + threshold recalculation after the viewport settles.
+  //      This keeps the O(n) node scan off the animation hot path.
   function onViewportChange() {
+    // Tier 1: rAF gate — apply current LOD thresholds this frame.
     if (zoomRafId !== null) return
     zoomRafId = requestAnimationFrame(() => {
       zoomRafId = null
       applyZoomLabels()
       applyEdgeCulling()
     })
+
+    // Tier 2: debounced LOD recalculation — runs 100 ms after last viewport event.
+    if (lodDebounceTimer !== null) clearTimeout(lodDebounceTimer)
+    lodDebounceTimer = setTimeout(() => {
+      lodDebounceTimer = null
+      recomputeLodAndApply()
+    }, 100)
   }
 
   cy.on('zoom pan', onViewportChange)
 
   // ── Combined filter state ─────────────────────────────────────────────────────
-  const DEFAULT_TAG = 'number-theory'
   const activeTypes = new Set(ALL_TYPES)
-  const activeTags  = new Set([DEFAULT_TAG])
+  const activeTags  = new Set(allTags)
 
   document.getElementById('tag-filters').innerHTML = allTags.map(t => `
-    <button class="filter-btn${t === DEFAULT_TAG ? ' active' : ''}" data-tag="${t}"
+    <button class="filter-btn active" data-tag="${t}"
       style="--type-color:${TAG_COLORS[t]}">
       ${t}
     </button>`).join('')
 
   // Apply zoom labels, then filter (which calls applyEdgeCulling internally).
-  applyZoomLabels()
+  // recomputeLodAndApply() runs first to set dynamic thresholds from the initial
+  // viewport before any zoom/pan event fires, so the first render is correct.
+  recomputeLodAndApply()
   applyFilters()
 
   // ── Wire search ───────────────────────────────────────────────────────────────
@@ -699,10 +890,15 @@ export async function createGraph() {
       filterVisibleEdges.clear()
       culledEdgeIds.clear()   // culling state is now stale — reset it
       cy.edges().forEach(edge => {
+        // tag-link edges are hidden permanently; shown only on ring hover/click
+        // via hoverRevealedEdges in applyHighlight().
+        if (edge.data('kind') === 'tag-link') {
+          edge.style('display', 'none')
+          return
+        }
         const visible = nodeVisible(edge.source()) && nodeVisible(edge.target())
         if (visible) {
           filterVisibleEdges.add(edge.id())
-          // Viewport culling will set display below; start as element.
           edge.style('display', 'element')
         } else {
           edge.style('display', 'none')
@@ -817,10 +1013,18 @@ export async function createGraph() {
       }
     })
 
+    // PERF: use class-toggle pattern for dim/highlight.
+    // Instead of iterating all elements and writing individual opacity values,
+    // we add .dimmed to the "not lit" collection and .hover/.neighbor to the lit set.
+    // Cytoscape's style engine handles this via cached class rules — O(1) per element
+    // in the style pass instead of O(n) JS writes.
+    // The .dimmed class is defined in the stylesheet above — no JS style computation.
     cy.batch(() => {
       if (hoverRevealedNodes.length > 0) hoverRevealedNodes.style('display', 'element')
       if (hoverRevealedEdges.length > 0) hoverRevealedEdges.style('display', 'element')
-      cy.elements().difference(lit).addClass('faded')
+      // Add dimmed to everything NOT in the lit set (replaces old .faded approach,
+      // but .faded alias in stylesheet still catches legacy references).
+      cy.elements().difference(lit).addClass('dimmed')
       node.addClass('hover')
       related.nodes().addClass('neighbor')
       related.edges().addClass('neighbor')
@@ -830,7 +1034,9 @@ export async function createGraph() {
 
   function clearHighlight() {
     cy.batch(() => {
-      cy.elements().removeClass('hover neighbor faded label-visible')
+      // Remove all interaction classes in one batch call.
+      // removeClass on a collection is a single style invalidation, not per-element.
+      cy.elements().removeClass('hover neighbor faded dimmed label-visible')
       if (hoverRevealedNodes.length > 0) hoverRevealedNodes.style('display', 'none')
       if (hoverRevealedEdges.length > 0) hoverRevealedEdges.style('display', 'none')
     })
@@ -842,25 +1048,50 @@ export async function createGraph() {
 
   // ── Hover interactions ────────────────────────────────────────────────────────
 
-  cy.on('mouseover', 'node', e => {
-    if (pinnedNode) return
-    const node = e.target
-    applyHighlight(node)
+  // PERF: debounce hover entry by 30 ms.
+  // Fast cursor sweeps over many nodes without pausing should not trigger
+  // the full highlight/dim cycle. The debounce absorbs these micro-events.
+  // mouseout fires immediately (no debounce) so the graph clears without delay.
+  let hoverDebounceTimer = null
+  let pendingHoverNode   = null
 
-    const pos = e.renderedPosition
-    if (node.data('type') === 'tag') {
-      const count = node.data('memberCount') || 0
-      tooltip.innerHTML = `<span class="tt-row"><b>Tag:</b> ${node.data('label')}</span><span class="tt-row"><b>Members:</b> ${count}</span>`
-    } else {
-      const tags = (node.data('tags') || []).join(', ') || '—'
-      tooltip.innerHTML = `<span class="tt-row"><b>Type:</b> ${node.data('type')}</span><span class="tt-row"><b>Tags:</b> ${tags}</span>`
+  function scheduleHover(node, e) {
+    // Cancel any pending hover for a different node.
+    if (hoverDebounceTimer !== null) {
+      clearTimeout(hoverDebounceTimer)
+      hoverDebounceTimer = null
     }
-    tooltip.style.left    = `${pos.x + 15}px`
-    tooltip.style.top     = `${pos.y + 15}px`
-    tooltip.style.display = 'flex'
+    pendingHoverNode = node
+    const pos = e.renderedPosition
+
+    hoverDebounceTimer = setTimeout(() => {
+      hoverDebounceTimer = null
+      if (pinnedNode) return
+      applyHighlight(pendingHoverNode)
+
+      if (pendingHoverNode.data('type') === 'tag') {
+        const count = pendingHoverNode.data('memberCount') || 0
+        tooltip.innerHTML = `<span class="tt-row"><b>Tag:</b> ${pendingHoverNode.data('label')}</span><span class="tt-row"><b>Members:</b> ${count}</span>`
+      } else {
+        const tags = (pendingHoverNode.data('tags') || []).join(', ') || '—'
+        tooltip.innerHTML = `<span class="tt-row"><b>Type:</b> ${pendingHoverNode.data('type')}</span><span class="tt-row"><b>Tags:</b> ${tags}</span>`
+      }
+      tooltip.style.left    = `${pos.x + 15}px`
+      tooltip.style.top     = `${pos.y + 15}px`
+      tooltip.style.display = 'flex'
+    }, 30)
+  }
+
+  cy.on('mouseover', 'node', e => {
+    scheduleHover(e.target, e)
   })
 
   cy.on('mouseout', 'node', () => {
+    // Cancel pending hover immediately on mouse-out (no delay needed for clear).
+    if (hoverDebounceTimer !== null) {
+      clearTimeout(hoverDebounceTimer)
+      hoverDebounceTimer = null
+    }
     if (pinnedNode) return
     tooltip.style.display = 'none'
     clearHighlight()
@@ -919,22 +1150,33 @@ export async function createGraph() {
   // The dragged node itself is moved natively by Cytoscape (cursor tracking);
   // we pin it in d3 via fx/fy so d3 never fights Cytoscape for its position.
   // On release we free the pin — no forced position assignment, no jitter.
+  //
+  // Ring nodes use an isolated simulation (onRingDragStart): only cluster members
+  // react, no dep-edge forces propagate to the rest of the graph.
+  // Concept nodes use the normal 2-hop simulation (onDragStart).
 
   cy.on('grabon', 'node', e => {
     const node = e.target
     const pos  = node.position()
-    onDragStart(node.id(), { x: pos.x, y: pos.y })
+
+    if (node.data('type') === 'tag') {
+      // Isolated ring-drag: only cluster members react, no dep-edge forces.
+      const label   = node.data('label')
+      const members = clusterMembers[label] || []
+      onRingDragStart(node.id(), { x: pos.x, y: pos.y }, members)
+    } else {
+      // Normal concept-node drag: existing 2-hop physics.
+      onDragStart(node.id(), { x: pos.x, y: pos.y })
+    }
   })
 
   cy.on('drag', 'node', e => {
     const node = e.target
     const pos  = node.position()
-    // Mirror cursor into d3 pin only — do NOT write position back to Cytoscape.
     onDragMove(node.id(), { x: pos.x, y: pos.y })
   })
 
   cy.on('graboff', 'node', e => {
-    // Free d3 pin — smooth handoff, zero position jump (GUARDA 2).
     onDragEnd(e.target.id())
   })
 }
