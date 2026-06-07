@@ -34,7 +34,8 @@ import {
   PHYSICS_STOP_DELAY_MS,
   INIT_RING_STRENGTH,
   INIT_RING_TARGET_DIST,
-  INIT_COLLISION_PAD
+  INIT_COLLISION_PAD,
+  DRAG_LIT_PULL_STRENGTH
 } from './physics-config.js'
 
 // ── module-level state ─────────────────────────────────────────────────────────
@@ -258,16 +259,15 @@ export function onRingDragStart(ringNodeId, position, memberIds) {
 
 /**
  * Called on Cytoscape `grabon` — a drag has started on `nodeId`.
- * (Re)creates the d3 simulation seeded from current Cytoscape positions,
- * pins the dragged node at its current position, and starts the rAF loop.
+ * Pins the dragged node at cursor; lit neighbors strongly attract toward it.
+ * All other nodes are frozen. No link springs or ring gravity — only direct
+ * pull + collision, so lit nodes cluster tightly around the dragged node.
  *
- * GUARDA 2: the dragged node is fixed (fx/fy) so d3 never moves it;
- * Cytoscape mirrors the cursor directly via `grabmove`.
- *
- * @param {string} nodeId
- * @param {{ x: number, y: number }} position  current Cytoscape position
+ * @param {string}   nodeId    id of the dragged node
+ * @param {{ x, y }} position  cursor position
+ * @param {string[]} litIds    ids of nodes to attract (from current hoverMode)
  */
-export function onDragStart(nodeId, position) {
+export function onDragStart(nodeId, position, litIds = []) {
   dragEndTime = null
 
   // Refresh all positions from Cytoscape.
@@ -285,22 +285,16 @@ export function onDragStart(nodeId, position) {
 
   dragging = nodeId
 
-  // Fix every node that is NOT a direct neighbor of the dragged node.
-  // Only the immediate neighborhood participates in the simulation;
-  // the rest of the graph stays frozen — no global cascade.
-  if (cyRef) {
-    const cyNode = cyRef.getElementById(nodeId)
-    const freeIds = new Set()
-    freeIds.add(nodeId)
-    cyNode.connectedEdges().connectedNodes().forEach(nb => freeIds.add(nb.id()))
+  const litIdSet = new Set(litIds)
+  const freeIds  = new Set([nodeId, ...litIds])
 
-    Object.values(nodeMap).forEach(n => {
-      if (!freeIds.has(n.id)) {
-        n.fx = n.x
-        n.fy = n.y
-      }
-    })
-  }
+  // Freeze every node outside the lit set — no global cascade.
+  Object.values(nodeMap).forEach(n => {
+    if (!freeIds.has(n.id)) {
+      n.fx = n.x
+      n.fy = n.y
+    }
+  })
 
   // Pin the dragged node at cursor (GUARDA 2).
   const dn = nodeMap[nodeId]
@@ -314,52 +308,40 @@ export function onDragStart(nodeId, position) {
   if (simulation) { simulation.stop(); simulation = null }
   if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null }
 
-  const nodes = Object.values(nodeMap)
+  // Simulation runs only on dragged node + lit nodes for efficiency.
+  const simNodes = Array.from(freeIds).map(id => nodeMap[id]).filter(Boolean)
   const nodeById = {}
-  nodes.forEach(n => { nodeById[n.id] = n })
+  simNodes.forEach(n => { nodeById[n.id] = n })
 
-  const resolvedLinks = (initPhysics._links || [])
-    .filter(l => nodeById[l.source] && nodeById[l.target])
-    .map(l => ({ source: nodeById[l.source], target: nodeById[l.target] }))
+  // Target-distance spring: nodes settle at INIT_RING_TARGET_DIST from the dragged node,
+  // with the same spacing as ring clusters. DRAG_LIT_PULL_STRENGTH controls speed.
+  function forceLitPull(alpha) {
+    const anchor = nodeById[nodeId]
+    if (!anchor) return
+    for (const id of litIdSet) {
+      const m = nodeById[id]
+      if (!m) continue
+      const dx   = anchor.x - m.x
+      const dy   = anchor.y - m.y
+      const dist = Math.hypot(dx, dy) || 0.001
+      const f    = DRAG_LIT_PULL_STRENGTH * (dist - INIT_RING_TARGET_DIST) / dist * alpha
+      m.vx += dx * f
+      m.vy += dy * f
+    }
+  }
 
-  simulation = forceSimulation(nodes)
-    .alpha(SIM_ALPHA_START)
-    .alphaDecay(SIM_ALPHA_DECAY)
-    .alphaMin(SIM_ALPHA_MIN)
-    .velocityDecay(VELOCITY_DECAY)
-    .force('link', forceLink(resolvedLinks)
-      .distance(l => l.kind === 'tag-link' ? TAG_LINK_SIM_DISTANCE : LINK_DISTANCE)
-      .strength(l => l.kind === 'tag-link' ? TAG_LINK_SIM_STRENGTH  : LINK_STRENGTH)
-      .iterations(LINK_ITERATIONS)
-    )
-    .force('ringGravity', alpha => {
-      // Quadratic attraction: F ∝ dist² — grows faster than the linear link spring.
-      // At dist = d0 the extra pull is small; at dist >> d0 it dominates,
-      // preventing concept nodes from escaping their ring under distant repulsions.
-      for (const { ringId, conceptId } of (initPhysics._ringPairs || [])) {
-        const ring    = nodeById[ringId]
-        const concept = nodeById[conceptId]
-        if (!ring || !concept) continue
-        if (concept.fx != null && concept.fy != null) continue  // skip pinned nodes
-        const dx   = ring.x - concept.x
-        const dy   = ring.y - concept.y
-        const dist = Math.hypot(dx, dy) || 1
-        // f scales with dist/d0: at d0 → f = k; at 2·d0 → f = 2k (giving F ∝ dist²).
-        const f = RING_GRAVITY_STRENGTH * (dist / TAG_LINK_SIM_DISTANCE) * alpha
-        concept.vx += dx * f
-        concept.vy += dy * f
-      }
-    })
+  simulation = forceSimulation(simNodes)
+    .alpha(DRAG_ALPHA_TARGET)
+    .alphaTarget(DRAG_ALPHA_TARGET)
+    .alphaDecay(0)
+    .velocityDecay(0.4)
+    .force('litPull', forceLitPull)
     .force('collide', forceCollide()
-      .radius(n => (n.r || 7) + COLLISION_RADIUS_PAD)
+      .radius(n => (n.r || 7) + INIT_COLLISION_PAD)
       .strength(COLLISION_STRENGTH)
       .iterations(COLLISION_ITERATIONS)
     )
-    // No forceManyBody: charge force is global and causes cascades across all nodes.
-    // No forceCenter: unnecessary pull that keeps energy in the system.
     .stop()
-
-  simulation.alphaTarget(DRAG_ALPHA_TARGET)
 
   running = true
   rafId = requestAnimationFrame(tick)

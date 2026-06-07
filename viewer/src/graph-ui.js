@@ -19,7 +19,6 @@ import {
   ZOOM_WHEEL_SENSITIVITY,
   ZOOM_EASE_FACTOR,
   ZOOM_REST_EPSILON,
-  SPIRAL_TURNS,
   SPIRAL_SPACING,
   INIT_SCATTER,
   INIT_RING_STRENGTH,
@@ -29,6 +28,50 @@ import {
   INIT_MAX_TICKS,
   INITIAL_VIEW_FRACTION
 } from './physics-config.js'
+
+// ── TAG_PRIORITY — mirrors build_graph.py TAG_PRIORITY (lower number = higher priority) ──
+const TAG_PRIORITY = {
+  'logic':                   1,
+  'set-theory':              2,
+  'foundations':             3,
+  'order-theory':            4,
+  'abstract-algebra':        5,
+  'algebra':                 6,
+  'linear-algebra':          7,
+  'number-theory':           8,
+  'combinatorics':           9,
+  'real-analysis':          10,
+  'calculus':               11,
+  'topology':               12,
+  'geometry':               13,
+  'analysis':               14,
+  'measure-theory':         15,
+  'graph-theory':           16,
+  'complex-analysis':       17,
+  'differential-equations': 18,
+  'differential-geometry':  19,
+  'functional-analysis':    20,
+  'probability':            21,
+  'algorithms':             22,
+}
+
+/**
+ * Returns the highest-priority tag (lowest TAG_PRIORITY value) from `nodeTags`
+ * that is also present in `tagSet`. Returns null if no intersection.
+ */
+function selectClusterTag(nodeTags, tagSet) {
+  let best = null
+  let bestPriority = Infinity
+  for (const t of nodeTags) {
+    if (!tagSet.has(t)) continue
+    const p = TAG_PRIORITY[t] ?? 999
+    if (p < bestPriority) {
+      bestPriority = p
+      best = t
+    }
+  }
+  return best
+}
 
 /**
  * Init-only layout: pure ring-attraction + collision.
@@ -102,6 +145,37 @@ function runInitLayout(cy, clusterRingPos) {
     resolve()
   })
 }
+
+/**
+ * Place N points on an Archimedean spiral r(θ) = startRadius + b·θ
+ * with equal chord spacing `spacing` between consecutive points.
+ * Uses arc-length parametrisation: dθᵢ = spacing / sqrt(rᵢ² + b²),
+ * which keeps the Euclidean distance between adjacent nodes constant
+ * regardless of how far out on the spiral they sit.
+ */
+function spiralPositions(N, startRadius, spacing) {
+  const b = spacing / (2 * Math.PI)
+  const pts = []
+  let theta = 0
+  for (let i = 0; i < N; i++) {
+    const r     = startRadius + b * theta
+    const angle = -Math.PI / 2 + theta
+    pts.push({ x: Math.cos(angle) * r, y: Math.sin(angle) * r })
+    if (i < N - 1) theta += spacing / Math.sqrt(r * r + b * b)
+  }
+  return pts
+}
+
+// ── Module-level reference to the initial clusterRingPos map ─────────────────
+// Saved once at startup so restoreGlobalLayout() can re-run the init layout
+// without re-computing ring positions from scratch.
+let savedClusterRingPos = null
+
+// ── Snapshot of every node's position after the initial layout ────────────────
+// Saved once so restoreGlobalLayout() can teleport directly to the original
+// state without re-running any simulation. Completely independent of anything
+// that applyCompactLayout or applyRegrouping may have done to node positions.
+let savedInitialNodePos = null
 
 // ── main export ────────────────────────────────────────────────────────────────
 export async function createGraph() {
@@ -241,15 +315,10 @@ export async function createGraph() {
     const sortedRings = ringNodes.slice().sort(
       (a, b) => (clusterSize[b.label] || 0) - (clusterSize[a.label] || 0)
     )
-    // b: radial growth per radian — one full turn (2π rad) increases r by SPIRAL_SPACING.
-    const bSpiral = SPIRAL_SPACING / (2 * Math.PI)
-    // Spread all rings over SPIRAL_TURNS full rotations.
-    const dTheta  = N > 1 ? (SPIRAL_TURNS * 2 * Math.PI) / (N - 1) : 0
-    // First ring starts at r = SPIRAL_SPACING (one turn-distance from origin).
+    // Equal chord spacing: every pair of consecutive ring nodes is ~SPIRAL_SPACING apart.
+    const pts = spiralPositions(N, SPIRAL_SPACING, SPIRAL_SPACING)
     sortedRings.forEach((rn, i) => {
-      const theta = -Math.PI / 2 + i * dTheta          // start pointing up
-      const r     = SPIRAL_SPACING + bSpiral * i * dTheta
-      clusterRef[rn.id] = { x: Math.cos(theta) * r, y: Math.sin(theta) * r }
+      clusterRef[rn.id] = pts[i]
     })
   }
 
@@ -522,9 +591,20 @@ export async function createGraph() {
     clusterRingPos.set(rn.id, ringPositions[rn.id] || { x: 0, y: 0 })
   })
 
+  // Save reference so restoreGlobalLayout() can use it later
+  savedClusterRingPos = clusterRingPos
+
   // Run init layout (ring-only attraction + collision), then snapshot for drag
   await runInitLayout(cy, clusterRingPos)
   initPhysics(cy)
+
+  // Freeze the exact post-init positions so restoreGlobalLayout() can always
+  // return to this state without re-running any simulation.
+  savedInitialNodePos = new Map()
+  cy.nodes().forEach(n => {
+    const p = n.position()
+    savedInitialNodePos.set(n.id(), { x: p.x, y: p.y })
+  })
 
   // ── Initial camera: fit to innermost INITIAL_VIEW_FRACTION of concept nodes ───
   // Concept nodes only — ring nodes are layout scaffolding, not the focal content.
@@ -835,6 +915,16 @@ export async function createGraph() {
   const activeTypes = new Set(ALL_TYPES)
   const activeTags  = new Set(allTags)
 
+  // Whether applyFilters is being called for the very first time (init pass).
+  // The first call happens during setup before the user has interacted — we skip
+  // the regrouping animation then to avoid an awkward snap on load.
+  let filtersInitialized = false
+
+  // True when the user has used shift+click to accumulate multiple tags.
+  // False when a plain click set an exclusive single tag (or All was restored).
+  // Controls whether applyFilters routes to applyCompactLayout vs applyRegrouping.
+  let multiTagMode = false
+
   document.getElementById('tag-filters').innerHTML = allTags.map(t => `
     <button class="filter-btn active" data-tag="${t}"
       style="--type-color:${TAG_COLORS[t]}">
@@ -847,17 +937,18 @@ export async function createGraph() {
   recomputeLodAndApply()
   applyFilters()
 
+  // Mark initialization complete — subsequent applyFilters() calls will
+  // trigger applyRegrouping() / restoreGlobalLayout() as appropriate.
+  filtersInitialized = true
+
   // ── Wire search ───────────────────────────────────────────────────────────────
   initializeSearch(cy, graph.nodes, node => {
-    // Always tree-both for search: highlight full dependency tree, fit camera to it.
     pinnedNode = node
     clearHighlight()
-    applyHighlight(node, 'tree-both')
+    applyHighlight(node, 'near-both')
 
-    const raw      = node.predecessors().union(node.successors())
-    const treeNodes = node.union(raw.not('[type="tag"]').not('[kind="tag-link"]')).nodes()
     cy.animate(
-      { fit: { eles: treeNodes, padding: 60 } },
+      { center: { eles: node }, zoom: 2.5 },
       { duration: 600, complete: () => { zoomTarget = cy.zoom() } }
     )
   })
@@ -879,6 +970,285 @@ export async function createGraph() {
     if (!activeTypes.has(type)) return false
     const tags = node.data('tags') || []
     return tags.length === 0 || tags.some(t => activeTags.has(t))
+  }
+
+  // ── Regrouping simulation ─────────────────────────────────────────────────────
+  // Runs after applyFilters() when a subset of tags is active.
+  // Each visible concept node is attracted to its selection clusterTag ring
+  // (highest-priority active tag on that node) instead of its global clusterTag.
+
+  function applyRegrouping() {
+    if (!savedClusterRingPos) return
+
+    // Collect visible ring nodes (those in activeTags)
+    const activeRingNodes = cy.nodes().filter(n =>
+      n.data('type') === 'tag' && n.style('display') !== 'none'
+    )
+
+    // Build d3 node list — only visible concept nodes + visible ring nodes (fixed)
+    const d3Nodes = []
+
+    cy.nodes().forEach(n => {
+      if (n.style('display') === 'none') return
+      const pos = n.position()
+      const isRing = n.data('type') === 'tag'
+
+      // For each concept node, compute its selCluster:
+      // highest-priority active tag among this node's own tags
+      let selCluster = null
+      if (!isRing) {
+        const nodeTags = n.data('tags') || []
+        selCluster = selectClusterTag(nodeTags, activeTags)
+        // Fallback: if no tag of this node is in activeTags, skip ring attraction
+        // (the node is visible because of a type filter or has no tags — leave it in place)
+      }
+
+      d3Nodes.push({
+        id:        n.id(),
+        x:         pos.x,
+        y:         pos.y,
+        r:         n.width() / 2,
+        selCluster,
+        isRing,
+        fx:        isRing ? pos.x : null,
+        fy:        isRing ? pos.y : null,
+      })
+    })
+
+    // Get the current rendered positions of active ring nodes for attraction targets.
+    // We use current cy positions (which reflect any prior drag/layout) rather than
+    // the savedClusterRingPos so the reagrouping respects the current ring layout.
+    const activeRingPos = new Map()
+    activeRingNodes.forEach(rn => {
+      const pos = rn.position()
+      activeRingPos.set(rn.id(), { x: pos.x, y: pos.y })
+    })
+
+    function forceSelRingAttraction(alpha) {
+      for (const n of d3Nodes) {
+        if (n.isRing) continue
+        if (n.fx != null) continue
+        if (!n.selCluster) continue
+        const ringId = `tag:${n.selCluster}`
+        const ringPos = activeRingPos.get(ringId)
+        if (!ringPos) continue
+        const dx   = ringPos.x - n.x
+        const dy   = ringPos.y - n.y
+        const dist = Math.hypot(dx, dy) || 1
+        const f    = INIT_RING_STRENGTH * (dist - INIT_RING_TARGET_DIST) / dist * alpha
+        n.vx = (n.vx || 0) + dx * f
+        n.vy = (n.vy || 0) + dy * f
+      }
+    }
+
+    const sim = forceSimulation(d3Nodes)
+      .alpha(0.8)
+      .alphaDecay(0.02)
+      .velocityDecay(0.4)
+      .force('ring', forceSelRingAttraction)
+      .force('collide', forceCollide()
+        .radius(n => (n.r || 7) + INIT_COLLISION_PAD)
+        .strength(1.0)
+        .iterations(3)
+      )
+      .stop()
+
+    let ticks = 0
+    while (sim.alpha() > INIT_ALPHA_THRESHOLD && ticks < INIT_MAX_TICKS) {
+      sim.tick()
+      ticks++
+    }
+
+    // Flush computed positions to Cytoscape
+    cy.batch(() => {
+      d3Nodes.forEach(n => {
+        if (n.isRing) return
+        cy.getElementById(n.id).position({ x: n.x, y: n.y })
+      })
+    })
+
+    // Update physics snapshot so drag knows the new positions
+    initPhysics(cy)
+
+    // Animate camera to fit visible elements
+    const visibleEles = cy.elements().filter(e => e.style('display') !== 'none')
+    cy.animate(
+      { fit: { eles: visibleEles, padding: 60 } },
+      { duration: 600, complete: () => { zoomTarget = cy.zoom() } }
+    )
+  }
+
+  function restoreGlobalLayout() {
+    if (!savedInitialNodePos) return
+
+    // Restore every node to its exact post-init position — no simulation needed.
+    // This is completely independent of any state left by applyCompactLayout or
+    // applyRegrouping, so it always produces the original layout.
+    // Edge visibility is managed by applyFilters, not here.
+    cy.batch(() => {
+      cy.nodes().forEach(n => {
+        const p = savedInitialNodePos.get(n.id())
+        if (p) n.position(p)
+      })
+    })
+
+    initPhysics(cy)
+
+    const visibleEles = cy.elements().filter(e => e.style('display') !== 'none')
+    cy.animate(
+      { fit: { eles: visibleEles, padding: 60 } },
+      { duration: 600, complete: () => { zoomTarget = cy.zoom() } }
+    )
+  }
+
+  // ── Compact layout for multi-tag shift+click mode ────────────────────────────
+  // Moves ring nodes of activeTags into a compact Archimedean spiral (same
+  // formula as the global layout but with a reduced SPIRAL_SPACING).
+  // Concept nodes are NOT reassigned — each one keeps its original clusterTag
+  // and is attracted to the ring's NEW compact position.
+  // Ring nodes outside activeTags remain where they are (they are filter-hidden).
+
+  function applyCompactLayout() {
+    if (!savedClusterRingPos) return
+
+    // Collect ring nodes whose tag is in activeTags (these will move).
+    const activeRingCy = cy.nodes().filter(n =>
+      n.data('type') === 'tag' && activeTags.has(n.data('label'))
+    )
+
+    if (activeRingCy.length === 0) return
+
+    // Sort active rings by descending cluster size (mirrors global spiral sort).
+    const activeRingSorted = activeRingCy.toArray().slice().sort((a, b) =>
+      (clusterSize[b.data('label')] || 0) - (clusterSize[a.data('label')] || 0)
+    )
+
+    // Archimedean spiral with fixed small dθ so consecutive rings are angularly
+    // close — this is what makes the spiral arm visually obvious for any N.
+    // dθ = 60°: each ring advances 60° and grows radially, tracing a clear arm.
+    const nActive         = activeRingSorted.length
+    const COMPACT_START_R = 320
+    const COMPACT_SPACING = 400
+
+    const compactPos = new Map()
+    const cPts = spiralPositions(nActive, COMPACT_START_R, COMPACT_SPACING)
+    activeRingSorted.forEach((rn, i) => {
+      compactPos.set(rn.id(), nActive === 1 ? { x: 0, y: 0 } : cPts[i])
+    })
+
+    // Move ring nodes to their compact positions immediately (they are fixed in d3).
+    cy.batch(() => {
+      activeRingSorted.forEach(rn => {
+        const pos = compactPos.get(rn.id())
+        if (pos) rn.position(pos)
+      })
+    })
+
+    // Build d3 node list — only visible concept nodes + active ring nodes (fixed).
+    // Concept nodes are seeded near their target compact ring (not current cy pos)
+    // so the sim converges fast regardless of where they currently are.
+    const d3Nodes = []
+
+    cy.nodes().forEach(n => {
+      if (n.style('display') === 'none') return
+      const isRing = n.data('type') === 'tag'
+      const pos    = n.position()   // for rings this is already the compact position
+
+      const nodeTags = n.data('tags') || []
+      let startX = pos.x, startY = pos.y
+      if (!isRing) {
+        const selTag  = selectClusterTag(nodeTags, activeTags)
+        const ringPos = selTag ? compactPos.get(`tag:${selTag}`) : null
+        if (ringPos) {
+          // Seed in a small disk around the compact ring (same pattern as init layout)
+          const size    = clusterSize[selTag] || 1
+          const scatter = INIT_SCATTER * Math.sqrt(size)
+          const angle   = Math.random() * 2 * Math.PI
+          const rr      = Math.sqrt(Math.random()) * scatter
+          startX = ringPos.x + Math.cos(angle) * rr
+          startY = ringPos.y + Math.sin(angle) * rr
+        }
+      }
+
+      d3Nodes.push({
+        id:         n.id(),
+        x:          startX,
+        y:          startY,
+        r:          n.width() / 2,
+        clusterTag: n.data('clusterTag'),
+        tags:       nodeTags,
+        isRing,
+        fx:         isRing ? pos.x : null,
+        fy:         isRing ? pos.y : null,
+      })
+    })
+
+    // Build attraction-target map: for active rings use the new compact positions;
+    // for any non-active visible ring use its current cy position (defensive).
+    const attractionPos = new Map()
+    cy.nodes().filter(n => n.data('type') === 'tag').forEach(rn => {
+      if (rn.style('display') === 'none') return
+      const compact = compactPos.get(rn.id())
+      if (compact) {
+        attractionPos.set(rn.id(), compact)
+      } else {
+        const pos = rn.position()
+        attractionPos.set(rn.id(), { x: pos.x, y: pos.y })
+      }
+    })
+
+    function forceCompactRingAttraction(alpha) {
+      for (const n of d3Nodes) {
+        if (n.isRing) continue
+        if (n.fx != null) continue
+        // Use highest-priority selected tag, not the global clusterTag.
+        const tag = selectClusterTag(n.tags, activeTags)
+        if (!tag) continue
+        const ringId  = `tag:${tag}`
+        const ringPos = attractionPos.get(ringId)
+        if (!ringPos) continue
+        const dx   = ringPos.x - n.x
+        const dy   = ringPos.y - n.y
+        const dist = Math.hypot(dx, dy) || 1
+        const f    = INIT_RING_STRENGTH * (dist - INIT_RING_TARGET_DIST) / dist * alpha
+        n.vx = (n.vx || 0) + dx * f
+        n.vy = (n.vy || 0) + dy * f
+      }
+    }
+
+    const sim = forceSimulation(d3Nodes)
+      .alpha(0.8)
+      .alphaDecay(0.02)
+      .velocityDecay(0.4)
+      .force('ring', forceCompactRingAttraction)
+      .force('collide', forceCollide()
+        .radius(n => (n.r || 7) + INIT_COLLISION_PAD)
+        .strength(1.0)
+        .iterations(3)
+      )
+      .stop()
+
+    let ticks = 0
+    while (sim.alpha() > INIT_ALPHA_THRESHOLD && ticks < INIT_MAX_TICKS) {
+      sim.tick()
+      ticks++
+    }
+
+    // Flush positions to Cytoscape
+    cy.batch(() => {
+      d3Nodes.forEach(n => {
+        if (n.isRing) return
+        cy.getElementById(n.id).position({ x: n.x, y: n.y })
+      })
+    })
+
+    initPhysics(cy)
+
+    const visibleEles = cy.elements().filter(e => e.style('display') !== 'none')
+    cy.animate(
+      { fit: { eles: visibleEles, padding: 60 } },
+      { duration: 600, complete: () => { zoomTarget = cy.zoom() } }
+    )
   }
 
   function applyFilters() {
@@ -907,6 +1277,23 @@ export async function createGraph() {
     })
     // Re-apply viewport culling now that filter state is rebuilt.
     applyEdgeCulling()
+
+    // Trigger regrouping only after the initial layout is done (filtersInitialized
+    // is set to true at the end of createGraph, after runInitLayout has resolved).
+    if (!filtersInitialized) return
+
+    if (activeTags.size >= allTags.length) {
+      // All tags active → full global layout.
+      restoreGlobalLayout()
+    } else if (multiTagMode && activeTags.size >= 2) {
+      // Shift+click with 2+ tags: bring their ring nodes together in a compact
+      // spiral. Concept nodes keep their original clusterTag assignment.
+      applyCompactLayout()
+    } else {
+      // Single exclusive tag (plain click): regroup concept nodes to their
+      // highest-priority active ring (original behavior).
+      applyRegrouping()
+    }
   }
 
   document.getElementById('filters').addEventListener('click', e => {
@@ -924,11 +1311,16 @@ export async function createGraph() {
     const tag = btn.dataset.tag
 
     if (e.shiftKey) {
-      // Shift+click: toggle this tag without affecting others
+      // Shift+click: accumulate tags — enter multi-tag mode.
+      // Ring nodes for all selected tags converge in a compact spiral;
+      // concept nodes keep their original clusterTag assignment.
+      multiTagMode = true
       if (activeTags.has(tag)) { activeTags.delete(tag); btn.classList.remove('active') }
       else                      { activeTags.add(tag);    btn.classList.add('active')    }
     } else {
-      // Plain click: exclusive selection — deselect all, select only this one
+      // Plain click: exclusive single-tag mode — regroups concept nodes to
+      // their highest-priority active ring (original behavior).
+      multiTagMode = false
       activeTags.clear()
       activeTags.add(tag)
       document.querySelectorAll('#tag-filters .filter-btn').forEach(b => {
@@ -951,6 +1343,7 @@ export async function createGraph() {
         b.classList.toggle('active', selectAll)
       })
     } else {
+      if (selectAll) multiTagMode = false
       allTags.forEach(t => selectAll ? activeTags.add(t) : activeTags.delete(t))
       document.querySelectorAll('#tag-filters .filter-btn').forEach(b => {
         b.classList.toggle('active', selectAll)
@@ -1165,8 +1558,17 @@ export async function createGraph() {
       const members = clusterMembers[label] || []
       onRingDragStart(node.id(), { x: pos.x, y: pos.y }, members)
     } else {
-      // Normal concept-node drag: existing 2-hop physics.
-      onDragStart(node.id(), { x: pos.x, y: pos.y })
+      // Concept-node drag: lit neighbors (per current hoverMode) attract strongly.
+      const raw =
+        hoverMode === 'tree-both'         ? node.predecessors().union(node.successors()) :
+        hoverMode === 'tree-dependents'   ? node.successors()                            :
+        hoverMode === 'tree-dependencies' ? node.predecessors()                          :
+        hoverMode === 'near-both'         ? node.incomers().union(node.outgoers())       :
+        hoverMode === 'near-dependents'   ? node.outgoers()                              :
+                                            node.incomers()
+      const litIds = raw.not('[type="tag"]').not('[kind="tag-link"]')
+        .nodes().map(n => n.id())
+      onDragStart(node.id(), { x: pos.x, y: pos.y }, litIds)
     }
   })
 

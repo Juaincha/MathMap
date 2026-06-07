@@ -34,7 +34,6 @@ export const NODE_SIZE_MAX          = 30
 //   Reduce to compress the spiral; increase to spread it out.
 // SPIRAL_TURNS: how many full rotations the spiral spans across all ring nodes.
 export const SPIRAL_SPACING         = 500
-export const SPIRAL_TURNS           = 2.5
 
 // ── SEED_SCATTER — unused after init-sim refactor (replaced by INIT_SCATTER) ──
 // export const SEED_SCATTER           = 25
@@ -89,6 +88,10 @@ export const DRAG_PULL_MIN_DIST     = 10
 // Strength of ring→member attraction during isolated ring-drag simulation.
 // Separate from DRAG_PULL_STRENGTH (rAF-shift) — this is a d3-force strength.
 export const RING_DRAG_STRENGTH     = 0.5
+
+// Strength of lit-node attraction toward the dragged concept node.
+// Higher = nodes follow more aggressively. Collision provides natural spacing.
+export const DRAG_LIT_PULL_STRENGTH = 2.0
 
 // ── Smart zoom label thresholds ───────────────────────────────────────────────
 // Zoom levels that control label visibility.
