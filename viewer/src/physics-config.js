@@ -82,13 +82,13 @@ export const PHYSICS_STOP_DELAY_MS  = 1500
 // toward the ring's current position each rAF frame.
 // DRAG_PULL_STRENGTH: fraction of the distance-to-ring moved per frame.
 //   0.12 ≈ responsive without overshooting; raise for snappier pull.
-export const DRAG_PULL_STRENGTH     = 0.30
+export const DRAG_PULL_STRENGTH     = 0.15
 // DRAG_PULL_MIN_DIST: nodes already within this many graph-units of the ring
 //   are not moved (prevents micro-jitter when nearly touching).
-export const DRAG_PULL_MIN_DIST     = 5
+export const DRAG_PULL_MIN_DIST     = 10
 // Strength of ring→member attraction during isolated ring-drag simulation.
 // Separate from DRAG_PULL_STRENGTH (rAF-shift) — this is a d3-force strength.
-export const RING_DRAG_STRENGTH     = 1.5
+export const RING_DRAG_STRENGTH     = 0.5
 
 // ── Smart zoom label thresholds ───────────────────────────────────────────────
 // Zoom levels that control label visibility.

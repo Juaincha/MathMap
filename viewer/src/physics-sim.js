@@ -32,7 +32,9 @@ import {
   COLLISION_ITERATIONS,
   VELOCITY_DECAY,
   PHYSICS_STOP_DELAY_MS,
-  RING_DRAG_STRENGTH
+  INIT_RING_STRENGTH,
+  INIT_RING_TARGET_DIST,
+  INIT_COLLISION_PAD
 } from './physics-config.js'
 
 // ── module-level state ─────────────────────────────────────────────────────────
@@ -219,17 +221,21 @@ export function onRingDragStart(ringNodeId, position, memberIds) {
     if (n) { simNodes.push(n); simById[mid] = n }
   })
 
-  // Custom force: each member attracted toward the ring's current position.
+  // Target-distance spring identical to runInitLayout — same strength, same target.
+  // Nodes settle at INIT_RING_TARGET_DIST from the ring (pushed out by collision
+  // if the cluster is dense, just as in the startup layout).
   function forceRingPull(alpha) {
     const ring = simById[ringNodeId]
     if (!ring) return
     for (const mid of ringMemberIds) {
       const m = simById[mid]
       if (!m) continue
-      const dx = ring.x - m.x
-      const dy = ring.y - m.y
-      m.vx += dx * RING_DRAG_STRENGTH * alpha
-      m.vy += dy * RING_DRAG_STRENGTH * alpha
+      const dx   = ring.x - m.x
+      const dy   = ring.y - m.y
+      const dist = Math.hypot(dx, dy) || 0.001
+      const f    = INIT_RING_STRENGTH * (dist - INIT_RING_TARGET_DIST) / dist * alpha
+      m.vx += dx * f
+      m.vy += dy * f
     }
   }
 
@@ -237,10 +243,10 @@ export function onRingDragStart(ringNodeId, position, memberIds) {
     .alpha(DRAG_ALPHA_TARGET)
     .alphaTarget(DRAG_ALPHA_TARGET)   // stays warm while dragging
     .alphaDecay(0)
-    .velocityDecay(VELOCITY_DECAY)
+    .velocityDecay(0.4)               // matches init layout — lower damping lets nodes spread angularly
     .force('ringPull', forceRingPull)
     .force('collide',  forceCollide()
-      .radius(n => (n.r || 7) + COLLISION_RADIUS_PAD)
+      .radius(n => (n.r || 7) + INIT_COLLISION_PAD)   // same padding as init layout
       .strength(COLLISION_STRENGTH)
       .iterations(COLLISION_ITERATIONS)
     )
