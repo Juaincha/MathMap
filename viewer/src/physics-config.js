@@ -32,8 +32,10 @@ export const NODE_SIZE_MAX          = 30
 // SPIRAL_SPACING: radial gap between consecutive turns — also the primary size
 //   dial for the whole spiral (r_max ≈ SPIRAL_SPACING × (1 + SPIRAL_TURNS)).
 //   Reduce to compress the spiral; increase to spread it out.
-// SPIRAL_TURNS: how many full rotations the spiral spans across all ring nodes.
-export const SPIRAL_SPACING         = 500
+// SPIRAL_BASE_SCALE: chord spacing = SPIRAL_BASE_SCALE × √(maxClusterSize),
+//   so rings spread apart proportionally to the square root of the largest
+//   cluster shown. Calibrated so that at maxClusterSize ≈ 60, spacing ≈ 500.
+export const SPIRAL_BASE_SCALE      = 65
 
 // ── SEED_SCATTER — unused after init-sim refactor (replaced by INIT_SCATTER) ──
 // export const SEED_SCATTER           = 25

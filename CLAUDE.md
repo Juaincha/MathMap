@@ -36,27 +36,25 @@ Asume este directorio en scripts, comandos y rutas salvo indicación contraria.
 
 ## Modelo de datos (fuente de verdad)
 
-Cada concepto es un archivo Markdown en `content/`. Formato **exacto**:
+Cada concepto es un archivo Markdown en `content/`. Formato **exacto**
+(frontmatter compacto, sin líneas en blanco entre campos):
 
+```
 ---
 id: fundamental-theorem-of-arithmetic
-
 type: theorem
-
 tags:
   - number-theory
-
 wikipedia: https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic
-
 depends_on:
   - principle-of-mathematical-induction
 ---
 
-# Fundamental Theorem of Arithmetic
+# Fundamental theorem of arithmetic
 
 ## Dependencies
 
-[[Principle of Mathematical Induction]]
+[[Principle of mathematical induction]]
 ```
 
 ### Campos
@@ -68,12 +66,15 @@ depends_on:
 | `wikipedia` | URL válida del artículo en inglés |
 | `depends_on` | Lista de `id` de prerrequisitos reales |
 
-### Regla de consistencia (crítica)
+### Reglas de consistencia (críticas)
 - El **frontmatter** es la fuente de verdad estructurada.
 - El **cuerpo** (`[[enlaces]]`) es la representación visual auxiliar para
   Obsidian/Quartz e inspección humana.
 - Ambos deben coincidir: cada `id` en `depends_on` tiene su `[[enlace]]`
   correspondiente en el cuerpo, y viceversa.
+- **Nombre de archivo:** es el texto del encabezado `#` + ".md", verbatim
+  (ortografía correcta en sentence case). NUNCA es `<id>.md`.
+- **Frontmatter compacto:** sin líneas en blanco entre campos, como el corpus.
 
 ---
 

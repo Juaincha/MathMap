@@ -19,7 +19,7 @@ import {
   ZOOM_WHEEL_SENSITIVITY,
   ZOOM_EASE_FACTOR,
   ZOOM_REST_EPSILON,
-  SPIRAL_SPACING,
+  SPIRAL_BASE_SCALE,
   INIT_SCATTER,
   INIT_RING_STRENGTH,
   INIT_RING_TARGET_DIST,
@@ -246,6 +246,8 @@ export async function createGraph() {
 
     <div id="cy"></div>
 
+    <div id="node-counter"></div>
+
     <div id="tooltip"></div>
   `
 
@@ -310,13 +312,19 @@ export async function createGraph() {
   // Rings sorted by descending member count so larger clusters sit nearer the
   // centre, where screen density is highest and they can anchor more nodes.
   const clusterRef = {}
-  const N = ringNodes.length
+  // Only include rings that own at least one concept node (clusterSize > 0).
+  // Rings with 0 members are hidden by nodeVisible and need no spiral slot.
+  const nonEmptyRings = ringNodes.filter(rn => (clusterSize[rn.label] || 0) > 0)
+  const N = nonEmptyRings.length
   if (N > 0) {
-    const sortedRings = ringNodes.slice().sort(
+    const sortedRings = nonEmptyRings.slice().sort(
       (a, b) => (clusterSize[b.label] || 0) - (clusterSize[a.label] || 0)
     )
-    // Equal chord spacing: every pair of consecutive ring nodes is ~SPIRAL_SPACING apart.
-    const pts = spiralPositions(N, SPIRAL_SPACING, SPIRAL_SPACING)
+    // Chord spacing scales with √(maxClusterSize) so rings spread further apart
+    // when clusters are large, keeping concept clouds from overlapping.
+    const maxClusterSize = Math.max(...nonEmptyRings.map(rn => clusterSize[rn.label] || 1))
+    const spiralSpacing  = SPIRAL_BASE_SCALE * Math.sqrt(maxClusterSize)
+    const pts = spiralPositions(N, spiralSpacing, spiralSpacing)
     sortedRings.forEach((rn, i) => {
       clusterRef[rn.id] = pts[i]
     })
@@ -931,6 +939,29 @@ export async function createGraph() {
       ${t}
     </button>`).join('')
 
+  // ── Node counter — positioned at graph origin (spiral centre) ────────────────
+  const nodeCounter   = document.getElementById('node-counter')
+  const totalConcepts = regularNodes.length
+
+  function updateNodeCounter() {
+    const visible = cy.nodes().filter(
+      n => n.data('type') !== 'tag' && n.style('display') !== 'none'
+    ).length
+    nodeCounter.textContent = visible === totalConcepts
+      ? `${visible.toLocaleString()} nodes`
+      : `${visible.toLocaleString()} / ${totalConcepts.toLocaleString()} nodes`
+  }
+
+  function updateCounterPosition() {
+    const pan  = cy.pan()
+    const zoom = cy.zoom()
+    nodeCounter.style.left      = pan.x + 'px'
+    nodeCounter.style.top       = pan.y + 'px'
+    nodeCounter.style.transform = `translate(-50%, -50%) scale(${zoom})`
+  }
+
+  cy.on('pan zoom', updateCounterPosition)
+
   // Apply zoom labels, then filter (which calls applyEdgeCulling internally).
   // recomputeLodAndApply() runs first to set dynamic thresholds from the initial
   // viewport before any zoom/pan event fires, so the first render is correct.
@@ -940,6 +971,8 @@ export async function createGraph() {
   // Mark initialization complete — subsequent applyFilters() calls will
   // trigger applyRegrouping() / restoreGlobalLayout() as appropriate.
   filtersInitialized = true
+  updateNodeCounter()
+  updateCounterPosition()
 
   // ── Wire search ───────────────────────────────────────────────────────────────
   initializeSearch(cy, graph.nodes, node => {
@@ -964,8 +997,9 @@ export async function createGraph() {
   function nodeVisible(node) {
     const type = node.data('type')
     if (type === 'tag') {
-      // Ring node visible only if its tag is active
-      return activeTags.has(node.data('label'))
+      // Ring node visible only if its tag is active AND owns at least one concept node.
+      const label = node.data('label')
+      return activeTags.has(label) && (clusterSize[label] || 0) > 0
     }
     if (!activeTypes.has(type)) return false
     const tags = node.data('tags') || []
@@ -1118,17 +1152,35 @@ export async function createGraph() {
 
     if (activeRingCy.length === 0) return
 
-    // Sort active rings by descending cluster size (mirrors global spiral sort).
-    const activeRingSorted = activeRingCy.toArray().slice().sort((a, b) =>
-      (clusterSize[b.data('label')] || 0) - (clusterSize[a.data('label')] || 0)
-    )
+    // Determine which rings actually attract ≥1 visible concept node in this
+    // selection (a ring may be active but all its concept nodes prefer a
+    // higher-priority active tag, leaving it empty).
+    const usedRingTags = new Set()
+    cy.nodes().forEach(n => {
+      if (n.data('type') === 'tag' || n.style('display') === 'none') return
+      const selTag = selectClusterTag(n.data('tags') || [], activeTags)
+      if (selTag) usedRingTags.add(selTag)
+    })
+
+    // Hide rings with no attracted nodes so they don't clutter the view.
+    cy.batch(() => {
+      activeRingCy.forEach(rn => {
+        rn.style('display', usedRingTags.has(rn.data('label')) ? 'element' : 'none')
+      })
+    })
+
+    // Sort only the used active rings by descending cluster size (mirrors global spiral sort).
+    const activeRingSorted = activeRingCy.toArray()
+      .filter(rn => usedRingTags.has(rn.data('label')))
+      .sort((a, b) => (clusterSize[b.data('label')] || 0) - (clusterSize[a.data('label')] || 0))
 
     // Archimedean spiral with fixed small dθ so consecutive rings are angularly
     // close — this is what makes the spiral arm visually obvious for any N.
     // dθ = 60°: each ring advances 60° and grows radially, tracing a clear arm.
-    const nActive         = activeRingSorted.length
-    const COMPACT_START_R = 320
-    const COMPACT_SPACING = 400
+    const nActive          = activeRingSorted.length
+    const maxActiveCluster = Math.max(...activeRingSorted.map(rn => clusterSize[rn.data('label')] || 1))
+    const COMPACT_SPACING  = SPIRAL_BASE_SCALE * Math.sqrt(maxActiveCluster)
+    const COMPACT_START_R  = COMPACT_SPACING * 0.8
 
     const compactPos = new Map()
     const cPts = spiralPositions(nActive, COMPACT_START_R, COMPACT_SPACING)
@@ -1294,6 +1346,7 @@ export async function createGraph() {
       // highest-priority active ring (original behavior).
       applyRegrouping()
     }
+    updateNodeCounter()
   }
 
   document.getElementById('filters').addEventListener('click', e => {

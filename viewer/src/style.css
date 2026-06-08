@@ -192,3 +192,18 @@ body {
 .tt-row {
   display: block;
 }
+
+#node-counter {
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-family: Inter, Arial, sans-serif;
+  color: #444;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
